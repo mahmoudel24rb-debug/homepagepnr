@@ -1,12 +1,12 @@
 import SiteHeader from '@/components/SiteHeader';
 import HomeHero from '@/components/HomeHero';
 import ClubSection from '@/components/ClubSection';
-import FootUsSection from '@/components/FootUsSection';
-import FlagSection from '@/components/FlagSection';
+import DisciplinesSection from '@/components/DisciplinesSection';
+import PPPBand from '@/components/PPPBand';
 import JeunesSection from '@/components/JeunesSection';
 import InfosSection from '@/components/InfosSection';
 import FaqSection from '@/components/FaqSection';
-import EndzoneSection from '@/components/EndzoneSection';
+import FinalCta from '@/components/FinalCta';
 import SiteFooter from '@/components/SiteFooter';
 
 export default function Home() {
@@ -16,12 +16,12 @@ export default function Home() {
       <main>
         <HomeHero />
         <ClubSection />
-        <FootUsSection />
-        <FlagSection />
+        <DisciplinesSection />
+        <PPPBand />
         <JeunesSection />
         <InfosSection />
         <FaqSection />
-        <EndzoneSection />
+        <FinalCta />
       </main>
       <SiteFooter />
     </>

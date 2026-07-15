@@ -26,9 +26,9 @@ export const ACCES = [
 ];
 
 export const HORAIRES = [
-  { cat: 'Seniors · Football américain compétition', heures: 'Lundi & jeudi · 20h30 à 22h30' },
-  { cat: 'Flag football · Mixte seniors', heures: 'Lundi & jeudi · 20h30 à 22h30' },
-  { cat: 'Juniors · Football américain & flag', heures: 'Lundi & jeudi · 19h00 à 20h30' },
+  { cat: 'Seniors · Football américain', heures: 'Lundi & jeudi · 20h30 à 22h30' },
+  { cat: 'Flag mixte seniors', heures: 'Lundi & jeudi · 20h30 à 22h30' },
+  { cat: 'Juniors · Foot US & flag', heures: 'Lundi & jeudi · 19h00 à 20h30' },
   { cat: 'École de flag', heures: 'Samedi · 10h00 à 12h00' },
 ];
 

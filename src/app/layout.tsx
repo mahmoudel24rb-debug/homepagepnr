@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
 import React from 'react';
 
-// Charte partagée avec la landing « Nous rejoindre » (header + hero + sections),
-// puis compléments homepage. L'ordre compte : les variables viennent de charte-hero.css.
+// Charte partagée avec la landing « Nous rejoindre » (header pilule + hero + tokens),
+// puis le thème éditorial clair de la homepage. L'ordre compte :
+// les variables (--rf-*) viennent de charte-hero.css.
 import '@/styles/charte-hero.css';
-import '@/styles/charte-sections.css';
 import '@/styles/homepage.css';
 
 import RevealObserver from '@/components/RevealObserver';

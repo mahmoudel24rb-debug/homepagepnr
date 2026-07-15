@@ -1,20 +1,18 @@
 import { ArrowRight } from 'lucide-react';
-import YardLine from './YardLine';
 import { REJOINDRE_URL } from '@/lib/infos';
 
-/** CTA final : l'en-but au bout de la descente de terrain, vers le parcours « Nous rejoindre ». */
-export default function EndzoneSection() {
+/** CTA final : bande sombre vers le parcours « Nous rejoindre ». */
+export default function FinalCta() {
   return (
-    <section className="sc-sec sc-endzone">
-      <YardLine n="En-but" />
-      <div className="sc-wrap" data-reveal>
-        <p className="sc-eyebrow">Kickoff · Saison 2026/2027</p>
-        <h2 className="sc-title">
+    <section className="hp-dark hp-final">
+      <div className="hp-wrap" data-reveal>
+        <p className="hp-eyebrow">Kickoff · Saison 2026/2027</p>
+        <h2 className="hp-h2">
           Prêt à entrer
           <br />
           sur le terrain ?
         </h2>
-        <p className="sc-lead" style={{ maxWidth: 560 }}>
+        <p className="hp-p" style={{ maxWidth: 540 }}>
           Performer sur le terrain, s&apos;investir dans le club ou soutenir le projet : le
           parcours en ligne vous guide vers votre place en deux minutes.
         </p>

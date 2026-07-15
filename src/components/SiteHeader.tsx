@@ -7,8 +7,8 @@ import { REJOINDRE_URL } from '@/lib/infos';
 
 const LINKS = [
   { href: '#club', label: 'Le club' },
-  { href: '#foot-us', label: 'Football américain' },
-  { href: '#flag', label: 'Flag football' },
+  { href: '#disciplines', label: 'Disciplines' },
+  { href: '#jeunes', label: 'Jeunes' },
   { href: '#infos', label: 'Infos pratiques' },
   { href: '#faq', label: 'FAQ' },
 ];

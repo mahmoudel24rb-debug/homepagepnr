@@ -1,5 +1,3 @@
-import YardLine from './YardLine';
-
 // Questions/réponses affichées ET exposées en données structurées FAQPage.
 const FAQ = [
   {
@@ -40,12 +38,11 @@ const FAQ_JSONLD = {
 
 export default function FaqSection() {
   return (
-    <section className="sc-sec" id="faq">
-      <YardLine n="50" />
-      <div className="sc-wrap">
+    <section className="hp-sec" id="faq">
+      <div className="hp-wrap">
         <div data-reveal>
-          <p className="sc-eyebrow">Questions fréquentes</p>
-          <h2 className="sc-title">Avant d&apos;entrer sur le terrain.</h2>
+          <p className="hp-eyebrow">Questions fréquentes</p>
+          <h2 className="hp-h2">Avant d&apos;entrer sur le terrain.</h2>
         </div>
         <div className="hp-faq" data-reveal>
           {FAQ.map((item) => (
