@@ -1,0 +1,67 @@
+/* ============================================================
+   Pages légales (mentions légales, politique de confidentialité).
+   Lecture claire, colonne étroite, même charte que le reste du site.
+   ============================================================ */
+
+.lg-body { padding: clamp(48px, 6vw, 80px) 24px clamp(60px, 7.5vw, 104px); }
+.lg-wrap { max-width: 800px; margin: 0 auto; }
+
+.lg-intro {
+  margin: 0 0 clamp(28px, 3.5vw, 40px);
+  font-family: 'Neuething', sans-serif; font-size: 16px; line-height: 1.7;
+  letter-spacing: -0.02em; color: var(--hp-ink-soft, rgba(51, 22, 26, 0.74));
+}
+
+.lg-block {
+  padding: clamp(22px, 2.6vw, 30px) clamp(20px, 2.4vw, 28px);
+  border-radius: 20px;
+  background: var(--hp-card, #fffefb);
+  border: 1px solid var(--hp-card-border, rgba(111, 44, 48, 0.12));
+  box-shadow: var(--hp-card-shadow, 0 20px 44px -30px rgba(58, 22, 4, 0.35));
+}
+.lg-block + .lg-block { margin-top: 18px; }
+
+.lg-block h2 {
+  font-family: 'Futura Condensed', 'Arial Narrow', sans-serif; font-weight: 800;
+  text-transform: uppercase; letter-spacing: -0.025em;
+  font-size: clamp(23px, 2.1vw, 30px); line-height: 1.06;
+  color: var(--hp-title, #5e2327); margin: 0 0 14px;
+}
+.lg-block h3 {
+  font-family: 'Neuething', sans-serif; font-weight: 700; font-size: 16px;
+  letter-spacing: -0.02em; color: var(--hp-title, #5e2327); margin: 1.3em 0 0.4em;
+}
+.lg-block p {
+  margin: 0 0 1em;
+  font-family: 'Neuething', sans-serif; font-size: 15.5px; line-height: 1.7;
+  letter-spacing: -0.02em; color: var(--hp-ink-soft, rgba(51, 22, 26, 0.74));
+}
+.lg-block p:last-child { margin-bottom: 0; }
+.lg-block strong { color: var(--hp-ink, #33161a); font-weight: 700; }
+.lg-block a { color: #a04c00; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+.lg-block a:hover { color: var(--hp-title, #5e2327); }
+.lg-block ul { margin: 0 0 1em; padding-left: 20px; }
+.lg-block li {
+  margin: 0 0 0.4em;
+  font-family: 'Neuething', sans-serif; font-size: 15.5px; line-height: 1.65;
+  letter-spacing: -0.02em; color: var(--hp-ink-soft, rgba(51, 22, 26, 0.74));
+}
+.lg-block li::marker { color: var(--rf-amber, #ffad00); font-weight: 700; }
+
+/* Champ restant à renseigner par le club */
+.lg-todo {
+  display: inline-block; padding: 1px 8px; border-radius: 6px;
+  font-size: 13px; font-weight: 700; letter-spacing: 0.02em;
+  color: #8a5300; background: rgba(255, 173, 0, 0.16);
+  border: 1px solid rgba(255, 173, 0, 0.4);
+}
+
+.lg-maj {
+  margin: clamp(26px, 3vw, 34px) 0 0;
+  font-family: 'Neuething', sans-serif; font-size: 13.5px; letter-spacing: -0.02em;
+  color: var(--hp-ink-mute, rgba(51, 22, 26, 0.52));
+}
+
+@media (max-width: 640px) {
+  .lg-body { padding-left: 20px; padding-right: 20px; }
+}

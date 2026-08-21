@@ -1,0 +1,120 @@
+/* ============================================================
+   Page /contact/ : thème éditorial clair du site.
+   Bande sombre en hero (comme .hp-dark), puis corps crème avec
+   un panneau de formulaire clair (champs blancs, bordures bordeaux)
+   et une colonne d'informations pratiques.
+   ============================================================ */
+
+/* ---------- Corps (le hero est rendu par PageHero) ---------- */
+.ct-body { padding: clamp(48px, 6vw, 80px) 24px clamp(60px, 7.5vw, 104px); }
+.ct-grid {
+  max-width: 1160px; margin: 0 auto;
+  /* minmax(0, ...) : sans lui, le select à texte long impose sa largeur
+     intrinsèque et fait déborder la colonne (piège minmax(auto, 1fr)) */
+  display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.85fr); gap: clamp(28px, 4vw, 52px);
+  align-items: start;
+}
+
+/* ---------- Panneaux clairs ---------- */
+.ct-panel {
+  padding: clamp(26px, 3vw, 34px) clamp(22px, 2.6vw, 32px);
+  border-radius: 22px;
+  background: var(--hp-card, #fffefb);
+  border: 1px solid var(--hp-card-border, rgba(111, 44, 48, 0.12));
+  box-shadow: var(--hp-card-shadow, 0 20px 44px -30px rgba(58, 22, 4, 0.35));
+}
+.ct-panel + .ct-panel { margin-top: 22px; }
+.ct-panel-title {
+  font-family: 'Futura Condensed', 'Arial Narrow', sans-serif; font-weight: 800;
+  text-transform: uppercase; letter-spacing: -0.02em;
+  font-size: clamp(24px, 2.2vw, 32px); line-height: 1.06;
+  color: var(--hp-title, #5e2327); margin: 0 0 18px;
+}
+
+/* ---------- Formulaire ---------- */
+.ct-form { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; }
+.ct-field { display: grid; gap: 7px; }
+.ct-field--full { grid-column: 1 / -1; }
+.ct-field label {
+  font-family: 'Neuething', sans-serif; font-weight: 700; font-size: 13px;
+  letter-spacing: 0.02em; text-transform: uppercase; color: var(--hp-title, #5e2327);
+}
+.ct-field input, .ct-field select, .ct-field textarea {
+  width: 100%;
+  font-family: 'Neuething', sans-serif; font-weight: 400; font-size: 15px;
+  letter-spacing: -0.02em; color: var(--hp-ink, #33161a);
+  padding: 12px 14px; border-radius: 12px;
+  background: #fffdf8;
+  border: 1px solid rgba(111, 44, 48, 0.28);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+.ct-field select { appearance: none; cursor: pointer; }
+.ct-field input::placeholder, .ct-field textarea::placeholder { color: rgba(51, 22, 26, 0.42); }
+.ct-field input:focus, .ct-field select:focus, .ct-field textarea:focus {
+  outline: none;
+  background: #fff;
+  border-color: var(--rf-amber, #ffad00);
+  box-shadow: 0 0 0 3px rgba(255, 173, 0, 0.18);
+}
+.ct-field textarea { resize: vertical; min-height: 130px; line-height: 1.55; }
+
+/* Honeypot : hors écran, jamais visible ni focusable au clavier */
+.sc-field-trap { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+
+.ct-form-actions {
+  grid-column: 1 / -1;
+  display: flex; align-items: center; gap: 18px; flex-wrap: wrap; margin-top: 4px;
+}
+.ct-form-ok {
+  margin: 0; font-size: 15px; line-height: 1.6; font-weight: 700;
+  letter-spacing: -0.02em; color: #1f7a45;
+}
+.ct-form-repli { margin: 0; font-size: 13px; letter-spacing: -0.02em; color: var(--hp-ink-mute, rgba(51, 22, 26, 0.52)); }
+.ct-form-repli a { color: #a04c00; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+
+/* ---------- Colonne infos ---------- */
+.ct-infos-h {
+  font-family: 'Futura Condensed', 'Arial Narrow', sans-serif; font-weight: 800;
+  text-transform: uppercase; letter-spacing: -0.02em; font-size: 22px;
+  color: var(--hp-title, #5e2327); margin: 0 0 14px;
+}
+.ct-list { display: grid; gap: 13px; font-style: normal; }
+.ct-row {
+  display: flex; align-items: flex-start; gap: 12px;
+  font-size: 15px; line-height: 1.55; letter-spacing: -0.02em;
+  color: var(--hp-ink-soft, rgba(51, 22, 26, 0.74));
+}
+.ct-row svg { color: var(--rf-amber, #ffad00); flex: 0 0 auto; margin-top: 4px; }
+.ct-row a { color: var(--hp-title, #5e2327); font-weight: 700; text-decoration: none; }
+.ct-row a:hover { color: #a04c00; text-decoration: underline; }
+.ct-row strong { color: var(--hp-ink, #33161a); font-weight: 700; }
+
+.ct-horaire {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 18px;
+  padding: 12px 2px; border-top: 1px solid var(--hp-line, rgba(111, 44, 48, 0.14));
+}
+.ct-horaire:first-of-type { border-top: none; padding-top: 2px; }
+.ct-horaire-cat { font-weight: 700; font-size: 14.5px; letter-spacing: -0.02em; color: var(--hp-ink, #33161a); }
+/* pas de nowrap : les créneaux multi-séances (Lun & Ven / Mer) doivent replier */
+.ct-horaire-time { font-size: 13.5px; letter-spacing: -0.01em; color: #8a5300; text-align: right; }
+
+.ct-socials { display: flex; gap: 12px; margin-top: 4px; }
+.ct-socials a {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 40px; height: 40px; border-radius: 50%;
+  color: var(--hp-title, #5e2327);
+  background: rgba(111, 44, 48, 0.05);
+  border: 1px solid rgba(111, 44, 48, 0.18);
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+.ct-socials a:hover { color: #8a5300; border-color: rgba(255, 173, 0, 0.6); background: rgba(255, 173, 0, 0.1); }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 980px) {
+  .ct-grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 640px) {
+  .ct-form { grid-template-columns: minmax(0, 1fr); }
+  .ct-body { padding-left: 20px; padding-right: 20px; }
+  .ct-horaire { flex-direction: column; gap: 3px; }
+}

@@ -17,8 +17,9 @@ export default function HomeHero() {
           &amp; flag football à Tours
         </h1>
         <p className="rf-sub">
-          Football américain au contact, flag football sans contact : depuis 1987, les Pionniers
-          accueillent athlètes débutants et confirmés au stade de la Chambrerie.
+          Pratiquer le football américain au contact ou le flag football sans contact : depuis
+          1987, les Pionniers accueillent débutants et joueurs confirmés au stade de la
+          Chambrerie, à Tours Nord.
         </p>
         <div className="hp-hero-ctas">
           <a className="rf-cta" href="#club">

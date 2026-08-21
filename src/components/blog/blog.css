@@ -1,0 +1,216 @@
+/* ============================================================
+   Blog : archive + articles (préfixe blogc-)
+   Charte : tokens de charte-hero.css / homepage.css. Le site est
+   éditorial clair ; le blog garde donc une bande sombre .hp-dark en
+   hero (archive et articles) et une zone de lecture CLAIRE en dessous.
+   Les classes .sc-* reprises de la landing sont volontairement portées
+   ICI et limitées aux conteneurs du blog (.blogc-hero, .blogc-list)
+   pour ne rien changer au reste du site.
+   ============================================================ */
+
+/* ---------- Hero d'article / d'archive (bande sombre .hp-dark) ---------- */
+.blogc-hero {
+  /* compense le header fixed */
+  padding: clamp(126px, 13vw, 176px) 24px clamp(48px, 6vw, 76px);
+  text-align: center;
+}
+.blogc-hero-inner { position: relative; z-index: 1; max-width: 860px; margin: 0 auto; }
+
+/* Reprises de sections.css (landing), portées sur bande sombre uniquement */
+.blogc-hero .sc-eyebrow {
+  font-family: 'Neuething', sans-serif; font-weight: 700;
+  color: var(--rf-amber); text-transform: uppercase;
+  font-size: clamp(15px, 1.5vw, 18px); letter-spacing: 0.02em;
+  margin: 0 0 10px;
+}
+.blogc-hero .sc-title {
+  font-family: 'Futura Condensed', 'Arial Narrow', sans-serif; font-weight: 800;
+  color: var(--rf-cream); text-transform: uppercase;
+  font-size: clamp(32px, 4.2vw, 62px); line-height: 1.04; letter-spacing: -0.045em;
+  margin: 0;
+}
+.blogc-hero .sc-lead {
+  font-family: 'Neuething', sans-serif; font-weight: 400;
+  color: var(--sc-cream-72);
+  font-size: clamp(15px, 1.35vw, 18px); line-height: 1.6; letter-spacing: -0.03em;
+  margin: 18px auto 0; max-width: 640px;
+}
+.blogc-hero .sc-lead strong { color: var(--rf-cream); font-weight: 700; }
+
+.blogc-crumbs {
+  display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 8px;
+  margin: 0 0 18px;
+  font-family: 'Neuething', sans-serif; font-weight: 700; font-size: 13px;
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--sc-cream-38);
+}
+.blogc-crumbs a { color: var(--rf-amber); text-decoration: none; }
+.blogc-crumbs a:hover { text-decoration: underline; }
+.blogc-crumbs .sep { color: var(--sc-cream-38); }
+
+.blogc-meta {
+  margin: 16px 0 0;
+  font-family: 'Neuething', sans-serif; font-size: 14px; letter-spacing: -0.01em;
+  color: var(--sc-cream-55);
+}
+.blogc-meta strong { color: var(--sc-cream-72); font-weight: 700; }
+
+/* ---------- Zone de lecture claire ---------- */
+.blogc-body {
+  background: var(--rf-cream, #fffaf0);
+  color: #3a1604;
+  padding: clamp(40px, 5vw, 72px) 24px clamp(56px, 7vw, 96px);
+}
+.blogc-prose {
+  max-width: 720px; margin: 0 auto;
+  font-family: 'Neuething', sans-serif; font-weight: 400;
+  font-size: 17px; line-height: 1.7; letter-spacing: -0.01em;
+}
+.blogc-prose p { margin: 0 0 1.15em; color: rgba(58, 22, 4, 0.88); }
+.blogc-prose strong { color: #3a1604; font-weight: 700; }
+.blogc-prose a { color: #a04c00; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+.blogc-prose a:hover { color: #6f2c30; }
+
+.blogc-prose h2 {
+  font-family: 'Futura Condensed', 'Arial Narrow', sans-serif; font-weight: 800;
+  font-size: clamp(26px, 3vw, 36px); line-height: 1.04;
+  text-transform: uppercase; letter-spacing: -0.03em;
+  color: #5a1e22; margin: 1.7em 0 0.6em;
+  scroll-margin-top: 100px;
+}
+.blogc-prose h3 {
+  font-family: 'Neuething', sans-serif; font-weight: 700;
+  font-size: 19px; letter-spacing: -0.02em;
+  color: #5a1e22; margin: 1.4em 0 0.5em;
+}
+.blogc-prose ul, .blogc-prose ol { margin: 0 0 1.15em; padding-left: 22px; }
+.blogc-prose li { margin: 0 0 0.45em; color: rgba(58, 22, 4, 0.88); }
+.blogc-prose li::marker { color: #d98a00; font-weight: 700; }
+
+.blogc-prose blockquote {
+  margin: 1.3em 0; padding: 4px 0 4px 18px;
+  border-left: 3px solid var(--rf-amber, #ffad00);
+  color: #6f2c30; font-style: italic;
+}
+
+.blogc-prose table {
+  width: 100%; border-collapse: collapse; margin: 0 0 1.3em; font-size: 15px;
+}
+.blogc-prose th, .blogc-prose td {
+  border: 1px solid rgba(90, 30, 34, 0.18); padding: 9px 12px; text-align: left;
+  vertical-align: top;
+}
+.blogc-prose th {
+  background: rgba(90, 30, 34, 0.07);
+  font-family: 'Neuething', sans-serif; font-weight: 700; color: #5a1e22;
+  text-transform: uppercase; font-size: 12.5px; letter-spacing: 0.06em;
+}
+.blogc-table-scroll { overflow-x: auto; margin: 0 0 1.3em; }
+.blogc-table-scroll table { margin: 0; min-width: 480px; }
+
+/* ---------- Encart CTA (panel sombre posé sur la zone claire) ---------- */
+.blogc-cta {
+  margin: 2em 0 0;
+  padding: clamp(22px, 3vw, 32px);
+  border-radius: 20px;
+  background:
+    radial-gradient(120% 160% at 85% -20%, rgba(255, 173, 0, 0.16) 0%, transparent 55%),
+    linear-gradient(180deg, #401317 0%, #2a0f12 100%);
+  border: 1px solid rgba(255, 173, 0, 0.22);
+  color: var(--rf-cream, #fffaf0);
+  text-align: center;
+}
+.blogc-cta-title {
+  margin: 0 0 6px;
+  font-family: 'Futura Condensed', 'Arial Narrow', sans-serif; font-weight: 800;
+  font-size: clamp(22px, 2.6vw, 30px); text-transform: uppercase; letter-spacing: -0.03em;
+}
+.blogc-cta p { margin: 0 0 16px; color: var(--sc-cream-72); font-size: 15px; }
+.blogc-cta .sc-btn { display: inline-flex; }
+
+/* ---------- Sommaire (article pilier) ---------- */
+.blogc-toc {
+  margin: 0 0 1.6em; padding: 18px 22px;
+  border-radius: 16px;
+  background: rgba(90, 30, 34, 0.06);
+  border: 1px solid rgba(90, 30, 34, 0.14);
+}
+.blogc-toc-title {
+  margin: 0 0 8px;
+  font-family: 'Neuething', sans-serif; font-weight: 700; font-size: 13px;
+  text-transform: uppercase; letter-spacing: 0.1em; color: #6f2c30;
+}
+.blogc-toc ol { margin: 0; padding-left: 20px; }
+.blogc-toc li { margin: 0 0 4px; font-size: 15px; }
+.blogc-toc a { text-decoration: none; }
+.blogc-toc a:hover { text-decoration: underline; }
+
+/* ---------- Archive : cartes claires sur fond crème ---------- */
+.blogc-list { padding: clamp(48px, 6vw, 78px) 24px clamp(60px, 7.5vw, 104px); }
+.blogc-list-wrap { max-width: 1160px; margin: 0 auto; }
+.blogc-list .sc-cards {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+}
+.blogc-list a.sc-card { text-decoration: none; }
+.blogc-list .sc-card {
+  display: flex; flex-direction: column; align-items: flex-start; text-align: left;
+  padding: 30px 28px 26px; border-radius: 22px;
+  background: var(--hp-card, #fffefb); border: 1px solid var(--hp-card-border, rgba(111, 44, 48, 0.12));
+  box-shadow: var(--hp-card-shadow, 0 20px 44px -30px rgba(58, 22, 4, 0.35));
+  font-family: 'Neuething', sans-serif; color: var(--hp-ink, #33161a);
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.blogc-list .sc-card:hover {
+  transform: translateY(-5px); border-color: rgba(255, 173, 0, 0.5);
+  box-shadow: 0 28px 54px -30px rgba(58, 22, 4, 0.45);
+}
+.blogc-list .sc-card-title {
+  font-family: 'Futura Condensed', 'Arial Narrow', sans-serif; font-weight: 800; text-transform: uppercase;
+  font-size: clamp(23px, 2.1vw, 30px); line-height: 1.06; letter-spacing: -0.03em;
+  color: var(--hp-title, #5e2327); margin: 0 0 12px;
+}
+.blogc-list .sc-card-desc {
+  font-size: 15px; line-height: 1.6; letter-spacing: -0.02em;
+  color: var(--hp-ink-soft, rgba(51, 22, 26, 0.74)); margin: 0 0 14px;
+}
+.blogc-list .sc-card-cta {
+  display: inline-flex; align-items: center; gap: 8px; margin-top: auto;
+  font-weight: 700; font-size: 14px; color: var(--hp-title, #5e2327);
+}
+.blogc-list .sc-card-cta::after {
+  content: '›'; font-family: 'Futura Condensed', sans-serif; font-size: 20px; line-height: 1;
+  color: var(--rf-amber); transition: transform 0.22s ease;
+}
+.blogc-list .sc-card:hover .sc-card-cta::after { transform: translateX(4px); }
+
+.blogc-card-meta {
+  display: block; margin: 0 0 18px;
+  font-size: 13px; color: var(--hp-ink-mute, rgba(51, 22, 26, 0.52)); letter-spacing: -0.01em;
+}
+.blogc-card-icon {
+  display: inline-flex; align-items: center; justify-content: center;
+  height: 58px; margin-bottom: 18px;
+}
+.blogc-card-icon img {
+  height: 58px; width: auto; object-fit: contain;
+  filter: drop-shadow(0 6px 14px rgba(58, 22, 4, 0.22));
+}
+
+/* Carte quiz mise en avant dans l'archive */
+.blogc-list .sc-card.blogc-quiz-card {
+  border-color: rgba(255, 173, 0, 0.45);
+  background:
+    radial-gradient(120% 160% at 85% -20%, rgba(255, 173, 0, 0.16) 0%, transparent 58%),
+    var(--hp-card, #fffefb);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 980px) {
+  .blogc-list .sc-cards { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) {
+  .blogc-prose { font-size: 16px; }
+  .blogc-hero { padding-left: 20px; padding-right: 20px; }
+  .blogc-body { padding-left: 20px; padding-right: 20px; }
+  .blogc-list { padding-left: 20px; padding-right: 20px; }
+  .blogc-list .sc-cards { grid-template-columns: 1fr; }
+}

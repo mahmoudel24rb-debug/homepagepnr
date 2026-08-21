@@ -33,7 +33,11 @@ export default function InfosSection() {
               {HORAIRES.map((h) => (
                 <div key={h.cat} className="hp-horaire">
                   <span className="hp-horaire-cat">{h.cat}</span>
-                  <span className="hp-horaire-time">{h.heures}</span>
+                  <span className="hp-horaire-times">
+                    {h.creneaux.map((c) => (
+                      <span key={c}>{c}</span>
+                    ))}
+                  </span>
                 </div>
               ))}
             </div>

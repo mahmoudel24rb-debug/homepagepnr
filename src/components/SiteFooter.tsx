@@ -1,14 +1,30 @@
+import Link from 'next/link';
 import { FaFacebookF, FaInstagram, FaTiktok } from 'react-icons/fa';
 import { asset } from '@/lib/asset';
-import { STADE, RESEAUX, REJOINDRE_URL } from '@/lib/infos';
+import { STADE, RESEAUX, REJOINDRE_URL, BOUTIQUE_URL } from '@/lib/infos';
 
+// Navigation interne du site (mêmes routes que le header).
 const NAV = [
-  { href: '#club', label: 'Le club' },
-  { href: '#foot-us', label: 'Football américain' },
-  { href: '#flag', label: 'Flag football' },
-  { href: '#infos', label: 'Infos pratiques' },
-  { href: '#faq', label: 'FAQ' },
-  { href: REJOINDRE_URL, label: 'Nous rejoindre' },
+  { href: '/', label: 'Accueil' },
+  { href: '/le-club/', label: 'Le club' },
+  { href: '/football-americain/', label: 'Football américain' },
+  { href: '/flag-football/', label: 'Flag football' },
+  { href: '/ecole-de-flag/', label: 'École de flag' },
+  { href: '/partenaires/', label: 'Partenaires' },
+  { href: '/blog/', label: 'Blog' },
+  { href: '/contact/', label: 'Contact' },
+];
+
+// Pages légales, isolées dans leur propre colonne.
+const LEGAL = [
+  { href: '/mentions-legales/', label: 'Mentions légales' },
+  { href: '/politique-de-confidentialite/', label: 'Politique de confidentialité' },
+];
+
+// Sous-domaines du club (hors application Next : liens externes classiques).
+const EXTERNES = [
+  { href: REJOINDRE_URL, label: 'Site de recrutement' },
+  { href: BOUTIQUE_URL, label: 'Boutique' },
 ];
 
 const ICONS = { Facebook: FaFacebookF, Instagram: FaInstagram, TikTok: FaTiktok } as const;
@@ -56,9 +72,29 @@ export default function SiteFooter() {
           <h3 className="sc-footer-h">Explorer</h3>
           <nav className="sc-footer-links" aria-label="Navigation pied de page">
             {NAV.map((l) => (
+              <Link key={l.label} href={l.href}>
+                {l.label}
+              </Link>
+            ))}
+          </nav>
+        </div>
+        <div>
+          <h3 className="sc-footer-h">Le club en ligne</h3>
+          <nav className="sc-footer-links" aria-label="Autres sites du club">
+            {EXTERNES.map((l) => (
               <a key={l.label} href={l.href}>
                 {l.label}
               </a>
+            ))}
+          </nav>
+          <h3 className="sc-footer-h" style={{ marginTop: 26 }}>
+            Informations
+          </h3>
+          <nav className="sc-footer-links" aria-label="Informations légales">
+            {LEGAL.map((l) => (
+              <Link key={l.label} href={l.href}>
+                {l.label}
+              </Link>
             ))}
           </nav>
         </div>

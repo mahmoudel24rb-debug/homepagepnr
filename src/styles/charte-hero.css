@@ -1,5 +1,5 @@
 /* ============================================================
-   Refonte design (maquette Figma) — header + hero.
+   Refonte design (maquette Figma) : header + hero.
    Polices fournies par le designer + palette exacte.
    ============================================================ */
 @font-face {
@@ -57,19 +57,27 @@
 }
 .rf-nav > * { position: relative; z-index: 1; }
 .rf-logo { height: 40px; width: auto; display: block; }
-.rf-links { display: flex; align-items: center; gap: 32px; }
+/* 8 entrées de nav + CTA : écart et taille resserrés pour tenir la pilule. */
+.rf-links { display: flex; align-items: center; gap: 18px; }
 .rf-links a {
-  font-family: 'Neuething', sans-serif; font-weight: 400; font-size: 16px;
+  position: relative; white-space: nowrap;
+  font-family: 'Neuething', sans-serif; font-weight: 400; font-size: 14px;
   color: var(--rf-cream); text-decoration: none; opacity: 0.92; transition: color 0.2s ease;
 }
 .rf-links a:hover { color: var(--rf-amber); }
-.rf-right { display: flex; align-items: center; gap: 20px; }
+/* Page courante : ambre + soulignement discret. */
+.rf-links a.on { color: var(--rf-amber); opacity: 1; font-weight: 700; }
+.rf-links a.on::after {
+  content: ''; position: absolute; left: 0; right: 0; bottom: -6px; height: 2px;
+  border-radius: 2px; background: var(--rf-amber);
+}
+.rf-right { display: flex; align-items: center; gap: 16px; }
 .rf-phone {
   display: inline-flex; align-items: center; gap: 9px;
   font-family: 'Neuething', sans-serif; font-size: 15px; color: var(--rf-cream); text-decoration: none;
 }
 .rf-phone svg { color: var(--rf-amber); }
-/* Bouton ambre premium (glossy + relief 3D) — partagé header/hero */
+/* Bouton ambre premium (glossy + relief 3D) : partagé header/hero */
 .rf-join {
   position: relative; font-family: 'Neuething', sans-serif; font-weight: 700; font-size: 14px;
   color: #3a1604; white-space: nowrap; cursor: pointer;
@@ -167,7 +175,8 @@
 .rf-mobile-menu { display: none; }
 
 /* ───────────────────────── RESPONSIVE ───────────────────────── */
-@media (max-width: 900px) {
+/* Bascule burger à 1100px : 8 entrées de nav ne tiennent plus en dessous. */
+@media (max-width: 1100px) {
   .rf-links, .rf-right .rf-phone span, .rf-right .rf-join { display: none; }
   .rf-burger { display: inline-flex; }
   .rf-nav { padding: 10px 14px; }
@@ -184,12 +193,17 @@
   }
   .rf-mobile-menu a { font-family: 'Neuething', sans-serif; color: var(--rf-cream); text-decoration: none; padding: 12px 14px; border-radius: 12px; }
   .rf-mobile-menu a:hover { background: rgba(255, 255, 255, 0.06); color: var(--rf-amber); }
+  .rf-mobile-menu a.on { color: var(--rf-amber); font-weight: 700; background: rgba(255, 181, 36, 0.1); }
+  .rf-mobile-menu a.rf-join.on { color: #3a1604; background: none; }
   .rf-mobile-menu .rf-join { display: inline-flex; justify-content: center; margin-top: 6px; }
+}
+/* Le hero, lui, garde sa bascule d'origine à 900px. */
+@media (max-width: 900px) {
   .rf-badges { gap: 14px; }
   .rf-badges img { height: 50px; }
   .rf-title { font-size: clamp(34px, 11vw, 62px); white-space: normal; overflow-wrap: anywhere; }
   .rf-hero { padding: 130px 18px 70px; }
 }
-@media (min-width: 901px) {
+@media (min-width: 1101px) {
   .rf-phone-mobile { display: none; }
 }

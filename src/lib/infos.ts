@@ -25,12 +25,43 @@ export const ACCES = [
   { mode: 'En voiture', detail: 'Autoroute A10, sortie n°19 (Tours Nord) à 5 minutes · périphérique de Tours Nord à 3 minutes.' },
 ];
 
+/**
+ * Horaires officiels des entraînements, validés par le club.
+ * `creneaux` sert à l'affichage (une ligne par créneau) ; `heures` reste une
+ * version compacte sur une seule ligne, pratique pour les résumés et le SEO.
+ */
 export const HORAIRES = [
-  { cat: 'Seniors · Football américain', heures: 'Lundi & jeudi · 20h30 à 22h30' },
-  { cat: 'Flag mixte seniors', heures: 'Lundi & jeudi · 20h30 à 22h30' },
-  { cat: 'Juniors · Foot US & flag', heures: 'Lundi & jeudi · 19h00 à 20h30' },
-  { cat: 'École de flag', heures: 'Samedi · 10h00 à 12h00' },
+  {
+    cat: 'Seniors · Foot US compétition',
+    creneaux: ['Lundi & vendredi · 20h30 à 22h30', 'Mercredi · 21h00 à 23h00'],
+    heures: 'Lundi & vendredi 20h30 à 22h30, mercredi 21h00 à 23h00',
+  },
+  {
+    cat: 'Flag mixte seniors',
+    creneaux: ['Lundi & jeudi · 20h30 à 22h30'],
+    heures: 'Lundi & jeudi 20h30 à 22h30',
+  },
+  {
+    cat: 'Juniors · Foot US & flag',
+    creneaux: ['Lundi & jeudi · 19h00 à 21h00'],
+    heures: 'Lundi & jeudi 19h00 à 21h00',
+  },
+  {
+    cat: 'École de flag',
+    creneaux: ['Samedi · 10h00 à 12h00'],
+    heures: 'Samedi 10h00 à 12h00',
+  },
 ];
+
+/** Raccourcis vers un créneau précis, pour les pages de section. */
+export const horairesDe = (cat: string) => HORAIRES.filter((h) => h.cat === cat);
+
+/** Contact officiel du club (recrutement et informations générales). */
+export const CONTACT = {
+  email: 'recrutement@pionniersdetouraine.fr',
+  telephone: '07 87 01 80 26',
+  telHref: 'tel:+33787018026',
+};
 
 export const RESEAUX = [
   { nom: 'Facebook', url: 'https://www.facebook.com/p/Pionniers-de-Touraine-61578271450029/' },
@@ -38,5 +69,11 @@ export const RESEAUX = [
   { nom: 'TikTok', url: 'https://www.tiktok.com/@pionniersdetouraine' },
 ];
 
-/** Parcours de recrutement en ligne (landing « Nous rejoindre »). */
-export const REJOINDRE_URL = 'https://mahmoudel24rb-debug.github.io/lppionnier/';
+/** Site de recrutement (landing « Nous rejoindre »), pour les mentions génériques. */
+export const REJOINDRE_URL = 'https://recrutement.pionniersdetouraine.fr/';
+
+/** Entrée directe dans le tunnel de recrutement, pour les CTA d'action. */
+export const REJOINDRE_TUNNEL_URL = 'https://recrutement.pionniersdetouraine.fr/#rejoindre';
+
+/** Boutique officielle du club. */
+export const BOUTIQUE_URL = 'https://shop.pionniersdetouraine.fr/';
