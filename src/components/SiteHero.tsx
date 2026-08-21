@@ -1,11 +1,9 @@
 'use client';
 
-import Link from 'next/link';
 import { FaChevronDown } from 'react-icons/fa';
 import { ArrowRight } from 'lucide-react';
 import { asset } from '@/lib/asset';
 import { mobileLines } from '@/lib/mobileLines';
-import { REJOINDRE_TUNNEL_URL } from '@/lib/infos';
 
 /**
  * Hero du site vitrine : reprend exactement le gabarit du hero de la landing
@@ -35,17 +33,13 @@ export default function SiteHero() {
           Seniors, juniors U18, flag mixte et école de flag : chacun trouve son terrain.
         </p>
         <div className="rf-cta-row">
-          <a className="rf-cta" href={REJOINDRE_TUNNEL_URL}>
-            Commencer le parcours
+          <a className="rf-cta" href="#club">
+            Découvrir le club
             <span className="rf-cta-arrow">
               <ArrowRight size={17} strokeWidth={2.6} />
             </span>
           </a>
-          <Link className="sc-btn-ghost" href="/le-club/">
-            Découvrir le club
-          </Link>
         </div>
-        <p className="rf-note">2 minutes · sans engagements</p>
 
         <div className="rf-badges">
           {BADGES.map((b) => (
