@@ -4,17 +4,58 @@ import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
 import PageHero from '@/components/PageHero';
 import ContactForm from '@/components/ContactForm';
-import { STADE, HORAIRES, RESEAUX } from '@/lib/infos';
-import '@/styles/contact.css';
+import InfosSection from '@/components/InfosSection';
+import { CONTACT, STADE, RESEAUX } from '@/lib/infos';
 
 // Démo GitHub Pages : pas de canonical (et noindex hérité du layout).
 const IS_DEMO = (process.env.NEXT_PUBLIC_BASE_PATH ?? '/homepagepnr') !== '/';
 
-const EMAIL = 'recrutement@pionniersdetouraine.fr';
-const TEL_AFFICHE = '07 87 01 80 26';
-const TEL_LIEN = '+33787018026';
-
 const ICONS = { Facebook: FaFacebookF, Instagram: FaInstagram, TikTok: FaTiktok } as const;
+
+/** Ligne de coordonnée : pastille ambre + libellé, sur le verre du panneau. */
+const ROW: React.CSSProperties = {
+  display: 'flex',
+  alignItems: 'flex-start',
+  gap: 14,
+  padding: '14px 2px',
+  borderTop: '1px solid var(--sc-line)',
+  fontFamily: "'Neuething', sans-serif",
+  fontSize: 15,
+  lineHeight: 1.55,
+  letterSpacing: '-0.02em',
+  color: 'var(--sc-cream-72)',
+};
+
+const PASTILLE: React.CSSProperties = {
+  flex: '0 0 auto',
+  display: 'inline-flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  width: 34,
+  height: 34,
+  borderRadius: '50%',
+  background: 'rgba(255, 173, 0, 0.12)',
+  border: '1px solid rgba(255, 173, 0, 0.3)',
+  color: 'var(--rf-amber)',
+};
+
+const LIEN: React.CSSProperties = {
+  color: 'var(--rf-amber)',
+  fontWeight: 700,
+  textDecoration: 'none',
+};
+
+const RESEAU: React.CSSProperties = {
+  display: 'inline-flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  width: 42,
+  height: 42,
+  borderRadius: '50%',
+  background: 'rgba(255, 250, 240, 0.05)',
+  border: '1px solid rgba(255, 250, 240, 0.14)',
+  color: 'var(--rf-cream)',
+};
 
 export const metadata: Metadata = {
   title: 'Contact',
@@ -36,30 +77,42 @@ export default function ContactPage() {
           sousTitre="Partenariat, question sur le club, demande presse ou simple curiosité : le staff vous répond. Pour rejoindre une équipe, passez plutôt par notre site de recrutement."
         />
 
-        <section className="ct-body">
-          <div className="ct-grid">
-            <ContactForm />
+        <section className="sc-sec" id="ecrire">
+          <div className="sc-wrap">
+            <div className="sc-infos-grid" data-reveal>
+              <ContactForm />
 
-            <div>
-              <div className="ct-panel">
-                <h2 className="ct-infos-h">Coordonnées</h2>
-                <address className="ct-list">
-                  <span className="ct-row">
-                    <FaEnvelope size={15} />
+              <div className="sc-panel">
+                <h2 className="sc-panel-title">Coordonnées</h2>
+                <address style={{ fontStyle: 'normal', display: 'grid' }}>
+                  <span style={ROW}>
+                    <span style={PASTILLE} aria-hidden="true">
+                      <FaEnvelope size={14} />
+                    </span>
                     <span>
-                      <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
+                      <a style={LIEN} href={`mailto:${CONTACT.email}`}>
+                        {CONTACT.email}
+                      </a>
                     </span>
                   </span>
-                  <span className="ct-row">
-                    <FaPhoneAlt size={15} />
+                  <span style={ROW}>
+                    <span style={PASTILLE} aria-hidden="true">
+                      <FaPhoneAlt size={14} />
+                    </span>
                     <span>
-                      <a href={`tel:${TEL_LIEN}`}>{TEL_AFFICHE}</a>
+                      <a style={LIEN} href={CONTACT.telHref}>
+                        {CONTACT.telephone}
+                      </a>
                     </span>
                   </span>
-                  <span className="ct-row">
-                    <FaMapMarkerAlt size={15} />
+                  <span style={ROW}>
+                    <span style={PASTILLE} aria-hidden="true">
+                      <FaMapMarkerAlt size={14} />
+                    </span>
                     <span>
-                      <strong>{STADE.nom}</strong>
+                      <strong style={{ color: 'var(--rf-cream)', fontWeight: 700 }}>
+                        {STADE.nom}
+                      </strong>
                       <br />
                       {STADE.rue}
                       <br />
@@ -67,26 +120,17 @@ export default function ContactPage() {
                     </span>
                   </span>
                 </address>
-              </div>
 
-              <div className="ct-panel">
-                <h2 className="ct-infos-h">Horaires d&apos;entraînement</h2>
-                {HORAIRES.map((h) => (
-                  <div className="ct-horaire" key={h.cat}>
-                    <span className="ct-horaire-cat">{h.cat}</span>
-                    <span className="ct-horaire-time">{h.heures}</span>
-                  </div>
-                ))}
-              </div>
-
-              <div className="ct-panel">
-                <h2 className="ct-infos-h">Nous suivre</h2>
-                <div className="ct-socials">
+                <h2 className="sc-panel-title" style={{ marginTop: 30 }}>
+                  Nous suivre
+                </h2>
+                <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
                   {RESEAUX.map((r) => {
                     const Icon = ICONS[r.nom as keyof typeof ICONS];
                     return (
                       <a
                         key={r.nom}
+                        style={RESEAU}
                         href={r.url}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -101,6 +145,8 @@ export default function ContactPage() {
             </div>
           </div>
         </section>
+
+        <InfosSection />
       </main>
       <SiteFooter />
     </>

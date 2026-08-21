@@ -3,6 +3,7 @@ import Link from 'next/link';
 import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
 import PageHero from '@/components/PageHero';
+import YardLine from '@/components/YardLine';
 import { STADE, CONTACT } from '@/lib/infos';
 
 /**
@@ -49,17 +50,19 @@ export default function Page() {
           titre="Nos têtes"
           sousTitre="Le bureau, le staff sportif et les responsables de sections des Pionniers de Touraine. Cette page est en cours de constitution : les noms et les photos arrivent bientôt."
         >
-          <div className="ph-ctas">
-            <span className="hp-todo">Page à compléter</span>
+          <div className="sc-ctas">
+            <span className="sc-todo">Page à compléter</span>
           </div>
         </PageHero>
 
-        <section className="hp-sec" id="equipe">
-          <div className="hp-wrap">
+        {/* ── Bureau & staff ── */}
+        <section className="sc-sec" id="equipe">
+          <YardLine n="10" />
+          <div className="sc-wrap">
             <div data-reveal>
-              <p className="hp-eyebrow">Celles et ceux qui font tourner le club</p>
-              <h2 className="hp-h2">Bureau &amp; staff.</h2>
-              <p className="hp-p">
+              <p className="sc-eyebrow">Celles et ceux qui font tourner le club</p>
+              <h2 className="sc-title">Bureau &amp; staff.</h2>
+              <p className="sc-lead">
                 Un club associatif tient grâce à des bénévoles qui prennent des responsabilités en
                 plus de leur vie professionnelle et familiale. Voici les rôles qui structurent les
                 Pionniers de Touraine.
@@ -69,58 +72,72 @@ export default function Page() {
             {/* À COMPLÉTER : remplacer « Prénom Nom » par les identités réelles,
                 mettre à jour les initiales de la pastille, et ajouter les photos
                 si le club en dispose et si les personnes concernées l'acceptent. */}
-            <div className="hp-people" data-reveal>
+            <div className="sc-membres" data-reveal>
               {MEMBRES.map((m) => (
-                <div key={m.role} className="hp-person">
-                  <span className="hp-avatar" aria-hidden="true">
+                <article key={m.role} className="sc-card sc-card--statique">
+                  <span className="sc-avatar" aria-hidden="true">
                     {INITIALES}
                   </span>
-                  <span className="hp-person-role">{m.role}</span>
-                  <span className="hp-person-nom">Prénom Nom (À COMPLÉTER)</span>
-                  <span className="hp-todo">{m.pole}</span>
-                </div>
+                  <h3 className="sc-membre-role">{m.role}</h3>
+                  <p className="sc-membre-nom">Prénom Nom (À COMPLÉTER)</p>
+                  <span className="sc-chip">{m.pole}</span>
+                </article>
               ))}
             </div>
           </div>
         </section>
 
-        <section className="hp-sec" id="contact" style={{ paddingTop: 0 }}>
-          <div className="hp-wrap">
+        {/* ── Nous joindre ── */}
+        <section className="sc-sec" id="contact">
+          <YardLine n="20" />
+          <div className="sc-wrap">
             <div data-reveal>
-              <p className="hp-eyebrow">Nous joindre</p>
-              <h2 className="hp-h2">Une question pour le bureau ?</h2>
-              <p className="hp-p">
-                En attendant que cette page soit complète, écrivez au club : le message est
-                transmis à la bonne personne.
+              <p className="sc-eyebrow">Nous joindre</p>
+              <h2 className="sc-title">Une question pour le bureau ?</h2>
+              <p className="sc-lead">
+                En attendant que cette page soit complète, écrivez au club : le message est transmis
+                à la bonne personne.
               </p>
             </div>
-            <div className="hp-contact-box" data-reveal>
-              <div className="hp-contact-item">
-                <span>Email</span>
-                <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
+
+            <div className="sc-panel" data-reveal style={{ marginTop: 30, maxWidth: 860 }}>
+              <h3 className="sc-panel-title">Contacter le club</h3>
+              <div className="sc-horaires">
+                <div className="sc-horaire">
+                  <span className="sc-horaire-cat">Email</span>
+                  <span className="sc-horaire-time">
+                    <a
+                      href={`mailto:${CONTACT.email}`}
+                      style={{ color: 'inherit', textDecoration: 'none' }}
+                    >
+                      {CONTACT.email}
+                    </a>
+                  </span>
+                </div>
+                <div className="sc-horaire">
+                  <span className="sc-horaire-cat">Téléphone</span>
+                  <span className="sc-horaire-time">
+                    <a href={CONTACT.telHref} style={{ color: 'inherit', textDecoration: 'none' }}>
+                      {CONTACT.telephone}
+                    </a>
+                  </span>
+                </div>
+                <div className="sc-horaire">
+                  <span className="sc-horaire-cat">Le stade</span>
+                  <span className="sc-horaire-time" style={{ color: 'var(--sc-cream-72)' }}>
+                    {STADE.nom}, {STADE.rue}, {STADE.codePostal} {STADE.ville}
+                  </span>
+                </div>
               </div>
-              <div className="hp-contact-item">
-                <span>Téléphone</span>
-                <a href={CONTACT.telHref}>{CONTACT.telephone}</a>
+
+              <div className="sc-ctas">
+                <Link className="sc-btn-ghost" href="/contact/">
+                  Page contact
+                </Link>
+                <Link className="sc-btn-ghost" href="/le-club/">
+                  Découvrir le club
+                </Link>
               </div>
-              <div className="hp-contact-item">
-                <span>Le stade</span>
-                <p>
-                  {STADE.nom}
-                  <br />
-                  {STADE.rue}
-                  <br />
-                  {STADE.codePostal} {STADE.ville}
-                </p>
-              </div>
-            </div>
-            <div className="hp-section-cta" data-reveal>
-              <Link className="hp-ghost" href="/contact/">
-                Page contact
-              </Link>
-              <Link className="hp-ghost" href="/le-club/">
-                Découvrir le club
-              </Link>
             </div>
           </div>
         </section>

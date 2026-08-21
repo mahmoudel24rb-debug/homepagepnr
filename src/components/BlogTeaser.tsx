@@ -1,5 +1,7 @@
 import Link from 'next/link';
-import { FaArrowRight } from 'react-icons/fa';
+import { ArrowRight } from 'lucide-react';
+import YardLine from './YardLine';
+import { getEmoji } from '@/lib/funnelIcons';
 
 /**
  * Aperçu du blog : trois articles EN DUR, volontairement indépendants de tout
@@ -8,6 +10,8 @@ import { FaArrowRight } from 'react-icons/fa';
 const ARTICLES = [
   {
     href: '/blog/comment-pratiquer-le-football-americain-en-france/',
+    emoji: 'foot-us',
+    alt: 'Emoji football américain',
     kicker: 'Guide',
     titre: 'Comment pratiquer le football américain en France',
     extrait:
@@ -15,6 +19,8 @@ const ARTICLES = [
   },
   {
     href: '/blog/flag-football-cest-quoi/',
+    emoji: 'flag',
+    alt: 'Emoji flag football',
     kicker: 'Décryptage',
     titre: 'Le flag football, c’est quoi ?',
     extrait:
@@ -22,6 +28,8 @@ const ARTICLES = [
   },
   {
     href: '/blog/sport-collectif-tours/',
+    emoji: 'partenaire',
+    alt: 'Emoji équipe soudée',
     kicker: 'Tours',
     titre: 'Quel sport collectif pratiquer à Tours ?',
     extrait:
@@ -31,30 +39,38 @@ const ARTICLES = [
 
 export default function BlogTeaser() {
   return (
-    <section className="hp-sec" id="blog">
-      <div className="hp-wrap">
+    <section className="sc-sec" id="blog">
+      <YardLine n="50" />
+      <div className="sc-wrap">
         <div data-reveal>
-          <p className="hp-eyebrow">Le blog des Pionniers</p>
-          <h2 className="hp-h2">Comprendre avant de chausser les crampons.</h2>
-          <p className="hp-p">
+          <p className="sc-eyebrow">Le blog des Pionniers</p>
+          <h2 className="sc-title">Comprendre avant de chausser les crampons.</h2>
+          <p className="sc-lead">
             Des articles pour découvrir le football américain et le flag, sans jargon et sans
             présupposer que vous connaissez déjà le sport.
           </p>
         </div>
-        <div className="hp-blog" data-reveal>
+
+        <div className="sc-cards" data-reveal>
           {ARTICLES.map((a) => (
-            <Link key={a.href} className="hp-blog-card" href={a.href}>
-              <p className="hp-blog-kicker">{a.kicker}</p>
-              <h3>{a.titre}</h3>
-              <p>{a.extrait}</p>
-              <span className="hp-blog-more">
-                Lire l’article <FaArrowRight size={12} />
+            <Link key={a.href} className="sc-card" href={a.href}>
+              <div className="sc-card-badges">
+                <img className="sc-card-badge" src={getEmoji(a.emoji)} alt={a.alt} loading="lazy" />
+              </div>
+              <div className="sc-chips">
+                <span className="sc-chip">{a.kicker}</span>
+              </div>
+              <h3 className="sc-card-title">{a.titre}</h3>
+              <p className="sc-card-desc">{a.extrait}</p>
+              <span className="sc-card-cta">
+                Lire l’article <ArrowRight size={15} strokeWidth={2.6} />
               </span>
             </Link>
           ))}
         </div>
-        <div className="hp-section-cta" data-reveal>
-          <Link className="hp-ghost" href="/blog/">
+
+        <div style={{ marginTop: 34 }} data-reveal>
+          <Link className="sc-btn-ghost" href="/blog/">
             Tous les articles
           </Link>
         </div>

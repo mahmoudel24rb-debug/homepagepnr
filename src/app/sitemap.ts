@@ -35,6 +35,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${SITE}/nos-sections/`,
+      lastModified: DATE_PAGES,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: `${SITE}/football-americain/`,
       lastModified: DATE_PAGES,
       changeFrequency: 'monthly',

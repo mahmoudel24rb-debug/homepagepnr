@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { CLUB } from '@/lib/infos';
 
 /**
- * Gabarit d'en-tête des pages intérieures : bande sombre compensant le header
- * fixe, fil d'Ariane (Accueil / {page}), H1 et sous-titre optionnel.
+ * Gabarit d'en-tête des pages intérieures : compense le header fixe
+ * (.sc-pagehead), fil d'Ariane (Accueil / {page}), H1 et sous-titre optionnel.
  * Émet aussi le BreadcrumbList (données structurées) de la page.
  */
 type Props = {
@@ -31,16 +31,18 @@ export default function PageHero({ fil, chemin, eyebrow, titre, sousTitre, child
   };
 
   return (
-    <section className="hp-dark ph-hero">
-      <div className="hp-wrap">
-        <nav className="ph-crumb" aria-label="Fil d’Ariane">
+    <section className="sc-sec sc-pagehead">
+      <div className="sc-wrap">
+        <nav className="sc-crumbs" aria-label="Fil d’Ariane">
           <Link href="/">Accueil</Link>
-          <span aria-hidden="true">/</span>
+          <span className="sep" aria-hidden="true">
+            /
+          </span>
           <span aria-current="page">{fil}</span>
         </nav>
-        {eyebrow ? <p className="hp-eyebrow">{eyebrow}</p> : null}
-        <h1 className="ph-title">{titre}</h1>
-        {sousTitre ? <p className="ph-sub">{sousTitre}</p> : null}
+        {eyebrow ? <p className="sc-eyebrow">{eyebrow}</p> : null}
+        <h1 className="sc-title">{titre}</h1>
+        {sousTitre ? <p className="sc-lead">{sousTitre}</p> : null}
         {children}
       </div>
       <script

@@ -1,55 +1,51 @@
-import { FaMapMarkerAlt } from 'react-icons/fa';
-import { STADE, HORAIRES, ACCES } from '@/lib/infos';
+import YardLine from './YardLine';
+import StadeMap from './StadeMap';
+import { ACCES, HORAIRES } from '@/lib/infos';
 
+/**
+ * Infos pratiques : horaires officiels des entraînements, carte du stade et
+ * moyens d'accès. Gabarit .sc-infos-grid / .sc-panel de la landing.
+ */
 export default function InfosSection() {
   return (
-    <section className="hp-sec" id="infos">
-      <div className="hp-wrap">
+    <section className="sc-sec" id="infos">
+      <YardLine n="10" />
+      <div className="sc-wrap">
         <div data-reveal>
-          <p className="hp-eyebrow">Infos pratiques</p>
-          <h2 className="hp-h2">Stade, horaires &amp; accès.</h2>
+          <p className="sc-eyebrow">Infos pratiques</p>
+          <h2 className="sc-title">On t’attend au stade.</h2>
+          <p className="sc-lead">
+            Les Pionniers s’entraînent au <strong>stade de la Chambrerie</strong>, à Tours Nord.
+            Voici les créneaux de chaque collectif et les façons d’y venir.
+          </p>
         </div>
-        <div className="hp-infos-grid" data-reveal>
-          <div className="hp-panel">
-            <h3>Le stade</h3>
-            <address className="hp-address">
-              <div className="hp-address-row">
-                <FaMapMarkerAlt size={15} aria-hidden />
-                <span>
-                  {STADE.nom}
-                  <br />
-                  {STADE.rue}, {STADE.codePostal} {STADE.ville}
-                </span>
-              </div>
-            </address>
-            <p className="hp-p" style={{ fontSize: 14, marginTop: 14 }}>
-              Tous les entraînements de football américain et de flag football ont lieu au
-              {' '}{STADE.nom}, à {STADE.ville} Nord.
-            </p>
-          </div>
-          <div className="hp-panel">
-            <h3>Entraînements</h3>
-            <div>
+
+        <div className="sc-infos-grid" data-reveal>
+          <StadeMap />
+          <div className="sc-panel">
+            <h3 className="sc-panel-title">Entraînements</h3>
+            <div className="sc-horaires">
               {HORAIRES.map((h) => (
-                <div key={h.cat} className="hp-horaire">
-                  <span className="hp-horaire-cat">{h.cat}</span>
-                  <span className="hp-horaire-times">
-                    {h.creneaux.map((c) => (
-                      <span key={c}>{c}</span>
-                    ))}
+                <div key={h.cat} className="sc-horaire">
+                  <span className="sc-horaire-cat">{h.cat}</span>
+                  <span className="sc-horaire-time">{h.creneaux.join(' / ')}</span>
+                </div>
+              ))}
+            </div>
+
+            <h3 className="sc-panel-title" style={{ marginTop: 30 }}>
+              Y accéder
+            </h3>
+            <div className="sc-horaires">
+              {ACCES.map((a) => (
+                <div key={a.mode} className="sc-horaire">
+                  <span className="sc-horaire-cat">{a.mode}</span>
+                  <span className="sc-horaire-time" style={{ color: 'var(--sc-cream-72)' }}>
+                    {a.detail}
                   </span>
                 </div>
               ))}
             </div>
-          </div>
-          <div className="hp-panel">
-            <h3>Comment venir</h3>
-            {ACCES.map((a) => (
-              <div key={a.mode} className="hp-access-row">
-                <span className="hp-access-mode">{a.mode}</span>
-                <p>{a.detail}</p>
-              </div>
-            ))}
           </div>
         </div>
       </div>

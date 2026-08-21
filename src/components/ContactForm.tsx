@@ -45,9 +45,9 @@ export default function ContactForm() {
 
   if (statut === 'envoye') {
     return (
-      <div className="ct-panel">
-        <h2 className="ct-panel-title">Message envoyé</h2>
-        <p className="ct-form-ok">
+      <div className="sc-panel">
+        <h2 className="sc-panel-title">Message envoyé</h2>
+        <p className="sc-form-ok">
           Merci ! Le staff des Pionniers de Touraine vous répond dans les meilleurs délais.
         </p>
       </div>
@@ -55,9 +55,9 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="ct-panel">
-      <h2 className="ct-panel-title">Nous écrire</h2>
-      <form className="ct-form" onSubmit={onSubmit}>
+    <div className="sc-panel">
+      <h2 className="sc-panel-title">Nous écrire</h2>
+      <form className="sc-form" onSubmit={onSubmit}>
         {/* Honeypot anti-spam : caché aux humains, rempli par les robots */}
         <input
           type="text"
@@ -67,7 +67,7 @@ export default function ContactForm() {
           aria-hidden="true"
           className="sc-field-trap"
         />
-        <div className="ct-field ct-field--full">
+        <div className="sc-field sc-field--full">
           <label htmlFor="contact-objet">Objet</label>
           <select
             id="contact-objet"
@@ -83,15 +83,15 @@ export default function ContactForm() {
             ))}
           </select>
         </div>
-        <div className="ct-field">
+        <div className="sc-field">
           <label htmlFor="contact-nom">Nom</label>
           <input id="contact-nom" name="nom" required placeholder="Votre nom" />
         </div>
-        <div className="ct-field">
+        <div className="sc-field">
           <label htmlFor="contact-email">Email</label>
           <input id="contact-email" name="email" type="email" required placeholder="prenom@email.com" />
         </div>
-        <div className="ct-field ct-field--full">
+        <div className="sc-field sc-field--full">
           <label htmlFor="contact-message">Message</label>
           <textarea
             id="contact-message"
@@ -103,12 +103,12 @@ export default function ContactForm() {
             onChange={(e) => setMessage(e.target.value)}
           />
         </div>
-        <div className="ct-form-actions">
+        <div className="sc-form-actions">
           <button type="submit" className="sc-btn" disabled={statut === 'envoi'}>
             {statut === 'envoi' ? 'Envoi…' : 'Envoyer'} <FaPaperPlane size={13} />
           </button>
           {statut === 'repli' && (
-            <p className="ct-form-repli">
+            <p className="sc-form-demo">
               L&apos;envoi direct sera actif sur le site final. En attendant :{' '}
               <a href={mailtoRepli}>nous écrire par email</a>.
             </p>

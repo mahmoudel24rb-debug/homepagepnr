@@ -1,12 +1,17 @@
 import Link from 'next/link';
-import { FaFacebookF, FaInstagram, FaTiktok } from 'react-icons/fa';
 import { asset } from '@/lib/asset';
-import { STADE, RESEAUX, REJOINDRE_URL, BOUTIQUE_URL } from '@/lib/infos';
+import { BOUTIQUE_URL, CONTACT, REJOINDRE_URL, STADE } from '@/lib/infos';
 
-// Navigation interne du site (mêmes routes que le header).
-const NAV = [
-  { href: '/', label: 'Accueil' },
+/**
+ * Pied de page du site vitrine : gabarit .sc-footer* de la landing de
+ * recrutement, avec trois colonnes de liens (pages du site, sites du club,
+ * contact) et la barre de bas de page (mentions + confidentialité).
+ */
+const CALENDRIER_URL = 'https://calendrier.pionniersdetouraine.fr/';
+
+const EXPLORER = [
   { href: '/le-club/', label: 'Le club' },
+  { href: '/nos-sections/', label: 'Nos sections' },
   { href: '/football-americain/', label: 'Football américain' },
   { href: '/flag-football/', label: 'Flag football' },
   { href: '/ecole-de-flag/', label: 'École de flag' },
@@ -15,26 +20,18 @@ const NAV = [
   { href: '/contact/', label: 'Contact' },
 ];
 
-// Pages légales, isolées dans leur propre colonne.
-const LEGAL = [
-  { href: '/mentions-legales/', label: 'Mentions légales' },
-  { href: '/politique-de-confidentialite/', label: 'Politique de confidentialité' },
-];
-
-// Sous-domaines du club (hors application Next : liens externes classiques).
-const EXTERNES = [
+const EN_LIGNE = [
   { href: REJOINDRE_URL, label: 'Site de recrutement' },
-  { href: BOUTIQUE_URL, label: 'Boutique' },
+  { href: BOUTIQUE_URL, label: 'Boutique officielle' },
+  { href: CALENDRIER_URL, label: 'Calendrier des matchs' },
 ];
-
-const ICONS = { Facebook: FaFacebookF, Instagram: FaInstagram, TikTok: FaTiktok } as const;
 
 const BADGES = [
-  { src: '/assets/refonte/badge-1-footus.svg', alt: 'Foot US & Flag' },
-  { src: '/assets/refonte/badge-2-olympique.svg', alt: 'Sport Olympique · JO de Los Angeles 2028' },
+  { src: '/assets/refonte/badge-1-footus.webp', alt: 'Foot US & Flag' },
+  { src: '/assets/refonte/badge-2-olympique.webp', alt: 'Sport Olympique · JO de Los Angeles 2028' },
   { src: '/assets/refonte/badge-3-ppp.svg', alt: 'Programme PPP' },
-  { src: '/assets/refonte/badge-4-u18.svg', alt: 'U18' },
-  { src: '/assets/refonte/badge-5-ecole.svg', alt: 'École de Flag' },
+  { src: '/assets/refonte/badge-4-u18.webp', alt: 'U18' },
+  { src: '/assets/refonte/badge-5-ecole.webp', alt: 'École de Flag' },
 ];
 
 export default function SiteFooter() {
@@ -49,72 +46,60 @@ export default function SiteFooter() {
             loading="lazy"
           />
           <p className="sc-footer-tagline">
-            Club de football américain &amp; flag football à Tours depuis 1987. Sur le terrain ou
-            à nos côtés, chacun a sa place chez les Pionniers.
+            Football américain &amp; flag football à Tours depuis 1987. Sur le terrain ou à nos
+            côtés, trouve ta place chez les Pionniers.
           </p>
           <div className="sc-footer-badges">
             {BADGES.map((b) => (
               <img key={b.alt} src={asset(b.src)} alt={b.alt} loading="lazy" />
             ))}
           </div>
-          <div className="hp-socials">
-            {RESEAUX.map((r) => {
-              const Icon = ICONS[r.nom as keyof typeof ICONS];
-              return (
-                <a key={r.nom} href={r.url} target="_blank" rel="noopener noreferrer" aria-label={r.nom}>
-                  <Icon size={16} />
-                </a>
-              );
-            })}
-          </div>
         </div>
+
         <div>
           <h3 className="sc-footer-h">Explorer</h3>
-          <nav className="sc-footer-links" aria-label="Navigation pied de page">
-            {NAV.map((l) => (
-              <Link key={l.label} href={l.href}>
+          <nav className="sc-footer-links">
+            {EXPLORER.map((l) => (
+              <Link key={l.href} href={l.href}>
                 {l.label}
               </Link>
             ))}
           </nav>
         </div>
+
         <div>
           <h3 className="sc-footer-h">Le club en ligne</h3>
-          <nav className="sc-footer-links" aria-label="Autres sites du club">
-            {EXTERNES.map((l) => (
-              <a key={l.label} href={l.href}>
+          <nav className="sc-footer-links">
+            {EN_LIGNE.map((l) => (
+              <a key={l.href} href={l.href} target="_blank" rel="noopener noreferrer">
                 {l.label}
               </a>
             ))}
           </nav>
-          <h3 className="sc-footer-h" style={{ marginTop: 26 }}>
-            Informations
+
+          <h3 className="sc-footer-h" style={{ marginTop: 28 }}>
+            Contact
           </h3>
-          <nav className="sc-footer-links" aria-label="Informations légales">
-            {LEGAL.map((l) => (
-              <Link key={l.label} href={l.href}>
-                {l.label}
-              </Link>
-            ))}
-          </nav>
-        </div>
-        <div>
-          <h3 className="sc-footer-h">Le stade</h3>
-          <address className="sc-footer-links hp-address">
+          <div className="sc-footer-links">
+            <a href={CONTACT.telHref}>{CONTACT.telephone}</a>
+            <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
             <span style={{ fontSize: 14, letterSpacing: '-0.02em', color: 'var(--sc-cream-55)' }}>
-              {STADE.nom}
-              <br />
-              {STADE.rue}
+              {STADE.nom}, {STADE.rue}
               <br />
               {STADE.codePostal} {STADE.ville}
             </span>
-          </address>
+          </div>
         </div>
       </div>
+
       <div className="sc-footer-bottom">
-        <span>© Pionniers de Touraine · Tous droits réservés.</span>
-        <span>
-          Réalisé par <strong>DGL Agency</strong>
+        <span>© {new Date().getFullYear()} Pionniers de Touraine · Tous droits réservés.</span>
+        <span style={{ display: 'inline-flex', gap: 18, flexWrap: 'wrap' }}>
+          <Link href="/mentions-legales/">Mentions légales</Link>
+          <Link href="/politique-de-confidentialite/">Politique de confidentialité</Link>
+          <span>
+            Réalisé par <strong>DGL Agency</strong>
+          </span>
         </span>
       </div>
     </footer>

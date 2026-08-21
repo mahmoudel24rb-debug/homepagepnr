@@ -1,22 +1,22 @@
 import Link from 'next/link';
 import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
+import YardLine from '@/components/YardLine';
 import { CtaTunnel } from './CtaEncart';
 import { dateFr, type ArticleMeta } from '@/data/blog';
 import './blog.css';
 
 /**
- * Gabarit commun des articles : hero sur bande sombre (.hp-dark, comme les
- * respirations de la homepage) avec breadcrumb + H1 + méta, puis zone de
- * lecture claire (fond crème, texte sombre) et CTA en fin de page.
- * Le contenu (children) est le composant de src/content/.
+ * Gabarit commun des articles : hero sombre (breadcrumb + H1 + méta),
+ * zone de lecture claire (fond crème, texte sombre), CTA tunnel en fin
+ * de page. Le contenu (children) est le composant de src/content/.
  */
 export default function ArticleLayout({ article, children }: { article: ArticleMeta; children: React.ReactNode }) {
   return (
     <>
       <SiteHeader />
       <main>
-        <section className="hp-dark blogc-hero">
+        <section className="blogc-hero">
           <div className="blogc-hero-inner">
             <nav className="blogc-crumbs" aria-label="Fil d'Ariane">
               <Link href="/">Accueil</Link>
@@ -43,6 +43,8 @@ export default function ArticleLayout({ article, children }: { article: ArticleM
             />
           </article>
         </div>
+
+        <YardLine n="endzone" />
       </main>
       <SiteFooter />
     </>

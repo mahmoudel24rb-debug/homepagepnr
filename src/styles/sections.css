@@ -1,0 +1,725 @@
+/* ============================================================
+   Sections après le hero : charte exacte de la maquette hero :
+   fond bordeaux profond, crème #fffaf0, ambre #ffad00,
+   Futura Condensed (titres, maj) / Neuething (corps).
+   Fil conducteur : la page descend le terrain, section après
+   section (marqueurs de yards 10 → 50 → en-but).
+   ============================================================ */
+
+/* ── Base (le reset venait de framer.css, supprimé avec le template) ── */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: #140708;
+  color: var(--rf-cream);
+  font-family: 'Neuething', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; }
+#club, #sections, #adhesions, #infos, #contact { scroll-margin-top: 96px; }
+:where(a, button):focus-visible { outline: 2px solid var(--rf-amber); outline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+:root {
+  --sc-ink: #3a1604;                       /* texte sur ambre (cf. .rf-cta) */
+  --sc-cream-72: rgba(255, 250, 240, 0.72);
+  --sc-cream-55: rgba(255, 250, 240, 0.55);
+  --sc-cream-38: rgba(255, 250, 240, 0.38);
+  --sc-line: rgba(255, 250, 240, 0.09);
+  /* verre bordeaux : même recette que la pilule du header */
+  --sc-glass: linear-gradient(180deg, rgba(128, 53, 58, 0.26) 0%, rgba(90, 34, 38, 0.34) 100%);
+  --sc-glass-border: rgba(255, 255, 255, 0.06);
+}
+
+/* ── Structure commune ── */
+.sc-sec { position: relative; padding: clamp(18px, 2vw, 28px) 24px clamp(72px, 8.5vw, 118px); }
+.sc-wrap { max-width: 1200px; margin: 0 auto; }
+
+/* Labels courts : Futura Condensed ExtraBold, majuscules, chasse étroite
+   → taille légèrement augmentée et interlettrage ouvert. */
+.sc-eyebrow {
+  font-family: 'Neuething', sans-serif; font-weight: 700;
+  color: var(--rf-amber); text-transform: uppercase;
+  font-size: clamp(15px, 1.5vw, 18px); letter-spacing: 0.02em;
+  margin: 0 0 10px;
+}
+.sc-title {
+  font-family: 'Futura Condensed', 'Arial Narrow', sans-serif; font-weight: 800;
+  color: var(--rf-cream); text-transform: uppercase;
+  font-size: clamp(36px, 4.6vw, 68px); line-height: 1.04; letter-spacing: -0.045em;
+  margin: 0;
+}
+.sc-lead {
+  font-family: 'Neuething', sans-serif; font-weight: 400;
+  color: var(--sc-cream-72);
+  font-size: clamp(15px, 1.35vw, 18px); line-height: 1.6; letter-spacing: -0.03em;
+  margin: 18px 0 0; max-width: 640px;
+}
+.sc-lead strong { color: var(--rf-cream); font-weight: 700; }
+
+/* ── Marqueur de yards (séparateur de sections) : SVG terrain du designer ── */
+.sc-yard {
+  position: relative; z-index: 1; /* au-dessus des calques décoratifs des sections (texture/halo) */
+  max-width: 1200px; margin: 0 auto clamp(28px, 3.5vw, 46px); padding: 0;
+}
+.sc-yard img { width: 100%; height: auto; display: block; }
+
+/* ── Boutons (recette glossy ambre du hero) ── */
+.sc-btn {
+  position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  font-family: 'Neuething', sans-serif; font-weight: 700; font-size: 15px;
+  color: var(--sc-ink); text-decoration: none; white-space: nowrap; cursor: pointer;
+  padding: 16px 28px 12px; border-radius: 999px;
+  background: linear-gradient(180deg, #ffd86b 0%, #ffb01f 50%, #f59e00 100%);
+  border: 1px solid rgba(214, 130, 0, 0.5);
+  box-shadow:
+    0 1px 0 rgba(255, 235, 200, 0.4) inset,
+    0 -5px 12px rgba(150, 75, 0, 0.28) inset,
+    0 8px 20px -6px rgba(245, 160, 0, 0.5),
+    0 14px 30px -14px rgba(0, 0, 0, 0.55);
+  transition: filter 0.2s ease, box-shadow 0.25s ease;
+}
+.sc-btn:hover {
+  filter: brightness(1.05);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.7) inset,
+    0 -5px 12px rgba(150, 75, 0, 0.3) inset,
+    0 12px 26px -6px rgba(245, 160, 0, 0.62),
+    0 18px 38px -14px rgba(0, 0, 0, 0.62);
+}
+.sc-btn-ghost {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  font-family: 'Neuething', sans-serif; font-weight: 700; font-size: 15px;
+  color: var(--rf-amber); text-decoration: none; cursor: pointer;
+  padding: 15px 26px 11px; border-radius: 999px;
+  background: transparent; border: 1px solid rgba(255, 173, 0, 0.45);
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+.sc-btn-ghost:hover { background: rgba(255, 173, 0, 0.08); border-color: var(--rf-amber); }
+
+/* ── Apparition au scroll ──
+   will-change : promeut la couche AVANT le déclenchement (sous-arbres lourds :
+   ombres 50px+, drop-shadows, carte filtrée). RevealObserver remet willChange
+   à auto en fin de transition pour libérer la mémoire GPU. */
+[data-reveal] { opacity: 0; transform: translateY(20px); will-change: opacity, transform; transition: opacity 0.45s ease, transform 0.45s cubic-bezier(0.22, 1, 0.36, 1); }
+[data-reveal].sc-in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] { opacity: 1 !important; transform: none !important; transition: none !important; }
+}
+
+/* ============================================================
+   LE CLUB (yard 10)
+   ============================================================ */
+.sc-club-grid {
+  display: grid; grid-template-columns: 1.15fr 0.85fr;
+  gap: clamp(44px, 5vw, 80px); align-items: center;
+}
+.sc-reperes { margin: 34px 0 0; padding: 0; list-style: none; }
+.sc-reperes li {
+  display: flex; align-items: baseline; gap: 18px;
+  padding: 15px 2px; border-top: 1px solid var(--sc-line);
+}
+.sc-reperes li:last-child { border-bottom: 1px solid var(--sc-line); }
+.sc-repere-label {
+  flex: 0 0 118px;
+  font-family: 'Futura Condensed', sans-serif; font-weight: 800; text-transform: uppercase;
+  font-size: 21px; letter-spacing: -0.02em; color: var(--rf-amber);
+}
+.sc-repere-txt { font-size: 15px; line-height: 1.5; letter-spacing: -0.03em; color: var(--sc-cream-72); }
+
+/* Affiche du club, façon sticker/écusson du hero */
+.sc-poster { position: relative; display: flex; flex-direction: column; align-items: center; gap: 16px; margin: 0; }
+.sc-poster img {
+  width: min(100%, 380px); border-radius: 14px; transform: rotate(-2.4deg);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  filter: drop-shadow(0 30px 50px rgba(0, 0, 0, 0.55));
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.sc-poster:hover img { transform: rotate(0deg) scale(1.02); }
+.sc-poster figcaption { font-size: 13px; color: var(--sc-cream-55); letter-spacing: -0.02em; text-align: center; }
+
+/* ── Diaporama du club (affiches & photos) ── */
+.sc-slideshow { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+.sc-slide-stage {
+  position: relative; width: min(100%, 380px); aspect-ratio: 3 / 4;
+  border-radius: 14px; overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(20, 7, 8, 0.6);
+  box-shadow: 0 30px 50px -18px rgba(0, 0, 0, 0.55);
+}
+.sc-slide {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  opacity: 0; transition: opacity 0.6s ease;
+}
+.sc-slide.is-active { opacity: 1; }
+.sc-slide-nav {
+  position: absolute; top: 50%; transform: translateY(-50%); z-index: 2;
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 38px; height: 38px; border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  /* Pas de backdrop-filter ici : posé SUR les images en crossfade, le flou
+     serait recalculé à chaque frame du fondu. Dégradé plus opaque à la place. */
+  background: linear-gradient(180deg, rgba(128, 53, 58, 0.82) 0%, rgba(90, 34, 38, 0.9) 100%);
+  color: rgba(255, 250, 240, 0.75); cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+.sc-slide-nav:hover { border-color: rgba(255, 173, 0, 0.55); color: var(--rf-amber); }
+.sc-slide-nav--prev { left: 10px; }
+.sc-slide-nav--next { right: 10px; }
+.sc-slide-legende {
+  margin: 0; font-size: 13px; line-height: 1.45; letter-spacing: -0.02em;
+  color: var(--sc-cream-55); text-align: center; max-width: 100%;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.sc-slide-dots { display: flex; align-items: center; gap: 8px; }
+.sc-slide-dot {
+  width: 8px; height: 8px; padding: 0; border-radius: 50%; cursor: pointer;
+  border: 1px solid rgba(255, 250, 240, 0.3); background: transparent;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+.sc-slide-dot:hover { border-color: var(--rf-amber); }
+.sc-slide-dot.is-active { background: var(--rf-amber); border-color: var(--rf-amber); transform: scale(1.15); }
+
+@media (prefers-reduced-motion: reduce) {
+  .sc-slide { transition: none; }
+}
+
+/* ============================================================
+   SECTIONS / DISCIPLINES (yard 20)
+   ============================================================ */
+.sc-disciplines { background: radial-gradient(ellipse 90% 60% at 50% 0%, rgba(110, 32, 27, 0.28), transparent 65%); }
+.sc-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: clamp(36px, 4vw, 56px); }
+.sc-card {
+  position: relative; display: flex; flex-direction: column; align-items: flex-start; text-align: left;
+  padding: 30px 28px 26px; border-radius: 24px;
+  background: var(--sc-glass); border: 1px solid var(--sc-glass-border);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.07) inset, 0 24px 50px -28px rgba(0, 0, 0, 0.7);
+  font-family: 'Neuething', sans-serif; color: var(--rf-cream); cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.sc-card:hover {
+  transform: translateY(-6px); border-color: rgba(255, 173, 0, 0.4);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.09) inset, 0 30px 60px -26px rgba(0, 0, 0, 0.75), 0 18px 44px -18px rgba(245, 160, 0, 0.22);
+}
+/* Rangée de logos : hauteur uniforme, alignement centré */
+.sc-card-badges { display: flex; align-items: center; flex-wrap: wrap; gap: 14px; margin-bottom: 20px; height: 76px; }
+.sc-card-badge { height: 62px; width: auto; filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.5)); transition: transform 0.3s ease; }
+/* logo très horizontal (~2.8:1) : hauteur réduite pour équilibrer la rangée */
+.sc-card-badge--wide { height: 42px; }
+.sc-card-badge--u18 { height: 74px; }
+.sc-card-badge--ppp { height: 54px; }
+.sc-card:hover .sc-card-badge { transform: rotate(-4deg) scale(1.06); }
+.sc-card-title {
+  font-family: 'Futura Condensed', sans-serif; font-weight: 800; text-transform: uppercase;
+  font-size: clamp(26px, 2.3vw, 34px); line-height: 1.05; letter-spacing: -0.03em; margin: 0 0 12px;
+}
+.sc-chips { display: flex; flex-wrap: wrap; gap: 7px; margin: 0 0 14px; }
+.sc-chip {
+  font-family: 'Neuething', sans-serif; font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px; letter-spacing: 0.02em; color: var(--sc-cream-72);
+  padding: 5px 12px; border-radius: 999px;
+  background: rgba(111, 44, 48, 0.4); border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.sc-card-desc strong { color: var(--rf-cream); font-weight: 700; }
+.sc-card-desc { font-size: 15px; line-height: 1.55; letter-spacing: -0.03em; color: var(--sc-cream-72); margin: 0 0 22px; }
+.sc-card-cta {
+  display: inline-flex; align-items: center; gap: 9px; margin-top: auto;
+  font-weight: 700; font-size: 14px; color: var(--rf-amber);
+}
+.sc-card-cta svg { transition: transform 0.22s ease; }
+.sc-card:hover .sc-card-cta svg { transform: translateX(4px); }
+
+/* ============================================================
+   PPP (yard 30)
+   ============================================================ */
+.sc-ppp-panel {
+  position: relative; overflow: hidden;
+  display: grid; grid-template-columns: minmax(260px, 380px) 1fr;
+  gap: clamp(36px, 4.5vw, 70px); align-items: center;
+  padding: clamp(34px, 4vw, 60px);
+  border-radius: 28px;
+  background: var(--sc-glass); border: 1px solid var(--sc-glass-border);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.07) inset, 0 34px 70px -34px rgba(0, 0, 0, 0.75);
+}
+.sc-ppp-panel::before {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: url('/homepagepnr/assets/refonte/fond-hero.webp') center / cover no-repeat;
+  /* Pas de mix-blend-mode : combiné au fondu d'opacité du reveal parent, le
+     groupe de blending était recomposé sur le CPU à chaque frame. Le rendu
+     « screen » est approché par un filtre appliqué une seule fois à la texture. */
+  opacity: 0.22; filter: brightness(1.6) saturate(0.85);
+}
+.sc-ppp-panel > * { position: relative; }
+.sc-ppp-poster img,
+.sc-ppp-poster video {
+  width: 100%; display: block; border-radius: 16px; transform: rotate(1.8deg);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  filter: drop-shadow(0 26px 46px rgba(0, 0, 0, 0.55));
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.sc-ppp-poster:hover img,
+.sc-ppp-poster:hover video { transform: rotate(0deg) scale(1.015); }
+/* Vidéo PPP : fichier ré-encodé au cadre utile (484×608, ~4/5) -
+   ratio naturel, aucune bande ni recadrage nécessaire. */
+.sc-ppp-poster video { width: min(100%, 380px); margin: 0 auto; }
+.sc-ppp-logo { height: 56px; width: auto; margin-bottom: 18px; filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.45)); }
+.sc-ppp-body .sc-title { font-size: clamp(32px, 3.8vw, 54px); }
+.sc-ppp-body .sc-btn { margin-top: 26px; }
+
+/* ============================================================
+   INFOS PRATIQUES (yard 50)
+   ============================================================ */
+/* minmax(0, ...) : sans lui, un <select> ou un texte long impose sa largeur
+   intrinsèque à la colonne et fait déborder la page en mobile */
+.sc-infos-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 22px; align-items: stretch; margin-top: clamp(36px, 4vw, 56px); }
+
+/* Les chaînes insécables (emails, téléphones) replient au lieu de déborder */
+.sc-panel { overflow-wrap: anywhere; }
+
+/* Carte interactive du stade (Leaflet + OSM, teintée charte) */
+.sc-map {
+  position: relative; display: block; overflow: hidden; border-radius: 22px;
+  border: 1px solid var(--sc-glass-border); background: #4a1b1f;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.07) inset, 0 24px 50px -28px rgba(0, 0, 0, 0.7);
+  /* Contexte d'empilement isolé : les z-index internes de Leaflet (jusqu'à 1000)
+     et la plaque d'adresse restent SOUS le header fixe (z-index 200). */
+  isolation: isolate; z-index: 1;
+}
+.sc-map-canvas { width: 100%; height: 100%; min-height: 380px; }
+/* teinte chaude accordée au bordeaux (les tuiles OSM sont claires) */
+.sc-map .leaflet-tile-pane { filter: sepia(0.55) hue-rotate(-18deg) saturate(1.25) brightness(0.82) contrast(1.05); }
+.sc-map .leaflet-marker-icon { filter: drop-shadow(0 12px 18px rgba(0, 0, 0, 0.5)); }
+.sc-map .leaflet-control-zoom a {
+  background: linear-gradient(180deg, rgba(128, 53, 58, 0.92) 0%, rgba(90, 34, 38, 0.95) 100%);
+  color: var(--rf-cream); border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.sc-map .leaflet-control-zoom a:hover { color: var(--rf-amber); }
+.sc-map .leaflet-popup-content-wrapper, .sc-map .leaflet-popup-tip {
+  background: #3a1418; color: var(--rf-cream);
+  font-family: 'Neuething', sans-serif; letter-spacing: -0.02em;
+}
+.sc-map .leaflet-popup-content a { color: var(--rf-amber); font-weight: 700; text-decoration: none; }
+.sc-map .leaflet-container a.leaflet-popup-close-button { color: var(--sc-cream-55); }
+.sc-map .leaflet-control-attribution { background: rgba(20, 7, 8, 0.7); color: var(--sc-cream-55); font-size: 10px; }
+.sc-map .leaflet-control-attribution a { color: var(--sc-cream-72); }
+.sc-map-address {
+  position: absolute; top: 16px; left: 16px; z-index: 1000; display: grid; gap: 2px;
+  padding: 12px 18px; border-radius: 14px; pointer-events: none;
+  background: linear-gradient(180deg, rgba(58, 20, 23, 0.9) 0%, rgba(36, 11, 13, 0.93) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 26px -12px rgba(0, 0, 0, 0.6);
+}
+.sc-map-address strong {
+  font-family: 'Futura Condensed', 'Arial Narrow', sans-serif; font-weight: 800;
+  text-transform: uppercase; letter-spacing: -0.01em;
+  font-size: clamp(18px, 1.8vw, 24px); color: var(--rf-cream);
+}
+.sc-map-address a {
+  pointer-events: auto;
+  font-family: 'Neuething', sans-serif; font-weight: 700; text-decoration: none;
+  font-size: clamp(12px, 1.2vw, 14px); letter-spacing: -0.01em; color: var(--rf-amber);
+}
+.sc-map-address a:hover { text-decoration: underline; }
+
+/* ── Formulaire de contact ── */
+.sc-contact-block { margin-top: 22px; }
+.sc-form { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 16px; }
+/* min-width: 0 : sans lui, le <select> à texte long impose sa largeur
+   intrinsèque à la colonne de grille et déborde du panneau sur mobile. */
+.sc-field { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.sc-field--full { grid-column: 1 / -1; }
+.sc-field label {
+  font-family: 'Neuething', sans-serif; font-weight: 700;
+  font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--sc-cream-55);
+}
+.sc-field input, .sc-field select, .sc-field textarea {
+  width: 100%; min-width: 0; box-sizing: border-box;
+  background: rgba(255, 250, 240, 0.05); border: 1px solid rgba(255, 250, 240, 0.14);
+  border-radius: 12px; padding: 12px 14px; color: var(--rf-cream);
+  font-size: 14px; font-family: 'Neuething', sans-serif; letter-spacing: -0.02em; outline: none;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+.sc-field select { appearance: none; cursor: pointer; }
+.sc-field select option { background: #2a0f12; color: var(--rf-cream); }
+.sc-field input::placeholder, .sc-field textarea::placeholder { color: rgba(255, 250, 240, 0.35); }
+.sc-field input:focus, .sc-field select:focus, .sc-field textarea:focus {
+  border-color: var(--rf-amber); background: rgba(255, 250, 240, 0.07);
+}
+.sc-field textarea { resize: vertical; min-height: 96px; }
+.sc-field-trap { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.sc-form-actions { grid-column: 1 / -1; display: flex; align-items: center; gap: 18px; flex-wrap: wrap; margin-top: 4px; }
+.sc-form-ok { margin: 6px 0 0; font-size: 15px; font-weight: 700; letter-spacing: -0.02em; color: #3ad06a; }
+.sc-form-demo { margin: 0; font-size: 13px; letter-spacing: -0.02em; color: var(--sc-cream-55); }
+.sc-form-demo a { color: var(--rf-amber); font-weight: 700; text-decoration: none; }
+.sc-form-demo a:hover { text-decoration: underline; }
+@media (max-width: 640px) {
+  .sc-form { grid-template-columns: 1fr; }
+}
+.sc-panel {
+  padding: 30px 28px; border-radius: 24px;
+  background: var(--sc-glass); border: 1px solid var(--sc-glass-border);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.07) inset, 0 24px 50px -28px rgba(0, 0, 0, 0.7);
+}
+.sc-panel-title {
+  font-family: 'Futura Condensed', sans-serif; font-weight: 800; text-transform: uppercase;
+  font-size: clamp(24px, 2.2vw, 32px); letter-spacing: -0.03em; margin: 0 0 18px; color: var(--rf-cream);
+}
+a.sc-horaires { display: grid; }
+.sc-horaire {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 18px;
+  padding: 14px 2px; border-top: 1px solid var(--sc-line);
+}
+.sc-horaire-cat { font-weight: 700; font-size: 15px; letter-spacing: -0.02em; color: var(--rf-cream); }
+/* white-space normal : les horaires multi-créneaux (« Lun & Ven · … / Mer · … »)
+   doivent pouvoir passer à la ligne (hotfix 08/2026 rétro-porté) */
+.sc-horaire-time { font-size: 14px; letter-spacing: -0.01em; color: var(--rf-amber); white-space: normal; text-align: right; }
+@media (max-width: 640px) {
+  .sc-horaire-time { text-align: left; }
+}
+
+/* ============================================================
+   EN-BUT : CTA final
+   ============================================================ */
+.sc-endzone { overflow: hidden; text-align: center; }
+.sc-endzone::before {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: url('/homepagepnr/assets/refonte/fond-hero.webp') center / cover no-repeat;
+  opacity: 0.5;
+}
+.sc-endzone::after {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(ellipse 70% 55% at 50% 105%, rgba(245, 160, 0, 0.2), transparent 70%);
+}
+.sc-endzone .sc-wrap { position: relative; z-index: 1; }
+.sc-endzone .sc-title { font-size: clamp(40px, 6vw, 88px); letter-spacing: -0.05em; }
+.sc-endzone .sc-lead { margin: 18px auto 0; }
+.sc-endzone .rf-cta { margin-top: 34px; }
+.sc-endzone .rf-note { margin-top: 14px; }
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.sc-footer { background: #0c0405; border-top: 1px solid var(--sc-line); padding: clamp(52px, 6vw, 80px) 24px 34px; }
+.sc-footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: clamp(36px, 5vw, 70px); align-items: start; }
+.sc-footer-logo { height: 46px; width: auto; display: block; }
+.sc-footer-tagline { font-size: 14px; line-height: 1.6; letter-spacing: -0.02em; color: var(--sc-cream-55); margin: 16px 0 22px; max-width: 320px; }
+.sc-footer-badges { display: flex; gap: 12px; flex-wrap: wrap; }
+.sc-footer-badges img { height: 40px; width: auto; filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.45)); }
+.sc-footer-h {
+  font-family: 'Futura Condensed', sans-serif; font-weight: 800; text-transform: uppercase;
+  font-size: 19px; letter-spacing: 0.02em; color: var(--rf-cream); margin: 4px 0 16px;
+}
+.sc-footer-links { display: grid; gap: 10px; }
+.sc-footer-links a { font-size: 14px; letter-spacing: -0.02em; color: var(--sc-cream-72); text-decoration: none; transition: color 0.2s ease; }
+.sc-footer-links a:hover { color: var(--rf-amber); }
+.sc-footer-bottom {
+  max-width: 1200px; margin: clamp(40px, 5vw, 60px) auto 0; padding-top: 22px;
+  border-top: 1px solid var(--sc-line);
+  display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;
+  font-size: 13px; letter-spacing: -0.02em; color: var(--sc-cream-38);
+}
+.sc-footer-bottom strong { color: var(--sc-cream-55); font-weight: 700; }
+.sc-footer-bottom a { color: var(--sc-cream-55); text-decoration: none; transition: color 0.2s ease; }
+.sc-footer-bottom a:hover { color: var(--rf-amber); }
+
+/* ============================================================
+   MENTIONS LÉGALES (page dédiée)
+   ============================================================ */
+.sc-legal { padding-top: clamp(126px, 13vw, 176px); }
+.sc-legal .sc-title { font-size: clamp(34px, 4vw, 58px); }
+.sc-legal-blocks { display: grid; gap: 20px; margin-top: clamp(32px, 4vw, 48px); max-width: 860px; }
+.sc-legal-text {
+  font-size: 15px; line-height: 1.65; letter-spacing: -0.02em;
+  color: var(--sc-cream-72); margin: 0 0 14px;
+}
+.sc-legal-text:last-child { margin-bottom: 0; }
+.sc-legal-text a { color: var(--rf-amber); text-decoration: none; }
+.sc-legal-text a:hover { text-decoration: underline; }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1020px) {
+  .sc-cards { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 900px) {
+  .sc-club-grid { grid-template-columns: 1fr; }
+  .sc-poster, .sc-club-media { order: -1; }
+  .sc-poster img { width: min(100%, 320px); }
+  .sc-slide-stage { width: min(100%, 320px); }
+  .sc-ppp-panel { grid-template-columns: 1fr; }
+  .sc-ppp-poster { max-width: 320px; margin: 0 auto; }
+  .sc-infos-grid { grid-template-columns: minmax(0, 1fr); }
+  .sc-footer-grid { grid-template-columns: 1fr; gap: 34px; }
+}
+@media (max-width: 640px) {
+  .sc-cards { grid-template-columns: 1fr; }
+  .sc-repere-label { flex-basis: 92px; font-size: 19px; }
+  .sc-horaire { flex-direction: column; gap: 4px; }
+}
+
+/* Carte de verre utilisée comme lien (cartes sections / articles) */
+a.sc-card { text-decoration: none; }
+
+/* ============================================================
+   FAQ (accordéon sur panneaux de verre)
+   ============================================================ */
+.sc-faq { display: grid; gap: 14px; margin-top: clamp(32px, 4vw, 48px); max-width: 900px; }
+.sc-faq-item { padding: 0; transition: border-color 0.25s ease; }
+.sc-faq-item[open] { border-color: rgba(255, 173, 0, 0.3); }
+.sc-faq-item summary {
+  display: flex; align-items: center; justify-content: space-between; gap: 18px;
+  list-style: none; cursor: pointer;
+  padding: 22px 26px;
+  font-family: 'Neuething', sans-serif; font-weight: 700;
+  font-size: clamp(15px, 1.4vw, 17px); letter-spacing: -0.02em; color: var(--rf-cream);
+  transition: color 0.2s ease;
+}
+.sc-faq-item summary::-webkit-details-marker { display: none; }
+.sc-faq-item summary:hover { color: var(--rf-amber); }
+/* signe + / − en ambre, pivoté à l'ouverture */
+.sc-faq-item summary::after {
+  content: '+'; flex: 0 0 auto;
+  font-family: 'Neuething', sans-serif; font-weight: 700; font-size: 22px; line-height: 1;
+  color: var(--rf-amber); transition: transform 0.25s ease;
+}
+.sc-faq-item[open] summary::after { transform: rotate(45deg); }
+.sc-faq-item p {
+  margin: 0; padding: 0 26px 24px;
+  font-size: 15px; line-height: 1.65; letter-spacing: -0.02em; color: var(--sc-cream-72);
+}
+@media (prefers-reduced-motion: reduce) {
+  .sc-faq-item summary::after { transition: none; }
+}
+
+/* ============================================================
+   GRILLE DE LOGOS PARTENAIRES (réutilisable : home + page dédiée)
+   Les logos des sponsors sont fournis sur fond blanc : chaque carte
+   pose donc un aplat crème plutôt que le verre bordeaux des .sc-card.
+   ============================================================ */
+.sc-partenaires {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px; margin-top: clamp(32px, 4vw, 48px);
+}
+.sc-partenaire {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 14px; text-align: center;
+  padding: 26px 20px 22px; border-radius: 18px;
+  background: #fffaf0; border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 44px -28px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s ease;
+}
+.sc-partenaire:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 26px 54px -26px rgba(0, 0, 0, 0.75), 0 16px 40px -20px rgba(245, 160, 0, 0.25);
+}
+.sc-partenaire img {
+  max-height: 90px; max-width: 100%; width: auto; height: auto;
+  object-fit: contain; display: block; margin: auto 0;
+  /* Les logos sont livrés sur fond blanc pur : le mélange multiplicatif fond
+     ce blanc dans le crème de la carte, sans carré visible autour du logo. */
+  mix-blend-mode: multiply;
+}
+.sc-partenaire-nom {
+  font-family: 'Neuething', sans-serif; font-weight: 700;
+  font-size: 13px; letter-spacing: -0.01em; line-height: 1.35;
+  color: #5e2327; margin: 0;
+}
+.sc-partenaire-desc {
+  font-family: 'Neuething', sans-serif; font-weight: 400;
+  font-size: 12px; line-height: 1.4; color: rgba(51, 22, 26, 0.6); margin: -8px 0 0;
+}
+@media (max-width: 1020px) {
+  .sc-partenaires { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .sc-partenaires { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .sc-partenaire { padding: 18px 12px 16px; }
+  .sc-partenaire img { max-height: 62px; }
+}
+
+/* ============================================================
+   EN-TÊTE DE PAGE INTÉRIEURE (.sc-pagehead)
+   Même compensation du header fixe que .sc-legal, plus un fil
+   d'Ariane repris du blog. Gabarit commun des pages du site.
+   ============================================================ */
+.sc-pagehead { padding-top: clamp(126px, 13vw, 176px); }
+.sc-crumbs {
+  display: flex; align-items: center; flex-wrap: wrap; gap: 8px;
+  font-family: 'Neuething', sans-serif; font-size: 13px; letter-spacing: -0.01em;
+  color: var(--sc-cream-55); margin: 0 0 18px;
+}
+.sc-crumbs a { color: var(--rf-amber); text-decoration: none; }
+.sc-crumbs a:hover { text-decoration: underline; }
+.sc-crumbs .sep { color: var(--sc-cream-38); }
+.sc-pagehead .sc-title { font-size: clamp(34px, 4.6vw, 62px); }
+.sc-pagehead .sc-lead { max-width: 720px; }
+
+/* ============================================================
+   GABARITS DE PAGES INTÉRIEURES
+   Blocs réutilisés par /le-club/, /nos-sections/, les trois pages
+   de section, /partenaires/ et /organigramme/. Tout est bâti sur
+   les briques existantes (.sc-card, .sc-panel, .sc-chip, verre
+   bordeaux) : rien de nouveau côté charte, seulement des mises en
+   page qui manquaient au socle.
+   ============================================================ */
+
+/* Colonne de texte + colonne latérale de panneaux. */
+.sc-two {
+  display: grid; grid-template-columns: 1.4fr 0.6fr;
+  gap: clamp(30px, 4vw, 56px); align-items: start;
+  margin-top: clamp(30px, 3.6vw, 46px);
+}
+.sc-aside { display: grid; gap: 20px; }
+
+/* Corps de texte long : les paragraphes portent .sc-legal-text. */
+.sc-body { max-width: 780px; }
+.sc-two .sc-body { max-width: none; }
+
+/* Sous-titre interne d'un corps de texte. */
+.sc-h3 {
+  font-family: 'Futura Condensed', 'Arial Narrow', sans-serif; font-weight: 800;
+  text-transform: uppercase; color: var(--rf-cream);
+  font-size: clamp(21px, 1.9vw, 27px); line-height: 1.1; letter-spacing: -0.03em;
+  margin: 30px 0 12px;
+}
+.sc-body > .sc-h3:first-child { margin-top: 0; }
+
+/* Sous-titre d'un panneau de verre (plus petit que .sc-panel-title). */
+.sc-panel-h {
+  font-family: 'Futura Condensed', 'Arial Narrow', sans-serif; font-weight: 800;
+  text-transform: uppercase; color: var(--rf-cream);
+  font-size: 20px; letter-spacing: -0.02em; margin: 0 0 14px;
+}
+
+/* Liste à puces : pastille ambre, reprise du gabarit .imt-detail-sec. */
+.sc-liste { list-style: none; padding: 0; margin: 18px 0 0; display: grid; gap: 11px; }
+.sc-liste li {
+  position: relative; padding-left: 22px;
+  font-size: 15px; line-height: 1.6; letter-spacing: -0.02em; color: var(--sc-cream-72);
+}
+.sc-liste li::before {
+  content: ''; position: absolute; left: 4px; top: 9px;
+  width: 7px; height: 7px; border-radius: 50%; background: var(--rf-amber);
+}
+.sc-liste li strong { color: var(--rf-cream); font-weight: 700; }
+.sc-liste a { color: var(--rf-amber); text-decoration: none; }
+.sc-liste a:hover { text-decoration: underline; }
+/* Variante compacte dans un panneau de verre. */
+.sc-panel .sc-liste { margin-top: 0; }
+
+/* Rangée de boutons. */
+.sc-ctas { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: clamp(22px, 2.8vw, 32px); }
+
+/* Marqueur des contenus que le club doit encore fournir. */
+.sc-todo {
+  display: inline-block; padding: 4px 11px 2px; border-radius: 999px;
+  font-family: 'Neuething', sans-serif; font-weight: 700;
+  font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--rf-amber); background: rgba(255, 173, 0, 0.1);
+  border: 1px solid rgba(255, 173, 0, 0.3);
+}
+
+/* Grille de cartes à deux colonnes (arguments partenaires). */
+.sc-cards--deux { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+/* Cartes de section agrandies (/nos-sections/). */
+.sc-card--grande { padding: 34px 32px 30px; }
+.sc-card--grande .sc-card-title { font-size: clamp(28px, 2.6vw, 38px); }
+
+/* Le club en chiffres. */
+.sc-chiffres {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px; margin-top: clamp(30px, 3.6vw, 46px);
+}
+.sc-chiffre {
+  display: grid; gap: 8px; align-content: start;
+  padding: 26px 24px; border-radius: 20px;
+  background: var(--sc-glass); border: 1px solid var(--sc-glass-border);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.07) inset, 0 24px 50px -28px rgba(0, 0, 0, 0.7);
+}
+.sc-chiffre strong {
+  font-family: 'Futura Condensed', 'Arial Narrow', sans-serif; font-weight: 800;
+  text-transform: uppercase; color: var(--rf-amber);
+  font-size: clamp(24px, 2.2vw, 32px); line-height: 1.05; letter-spacing: -0.03em;
+}
+.sc-chiffre span { font-size: 14px; line-height: 1.5; letter-spacing: -0.02em; color: var(--sc-cream-72); }
+
+/* Coordonnées du club, en trois blocs de verre. */
+.sc-contacts {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px; margin-top: clamp(26px, 3.2vw, 38px);
+}
+.sc-contact-item {
+  display: grid; gap: 6px; align-content: start;
+  padding: 22px 24px; border-radius: 18px;
+  background: var(--sc-glass); border: 1px solid var(--sc-glass-border);
+}
+.sc-contact-item > span:first-child {
+  font-family: 'Neuething', sans-serif; font-weight: 700;
+  font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--sc-cream-55);
+}
+.sc-contact-item a {
+  font-weight: 700; font-size: 15px; letter-spacing: -0.02em;
+  color: var(--rf-amber); text-decoration: none;
+}
+.sc-contact-item a:hover { text-decoration: underline; }
+.sc-contact-item p { margin: 0; font-size: 15px; line-height: 1.5; letter-spacing: -0.02em; color: var(--sc-cream-72); }
+
+/* Organigramme : cartes membres à pastille d'initiales. */
+.sc-membres {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px; margin-top: clamp(30px, 3.6vw, 46px);
+}
+/* Lien d'action dans une carte non cliquable (la carte n'est pas un <a>). */
+a.sc-card-cta { text-decoration: none; }
+a.sc-card-cta:hover svg { transform: translateX(4px); }
+
+/* Carte de verre non cliquable : ni curseur main, ni soulèvement au survol. */
+.sc-card--statique { cursor: default; }
+.sc-card--statique:hover { transform: none; }
+.sc-avatar {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 56px; height: 56px; border-radius: 50%; margin-bottom: 18px;
+  background: var(--rf-amber-grad); color: var(--sc-ink);
+  font-family: 'Futura Condensed', 'Arial Narrow', sans-serif; font-weight: 800;
+  font-size: 22px; letter-spacing: -0.01em;
+  box-shadow: 0 10px 24px -12px rgba(245, 160, 0, 0.6);
+}
+.sc-membre-role {
+  font-family: 'Futura Condensed', 'Arial Narrow', sans-serif; font-weight: 800;
+  text-transform: uppercase; color: var(--rf-cream);
+  font-size: 21px; line-height: 1.1; letter-spacing: -0.03em; margin: 0 0 6px;
+}
+.sc-membre-nom { font-size: 14px; letter-spacing: -0.02em; color: var(--sc-cream-55); margin: 0 0 14px; }
+
+/* Niveaux de partenariat : carte « votre logo ici », en pointillés. */
+.sc-card--vide {
+  align-items: center; text-align: center; justify-content: center;
+  background: transparent; border-style: dashed; border-color: rgba(255, 173, 0, 0.35);
+  box-shadow: none;
+}
+.sc-card--vide:hover { border-color: var(--rf-amber); box-shadow: none; }
+.sc-card-plus {
+  font-family: 'Futura Condensed', 'Arial Narrow', sans-serif; font-weight: 800;
+  font-size: 46px; line-height: 1; color: var(--rf-amber); margin-bottom: 14px;
+}
+
+@media (max-width: 1020px) {
+  .sc-two { grid-template-columns: 1fr; }
+  .sc-chiffres { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .sc-membres { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .sc-cards--deux { grid-template-columns: 1fr; }
+  .sc-chiffres { grid-template-columns: 1fr; }
+  .sc-contacts { grid-template-columns: 1fr; }
+  .sc-membres { grid-template-columns: 1fr; }
+}

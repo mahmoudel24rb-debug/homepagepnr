@@ -28,11 +28,18 @@ export default function RevealObserver() {
             for (const e of entries) {
               if (e.isIntersecting) {
                 e.target.classList.add('sc-in');
+                // will-change: auto une fois révélé (comme le site recrutement) :
+                // garder le calque composité coûte en mémoire et fait sortir des
+                // captures pleine page vides hors viewport.
+                (e.target as HTMLElement).style.willChange = 'auto';
                 io?.unobserve(e.target);
               }
             }
           },
-          { threshold: 0.12, rootMargin: '0px 0px -6% 0px' },
+          // threshold 0 (et non 0.12) : un grand bloc en toute fin de page
+          // (endzone devant le footer) n'atteint jamais 12 % de visibilité
+          // et resterait invisible ; 1 pixel au-dessus de la marge suffit.
+          { threshold: 0, rootMargin: '0px 0px -6% 0px' },
         );
         els.forEach((el) => io?.observe(el));
       });

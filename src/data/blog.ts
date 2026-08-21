@@ -20,8 +20,8 @@ export type ArticleMeta = {
   titleSeo: string;
   /** Meta description (~150 caractères) */
   description: string;
-  /** Écusson affiché sur la carte d'archive (chemin public/, à passer dans asset()) */
-  icone: string;
+  /** Clé d'emoji funnelIcons pour la carte d'archive */
+  emoji: string;
   /** Dates ISO (affichées en français + datePublished/dateModified JSON-LD) */
   datePublication: string;
   dateModif: string;
@@ -38,7 +38,7 @@ export const ARTICLES: ArticleMeta[] = [
     titleSeo: 'Pratiquer le football américain en France : guide débutant',
     description:
       'Âge, clubs, licence, équipement, premier entraînement : tout ce qu’il faut savoir pour débuter le football américain en France, expliqué par un club fondé en 1987.',
-    icone: '/assets/refonte/badge-1-footus.svg',
+    emoji: 'foot-us',
     datePublication: '2026-08-20',
     dateModif: '2026-08-20',
     minutesLecture: 12,
@@ -52,7 +52,7 @@ export const ARTICLES: ArticleMeta[] = [
     titleSeo: 'Le flag football, c’est quoi ? Règles et JO 2028',
     description:
       'Le flag football expliqué simplement : règles du 5 contre 5, différences avec le football américain, pourquoi il sera aux JO de Los Angeles 2028 et comment s’y mettre.',
-    icone: '/assets/refonte/badge-2-olympique.svg',
+    emoji: 'flag',
     datePublication: '2026-08-20',
     dateModif: '2026-08-20',
     minutesLecture: 11,
@@ -66,7 +66,7 @@ export const ARTICLES: ArticleMeta[] = [
     titleSeo: 'Commencer le football américain adulte : trop tard ?',
     description:
       'Débuter le foot US à 25, 30 ou 35 ans ? Gabarit, condition physique, règles : on démonte les idées reçues et on explique comment se passe une première saison.',
-    icone: '/assets/refonte/badge-4-u18.svg',
+    emoji: 'seniors',
     datePublication: '2026-08-20',
     dateModif: '2026-08-20',
     minutesLecture: 10,
@@ -80,7 +80,7 @@ export const ARTICLES: ArticleMeta[] = [
     titleSeo: 'Quel sport collectif pratiquer à Tours ? Le guide',
     description:
       'Foot, rugby, basket, hand, volley, foot US, flag : le panorama des sports collectifs à Tours et les bons critères pour choisir celui où tu vas rester.',
-    icone: '/assets/refonte/logo-pionniers.svg',
+    emoji: 'partenaire',
     datePublication: '2026-08-22',
     dateModif: '2026-08-22',
     minutesLecture: 12,
@@ -94,7 +94,7 @@ export const ARTICLES: ArticleMeta[] = [
     titleSeo: 'Quel sport pour mon enfant à Tours ? Guide parents',
     description:
       'Choisir le sport de votre enfant selon son tempérament : panorama des activités à Tours, repères par âge et école de flag dès 6 ans, sans contact.',
-    icone: '/assets/refonte/badge-5-ecole.svg',
+    emoji: 'jeunes',
     datePublication: '2026-08-22',
     dateModif: '2026-08-22',
     minutesLecture: 11,

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
 import PageHero from '@/components/PageHero';
+import YardLine from '@/components/YardLine';
 import { asset } from '@/lib/asset';
 import { PARTENAIRES } from '@/lib/partenaires';
 import { STADE, CONTACT, REJOINDRE_TUNNEL_URL } from '@/lib/infos';
@@ -118,13 +119,13 @@ export default function Page() {
           }
           sousTitre="Fondés en 1987, les Pionniers de Touraine sont l’un des plus anciens clubs de football américain de France, et l’un des plus dynamiques du bassin tourangeau. Associer votre image à la nôtre, c’est soutenir un projet sportif local et rencontrer une communauté fidèle."
         >
-          <div className="hp-chips" style={{ marginTop: 24 }}>
-            <span className="hp-chip">Visibilité locale</span>
-            <span className="hp-chip">Co-branding</span>
-            <span className="hp-chip">Mécénat sportif</span>
-            <span className="hp-chip">Formation des jeunes</span>
+          <div className="sc-chips" style={{ marginTop: 24 }}>
+            <span className="sc-chip">Visibilité locale</span>
+            <span className="sc-chip">Co-branding</span>
+            <span className="sc-chip">Mécénat sportif</span>
+            <span className="sc-chip">Formation des jeunes</span>
           </div>
-          <div className="ph-ctas">
+          <div className="sc-ctas">
             <a className="sc-btn" href={REJOINDRE_TUNNEL_URL}>
               Devenir partenaire
             </a>
@@ -135,25 +136,28 @@ export default function Page() {
         </PageHero>
 
         {/* ── Les partenaires actuels ── */}
-        <section className="hp-sec" id="ils-nous-soutiennent">
-          <div className="hp-wrap">
+        <section className="sc-sec" id="ils-nous-soutiennent">
+          <YardLine n="10" />
+          <div className="sc-wrap">
             <div data-reveal>
-              <p className="hp-eyebrow">Ils nous font confiance</p>
-              <h2 className="hp-h2">Nos partenaires.</h2>
-              <p className="hp-p">
+              <p className="sc-eyebrow">Ils nous font confiance</p>
+              <h2 className="sc-title">Nos partenaires.</h2>
+              <p className="sc-lead">
                 Commerces, artisans et entreprises de Tours et de son agglomération : ce sont eux
                 qui financent le matériel, les déplacements et la formation de nos jeunes. Sans eux,
                 un club associatif de quarante ans ne tiendrait pas.
               </p>
             </div>
-            <div className="hp-logos" data-reveal>
+            <div className="sc-partenaires" data-reveal>
               {PARTENAIRES.map((p) => (
-                <div key={p.nom} className="hp-logo-card">
-                  <img src={asset(p.fichier)} alt={`Logo ${p.nom}, partenaire des Pionniers de Touraine`} loading="lazy" />
-                  <span className="hp-logo-meta">
-                    <strong>{p.nom}</strong>
-                    <span>{p.description}</span>
-                  </span>
+                <div key={p.nom} className="sc-partenaire">
+                  <img
+                    src={asset(p.fichier)}
+                    alt={`Logo ${p.nom}, partenaire des Pionniers de Touraine`}
+                    loading="lazy"
+                  />
+                  <p className="sc-partenaire-nom">{p.nom}</p>
+                  <p className="sc-partenaire-desc">{p.description}</p>
                 </div>
               ))}
             </div>
@@ -161,21 +165,22 @@ export default function Page() {
         </section>
 
         {/* ── Pourquoi sponsoriser les Pionniers ── */}
-        <section className="hp-dark" id="pourquoi">
-          <div className="hp-wrap">
+        <section className="sc-sec" id="pourquoi">
+          <YardLine n="20" />
+          <div className="sc-wrap">
             <div data-reveal>
-              <p className="hp-eyebrow">Pourquoi nous soutenir</p>
-              <h2 className="hp-h2">Ce que le sponsoring d’un club sportif à Tours vous apporte.</h2>
-              <p className="hp-p">
+              <p className="sc-eyebrow">Pourquoi nous soutenir</p>
+              <h2 className="sc-title">Ce que le sponsoring d’un club sportif à Tours vous apporte.</h2>
+              <p className="sc-lead">
                 Un partenariat réussi crée de la valeur pour les deux parties. Voici concrètement ce
                 que nous mettons sur la table.
               </p>
             </div>
-            <div className="hp-cards hp-cards-3" data-reveal style={{ marginTop: 40 }}>
+            <div className="sc-cards sc-cards--deux" data-reveal>
               {ARGUMENTS.map((a) => (
-                <article key={a.titre} className="hp-card">
-                  <h3>{a.titre}</h3>
-                  <ul className="hp-list">
+                <article key={a.titre} className="sc-card sc-card--statique">
+                  <h3 className="sc-card-title">{a.titre}</h3>
+                  <ul className="sc-liste" style={{ marginTop: 4 }}>
                     {a.points.map((pt) => (
                       <li key={pt}>{pt}</li>
                     ))}
@@ -187,18 +192,21 @@ export default function Page() {
         </section>
 
         {/* ── Sponsoring ou mécénat ── */}
-        <section className="hp-sec" id="mecenat">
-          <div className="hp-wrap">
-            <div className="hp-two">
-              <div className="hp-prose" data-reveal>
-                <p className="hp-eyebrow">Deux façons de nous accompagner</p>
-                <h2 className="hp-h2">Sponsoring ou mécénat sportif ?</h2>
-                <p>
+        <section className="sc-sec" id="mecenat">
+          <YardLine n="30" />
+          <div className="sc-wrap">
+            <div data-reveal>
+              <p className="sc-eyebrow">Deux façons de nous accompagner</p>
+              <h2 className="sc-title">Sponsoring ou mécénat sportif ?</h2>
+            </div>
+            <div className="sc-two" data-reveal>
+              <div className="sc-body">
+                <p className="sc-legal-text">
                   Le <strong>sponsoring</strong> est un contrat de communication : vous financez le
                   club, le club vous offre des contreparties visibles (logo, signalétique, contenus,
                   opérations communes). C’est la formule choisie par la plupart de nos partenaires.
                 </p>
-                <p>
+                <p className="sc-legal-text">
                   Le <strong>mécénat sportif</strong> est un don, sans contrepartie proportionnée,
                   au profit d’une association. Il ouvre droit, dans les conditions prévues par la
                   loi, à un avantage fiscal pour les entreprises comme pour les particuliers. Le
@@ -206,14 +214,14 @@ export default function Page() {
                   expert-comptable est le mieux placé pour vous confirmer ce qui s’applique à vous.
                   Le club vous remet les documents nécessaires.
                 </p>
-                <p>
-                  Enfin, tout ne passe pas par un chèque. Le <strong>mécénat en nature</strong> et le{' '}
-                  <strong>mécénat de compétences</strong> nous rendent d’immenses services :
+                <p className="sc-legal-text">
+                  Enfin, tout ne passe pas par un chèque. Le <strong>mécénat en nature</strong> et
+                  le <strong>mécénat de compétences</strong> nous rendent d’immenses services :
                   matériel, impression, transport, hébergement, prestations, ou simplement quelques
                   heures de votre savoir-faire.
                 </p>
-                <h3>À quoi sert votre soutien</h3>
-                <ul className="hp-list">
+                <h3 className="sc-h3">À quoi sert votre soutien</h3>
+                <ul className="sc-liste">
                   <li>Le matériel : ballons, protections, équipements de terrain</li>
                   <li>Les déplacements des équipes en compétition</li>
                   <li>La formation des jeunes, de l’école de flag aux juniors</li>
@@ -222,10 +230,10 @@ export default function Page() {
                 </ul>
               </div>
 
-              <aside className="hp-aside" data-reveal>
-                <div className="hp-panel">
-                  <h3>Le club en bref</h3>
-                  <ul className="hp-list">
+              <aside className="sc-aside">
+                <div className="sc-panel">
+                  <h3 className="sc-panel-title">Le club en bref</h3>
+                  <ul className="sc-liste">
                     <li>
                       <strong>Fondé en 1987</strong>, l’un des plus anciens clubs de football
                       américain de France
@@ -238,14 +246,18 @@ export default function Page() {
                     <li>Association loi 1901, licence FFFA</li>
                   </ul>
                 </div>
-                <div className="hp-panel">
-                  <h3>Parlons-en</h3>
-                  <div className="hp-contact-item" style={{ gap: 10 }}>
-                    <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
-                    <a href={CONTACT.telHref}>{CONTACT.telephone}</a>
-                  </div>
-                  <div className="hp-section-cta">
-                    <Link className="hp-ghost" href="/contact/">
+                <div className="sc-panel">
+                  <h3 className="sc-panel-title">Parlons-en</h3>
+                  <ul className="sc-liste">
+                    <li>
+                      <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
+                    </li>
+                    <li>
+                      <a href={CONTACT.telHref}>{CONTACT.telephone}</a>
+                    </li>
+                  </ul>
+                  <div className="sc-ctas">
+                    <Link className="sc-btn-ghost" href="/contact/">
                       Nous écrire
                     </Link>
                   </div>
@@ -256,68 +268,69 @@ export default function Page() {
         </section>
 
         {/* ── Niveaux de partenariat ── */}
-        <section className="hp-sec" id="niveaux" style={{ paddingTop: 0 }}>
-          <div className="hp-wrap">
+        <section className="sc-sec" id="niveaux">
+          <YardLine n="40" />
+          <div className="sc-wrap">
             <div data-reveal>
-              <p className="hp-eyebrow">Niveaux de partenariat</p>
-              <h2 className="hp-h2">Trois formules, à ajuster ensemble.</h2>
-              <p className="hp-p">
+              <p className="sc-eyebrow">Niveaux de partenariat</p>
+              <h2 className="sc-title">Trois formules, à ajuster ensemble.</h2>
+              <p className="sc-lead">
                 Ces niveaux sont des points de départ, pas une grille figée. Le contenu exact et le
                 montant se construisent avec vous, en fonction de vos objectifs et de la saison.
               </p>
             </div>
             {/* À COMPLÉTER : montants, durées d'engagement et emplacements précis
                 (maillots, panneaux, supports) à arbitrer par le bureau du club. */}
-            <div className="hp-tiers" data-reveal>
+            {/* 4 cartes (3 formules + votre logo ici) : grille 2x2, pas de carte orpheline */}
+            <div className="sc-cards sc-cards--deux" data-reveal>
               {NIVEAUX.map((n) => (
-                <div key={n.nom} className="hp-tier">
-                  <h3>{n.nom}</h3>
-                  <p>{n.pitch}</p>
-                  <ul className="hp-list">
+                <article key={n.nom} className="sc-card sc-card--statique">
+                  <h3 className="sc-card-title">{n.nom}</h3>
+                  <p className="sc-card-desc" style={{ marginBottom: 4 }}>
+                    {n.pitch}
+                  </p>
+                  <ul className="sc-liste">
                     {n.contreparties.map((c) => (
                       <li key={c}>{c}</li>
                     ))}
                   </ul>
-                </div>
+                </article>
               ))}
-              <div className="hp-tier hp-tier-add">
-                <span className="hp-tier-plus" aria-hidden="true">
+              <article className="sc-card sc-card--statique sc-card--vide">
+                <span className="sc-card-plus" aria-hidden="true">
                   +
                 </span>
-                <h3>Votre logo ici</h3>
-                <p>
+                <h3 className="sc-card-title">Votre logo ici</h3>
+                <p className="sc-card-desc">
                   Il reste de la place sur nos maillots, nos panneaux et cette page. Écrivez-nous,
                   on en discute autour d’un café.
                 </p>
-                <div className="hp-section-cta" style={{ justifyContent: 'center' }}>
-                  <Link className="hp-ghost" href="/contact/">
-                    Nous écrire
-                  </Link>
-                </div>
-              </div>
+                <Link className="sc-btn-ghost" href="/contact/">
+                  Nous écrire
+                </Link>
+              </article>
             </div>
           </div>
         </section>
 
         {/* ── CTA final ── */}
-        <section className="hp-sec" id="devenir-partenaire" style={{ paddingTop: 0 }}>
-          <div className="hp-wrap">
-            <div className="hp-inset" data-reveal>
-              <p className="hp-eyebrow">Prochaine étape</p>
-              <h2>Construisons un partenariat qui vous ressemble.</h2>
-              <p>
-                Dites-nous qui vous êtes et ce que vous cherchez : de la visibilité locale, un
-                engagement auprès de la jeunesse, ou simplement l’envie de donner un coup de main à
-                un club du coin. Nous revenons vers vous avec une proposition concrète.
-              </p>
-              <div className="hp-section-cta">
-                <a className="sc-btn" href={REJOINDRE_TUNNEL_URL}>
-                  Devenir partenaire
-                </a>
-                <Link className="hp-ghost" href="/contact/">
-                  Nous écrire
-                </Link>
-              </div>
+        <section className="sc-sec sc-endzone" id="devenir-partenaire">
+          <YardLine n="endzone" />
+          <div className="sc-wrap" data-reveal>
+            <p className="sc-eyebrow">Prochaine étape</p>
+            <h2 className="sc-title">Construisons un partenariat qui vous ressemble.</h2>
+            <p className="sc-lead" style={{ maxWidth: 660 }}>
+              Dites-nous qui vous êtes et ce que vous cherchez : de la visibilité locale, un
+              engagement auprès de la jeunesse, ou simplement l’envie de donner un coup de main à un
+              club du coin. Nous revenons vers vous avec une proposition concrète.
+            </p>
+            <div className="sc-ctas" style={{ justifyContent: 'center' }}>
+              <a className="sc-btn" href={REJOINDRE_TUNNEL_URL}>
+                Devenir partenaire
+              </a>
+              <Link className="sc-btn-ghost" href="/contact/">
+                Nous écrire
+              </Link>
             </div>
           </div>
         </section>
