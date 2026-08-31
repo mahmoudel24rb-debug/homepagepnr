@@ -12,7 +12,7 @@ const FAQ = [
   },
   {
     q: 'Quels sont les horaires des entraînements ?',
-    r: "Seniors football américain (compétition) : lundi et vendredi de 20h30 à 22h30, mercredi de 21h00 à 23h00. Flag mixte seniors : lundi et jeudi de 20h30 à 22h30. Juniors (foot US et flag) : lundi et jeudi de 19h00 à 21h00. École de flag : samedi de 10h00 à 12h00.",
+    r: "Seniors football américain (compétition) : lundi et vendredi de 20h00 à 23h00, mercredi de 21h00 à 23h00. Flag mixte seniors : lundi et jeudi de 20h15 à 22h45. Juniors foot US : lundi et jeudi de 19h00 à 21h00. Flag mixte juniors : jeudi de 19h00 à 20h30. École de flag : samedi de 10h00 à 12h00.",
   },
   {
     q: 'Quelle est la différence entre football américain et flag football ?',

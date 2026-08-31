@@ -9,7 +9,7 @@ import { asset } from '@/lib/asset';
 import { STADE, HORAIRES, CONTACT, REJOINDRE_TUNNEL_URL } from '@/lib/infos';
 
 /** Créneaux affichés sur cette page : les trois pratiques de flag du club. */
-const CATS_FLAG = ['Flag mixte seniors', 'Juniors · Foot US & flag', 'École de flag'];
+const CATS_FLAG = ['Flag mixte seniors', 'Flag mixte juniors', 'École de flag'];
 
 export const metadata: Metadata = {
   title: 'Flag football à Tours, mixte et sans contact',

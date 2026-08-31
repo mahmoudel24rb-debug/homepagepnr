@@ -10,7 +10,7 @@ import { STADE, HORAIRES, CONTACT, REJOINDRE_TUNNEL_URL } from '@/lib/infos';
 
 /** Créneaux affichés sur cette page : les deux collectifs de football américain. */
 const HORAIRES_FOOTUS = HORAIRES.filter(
-  (h) => h.cat === 'Seniors · Foot US compétition' || h.cat === 'Juniors · Foot US & flag',
+  (h) => h.cat === 'Seniors · Foot US compétition' || h.cat === 'Juniors · Foot US',
 );
 
 export const metadata: Metadata = {

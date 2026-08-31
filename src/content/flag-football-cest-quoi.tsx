@@ -266,8 +266,8 @@ export default function ArticleFlag() {
       </p>
       <ul>
         <li>
-          <strong>Flag mixte seniors :</strong> entraînements le lundi et le jeudi de 20 h 30 à
-          22 h 30 ; équipe engagée en championnat mixte D1 et dans les épreuves féminines et
+          <strong>Flag mixte seniors :</strong> entraînements le lundi et le jeudi de 20 h 15 à
+          22 h 45 ; équipe engagée en championnat mixte D1 et dans les épreuves féminines et
           masculines de la Coupe de France.
         </li>
         <li>

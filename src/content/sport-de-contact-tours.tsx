@@ -307,7 +307,7 @@ export default function ArticleSportContact() {
       </p>
       <ul>
         <li>
-          <strong>Football américain seniors</strong> : le lundi et le vendredi de 20 h 30 à 22 h 30,
+          <strong>Football américain seniors</strong> : le lundi et le vendredi de 20 h à 23 h,
           le mercredi de 21 h à 23 h. Contact complet, équipement fourni pour les débutants, groupe
           de nouveaux chaque saison.
         </li>
@@ -316,9 +316,12 @@ export default function ArticleSportContact() {
           pédagogique adaptée à l’âge.
         </li>
         <li>
-          <strong>Flag football mixte</strong> : le lundi et le jeudi de 20 h 30 à 22 h 30, sans
+          <strong>Flag football mixte</strong> : le lundi et le jeudi de 20 h 15 à 22 h 45, sans
           contact, femmes et hommes sur le même terrain, avec une équipe engagée en championnat
           mixte D1.
+        </li>
+        <li>
+          <strong>Flag football mixte juniors</strong> : le jeudi de 19 h à 20 h 30, de U13 à U18.
         </li>
         <li>
           <strong>École de flag</strong> le samedi de 10 h à 12 h pour les plus jeunes.

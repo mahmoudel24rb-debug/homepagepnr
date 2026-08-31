@@ -285,7 +285,7 @@ export default function Page() {
                   <h3 className="sc-panel-title">Entraînements</h3>
                   <div className="sc-horaires">
                     {HORAIRES.filter(
-                      (h) => h.cat === 'École de flag' || h.cat === 'Juniors · Foot US & flag',
+                      (h) => h.cat === 'École de flag' || h.cat === 'Flag mixte juniors',
                     ).map((h) => (
                       <div key={h.cat} className="sc-horaire">
                         <span className="sc-horaire-cat">{h.cat}</span>

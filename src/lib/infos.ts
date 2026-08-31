@@ -33,18 +33,23 @@ export const ACCES = [
 export const HORAIRES = [
   {
     cat: 'Seniors · Foot US compétition',
-    creneaux: ['Lundi & vendredi · 20h30 à 22h30', 'Mercredi · 21h00 à 23h00'],
-    heures: 'Lundi & vendredi 20h30 à 22h30, mercredi 21h00 à 23h00',
+    creneaux: ['Lundi & vendredi · 20h00 à 23h00', 'Mercredi · 21h00 à 23h00'],
+    heures: 'Lundi & vendredi 20h00 à 23h00, mercredi 21h00 à 23h00',
   },
   {
     cat: 'Flag mixte seniors',
-    creneaux: ['Lundi & jeudi · 20h30 à 22h30'],
-    heures: 'Lundi & jeudi 20h30 à 22h30',
+    creneaux: ['Lundi & jeudi · 20h15 à 22h45'],
+    heures: 'Lundi & jeudi 20h15 à 22h45',
   },
   {
-    cat: 'Juniors · Foot US & flag',
+    cat: 'Juniors · Foot US',
     creneaux: ['Lundi & jeudi · 19h00 à 21h00'],
     heures: 'Lundi & jeudi 19h00 à 21h00',
+  },
+  {
+    cat: 'Flag mixte juniors',
+    creneaux: ['Jeudi · 19h00 à 20h30'],
+    heures: 'Jeudi 19h00 à 20h30',
   },
   {
     cat: 'École de flag',

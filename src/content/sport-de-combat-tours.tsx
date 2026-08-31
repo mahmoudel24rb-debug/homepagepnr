@@ -279,16 +279,19 @@ export default function ArticleSportCombat() {
       </p>
       <ul>
         <li>
-          <strong>Football américain seniors</strong> : le lundi et le vendredi de 20 h 30 à 22 h 30,
+          <strong>Football américain seniors</strong> : le lundi et le vendredi de 20 h à 23 h,
           le mercredi de 21 h à 23 h. Contact complet, équipement prêté aux débutants.
         </li>
         <li>
-          <strong>Flag football mixte</strong> : le lundi et le jeudi de 20 h 30 à 22 h 30, sans
+          <strong>Flag football mixte</strong> : le lundi et le jeudi de 20 h 15 à 22 h 45, sans
           contact, femmes et hommes ensemble, avec une équipe engagée en championnat mixte D1. Ce
           sera un sport olympique aux Jeux de Los Angeles en 2028.
         </li>
         <li>
           <strong>Juniors</strong> : le lundi et le jeudi de 19 h à 21 h.
+        </li>
+        <li>
+          <strong>Flag football mixte juniors</strong> : le jeudi de 19 h à 20 h 30, de U13 à U18.
         </li>
         <li>
           <strong>École de flag</strong> : le samedi de 10 h à 12 h.

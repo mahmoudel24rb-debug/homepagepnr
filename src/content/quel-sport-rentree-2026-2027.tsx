@@ -283,9 +283,10 @@ export default function ArticleRentree() {
         </li>
         <li>
           <strong>Des créneaux en soirée, au Stade de la Chambrerie à Tours Nord.</strong> Football
-          américain seniors le lundi et le vendredi de 20 h 30 à 22 h 30 et le mercredi de 21 h à
-          23 h ; flag mixte le lundi et le jeudi de 20 h 30 à 22 h 30 ; juniors le lundi et le jeudi
-          de 19 h à 21 h ; école de flag le samedi de 10 h à 12 h. Le club existe depuis 1987.
+          américain seniors le lundi et le vendredi de 20 h à 23 h et le mercredi de 21 h à
+          23 h ; flag mixte le lundi et le jeudi de 20 h 15 à 22 h 45 ; juniors foot US le lundi et
+          le jeudi de 19 h à 21 h ; flag mixte juniors le jeudi de 19 h à 20 h 30 ; école de flag le
+          samedi de 10 h à 12 h. Le club existe depuis 1987.
         </li>
       </ul>
       <p>
