@@ -97,9 +97,6 @@ export default function SiteFooter() {
         <span style={{ display: 'inline-flex', gap: 18, flexWrap: 'wrap' }}>
           <Link href="/mentions-legales/">Mentions légales</Link>
           <Link href="/politique-de-confidentialite/">Politique de confidentialité</Link>
-          <span>
-            Réalisé par <strong>DGL Agency</strong>
-          </span>
         </span>
       </div>
     </footer>
