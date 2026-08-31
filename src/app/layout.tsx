@@ -72,7 +72,7 @@ const CLUB_JSONLD = {
     addressRegion: STADE.region,
     addressCountry: STADE.pays,
   },
-  sameAs: RESEAUX.map((r) => r.url),
+  sameAs: [...RESEAUX.map((r) => r.url), 'https://maps.app.goo.gl/cnVghabaHrhx9qaQA'],
 };
 
 export default function RootLayout({

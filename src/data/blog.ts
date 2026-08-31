@@ -7,6 +7,11 @@ import ArticleSportEnfant from '@/content/sport-enfant-tours';
 import ArticleSportContact from '@/content/sport-de-contact-tours';
 import ArticleSportCombat from '@/content/sport-de-combat-tours';
 import ArticleRentree from '@/content/quel-sport-rentree-2026-2027';
+import ArticlePostes from '@/content/postes-football-americain';
+import ArticleRegles from '@/content/regles-football-americain';
+import ArticleEquipement from '@/content/equipement-football-americain-debutant';
+import ArticleReprendreSport from '@/content/reprendre-le-sport-a-30-ans-tours';
+import ArticleSportEtudiant from '@/content/sport-etudiant-tours';
 
 /**
  * Registre des articles du blog (FR uniquement : le SEO vise des requêtes
@@ -38,12 +43,12 @@ export const ARTICLES: ArticleMeta[] = [
     slug: 'comment-pratiquer-le-football-americain-en-france',
     titre: 'Comment pratiquer le football américain en France : le guide complet pour débuter',
     titreCourt: 'Pratiquer le football américain en France',
-    titleSeo: 'Pratiquer le football américain en France : guide débutant',
+    titleSeo: 'Football américain en France : par où commencer ?',
     description:
-      'Âge, clubs, licence, équipement, premier entraînement : tout ce qu’il faut savoir pour débuter le football américain en France, expliqué par un club fondé en 1987.',
+      'Trouver un club près de chez toi, la licence, l’équipement à prévoir et ton premier entraînement : le guide pas à pas, écrit par un club français fondé en 1987.',
     emoji: 'foot-us',
     datePublication: '2026-08-20',
-    dateModif: '2026-08-20',
+    dateModif: '2026-08-31',
     minutesLecture: 12,
     motCle: 'pratiquer le football américain en France',
     content: ArticlePratiquer,
@@ -66,12 +71,12 @@ export const ARTICLES: ArticleMeta[] = [
     slug: 'commencer-le-football-americain-adulte',
     titre: 'Commencer le football américain à l’âge adulte : est-ce trop tard ?',
     titreCourt: 'Commencer le foot US à l’âge adulte',
-    titleSeo: 'Commencer le football américain adulte : trop tard ?',
+    titleSeo: 'Commencer le foot US adulte : oui, et voici comment',
     description:
-      'Débuter le foot US à 25, 30 ou 35 ans ? Gabarit, condition physique, règles : on démonte les idées reçues et on explique comment se passe une première saison.',
+      'Débuter à 25, 30 ou 35 ans sans aucune base : un poste pour chaque gabarit, équipement prêté, entraînements en soirée et un premier essai gratuit à Tours.',
     emoji: 'seniors',
     datePublication: '2026-08-20',
-    dateModif: '2026-08-20',
+    dateModif: '2026-08-31',
     minutesLecture: 10,
     motCle: 'commencer le football américain adulte',
     content: ArticleAdulte,
@@ -146,6 +151,76 @@ export const ARTICLES: ArticleMeta[] = [
     minutesLecture: 12,
     motCle: 'quel sport rentrée 2026',
     content: ArticleRentree,
+  },
+  {
+    slug: 'postes-football-americain',
+    titre: 'Les postes au football américain expliqués (et comment trouver le tien)',
+    titreCourt: 'Les postes au football américain',
+    titleSeo: 'Les postes au football américain expliqués',
+    description:
+      'Quarterback, ligne, linebacker, kicker : chaque poste du football américain, son rôle, son gabarit et son tempérament. Il y a un poste pour chaque physique.',
+    emoji: 'coaching',
+    datePublication: '2026-08-31',
+    dateModif: '2026-08-31',
+    minutesLecture: 15,
+    motCle: 'postes football américain',
+    content: ArticlePostes,
+  },
+  {
+    slug: 'regles-football-americain',
+    titre: 'Les règles du football américain expliquées simplement',
+    titreCourt: 'Les règles du football américain',
+    titleSeo: 'Les règles du football américain, simplement',
+    description:
+      '4 tentatives pour 10 yards, terrain, touchdown, field goal, fautes, temps de jeu : toutes les règles du football américain expliquées sans jargon.',
+    emoji: 'arbitrage',
+    datePublication: '2026-09-01',
+    dateModif: '2026-09-01',
+    minutesLecture: 13,
+    motCle: 'règles football américain',
+    content: ArticleRegles,
+  },
+  {
+    slug: 'equipement-football-americain-debutant',
+    titre: 'Quel équipement pour débuter le football américain (et le flag) ?',
+    titreCourt: 'L’équipement pour débuter',
+    titleSeo: 'Quel équipement pour débuter le football américain ?',
+    description:
+      'Casque, épaulières, protège-dents, pantalon à pads : ce qui est obligatoire, ce que les clubs prêtent, le budget réel et l’équipement quasi nul du flag.',
+    emoji: 'ressources',
+    datePublication: '2026-09-02',
+    dateModif: '2026-09-02',
+    minutesLecture: 13,
+    motCle: 'équipement football américain',
+    content: ArticleEquipement,
+  },
+  {
+    slug: 'reprendre-le-sport-a-30-ans-tours',
+    titre: 'Reprendre le sport à 30 ans (ou après) à Tours : le guide sans bullshit',
+    titreCourt: 'Reprendre le sport à 30 ans',
+    titleSeo: 'Reprendre le sport à 30 ans à Tours : le vrai guide',
+    description:
+      'Pourquoi les résolutions solo cassent, quelles options existent vraiment à Tours et comment tenir jusqu’en février : le guide honnête de la reprise adulte.',
+    emoji: 'sante',
+    datePublication: '2026-09-03',
+    dateModif: '2026-09-03',
+    minutesLecture: 16,
+    motCle: 'reprendre le sport à 30 ans',
+    content: ArticleReprendreSport,
+  },
+  {
+    slug: 'sport-etudiant-tours',
+    titre: 'Étudiant à Tours : quel sport choisir cette année ?',
+    titreCourt: 'Quel sport quand on est étudiant ?',
+    titleSeo: 'Étudiant à Tours : quel sport choisir cette année ?',
+    description:
+      'Budget serré, emploi du temps mouvant, pas de voiture, envie de rencontrer du monde : comment choisir un sport à Tours quand on est étudiant, et où aller essayer.',
+    emoji: 'experience',
+    datePublication: '2026-09-04',
+    dateModif: '2026-09-04',
+    minutesLecture: 15,
+    motCle: 'sport étudiant tours',
+    content: ArticleSportEtudiant,
   },
 ];
 

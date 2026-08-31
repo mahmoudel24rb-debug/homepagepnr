@@ -15,8 +15,7 @@ const STADE: [number, number] = [47.417, 0.7104]; // centre du complexe (OSM)
 /** Terrain d'entraînement actuel des Pionniers : pitch sud du complexe. */
 const TERRAIN: [number, number] = [47.416252, 0.710804];
 
-const GOOGLE_MAPS =
-  'https://www.google.com/maps/search/?api=1&query=Stade+de+la+Chambrerie+Rue+Tartifume+37100+Tours';
+const GOOGLE_MAPS = 'https://maps.app.goo.gl/cnVghabaHrhx9qaQA';
 
 export default function StadeMap() {
   const { lang } = useLang();
