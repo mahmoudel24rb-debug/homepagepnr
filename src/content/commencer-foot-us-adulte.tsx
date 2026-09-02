@@ -220,6 +220,60 @@ export default function ArticleAdulte() {
         </li>
       </ul>
 
+      <h2 id="age-30-40">
+        Commencer le football américain à 30 ans, 35 ans, 40 ans : trop tard ?
+      </h2>
+      <p>
+        Non. Mais la réponse honnête tient en deux temps : non, sous conditions. Te dire que l’âge
+        ne compte pour rien serait faux, et tu le sentirais dès la troisième séance. Mieux vaut dire
+        précisément ce qui change, et ce qui ne change pas.
+      </p>
+      <p>
+        Ce qui ne change pas, d’abord : le niveau d’entrée. À 35 ans comme à 20 ans, tu arrives dans
+        un vestiaire où presque personne n’a commencé enfant. Ton retard technique est exactement
+        celui du rookie de 22 ans assis à côté de toi, c’est-à-dire aucun. C’est propre au football
+        américain français, et c’est ce qui rend l’âge bien moins décisif ici qu’ailleurs.
+      </p>
+      <p>
+        Ce qui change vraiment tient en trois points, et aucun n’est rédhibitoire. La récupération
+        est plus lente : là où un joueur de 20 ans enchaîne trois séances par semaine sans y penser,
+        un corps de 38 ans a besoin d’un vrai jour de repos entre deux, et le sommeil devient un
+        paramètre d’entraînement à part entière. L’échauffement cesse d’être optionnel : les dix
+        minutes qu’on saute à 20 ans sont exactement celles qui protègent un ischio-jambier à 40.
+        Enfin, la marge d’erreur se réduit : une reprise trop brutale se paie en semaines d’arrêt,
+        plus seulement en courbatures.
+      </p>
+      <p>
+        D’où la seule préparation qui compte vraiment : arriver avec un minimum de fond et de
+        renforcement, monter en charge sur deux mois plutôt que sur deux semaines, et faire valider
+        la reprise par un avis médical si tu as des antécédents ou plusieurs années d’arrêt. Deux
+        courtes séances de renforcement par semaine (gainage, jambes, nuque) valent mieux
+        que trois entraînements héroïques suivis d’une élongation. Si tu repars de vraiment loin, on
+        a détaillé la méthode dans notre guide pour{' '}
+        <Link href="/blog/reprendre-le-sport-a-30-ans-tours/">
+          reprendre le sport à 30 ans à Tours
+        </Link>.
+      </p>
+      <p>
+        Quant aux profils, ils se ressemblent d’une saison à l’autre. Il y a celui qui arrive à
+        32 ans avec un passé de rugbyman ou de handballeur : il a le cardio et les appuis, il lui
+        manque le playbook, et il est souvent utile en match dès la première année. Il y a celui qui
+        arrive à 37 ans sans aucune base sportive : sa première saison ressemble à une remise en
+        forme guidée par le jeu, et sa transformation physique est en général la plus visible du
+        groupe. Il y a enfin celui qui, à 40 ans passés, choisit le flag plutôt que le casqué : il
+        garde l’équipe, la stratégie et l’adrénaline, et se passe des impacts. Aucun de ces trois
+        choix n’est un lot de consolation.
+      </p>
+      <p>
+        La seule mauvaise réponse serait d’attendre encore un an. Le corps de 35 ans qui hésite
+        aujourd’hui sera un corps de 36 ans l’an prochain, avec les mêmes doutes et une saison de
+        moins dans les jambes. Pour le détail tranche d’âge par tranche d’âge, des plus jeunes aux
+        seniors, on a écrit un guide dédié :{' '}
+        <Link href="/blog/a-quel-age-commencer-le-football-americain/">
+          à quel âge commencer le football américain
+        </Link>.
+      </p>
+
       <h2 id="faq-adulte">Questions fréquentes des débutants adultes</h2>
       <h3>Y a-t-il un âge limite pour jouer ?</h3>
       <p>

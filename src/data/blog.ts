@@ -13,6 +13,16 @@ import ArticleEquipement from '@/content/equipement-football-americain-debutant'
 import ArticleReprendreSport from '@/content/reprendre-le-sport-a-30-ans-tours';
 import ArticleSportEtudiant from '@/content/sport-etudiant-tours';
 
+import ArticleReglesFlagFootball from '@/content/regles-flag-football';
+import ArticleCombienCouteLeFootballAmericain from '@/content/combien-coute-le-football-americain';
+import ArticleFootballAmericainJeunesU13U16U18 from '@/content/football-americain-jeunes-u13-u16-u18';
+import ArticleArbitreCoachBenevoleClubFootballAmericain from '@/content/arbitre-coach-benevole-club-football-americain';
+import ArticleLexiqueFootballAmericain from '@/content/lexique-football-americain';
+import ArticleFlagFootballJo2028 from '@/content/flag-football-jo-2028';
+import ArticleChampionnatDeFranceFootballAmericain from '@/content/championnat-de-france-football-americain';
+import ArticleStadeDeLaChambrerieTours from '@/content/stade-de-la-chambrerie-tours';
+import ArticleClubDeSportTours from '@/content/club-de-sport-tours';
+import ArticleAQuelAgeCommencerLeFootballAmericain from '@/content/a-quel-age-commencer-le-football-americain';
 /**
  * Registre des articles du blog (FR uniquement : le SEO vise des requêtes
  * françaises). L'ordre du tableau = ordre d'affichage sur /blog/.
@@ -221,6 +231,146 @@ export const ARTICLES: ArticleMeta[] = [
     minutesLecture: 15,
     motCle: 'sport étudiant tours',
     content: ArticleSportEtudiant,
+  },
+  {
+    slug: 'regles-flag-football',
+    titre: 'Les règles du flag football (5 contre 5) : terrain, ceinture, temps, fautes',
+    titreCourt: 'Les règles du flag football',
+    titleSeo: 'Règles du flag football : le 5 contre 5 expliqué',
+    description:
+      'Terrain de 70 x 25 yards, ceinture à flags, 7 secondes pour lancer, zone sans course, fautes et équipement : les règles du flag football à 5 contre 5.',
+    emoji: 'rejoindre-flag',
+    datePublication: '2026-09-03',
+    dateModif: '2026-09-03',
+    minutesLecture: 17,
+    motCle: 'règles flag football',
+    content: ArticleReglesFlagFootball,
+  },
+  {
+    slug: 'combien-coute-le-football-americain',
+    titre: 'Combien coûte le football américain ? Licence, équipement, budget d’une saison',
+    titreCourt: 'Combien coûte le football américain ?',
+    titleSeo: 'Combien coûte le football américain ? Prix réels',
+    description:
+      'De 100 € à 249,99 € la saison selon la formule, licence FFFA incluse, équipement prêté aux débutants et paiement en 3 fois : le vrai budget d’une saison.',
+    emoji: 'finance',
+    datePublication: '2026-09-04',
+    dateModif: '2026-09-04',
+    minutesLecture: 15,
+    motCle: 'combien coûte le football américain',
+    content: ArticleCombienCouteLeFootballAmericain,
+  },
+  {
+    slug: 'football-americain-jeunes-u13-u16-u18',
+    titre: 'Football américain et flag pour les jeunes : U13, U16, U18, comment ça marche',
+    titreCourt: 'Football américain et flag pour les jeunes',
+    titleSeo: 'Football américain jeunes : U13, U16, U18 à Tours',
+    description:
+      'École de flag dès U7, flag juniors U13-U18, équipe U18 avec initiation au contact : le parcours jeunes des Pionniers de Touraine, horaires et tarifs.',
+    emoji: 'decouvrir',
+    datePublication: '2026-09-05',
+    dateModif: '2026-09-05',
+    minutesLecture: 14,
+    motCle: 'football américain enfant',
+    content: ArticleFootballAmericainJeunesU13U16U18,
+  },
+  {
+    slug: 'arbitre-coach-benevole-club-football-americain',
+    titre: 'Devenir arbitre, coach ou bénévole dans un club de football américain',
+    titreCourt: 'Arbitre, coach ou bénévole en club',
+    titleSeo: 'Arbitre, coach, bénévole : rejoindre un club à Tours',
+    description:
+      'Arbitrage indemnisé, coaching, régie FFFA TV, logistique : tous les rôles bénévoles d’un club de football américain à Tours, et comment candidater.',
+    emoji: 'competences',
+    datePublication: '2026-09-06',
+    dateModif: '2026-09-06',
+    minutesLecture: 17,
+    motCle: 'arbitre football américain',
+    content: ArticleArbitreCoachBenevoleClubFootballAmericain,
+  },
+  {
+    slug: 'lexique-football-americain',
+    titre: 'Lexique du football américain : 60 termes à connaître',
+    titreCourt: 'Lexique du football américain',
+    titleSeo: 'Lexique du football américain : 60 termes clés',
+    description:
+      'Quarterback, linebacker, touchdown, sack, deflag : les 60 mots du football américain expliqués, avec le nombre de joueurs et la durée réelle d’un match.',
+    emoji: 'com',
+    datePublication: '2026-09-07',
+    dateModif: '2026-09-07',
+    minutesLecture: 19,
+    motCle: 'vocabulaire football américain',
+    content: ArticleLexiqueFootballAmericain,
+  },
+  {
+    slug: 'flag-football-jo-2028',
+    titre: 'Flag football aux JO de Los Angeles 2028 : ce que ça change en France',
+    titreCourt: 'Le flag football aux JO 2028',
+    titleSeo: 'Flag football aux JO 2028 : ce que ça change',
+    description:
+      'Le flag football entre au programme des Jeux de Los Angeles 2028 : pourquoi ce choix, ce que ça change pour les clubs français et comment débuter à Tours.',
+    emoji: 'seniors-flag',
+    datePublication: '2026-09-08',
+    dateModif: '2026-09-08',
+    minutesLecture: 12,
+    motCle: 'flag football jo 2028',
+    content: ArticleFlagFootballJo2028,
+  },
+  {
+    slug: 'championnat-de-france-football-americain',
+    titre: 'Championnat de France de football américain : divisions, saison et où jouent les Pionniers',
+    titreCourt: 'Le championnat de France de foot US',
+    titleSeo: 'Championnat de France de football américain',
+    description:
+      'Divisions du championnat de foot US, championnat mixte de flag, Coupe de France et calendrier type : où jouent les Pionniers de Touraine, club de Tours.',
+    emoji: 'jeunes-flag',
+    datePublication: '2026-09-09',
+    dateModif: '2026-09-09',
+    minutesLecture: 13,
+    motCle: 'championnat football américain france',
+    content: ArticleChampionnatDeFranceFootballAmericain,
+  },
+  {
+    slug: 'stade-de-la-chambrerie-tours',
+    titre: 'Stade de la Chambrerie à Tours : venir voir un match des Pionniers',
+    titreCourt: 'Stade de la Chambrerie à Tours',
+    titleSeo: 'Stade de la Chambrerie à Tours : voir un match',
+    description:
+      'Adresse, créneaux, ambiance et déroulé d’un match de football américain au stade de la Chambrerie, rue Tartifume à Tours, chez les Pionniers de Touraine.',
+    emoji: 'soutenir',
+    datePublication: '2026-09-10',
+    dateModif: '2026-09-10',
+    minutesLecture: 12,
+    motCle: 'stade de la chambrerie',
+    content: ArticleStadeDeLaChambrerieTours,
+  },
+  {
+    slug: 'club-de-sport-tours',
+    titre: 'Trouver un club de sport à Tours : le guide par créneau et par âge',
+    titreCourt: 'Trouver un club de sport à Tours',
+    titleSeo: 'Club de sport à Tours : le guide par créneau et par âge',
+    description:
+      'Choisir un club de sport à Tours : les critères qui comptent vraiment, un guide par créneau, par âge et par envie, et le forum des associations.',
+    emoji: 'ambassadeur',
+    datePublication: '2026-09-11',
+    dateModif: '2026-09-11',
+    minutesLecture: 17,
+    motCle: 'club de sport Tours',
+    content: ArticleClubDeSportTours,
+  },
+  {
+    slug: 'a-quel-age-commencer-le-football-americain',
+    titre: 'À quel âge commencer le football américain ou le flag ?',
+    titreCourt: 'À quel âge commencer ?',
+    titleSeo: 'À quel âge commencer le football américain ?',
+    description:
+      'Le flag dès 5 ou 6 ans, le contact à partir des U18, et jamais trop tard à 30 ou 40 ans : les repères par âge d’un club de Tours fondé en 1987.',
+    emoji: 'temps',
+    datePublication: '2026-09-12',
+    dateModif: '2026-09-12',
+    minutesLecture: 13,
+    motCle: 'à quel âge commencer le football américain',
+    content: ArticleAQuelAgeCommencerLeFootballAmericain,
   },
 ];
 

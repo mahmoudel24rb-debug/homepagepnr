@@ -77,12 +77,14 @@ export default function Page() {
                   courtes, le rythme est élevé. C’est un sport de stratégie autant qu’un sport de
                   course : chaque action se prépare, s’annonce et s’exécute ensemble.
                 </p>
-                <h3 className="sc-h3">Un sport mixte, vraiment mixte</h3>
+                <h3 className="sc-h3">Le flag football mixte à Tours : vraiment mixte</h3>
                 <p className="sc-legal-text">
                   Femmes et hommes jouent dans la même équipe, sur le même terrain, au même moment.
-                  C’est rare dans un sport collectif, et c’est l’ADN de notre section flag. Personne
-                  n’est là pour faire de la figuration : les rôles se répartissent selon les
-                  qualités de chacun, pas selon les gabarits.
+                  Il n’y a donc pas ici une équipe masculine d’un côté et une équipe de flag
+                  football féminin de l’autre : il y a une équipe, et elle est mixte. C’est rare
+                  dans un sport collectif, et c’est l’ADN de notre section flag. Personne n’est là
+                  pour faire de la figuration : les rôles se répartissent selon les qualités de
+                  chacun, pas selon les gabarits.
                 </p>
                 <p className="sc-legal-text">
                   Cette mixité change l’ambiance des séances. On progresse ensemble, on s’explique
@@ -175,9 +177,9 @@ export default function Page() {
                   <span className="sc-chip">Compétition</span>
                 </div>
                 <p className="sc-card-desc">
-                  L’équipe adulte du club, femmes et hommes ensemble, deux soirs par semaine. On y
-                  joue en loisir comme en compétition. L’équipe de flag mixte des Pionniers a été
-                  qualifiée en demi-finales de Conférence Nord.
+                  Le flag football senior du club, femmes et hommes dans la même équipe, deux soirs
+                  par semaine. On y joue en loisir comme en compétition. L’équipe de flag mixte des
+                  Pionniers a été qualifiée en demi-finales de Conférence Nord.
                 </p>
                 <a className="sc-card-cta" href={REJOINDRE_TUNNEL_URL}>
                   Venir essayer <ArrowRight size={15} strokeWidth={2.6} />
@@ -239,9 +241,21 @@ export default function Page() {
           <div className="sc-wrap">
             <div data-reveal>
               <p className="sc-eyebrow">Pour qui ?</p>
-              <h2 className="sc-title">À qui ça s’adresse ?</h2>
+              <h2 className="sc-title">À qui s’adresse le flag football à Tours ?</h2>
             </div>
             <div className="sc-body" data-reveal style={{ marginTop: 30 }}>
+              <h3 className="sc-h3">Le flag football adulte, débutant compris</h3>
+              <p className="sc-legal-text">
+                Le <strong>flag football adulte</strong>, que les clubs appellent aussi flag
+                football senior, s’adresse en priorité aux débutants complets : des femmes et des
+                hommes qui n’ont jamais touché un ballon ovale, d’anciens sportifs d’autres
+                disciplines qui cherchent une équipe, des étudiants arrivés à Tours et qui veulent
+                un groupe en dehors des cours. Aucune expérience n’est demandée, rien n’est à
+                acheter. Pour arriver en connaissant déjà le jeu, lis{' '}
+                <Link href="/blog/regles-flag-football/">les règles du flag football</Link> ou notre
+                présentation générale :{' '}
+                <Link href="/blog/flag-football-cest-quoi/">le flag football, c’est quoi</Link>.
+              </p>
               <p className="sc-legal-text">
                 À peu près tout le monde, et ce n’est pas une formule. Le flag ne réclame ni gabarit
                 particulier ni passé sportif. Il réclame de l’envie et un peu de régularité. On
