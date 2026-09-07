@@ -23,6 +23,7 @@ import ArticleChampionnatDeFranceFootballAmericain from '@/content/championnat-d
 import ArticleStadeDeLaChambrerieTours from '@/content/stade-de-la-chambrerie-tours';
 import ArticleClubDeSportTours from '@/content/club-de-sport-tours';
 import ArticleAQuelAgeCommencerLeFootballAmericain from '@/content/a-quel-age-commencer-le-football-americain';
+import ArticleCommentRegarderLeCollegeFootballEnFrance from '@/content/comment-regarder-le-college-football-en-france';
 /**
  * Registre des articles du blog (FR uniquement : le SEO vise des requêtes
  * françaises). L'ordre du tableau = ordre d'affichage sur /blog/.
@@ -371,6 +372,20 @@ export const ARTICLES: ArticleMeta[] = [
     minutesLecture: 13,
     motCle: 'à quel âge commencer le football américain',
     content: ArticleAQuelAgeCommencerLeFootballAmericain,
+  },
+  {
+    slug: 'comment-regarder-le-college-football-en-france',
+    titre: 'Comment regarder le college football en France en 2026 : le guide complet',
+    titreCourt: 'Regarder le college football en France',
+    titleSeo: 'Regarder le college football en France : guide 2026',
+    description:
+      'DAZN, Disney+, beIN Sports, Fighting Irish TV : où regarder le college football en France en 2026, à quel prix, et tout le College Football Playoff.',
+    emoji: 'jouer',
+    datePublication: '2026-09-07',
+    dateModif: '2026-09-07',
+    minutesLecture: 26,
+    motCle: 'regarder college football en France',
+    content: ArticleCommentRegarderLeCollegeFootballEnFrance,
   },
 ];
 
