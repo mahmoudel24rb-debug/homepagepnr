@@ -127,6 +127,8 @@ const CLUB_JSONLD = {
         { '@type': 'AdministrativeArea', name: 'Indre-et-Loire' },
       ],
       hasMap: GOOGLE_MAPS_URL,
+      // Coordonnees relevees sur la fiche Google Business du club (10/09/2026).
+      geo: { '@type': 'GeoCoordinates', latitude: 47.4167151, longitude: 0.7102265 },
       memberOf: {
         '@type': 'SportsOrganization',
         name: FEDERATION.nom,
