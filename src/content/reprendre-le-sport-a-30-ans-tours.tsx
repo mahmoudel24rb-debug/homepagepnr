@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { CtaQuiz, CtaTunnel } from '@/components/blog/CtaEncart';
+import Faq from '@/components/blog/Faq';
 
 /**
  * Article. Mot-clé : « reprendre le sport à 30 ans ».
@@ -123,7 +124,10 @@ export default function ArticleReprendreSport() {
       <p>
         La question « quel sport me ferait perdre le plus de calories » est une mauvaise question.
         Celle qui compte, c’est « quel sport vais-je encore pratiquer dans huit mois ». Voici les
-        quatre filtres qui décident réellement, dans l’ordre d’importance.
+        quatre filtres qui décident réellement, dans l’ordre d’importance. Ils recoupent en partie
+        la méthode pour{' '}
+        <Link href="/blog/club-de-sport-tours/">trouver un club de sport à Tours</Link>, quel que
+        soit le sport que tu choisis.
       </p>
 
       <h3>1. Le créneau, contre ta vraie semaine</h3>
@@ -325,7 +329,7 @@ export default function ArticleReprendreSport() {
         un handicap à corriger avant de venir : c’est une donnée d’orientation. On développe le
         sujet dans notre article sur le fait de{' '}
         <Link href="/blog/commencer-le-football-americain-adulte/">
-          commencer le football américain à l’âge adulte
+          commencer à 30 ans
         </Link>.
       </p>
       <p>
@@ -349,7 +353,9 @@ export default function ArticleReprendreSport() {
         le mercredi de 21 h à 23 h ; flag mixte seniors le lundi et le jeudi de 20 h 15 à 22 h 45,
         avec un championnat mixte en D1. Tout se passe au Stade de la Chambrerie, rue Tartifume à
         Tours. Le détail des groupes est sur la page{' '}
-        <Link href="/nos-sections/">nos sections</Link>.
+        <Link href="/nos-sections/">nos sections</Link>, et la page pour{' '}
+        <Link href="/football-americain/">jouer au football américain à Tours</Link> décrit la
+        section senior au contact.
       </p>
 
       <CtaTunnel
@@ -410,75 +416,103 @@ export default function ArticleReprendreSport() {
         exactement le cadre que tu avais perdu à 18 ans, et tu viens de le reconstruire.
       </p>
 
-      <h2 id="faq">Questions fréquentes sur la reprise du sport à 30 ans</h2>
-
-      <h3>Est-il trop tard pour reprendre le sport à 30 ans ?</h3>
-      <p>
-        Non, et à vrai dire la question se pose dans l’autre sens : 30 ans est un très bon moment,
-        parce que tu as quelque chose que tu n’avais pas à 18 ans, la constance. Les adultes en
-        reprise progressent souvent plus vite que prévu, parce qu’ils écoutent les consignes,
-        récupèrent sérieusement et comprennent vite le sens des exercices. Le seul vrai
-        changement à intégrer, c’est qu’il faut monter en charge progressivement au lieu de
-        vouloir rattraper dix ans en trois semaines.
-      </p>
-
-      <h3>Faut-il se remettre en forme avant de s’inscrire quelque part ?</h3>
-      <p>
-        Non, et c’est l’erreur la plus coûteuse de toutes, parce qu’elle repousse indéfiniment le
-        démarrage. « Je m’inscrirai quand j’aurai perdu dix kilos » est une phrase qui, dans la
-        grande majorité des cas, ne se réalise jamais : la mise en forme viendra de la pratique
-        elle-même, pas l’inverse. Les groupes de débutants existent précisément pour accueillir
-        des gens qui ne sont pas en forme. C’est leur raison d’être.
-      </p>
-
-      <h3>Combien de séances par semaine pour un adulte qui reprend ?</h3>
-      <p>
-        Deux séances hebdomadaires régulières valent mieux que quatre séances irrégulières, et
-        largement mieux qu’une séance très intense de temps en temps. Deux entraînements en
-        soirée, tenus sur plusieurs mois, transforment réellement une condition physique. Si tu
-        veux ajouter quelque chose, deux courtes séances de renforcement à la maison (gainage,
-        jambes) suffisent, sans matériel.
-      </p>
-
-      <h3>Quel budget prévoir pour reprendre le sport à Tours ?</h3>
-      <p>
-        En ordre de grandeur, une adhésion annuelle en club associatif se situe le plus souvent
-        dans une fourchette de 100 à 350 euros selon la discipline, souvent licence et assurance
-        incluses, tandis qu’un abonnement en salle se compte au mois. Ajoute l’équipement
-        personnel, très variable d’une pratique à l’autre. Deux bonnes nouvelles : les séances
-        d’essai sont gratuites à peu près partout, donc tester ne coûte rien ; et beaucoup de
-        structures acceptent le paiement en plusieurs fois ou les aides existantes. Demande
-        systématiquement ce qui est prêté avant de budgéter du matériel.
-      </p>
-
-      <h3>Et si je n’ai jamais fait de sport collectif de ma vie ?</h3>
-      <p>
-        C’est un profil très courant dans nos effectifs, et ce n’est pas un handicap dans un sport
-        où tout le monde débute adulte. Ce qui te manque, ce sont des automatismes que personne
-        autour de toi n’a acquis avant 20 ans non plus. En revanche, si tu vises une discipline
-        où les autres jouent depuis l’enfance, choisis explicitement une section loisir ou
-        débutants : la question à poser au téléphone est « est-ce qu’il arrive des adultes
-        débutants chaque année chez vous, ou est-ce que je serais le seul ? ».
-      </p>
-
-      <h3>Peut-on s’inscrire en cours d’année ?</h3>
-      <p>
-        Oui, dans la quasi-totalité des clubs. Septembre reste le moment le plus confortable
-        parce que c’est là que se forment les groupes de nouveaux, mais arriver en novembre, en
-        janvier ou au printemps est tout à fait possible : tu seras intégré à la reprise des
-        fondamentaux plutôt qu’au groupe principal, ce qui n’est pas un mauvais deal pour un
-        débutant. Chez nous, la semaine découverte est disponible toute l’année.
-      </p>
-
-      <h3>Le contact, ça fait mal ?</h3>
-      <p>
-        Moins que ce que tu imagines, et surtout ça s’apprend par étapes. Le contact n’arrive
-        jamais le premier soir : les premières semaines travaillent la technique sans opposition,
-        sur boucliers, puis l’opposition contrôlée arrive progressivement. Équipé, plaqué avec la
-        bonne technique, le contact n’a rien à voir avec ce qu’on se figure depuis son canapé. Et
-        si le déclic ne vient pas, le flag existe, sans aucun impact, avec le même jeu et la même
-        bande de gens.
-      </p>
+      <Faq
+        titre="Questions fréquentes sur la reprise du sport à 30 ans"
+        items={[
+          {
+            q: 'Est-il trop tard pour reprendre le sport à 30 ans ?',
+            r: (
+              <p>
+                Non, et à vrai dire la question se pose dans l’autre sens : 30 ans est un très bon
+                moment, parce que tu as quelque chose que tu n’avais pas à 18 ans, la constance. Les
+                adultes en reprise progressent souvent plus vite que prévu, parce qu’ils écoutent
+                les consignes, récupèrent sérieusement et comprennent vite le sens des exercices. Le
+                seul vrai changement à intégrer, c’est qu’il faut monter en charge progressivement
+                au lieu de vouloir rattraper dix ans en trois semaines.
+              </p>
+            ),
+          },
+          {
+            q: 'Faut-il se remettre en forme avant de s’inscrire quelque part ?',
+            r: (
+              <p>
+                Non, et c’est l’erreur la plus coûteuse de toutes, parce qu’elle repousse
+                indéfiniment le démarrage. « Je m’inscrirai quand j’aurai perdu dix kilos » est une
+                phrase qui, dans la grande majorité des cas, ne se réalise jamais : la mise en forme
+                viendra de la pratique elle-même, pas l’inverse. Les groupes de débutants existent
+                précisément pour accueillir des gens qui ne sont pas en forme. C’est leur raison
+                d’être.
+              </p>
+            ),
+          },
+          {
+            q: 'Combien de séances par semaine pour un adulte qui reprend ?',
+            r: (
+              <p>
+                Deux séances hebdomadaires régulières valent mieux que quatre séances irrégulières,
+                et largement mieux qu’une séance très intense de temps en temps. Deux entraînements
+                en soirée, tenus sur plusieurs mois, transforment réellement une condition physique.
+                Si tu veux ajouter quelque chose, deux courtes séances de renforcement à la maison
+                (gainage, jambes) suffisent, sans matériel.
+              </p>
+            ),
+          },
+          {
+            q: 'Quel budget prévoir pour reprendre le sport à Tours ?',
+            r: (
+              <p>
+                En ordre de grandeur, une adhésion annuelle en club associatif se situe le plus
+                souvent dans une fourchette de 100 à 350 euros selon la discipline, souvent licence
+                et assurance incluses, tandis qu’un abonnement en salle se compte au mois. Ajoute
+                l’équipement personnel, très variable d’une pratique à l’autre. Deux bonnes
+                nouvelles : les séances d’essai sont gratuites à peu près partout, donc tester ne
+                coûte rien ; et beaucoup de structures acceptent le paiement en plusieurs fois ou
+                les aides existantes. Demande systématiquement ce qui est prêté avant de budgéter du
+                matériel.
+              </p>
+            ),
+          },
+          {
+            q: 'Et si je n’ai jamais fait de sport collectif de ma vie ?',
+            r: (
+              <p>
+                C’est un profil très courant dans nos effectifs, et ce n’est pas un handicap dans un
+                sport où tout le monde débute adulte. Ce qui te manque, ce sont des automatismes que
+                personne autour de toi n’a acquis avant 20 ans non plus. En revanche, si tu vises
+                une discipline où les autres jouent depuis l’enfance, choisis explicitement une
+                section loisir ou débutants : la question à poser au téléphone est « est-ce qu’il
+                arrive des adultes débutants chaque année chez vous, ou est-ce que je serais le
+                seul ? ».
+              </p>
+            ),
+          },
+          {
+            q: 'Peut-on s’inscrire en cours d’année ?',
+            r: (
+              <p>
+                Oui, dans la quasi-totalité des clubs. Septembre reste le moment le plus confortable
+                parce que c’est là que se forment les groupes de nouveaux, mais arriver en novembre,
+                en janvier ou au printemps est tout à fait possible : tu seras intégré à la reprise
+                des fondamentaux plutôt qu’au groupe principal, ce qui n’est pas un mauvais deal
+                pour un débutant. Chez nous, la semaine découverte est disponible toute l’année.
+              </p>
+            ),
+          },
+          {
+            q: 'Le contact, ça fait mal ?',
+            r: (
+              <p>
+                Moins que ce que tu imagines, et surtout ça s’apprend par étapes. Le contact
+                n’arrive jamais le premier soir : les premières semaines travaillent la technique
+                sans opposition, sur boucliers, puis l’opposition contrôlée arrive progressivement.
+                Équipé, plaqué avec la bonne technique, le contact n’a rien à voir avec ce qu’on se
+                figure depuis son canapé. Et si le déclic ne vient pas, le flag existe, sans aucun
+                impact, avec le même jeu et la même bande de gens.
+              </p>
+            ),
+          },
+        ]}
+      />
 
       <CtaTunnel
         titre="Le meilleur moment pour reprendre, c’est celui où tu y penses"

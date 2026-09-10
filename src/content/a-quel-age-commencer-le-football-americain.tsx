@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { CtaQuiz, CtaTunnel } from '@/components/blog/CtaEncart';
+import Faq from '@/components/blog/Faq';
 
 /**
  * Article. Mot-clé : « à quel âge commencer le football américain ».
@@ -18,8 +19,8 @@ export default function ArticleQuelAge() {
       </p>
       <p>
         La réponse tient en trois phrases. Le <strong>flag football</strong>, la version sans
-        contact, se pratique <strong>dès 5 ou 6 ans</strong> : notre école de flag accueille les
-        enfants nés entre 2009 et 2021, soit toute la tranche U7 à U18. Le{' '}
+        contact, se pratique <strong>dès 5 ou 6 ans</strong> : l’école de flag accueille les
+        jeunes nés entre 2009 et 2021 (catégories U7 à U18). Le{' '}
         <strong>football américain avec contact</strong> commence bien plus tard : chez les
         Pionniers de Touraine, il démarre avec l’équipe <strong>U18</strong>, vers 15 à 17 ans, et
         de façon progressive. Et pour les adultes, il n’y a tout simplement{' '}
@@ -258,8 +259,8 @@ export default function ArticleQuelAge() {
         un débutant complet, parce que c’est son quotidien. Les débutants sont regroupés avec un
         coach dédié, la technique précède le contact, et l’équipement est prêté. Nous avons
         consacré un article entier au sujet :{' '}
-        <Link href="/blog/commencer-le-football-americain-adulte/">commencer le football américain
-        à l’âge adulte, est-ce trop tard ?</Link>
+        <Link href="/blog/commencer-le-football-americain-adulte/">débuter le foot US adulte,
+        est-ce trop tard ?</Link>
       </p>
 
       <h3>À trente ans et au delà</h3>
@@ -357,85 +358,124 @@ export default function ArticleQuelAge() {
         Tout le reste s’aménage.
       </p>
 
-      <h2 id="faq">Questions fréquentes sur l’âge</h2>
-
-      <h3>À quel âge commencer le flag football ?</h3>
-      <p>
-        Dès <strong>5 ou 6 ans</strong>. Notre <Link href="/ecole-de-flag/">école de flag</Link>{' '}
-        accueille les enfants nés entre 2009 et 2021, c’est-à-dire de U7 à U18, le samedi de 10 h à
-        12 h. Avant cet âge, une activité d’éveil multisport apportera davantage à un enfant, et
-        il n’aura aucun retard en arrivant un an plus tard : dans notre sport, personne n’a
-        d’avance.
-      </p>
-
-      <h3>À quel âge le contact est-il autorisé ?</h3>
-      <p>
-        Chez les Pionniers de Touraine, le football américain avec contact commence avec l’équipe{' '}
-        <strong>U18</strong>, qui accueille les jeunes <strong>nés entre 2009 et 2011</strong>,
-        soit environ 15 à 17 ans. Avant, c’est le flag, sans aucun contact. Et le contact ne
-        s’improvise pas : il s’apprend par étapes, en équipement complet, la technique et la
-        protection de la tête d’abord, les situations réelles ensuite.
-      </p>
-
-      <h3>Est-ce trop tard pour commencer à 30 ans ?</h3>
-      <p>
-        Non, et c’est même l’âge de beaucoup de nos débutants. Le football américain français est
-        un sport où l’immense majorité des licenciés a commencé adulte, ce qui veut dire que les
-        clubs sont organisés pour t’accueillir sans aucune base. Ce qui change à trente ans, ce
-        n’est pas la capacité à jouer, c’est la préparation : échauffement sérieux, récupération,
-        régularité. Notre article{' '}
-        <Link href="/blog/commencer-le-football-americain-adulte/">commencer le football américain
-        à l’âge adulte</Link> raconte ce qui se passe vraiment lors d’une première saison.
-      </p>
-
-      <h3>Et à 40 ans ou plus ?</h3>
-      <p>
-        Le flag est alors la porte la plus évidente : pas de choc, un jeu de course et de lecture,
-        deux entraînements par semaine et une formule loisir à 100 € sans compétition si tu veux
-        seulement jouer. Certains poursuivent au contact bien après quarante ans, d’autres
-        préfèrent basculer vers le flag, d’autres encore prennent un sifflet. Le mieux est de venir
-        voir une séance et d’en parler avec les coachs : ils te diront honnêtement ce qui te
-        correspond.
-      </p>
-
-      <h3>Mon enfant est petit ou pas très sportif, est-ce un problème ?</h3>
-      <p>
-        Non. Le flag ne demande ni taille ni puissance : il demande de courir, de changer de
-        direction et de comprendre un tracé. Un enfant petit et vif y est même souvent redoutable,
-        parce qu’il est difficile à attraper. Quant au niveau sportif de départ, il n’a aucune
-        importance : la quasi-totalité des enfants qui arrivent chez nous n’a jamais pratiqué ce
-        sport, et personne n’a d’avance sur les autres.
-      </p>
-
-      <h3>Peut-on commencer en cours de saison ?</h3>
-      <p>
-        Oui. La saison court de septembre à juin et la rentrée reste le moment le plus confortable
-        pour débuter, avec le groupe des nouveaux. Mais un club accueille des débutants toute
-        l’année : tu t’entraînes, tu progresses, et tu es prêt pour la suite. Écris-nous via la
-        page <Link href="/contact/">contact</Link> pour savoir où en est le groupe qui
-        t’intéresse.
-      </p>
-
-      <h3>Y a-t-il un âge maximum pour prendre une licence ?</h3>
-      <p>
-        Nos catégories seniors sont définies par une année de naissance plancher, pas par un
-        plafond : le football américain seniors concerne les <strong>nés en 2007 et avant</strong>{' '}
-        et le flag mixte seniors les <strong>nés en 2008 et avant</strong>. Autrement dit, il y a
-        un âge minimum, pas un âge maximum. La vraie question n’est pas ton année de naissance,
-        c’est la formule qui te convient, et le tarif correspondant est détaillé dans notre article{' '}
-        <Link href="/blog/combien-coute-le-football-americain/">combien coûte le football
-        américain</Link>.
-      </p>
-
-      <h3>Faut-il connaître les règles pour venir essayer ?</h3>
-      <p>
-        Absolument pas, à aucun âge. Il suffit de savoir qu’une attaque dispose de plusieurs
-        tentatives pour avancer, et tout le reste s’apprend en jouant. Si tu veux quand même
-        arriver avec quelques repères, nos articles{' '}
-        <Link href="/blog/regles-flag-football/">les règles du flag football</Link> et{' '}
-        <Link href="/blog/regles-football-americain/">les règles du football américain</Link> font
-        le tour de la question en quelques minutes de lecture.
-      </p>
+      <Faq
+        titre="Questions fréquentes sur l’âge"
+        items={[
+          {
+            q: 'À quel âge commencer le flag football ?',
+            r: (
+              <p>
+                Dès <strong>5 ou 6 ans</strong>.{' '}
+                <Link href="/ecole-de-flag/">L’école de flag</Link> accueille les jeunes nés entre
+                2009 et 2021 (catégories U7 à U18), le samedi de 10 h à 12 h. Avant cet âge, une
+                activité d’éveil multisport apportera davantage à un enfant, et il n’aura aucun
+                retard en arrivant un an plus tard : dans notre sport, personne n’a d’avance.
+              </p>
+            ),
+          },
+          {
+            q: 'À quel âge le contact est-il autorisé ?',
+            r: (
+              <p>
+                Chez les Pionniers de Touraine, le football américain avec contact commence avec
+                l’équipe <strong>U18</strong>, qui accueille les jeunes{' '}
+                <strong>nés entre 2009 et 2011</strong>, soit environ 15 à 17 ans. Avant, c’est le
+                flag, sans aucun contact. Et le contact ne s’improvise pas : il s’apprend par
+                étapes, en équipement complet, la technique et la protection de la tête d’abord, les
+                situations réelles ensuite.
+              </p>
+            ),
+          },
+          {
+            q: 'Est-ce trop tard pour commencer à 30 ans ?',
+            r: (
+              <p>
+                Non, et c’est même l’âge de beaucoup de nos débutants. Le football américain
+                français est un sport où l’immense majorité des licenciés a commencé adulte, ce qui
+                veut dire que les clubs sont organisés pour t’accueillir sans aucune base. Ce qui
+                change à trente ans, ce n’est pas la capacité à jouer, c’est la préparation :
+                échauffement sérieux, récupération, régularité. Notre article{' '}
+                <Link href="/blog/commencer-le-football-americain-adulte/">
+                  commencer à 30 ans
+                </Link>{' '}
+                raconte ce qui se passe vraiment lors d’une première saison.
+              </p>
+            ),
+          },
+          {
+            q: 'Et à 40 ans ou plus ?',
+            r: (
+              <p>
+                Le flag est alors la porte la plus évidente : pas de choc, un jeu de course et de
+                lecture, deux entraînements par semaine et une formule loisir à 100 € sans
+                compétition si tu veux seulement jouer. Certains poursuivent au contact bien après
+                quarante ans, d’autres préfèrent basculer vers le flag, d’autres encore prennent un
+                sifflet. Le mieux est de venir voir une séance et d’en parler avec les coachs : ils
+                te diront honnêtement ce qui te correspond.
+              </p>
+            ),
+          },
+          {
+            q: 'Mon enfant est petit ou pas très sportif, est-ce un problème ?',
+            r: (
+              <p>
+                Non. Le flag ne demande ni taille ni puissance : il demande de courir, de changer de
+                direction et de comprendre un tracé. Un enfant petit et vif y est même souvent
+                redoutable, parce qu’il est difficile à attraper. Quant au niveau sportif de départ,
+                il n’a aucune importance : la quasi-totalité des enfants qui arrivent chez nous n’a
+                jamais pratiqué ce sport, et personne n’a d’avance sur les autres. Pour choisir en
+                partant de son tempérament, lisez{' '}
+                <Link href="/blog/quel-sport-pour-mon-enfant-tours/">
+                  quel sport pour mon enfant à Tours
+                </Link>.
+              </p>
+            ),
+          },
+          {
+            q: 'Peut-on commencer en cours de saison ?',
+            r: (
+              <p>
+                Oui. La saison court de septembre à juin et la rentrée reste le moment le plus
+                confortable pour débuter, avec le groupe des nouveaux. Mais un club accueille des
+                débutants toute l’année : tu t’entraînes, tu progresses, et tu es prêt pour la
+                suite. Écris-nous via la page <Link href="/contact/">contact</Link> pour savoir où
+                en est le groupe qui t’intéresse.
+              </p>
+            ),
+          },
+          {
+            q: 'Y a-t-il un âge maximum pour prendre une licence ?',
+            r: (
+              <p>
+                Nos catégories seniors sont définies par une année de naissance plancher, pas par un
+                plafond : le football américain seniors concerne les{' '}
+                <strong>nés en 2007 et avant</strong> et le flag mixte seniors les{' '}
+                <strong>nés en 2008 et avant</strong>. Autrement dit, il y a un âge minimum, pas un
+                âge maximum. La vraie question n’est pas ton année de naissance, c’est la formule
+                qui te convient, et le tarif correspondant est détaillé dans notre article{' '}
+                <Link href="/blog/combien-coute-le-football-americain/">
+                  combien coûte le football américain
+                </Link>.
+              </p>
+            ),
+          },
+          {
+            q: 'Faut-il connaître les règles pour venir essayer ?',
+            r: (
+              <p>
+                Absolument pas, à aucun âge. Il suffit de savoir qu’une attaque dispose de plusieurs
+                tentatives pour avancer, et tout le reste s’apprend en jouant. Si tu veux quand même
+                arriver avec quelques repères, nos articles{' '}
+                <Link href="/blog/regles-flag-football/">les règles du flag football</Link> et{' '}
+                <Link href="/blog/regles-football-americain/">
+                  les règles du football américain
+                </Link>{' '}
+                font le tour de la question en quelques minutes de lecture.
+              </p>
+            ),
+          },
+        ]}
+      />
 
       <h2 id="conclusion">Le bon âge, c’est celui que tu as</h2>
       <p>

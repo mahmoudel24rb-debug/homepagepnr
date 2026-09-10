@@ -5,18 +5,43 @@ import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
 import PageHero from '@/components/PageHero';
 import YardLine from '@/components/YardLine';
+import FaqSection from '@/components/FaqSection';
 import { asset } from '@/lib/asset';
 import { STADE, HORAIRES, CONTACT, REJOINDRE_TUNNEL_URL } from '@/lib/infos';
 
+/** FAQ de la page, affichée et exposée en données structurées FAQPage. */
+const FAQ = [
+  {
+    q: 'À partir de quel âge ?',
+    r: 'L’école de flag accueille les jeunes nés entre 2009 et 2021, ce qui correspond aux catégories U7 à U18. Les groupes sont constitués par âge, pour que chacun joue avec des enfants de son gabarit. Après l’école de flag, les plus grands rejoignent les juniors, qui pratiquent le football américain et le flag.',
+  },
+  {
+    q: 'Y a-t-il du contact ?',
+    r: 'Non, aucun. Le règlement du flag football interdit le contact : au lieu de plaquer, on arrache un ruban accroché à la ceinture du porteur de balle, et l’action s’arrête là. Il n’y a ni plaquage, ni blocage, ni choc entre joueurs, donc aucun casque et aucune protection à prévoir.',
+  },
+  {
+    q: 'Que doit apporter mon enfant ?',
+    r: 'Une tenue de sport confortable, des chaussures adaptées à un terrain extérieur, une gourde, et une veste ou un coupe-vent selon la météo du samedi matin. Les ceintures et les flags sont fournis par le club : il n’y a rien à acheter pour venir essayer.',
+  },
+  {
+    q: 'Faut-il savoir jouer ?',
+    r: 'Non. Les enfants arrivent sans rien connaître du flag football, et beaucoup de parents le découvrent en même temps qu’eux. Chaque samedi, les encadrants décomposent les gestes en petits groupes : courir, attraper, lancer, arracher le flag, puis on remet le geste dans le jeu. Aucun niveau n’est demandé à l’entrée.',
+  },
+  {
+    q: 'Comment essayer ?',
+    r: `Écrivez au club à ${CONTACT.email}, appelez le ${CONTACT.telephone}, ou remplissez le parcours en ligne en deux minutes. Votre enfant vient ensuite un samedi de 10h00 à 12h00 au stade de la Chambrerie, en tenue de sport. La semaine découverte est offerte, sans engagement.`,
+  },
+];
+
 export const metadata: Metadata = {
-  title: 'École de flag pour enfants à Tours',
+  title: 'École de flag football à Tours, U7 à U18',
   description:
-    'École de flag football pour enfants à Tours : le samedi de 10h00 à 12h00 au stade de la Chambrerie, dès 6 à 8 ans, zéro contact, matériel fourni par le club.',
+    'L’école de flag accueille les jeunes nés entre 2009 et 2021 (catégories U7 à U18), le samedi de 10h00 à 12h00, au stade de la Chambrerie à Tours.',
   alternates: { canonical: '/ecole-de-flag/' },
   openGraph: {
-    title: 'École de flag pour enfants à Tours',
+    title: 'École de flag football à Tours, U7 à U18',
     description:
-      'Le samedi matin au stade de la Chambrerie, dès 6 à 8 ans : un sport collectif olympique et sans contact, encadré par les Pionniers de Touraine.',
+      'Le samedi de 10h00 à 12h00 au stade de la Chambrerie, pour les jeunes nés entre 2009 et 2021 : un sport collectif olympique et sans aucun contact.',
     url: '/ecole-de-flag/',
     type: 'article',
   },
@@ -60,11 +85,12 @@ export default function Page() {
           chemin="/ecole-de-flag/"
           eyebrow="Nos sections"
           titre="École de flag football pour enfants à Tours"
-          sousTitre="Le samedi matin, dès 6 à 8 ans, au stade de la Chambrerie : un sport collectif olympique, sans aucun contact, où l’on court, on attrape et on joue ensemble."
+          sousTitre="Le samedi matin au stade de la Chambrerie, l’école de flag accueille les jeunes nés entre 2009 et 2021 (catégories U7 à U18) : un sport collectif olympique, sans aucun contact, où l’on court, on attrape et on joue ensemble."
         >
           <div className="sc-chips" style={{ marginTop: 24 }}>
             <span className="sc-chip">Samedi 10h-12h</span>
-            <span className="sc-chip">Dès 6 à 8 ans</span>
+            <span className="sc-chip">U7 à U18</span>
+            <span className="sc-chip">Nés de 2009 à 2021</span>
             <span className="sc-chip">Zéro contact</span>
             <span className="sc-chip">Matériel fourni</span>
           </div>
@@ -77,6 +103,26 @@ export default function Page() {
             </a>
           </div>
         </PageHero>
+
+        {/* ── Réponse directe : qui, quoi, quand, où, comment essayer ── */}
+        <section className="sc-sec" id="en-resume">
+          <div className="sc-wrap" data-reveal>
+            <p className="sc-lead">
+              L’école de flag des Pionniers de Touraine est la section jeunes du club de football
+              américain et de flag football de Tours. Elle accueille les jeunes nés entre 2009 et
+              2021 (catégories U7 à U18), chaque samedi de 10h00 à 12h00, au {STADE.nom},{' '}
+              {STADE.rue}, {STADE.codePostal} {STADE.ville}. On y pratique le flag football, la
+              version sans aucun contact du football américain : pas de plaquage, pas de casque, pas
+              de protection à acheter. Le club fournit les ceintures et les flags ; une tenue de
+              sport, des chaussures de terrain et une gourde suffisent. La licence FFFA est incluse
+              dans les formules d’adhésion, et une semaine découverte offerte permet de tester avant
+              de s’engager : cette séance d’essai gratuite se prépare en écrivant au club ou en
+              remplissant le parcours en ligne. Au fil de la saison, les équipes jouent des
+              championnats régionaux, des championnats nationaux et des rencontres au format NFL
+              FLAG.
+            </p>
+          </div>
+        </section>
 
         {/* ── Découvrir la discipline ── */}
         <section className="sc-sec" id="decouvrir">
@@ -100,6 +146,19 @@ export default function Page() {
                   ensemble. Chaque action est une petite histoire : un enfant lance, un autre court,
                   un troisième attrape. C’est un sport rapide, très ludique, et c’est aussi un{' '}
                   <strong>sport olympique</strong>, au programme des Jeux de Los Angeles 2028.
+                </p>
+                <h3 className="sc-h3">Pour quels âges ?</h3>
+                <p className="sc-legal-text">
+                  L’école de flag accueille les{' '}
+                  <strong>jeunes nés entre 2009 et 2021 (catégories U7 à U18)</strong>. Les groupes
+                  sont constitués par âge, pour que chacun joue avec des enfants de son gabarit et
+                  de son niveau. Si vous vous demandez{' '}
+                  <Link href="/blog/a-quel-age-commencer-le-football-americain/">
+                    à quel âge commencer le flag football
+                  </Link>
+                  , les catégories U7 à U18 couvrent toute la scolarité, de l’école primaire au
+                  lycée. Le détail du jeu est expliqué dans{' '}
+                  <Link href="/blog/regles-flag-football/">les règles du flag football</Link>.
                 </p>
                 <h3 className="sc-h3">Zéro contact, vraiment</h3>
                 <p className="sc-legal-text">
@@ -129,7 +188,7 @@ export default function Page() {
                       <strong>Samedi de 10h00 à 12h00</strong>, toute la saison
                     </li>
                     <li>
-                      Dès <strong>6 à 8 ans</strong>
+                      Jeunes <strong>nés entre 2009 et 2021</strong> (catégories U7 à U18)
                     </li>
                     <li>
                       <strong>Zéro contact</strong> : ni plaquage, ni casque
@@ -253,6 +312,14 @@ export default function Page() {
                 sur un tournoi, donner un coup de main sur la logistique. Rien n’est obligatoire,
                 mais tout est utile.
               </p>
+              <p className="sc-legal-text">
+                Vous hésitez encore entre plusieurs activités ? Nous avons écrit un repère pour les
+                familles :{' '}
+                <Link href="/blog/quel-sport-pour-mon-enfant-tours/">
+                  quel sport pour mon enfant à Tours
+                </Link>
+                .
+              </p>
             </div>
           </div>
         </section>
@@ -277,7 +344,13 @@ export default function Page() {
                 <p className="sc-legal-text">
                   Après l’école de flag, les enfants rejoignent les <strong>juniors</strong>, qui
                   pratiquent le football américain et le flag, puis les équipes{' '}
-                  <strong>seniors</strong>. Tout se passe sur le même terrain, au {STADE.nom}.
+                  <strong>seniors</strong>. Tout se passe sur le même terrain, au {STADE.nom}. Pour
+                  savoir ce qui attend les plus grands, nous détaillons{' '}
+                  <Link href="/blog/football-americain-jeunes-u13-u16-u18/">
+                    le parcours jeunes U13, U16, U18
+                  </Link>{' '}
+                  ; côté adultes, c’est <Link href="/flag-football/">le flag football des adultes</Link>{' '}
+                  qui prend le relais, en équipe mixte.
                 </p>
               </div>
               <aside className="sc-aside">
@@ -429,6 +502,9 @@ export default function Page() {
             </div>
           </div>
         </section>
+
+        {/* ── FAQ ── */}
+        <FaqSection titre="Les questions des parents." items={FAQ} />
 
         {/* ── CTA final ── */}
         <section className="sc-sec sc-endzone" id="inscription">

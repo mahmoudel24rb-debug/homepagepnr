@@ -32,7 +32,7 @@ export default function Home() {
               <div data-reveal>
                 <p className="sc-eyebrow">Le club</p>
                 <h2 className="sc-title">
-                  Le football américain
+                  Le football américain{' '}
                   <br />
                   au cœur de la Touraine.
                 </h2>

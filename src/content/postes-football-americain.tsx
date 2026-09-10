@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { CtaQuiz, CtaTunnel } from '@/components/blog/CtaEncart';
+import Faq from '@/components/blog/Faq';
 
 /**
  * Article. Mot-clé : « postes football américain ».
@@ -319,6 +320,14 @@ export default function ArticlePostes() {
         c’était le chemin le plus court vers le terrain. Beaucoup de carrières commencent là, et
         c’est un excellent conseil à donner à un débutant pressé de jouer.
       </p>
+      <p>
+        Le meilleur moyen de voir tous ces postes en action, c’est encore de regarder des matchs :
+        on a listé les chaînes, les abonnements et les horaires français pour{' '}
+        <Link href="/blog/comment-regarder-le-college-football-en-france/">
+          regarder le college football en France
+        </Link>
+        , le championnat universitaire américain où se forment la plupart des joueurs NFL.
+      </p>
 
       <CtaTunnel
         titre="Le meilleur moyen de trouver ton poste, c’est le terrain"
@@ -445,8 +454,12 @@ export default function ArticlePostes() {
         Un point qui rassure souvent les nouveaux : <strong>débuter adulte est la norme</strong> dans
         ce sport en France, et les groupes de débutants sont la règle plutôt que l’exception à la
         rentrée. On a détaillé à quoi ressemble cette première saison, mois par mois, dans{' '}
-        <Link href="/blog/commencer-le-football-americain-adulte/">commencer le football américain
-        à l’âge adulte</Link>.
+        <Link href="/blog/commencer-le-football-americain-adulte/">
+          ta première saison de football américain
+        </Link>
+        . Et si tu veux voir concrètement dans quel groupe tu atterrirais, la page{' '}
+        <Link href="/football-americain/">jouer au football américain à Tours</Link> décrit les
+        effectifs, les créneaux et l’encadrement des Pionniers.
       </p>
 
       <h2 id="flag">Et au flag football, quels postes ?</h2>
@@ -461,80 +474,111 @@ export default function ArticlePostes() {
         Cela change le profil recherché : au flag, la vitesse, l’agilité et l’intelligence de jeu
         priment presque totalement sur la masse. C’est aussi une discipline mixte, olympique à
         partir des <strong>Jeux de Los Angeles 2028</strong>, et une excellente école pour
-        comprendre le jeu avant de passer éventuellement au contact. Tout est expliqué dans notre
-        article{' '}
-        <Link href="/blog/flag-football-cest-quoi/">le flag football, c’est quoi ?</Link> et sur la
-        page de <Link href="/flag-football/">notre section flag</Link>.
+        comprendre le jeu avant de passer éventuellement au contact. La discipline est présentée
+        dans notre article{' '}
+        <Link href="/blog/flag-football-cest-quoi/">définition et origines du flag football</Link>,
+        son règlement dans{' '}
+        <Link href="/blog/regles-flag-football/">les règles du flag football</Link>, et les
+        créneaux sur la page de <Link href="/flag-football/">notre section flag</Link>.
       </p>
 
-      <h2 id="faq">Questions fréquentes sur les postes au football américain</h2>
-
-      <h3>Combien de postes existe-t-il au football américain ?</h3>
-      <p>
-        On compte une vingtaine d’appellations si on détaille toutes les variantes, mais dans les
-        faits une dizaine de familles suffisent à décrire le jeu : quarterback, running back,
-        receveur, tight end et ligne offensive en attaque ; ligne défensive, linebacker et defensive
-        back en défense ; kicker, punter et returner sur les équipes spéciales. Les subdivisions
-        supplémentaires, comme la distinction entre cornerback et safety ou entre les différentes
-        places de la ligne offensive, se comprennent naturellement une fois qu’on a les grandes
-        familles en tête. Pour un débutant, connaître ces dix familles suffit largement pour
-        regarder un match et pour commencer à s’entraîner.
-      </p>
-
-      <h3>Le quarterback est-il vraiment le poste le plus important ?</h3>
-      <p>
-        C’est le poste le plus déterminant sur le résultat d’une action, parce qu’il décide et qu’il
-        touche le ballon presque à chaque fois. Mais dire qu’il est le plus important est trompeur :
-        un quarterback derrière une ligne offensive dépassée n’a physiquement pas le temps de faire
-        son travail, et ses qualités deviennent invisibles. Les entraîneurs de ce sport répètent que
-        les matchs se gagnent d’abord sur la ligne, dans les deux sens, et les résultats leur donnent
-        raison beaucoup plus souvent que les résumés vidéo ne le laissent croire. Le quarterback est
-        le poste le plus exposé, ce qui n’est pas la même chose.
-      </p>
-
-      <h3>Quel poste jouer quand on est petit ou léger ?</h3>
-      <p>
-        Receveur, cornerback ou returner, sans hésiter. Ces trois postes valorisent exactement ce que
-        les gabarits légers ont en plus : la vitesse, la capacité à changer de direction, la
-        détente relative et la vivacité des appuis. Un joueur de soixante-cinq kilos qui court vite
-        et qui a des mains fiables est une arme dans une équipe de football américain, et il sera
-        titulaire devant des joueurs plus lourds que lui. Au flag football, l’avantage est encore
-        plus net, puisque la masse n’y sert quasiment à rien. Ce sport n’a pas de taille minimale, il
-        a des postes différents, ce qui est exactement l’inverse d’une barrière à l’entrée.
-      </p>
-
-      <h3>Quel poste jouer quand on est grand et lourd ?</h3>
-      <p>
-        Ligne offensive ou ligne défensive, et c’est une excellente nouvelle. Ce sont les deux
-        postes les plus demandés dans les clubs français, ceux où il manque presque toujours du
-        monde, et donc ceux où un débutant costaud accède le plus vite à du temps de jeu réel. Le
-        poids y est un atout et non un handicap, à condition de travailler la mobilité de bassin et
-        la technique de mains, qui sont les deux vraies compétences du poste. Beaucoup de joueurs
-        arrivent en pensant qu’ils vont pousser au hasard et découvrent en trois séances que c’est un
-        poste extrêmement technique, ce qui est souvent ce qui les fait rester.
-      </p>
-
-      <h3>Peut-on changer de poste en cours de saison ?</h3>
-      <p>
-        Oui, et c’est fréquent, en particulier dans les championnats français où les effectifs sont
-        plus resserrés qu’aux États-Unis. Il est très courant qu’un joueur essaie deux ou trois
-        postes lors de sa première saison avant de se fixer, et tout aussi courant qu’un joueur
-        expérimenté change de poste parce que son corps a évolué, parce que l’équipe a un besoin, ou
-        simplement parce qu’il s’ennuyait. Dis-le à ton coach si tu veux essayer autre chose : la
-        plupart accueillent très bien la demande, parce qu’un joueur qui joue à son bon poste vaut
-        deux joueurs mal placés.
-      </p>
-
-      <h3>Faut-il savoir jouer avant de choisir un poste ?</h3>
-      <p>
-        Non, et c’est même l’inverse : c’est en jouant que le poste se choisit. Aucun club sérieux ne
-        te demandera d’arriver avec une idée arrêtée. Ce qu’on attend d’un débutant, c’est qu’il
-        vienne en tenue de sport, qu’il essaie ce qu’on lui propose et qu’il dise honnêtement ce
-        qu’il ressent. Si tu veux quand même avoir une intuition avant ta première séance, notre test
-        de poste te donne une orientation en quelques minutes :{' '}
-        <Link href="https://recrutement.pionniersdetouraine.fr/quel-poste-football-americain/">
-        quel poste jouer au football américain ?</Link>
-      </p>
+      <Faq
+        titre="Questions fréquentes sur les postes au football américain"
+        items={[
+          {
+            q: 'Combien de postes existe-t-il au football américain ?',
+            r: (
+              <p>
+                On compte une vingtaine d’appellations si on détaille toutes les variantes, mais
+                dans les faits une dizaine de familles suffisent à décrire le jeu : quarterback,
+                running back, receveur, tight end et ligne offensive en attaque ; ligne défensive,
+                linebacker et defensive back en défense ; kicker, punter et returner sur les
+                équipes spéciales. Les subdivisions supplémentaires, comme la distinction entre
+                cornerback et safety ou entre les différentes places de la ligne offensive, se
+                comprennent naturellement une fois qu’on a les grandes familles en tête. Pour un
+                débutant, connaître ces dix familles suffit largement pour regarder un match et
+                pour commencer à s’entraîner.
+              </p>
+            ),
+          },
+          {
+            q: 'Le quarterback est-il vraiment le poste le plus important ?',
+            r: (
+              <p>
+                C’est le poste le plus déterminant sur le résultat d’une action, parce qu’il décide
+                et qu’il touche le ballon presque à chaque fois. Mais dire qu’il est le plus
+                important est trompeur : un quarterback derrière une ligne offensive dépassée n’a
+                physiquement pas le temps de faire son travail, et ses qualités deviennent
+                invisibles. Les entraîneurs de ce sport répètent que les matchs se gagnent d’abord
+                sur la ligne, dans les deux sens, et les résultats leur donnent raison beaucoup plus
+                souvent que les résumés vidéo ne le laissent croire. Le quarterback est le poste le
+                plus exposé, ce qui n’est pas la même chose.
+              </p>
+            ),
+          },
+          {
+            q: 'Quel poste jouer quand on est petit ou léger ?',
+            r: (
+              <p>
+                Receveur, cornerback ou returner, sans hésiter. Ces trois postes valorisent
+                exactement ce que les gabarits légers ont en plus : la vitesse, la capacité à
+                changer de direction, la détente relative et la vivacité des appuis. Un joueur de
+                soixante-cinq kilos qui court vite et qui a des mains fiables est une arme dans une
+                équipe de football américain, et il sera titulaire devant des joueurs plus lourds
+                que lui. Au flag football, l’avantage est encore plus net, puisque la masse n’y sert
+                quasiment à rien. Ce sport n’a pas de taille minimale, il a des postes différents,
+                ce qui est exactement l’inverse d’une barrière à l’entrée.
+              </p>
+            ),
+          },
+          {
+            q: 'Quel poste jouer quand on est grand et lourd ?',
+            r: (
+              <p>
+                Ligne offensive ou ligne défensive, et c’est une excellente nouvelle. Ce sont les
+                deux postes les plus demandés dans les clubs français, ceux où il manque presque
+                toujours du monde, et donc ceux où un débutant costaud accède le plus vite à du
+                temps de jeu réel. Le poids y est un atout et non un handicap, à condition de
+                travailler la mobilité de bassin et la technique de mains, qui sont les deux vraies
+                compétences du poste. Beaucoup de joueurs arrivent en pensant qu’ils vont pousser au
+                hasard et découvrent en trois séances que c’est un poste extrêmement technique, ce
+                qui est souvent ce qui les fait rester.
+              </p>
+            ),
+          },
+          {
+            q: 'Peut-on changer de poste en cours de saison ?',
+            r: (
+              <p>
+                Oui, et c’est fréquent, en particulier dans les championnats français où les
+                effectifs sont plus resserrés qu’aux États-Unis. Il est très courant qu’un joueur
+                essaie deux ou trois postes lors de sa première saison avant de se fixer, et tout
+                aussi courant qu’un joueur expérimenté change de poste parce que son corps a évolué,
+                parce que l’équipe a un besoin, ou simplement parce qu’il s’ennuyait. Dis-le à ton
+                coach si tu veux essayer autre chose : la plupart accueillent très bien la demande,
+                parce qu’un joueur qui joue à son bon poste vaut deux joueurs mal placés.
+              </p>
+            ),
+          },
+          {
+            q: 'Faut-il savoir jouer avant de choisir un poste ?',
+            r: (
+              <p>
+                Non, et c’est même l’inverse : c’est en jouant que le poste se choisit. Aucun club
+                sérieux ne te demandera d’arriver avec une idée arrêtée. Ce qu’on attend d’un
+                débutant, c’est qu’il vienne en tenue de sport, qu’il essaie ce qu’on lui propose et
+                qu’il dise honnêtement ce qu’il ressent. Si tu veux quand même avoir une intuition
+                avant ta première séance, notre test de poste te donne une orientation en quelques
+                minutes :{' '}
+                <Link href="https://recrutement.pionniersdetouraine.fr/quel-poste-football-americain/">
+                  trouve ton poste, fais le test
+                </Link>
+                .
+              </p>
+            ),
+          },
+        ]}
+      />
 
       <h2 id="conclusion">Ton poste existe déjà, il t’attend</h2>
       <p>

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { CtaQuiz, CtaTunnel } from '@/components/blog/CtaEncart';
+import Faq from '@/components/blog/Faq';
 
 /**
  * Article. Mot-clé : « flag football jo 2028 ».
@@ -152,7 +153,8 @@ export default function ArticleFlagJO2028() {
         règlement, poste par poste et faute par faute, est dans notre guide des{' '}
         <Link href="/blog/regles-flag-football/">règles du flag football</Link>, et la présentation
         générale de la discipline dans{' '}
-        <Link href="/blog/flag-football-cest-quoi/">le flag football, c’est quoi ?</Link>. Pour le
+        <Link href="/blog/flag-football-cest-quoi/">ce qu’est vraiment le flag football</Link>.
+        Pour le
         vocabulaire qu’on entendra dans les commentaires, notre{' '}
         <Link href="/blog/lexique-football-americain/">lexique du football américain</Link> couvre
         l’essentiel des termes communs aux deux disciplines.
@@ -338,8 +340,9 @@ export default function ArticleFlagJO2028() {
         remarquablement bien : lecture de trajectoire, appuis, démarquage, explosivité, coordination.
       </p>
       <p>
-        Le détail des créneaux, des catégories et de l’organisation est sur la page{' '}
-        <Link href="/flag-football/">flag football</Link> et dans le récapitulatif de{' '}
+        Le détail des créneaux, des catégories et de l’organisation est sur la page de{' '}
+        <Link href="/flag-football/">la section flag des Pionniers</Link> et dans le récapitulatif
+        de{' '}
         <Link href="/nos-sections/">nos sections</Link>. Si tu reprends une activité après une
         coupure, notre article sur{' '}
         <Link href="/blog/reprendre-le-sport-a-30-ans-tours/">reprendre le sport à 30 ans</Link>{' '}
@@ -347,80 +350,113 @@ export default function ArticleFlagJO2028() {
         page <Link href="/contact/">contact</Link> est le chemin le plus court.
       </p>
 
-      <h2 id="faq">Questions fréquentes sur le flag football aux JO 2028</h2>
-
-      <h3>Le flag football est-il vraiment un sport olympique ?</h3>
-      <p>
-        Oui. Le Comité International Olympique a validé en octobre 2023 son ajout au programme des
-        Jeux de Los Angeles 2028, avec un tournoi féminin et un tournoi masculin joués au format
-        5 contre 5. La discipline y fera ses débuts olympiques. Elle existait bien avant cette
-        décision, avec ses fédérations, ses championnats nationaux et ses compétitions
-        internationales : ce que les Jeux apportent, c’est une exposition d’une tout autre ampleur.
-      </p>
-
-      <h3>Pourquoi avoir choisi le flag plutôt que le football américain ?</h3>
-      <p>
-        Sans prêter d’intentions aux décideurs, les caractéristiques du flag parlent d’elles-mêmes :
-        cinq contre cinq au lieu de onze, un terrain deux fois plus petit, aucun équipement de
-        protection lourd, aucun contact, des matchs courts, une pratique mixte installée et un format
-        olympique paritaire. Organiser un tournoi de flag demande incomparablement moins de
-        logistique et d’infrastructures qu’un tournoi de football américain au contact, tout en
-        conservant la culture et le spectacle propres à cet univers sportif.
-      </p>
-
-      <h3>Qu’est-ce que le programme NFL Flag, et existe-t-il en France ?</h3>
-      <p>
-        C’est un dispositif de flag football pour les jeunes rattaché à l’univers de la NFL et
-        décliné à l’international. En France, il se retrouve dans des clubs affiliés à la fédération.
-        Aux Pionniers de Touraine, il concerne les catégories <strong>U13 et U15</strong>, qui
-        disposent par ailleurs d’un championnat jeunes en U13, U15 et U18. Les modalités précises du
-        programme relèvent de la fédération et peuvent évoluer d’une saison à l’autre.
-      </p>
-
-      <h3>Faut-il commencer maintenant pour espérer jouer un jour à haut niveau ?</h3>
-      <p>
-        La question du très haut niveau ne se pose pas dans ces termes, et nous ne ferons aucune
-        promesse sur les sélections ou les qualifications : ces sujets dépendent d’instances qui ne
-        sont pas nous. Ce qui est certain, c’est que la progression dans ce sport passe par le
-        volume de jeu, et que le volume commence par le premier entraînement. Un joueur qui débute
-        aujourd’hui aura plusieurs saisons de compétition derrière lui en 2028. Un joueur qui attend
-        2028 partira de zéro pendant que le sport, lui, aura accéléré.
-      </p>
-
-      <h3>Peut-on commencer le flag football à l’âge adulte ?</h3>
-      <p>
-        Oui, et c’est même le cas de figure le plus courant dans les clubs français. L’équipe mixte
-        seniors du club s’entraîne le lundi et le jeudi soir, avec un parcours loisir et un parcours
-        compétition. Les techniques de passe, les tracés, la couverture défensive et le playbook
-        s’apprennent au club, en séances. Notre article{' '}
-        <Link href="/blog/commencer-le-football-americain-adulte/">
-          commencer le football américain à l’âge adulte
-        </Link>{' '}
-        décrit le déroulé réel d’une première saison, et la logique est très proche côté flag.
-      </p>
-
-      <h3>Le flag football est-il adapté aux enfants ?</h3>
-      <p>
-        C’est même l’une de ses forces principales : sans plaquage ni blocage, il permet
-        d’apprendre les tracés, la lecture du jeu, la coordination et la vie collective dans un cadre
-        sécurisé. L’école de flag des Pionniers accueille les enfants de U7 à U18, nés entre 2009 et
-        2021, le samedi de 10 h à 12 h, pour 100 € la saison licence comprise. C’est aussi une
-        excellente réponse à la question générale du{' '}
-        <Link href="/blog/quel-sport-pour-mon-enfant-tours/">
-          choix d’un sport pour son enfant à Tours
-        </Link>
-        .
-      </p>
-
-      <h3>Où pratiquer le flag football près de Tours ?</h3>
-      <p>
-        Les Pionniers de Touraine s’entraînent au Stade de la Chambrerie, rue Tartifume, 37100 Tours,
-        en Indre-et-Loire. Le club propose du flag pour les seniors en mixte, pour les juniors U13 à
-        U18 et pour les enfants dès U7 à l’école de flag, ainsi qu’une section football américain au
-        contact. La semaine découverte est offerte, avec l’équipement prêté. Pour situer le club dans
-        le paysage sportif local, notre article sur{' '}
-        <Link href="/blog/club-de-sport-tours/">les clubs de sport à Tours</Link> donne des repères.
-      </p>
+      <Faq
+        titre="Questions fréquentes sur le flag football aux JO 2028"
+        items={[
+          {
+            q: 'Le flag football est-il vraiment un sport olympique ?',
+            r: (
+              <p>
+                Oui. Le Comité International Olympique a validé en octobre 2023 son ajout au
+                programme des Jeux de Los Angeles 2028, avec un tournoi féminin et un tournoi
+                masculin joués au format 5 contre 5. La discipline y fera ses débuts olympiques.
+                Elle existait bien avant cette décision, avec ses fédérations, ses championnats
+                nationaux et ses compétitions internationales : ce que les Jeux apportent, c’est une
+                exposition d’une tout autre ampleur.
+              </p>
+            ),
+          },
+          {
+            q: 'Pourquoi avoir choisi le flag plutôt que le football américain ?',
+            r: (
+              <p>
+                Sans prêter d’intentions aux décideurs, les caractéristiques du flag parlent
+                d’elles-mêmes : cinq contre cinq au lieu de onze, un terrain deux fois plus petit,
+                aucun équipement de protection lourd, aucun contact, des matchs courts, une pratique
+                mixte installée et un format olympique paritaire. Organiser un tournoi de flag
+                demande incomparablement moins de logistique et d’infrastructures qu’un tournoi de
+                football américain au contact, tout en conservant la culture et le spectacle propres
+                à cet univers sportif.
+              </p>
+            ),
+          },
+          {
+            q: 'Qu’est-ce que le programme NFL Flag, et existe-t-il en France ?',
+            r: (
+              <p>
+                C’est un dispositif de flag football pour les jeunes rattaché à l’univers de la NFL
+                et décliné à l’international. En France, il se retrouve dans des clubs affiliés à la
+                fédération. Aux Pionniers de Touraine, il concerne les catégories{' '}
+                <strong>U13 et U15</strong>, qui disposent par ailleurs d’un championnat jeunes en
+                U13, U15 et U18. Les modalités précises du programme relèvent de la fédération et
+                peuvent évoluer d’une saison à l’autre.
+              </p>
+            ),
+          },
+          {
+            q: 'Faut-il commencer maintenant pour espérer jouer un jour à haut niveau ?',
+            r: (
+              <p>
+                La question du très haut niveau ne se pose pas dans ces termes, et nous ne ferons
+                aucune promesse sur les sélections ou les qualifications : ces sujets dépendent
+                d’instances qui ne sont pas nous. Ce qui est certain, c’est que la progression dans
+                ce sport passe par le volume de jeu, et que le volume commence par le premier
+                entraînement. Un joueur qui débute aujourd’hui aura plusieurs saisons de compétition
+                derrière lui en 2028. Un joueur qui attend 2028 partira de zéro pendant que le
+                sport, lui, aura accéléré.
+              </p>
+            ),
+          },
+          {
+            q: 'Peut-on commencer le flag football à l’âge adulte ?',
+            r: (
+              <p>
+                Oui, et c’est même le cas de figure le plus courant dans les clubs français.
+                L’équipe mixte seniors du club s’entraîne le lundi et le jeudi soir, avec un
+                parcours loisir et un parcours compétition. Les techniques de passe, les tracés, la
+                couverture défensive et le playbook s’apprennent au club, en séances. Notre article
+                sur{' '}
+                <Link href="/blog/commencer-le-football-americain-adulte/">
+                  débuter le foot US adulte
+                </Link>{' '}
+                décrit le déroulé réel d’une première saison, et la logique est très proche côté
+                flag.
+              </p>
+            ),
+          },
+          {
+            q: 'Le flag football est-il adapté aux enfants ?',
+            r: (
+              <p>
+                C’est même l’une de ses forces principales : sans plaquage ni blocage, il permet
+                d’apprendre les tracés, la lecture du jeu, la coordination et la vie collective dans
+                un cadre sécurisé. L’école de flag des Pionniers accueille les enfants de U7 à U18,
+                nés entre 2009 et 2021, le samedi de 10 h à 12 h, pour 100 € la saison licence
+                comprise. C’est aussi une excellente réponse à la question générale du{' '}
+                <Link href="/blog/quel-sport-pour-mon-enfant-tours/">
+                  choix d’un sport pour son enfant à Tours
+                </Link>
+                .
+              </p>
+            ),
+          },
+          {
+            q: 'Où pratiquer le flag football près de Tours ?',
+            r: (
+              <p>
+                Les Pionniers de Touraine s’entraînent au Stade de la Chambrerie, rue Tartifume,
+                37100 Tours, en Indre-et-Loire. Le club propose du flag pour les seniors en mixte,
+                pour les juniors U13 à U18 et pour les enfants dès U7 à l’école de flag, ainsi
+                qu’une section football américain au contact. La semaine découverte est offerte,
+                avec l’équipement prêté. Pour situer le club dans le paysage sportif local, notre
+                article sur{' '}
+                <Link href="/blog/club-de-sport-tours/">les clubs de sport à Tours</Link> donne des
+                repères.
+              </p>
+            ),
+          },
+        ]}
+      />
 
       <CtaTunnel
         titre="Deux ans, c’est le temps d’une vraie progression"

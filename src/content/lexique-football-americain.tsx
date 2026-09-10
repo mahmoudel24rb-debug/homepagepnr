@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { CtaQuiz, CtaTunnel } from '@/components/blog/CtaEncart';
+import Faq from '@/components/blog/Faq';
 
 /**
  * Article. Mots-clés : « vocabulaire football américain », « quarterback »,
@@ -72,19 +73,18 @@ export default function ArticleLexique() {
 
       <h3 id="down">Down (la tentative)</h3>
       <p>
-        C’est l’unité de base du football américain. Un down est une action, du snap jusqu’au coup
-        de sifflet qui arrête le jeu, et il dure généralement entre quatre et huit secondes.
-        L’attaque dispose de quatre downs consécutifs pour faire avancer le ballon de dix yards. On
-        les compte à voix haute et sur l’affichage : premier down, deuxième, troisième, quatrième.
+        Une action, du snap jusqu’au coup de sifflet qui l’arrête, et qui dure généralement entre
+        quatre et huit secondes. C’est l’unité de base du jeu : on les compte à voix haute et sur
+        l’affichage, premier down, deuxième, troisième, quatrième. Le fonctionnement du compteur est
+        détaillé dans{' '}
+        <Link href="/blog/regles-football-americain/">les règles du football américain</Link>.
       </p>
 
       <h3 id="first-down">First down (le premier essai)</h3>
       <p>
-        Quand l’attaque a parcouru les dix yards demandés, elle obtient un nouveau first down,
-        c’est-à-dire quatre nouvelles tentatives. C’est la vraie unité de mesure du match : une
-        équipe qui enchaîne les first downs conserve le ballon, fatigue la défense adverse et
-        avance. L’expression « 1st and 10 » signifie simplement première tentative, dix yards à
-        parcourir.
+        La remise à zéro du compteur : quand l’attaque a parcouru les dix yards demandés, elle
+        obtient quatre nouvelles tentatives. C’est la vraie unité de mesure du match. L’expression
+        « 1st and 10 » signifie simplement première tentative, dix yards à parcourir.
       </p>
 
       <h3 id="yard">Yard (la verge)</h3>
@@ -121,9 +121,9 @@ export default function ArticleLexique() {
       <h3 id="snap">Snap (l’engagement)</h3>
       <p>
         Le geste qui déclenche chaque action : le center envoie le ballon entre ses jambes, vers
-        l’arrière, au quarterback. Tant que le snap n’a pas eu lieu, rien ne peut bouger côté
-        attaque. C’est le repère visuel le plus utile pour un spectateur débutant : le jeu commence
-        exactement à cet instant.
+        l’arrière, au quarterback. C’est le repère visuel le plus utile pour un spectateur débutant,
+        le jeu commence exactement à cet instant. Ce qui est autorisé ou non avant le snap relève{' '}
+        <Link href="/blog/regles-football-americain/">des règles de départ</Link>.
       </p>
 
       <h3 id="huddle">Huddle (le regroupement)</h3>
@@ -151,6 +151,85 @@ export default function ArticleLexique() {
       </p>
 
       <h2 id="attaque">Les postes d’attaque</h2>
+      <p>
+        Ici, on donne le nom et la fonction en une phrase. Le rôle complet de chacun, avec les
+        gabarits et les tempéraments, est dans{' '}
+        <Link href="/blog/postes-football-americain/">les postes au football américain expliqués</Link>
+        . Avant les définitions, le récapitulatif des douze postes qu’on entend le plus :
+      </p>
+      <div className="blogc-table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Poste</th>
+              <th scope="col">Rôle en un mot</th>
+              <th scope="col">Qualité dominante</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Quarterback</th>
+              <td>Lanceur</td>
+              <td>Lecture du jeu</td>
+            </tr>
+            <tr>
+              <th scope="row">Running back</th>
+              <td>Coureur</td>
+              <td>Explosivité</td>
+            </tr>
+            <tr>
+              <th scope="row">Wide receiver</th>
+              <td>Receveur</td>
+              <td>Vitesse</td>
+            </tr>
+            <tr>
+              <th scope="row">Tight end</th>
+              <td>Hybride</td>
+              <td>Polyvalence</td>
+            </tr>
+            <tr>
+              <th scope="row">Ligne offensive</th>
+              <td>Protecteur</td>
+              <td>Puissance</td>
+            </tr>
+            <tr>
+              <th scope="row">Center</th>
+              <td>Snappeur</td>
+              <td>Précision</td>
+            </tr>
+            <tr>
+              <th scope="row">Defensive tackle</th>
+              <td>Verrou</td>
+              <td>Puissance</td>
+            </tr>
+            <tr>
+              <th scope="row">Defensive end</th>
+              <td>Chasseur</td>
+              <td>Vitesse de départ</td>
+            </tr>
+            <tr>
+              <th scope="row">Linebacker</th>
+              <td>Couteau suisse</td>
+              <td>Lecture et impact</td>
+            </tr>
+            <tr>
+              <th scope="row">Cornerback</th>
+              <td>Marqueur</td>
+              <td>Vivacité d’appuis</td>
+            </tr>
+            <tr>
+              <th scope="row">Safety</th>
+              <td>Dernier rempart</td>
+              <td>Anticipation</td>
+            </tr>
+            <tr>
+              <th scope="row">Kicker</th>
+              <td>Botteur</td>
+              <td>Sang-froid</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       <h3 id="quarterback">Quarterback (QB)</h3>
       <p>
@@ -239,6 +318,12 @@ export default function ArticleLexique() {
       />
 
       <h2 id="defense">Les postes de défense</h2>
+      <p>
+        Même principe : la définition, pas la fiche de poste. Pour savoir lequel de ces rôles
+        correspond à ton profil, va voir{' '}
+        <Link href="/blog/postes-football-americain/">les postes au football américain expliqués</Link>
+        .
+      </p>
 
       <h3 id="ligne-defensive">Ligne défensive (DL)</h3>
       <p>
@@ -368,8 +453,8 @@ export default function ArticleLexique() {
       <p>
         La manière principale de marquer, et elle vaut <strong>six points</strong>. Il est accordé
         dès qu’un joueur porte le ballon dans la zone d’en-but adverse ou y attrape une passe en
-        contrôlant la réception. Contrairement à l’essai de rugby, il n’est pas nécessaire d’aplatir
-        le ballon au sol : franchir le plan de la ligne de but avec le ballon suffit.
+        contrôlant la réception. Le détail de ce qui compte comme touchdown est dans{' '}
+        <Link href="/blog/regles-football-americain/">les règles du football américain</Link>.
       </p>
 
       <h3 id="extra-point">Extra point (la transformation)</h3>
@@ -391,17 +476,18 @@ export default function ArticleLexique() {
       <h3 id="field-goal">Field goal (le coup de pied placé)</h3>
       <p>
         Un coup de pied tenté depuis le terrain, qui rapporte <strong>trois points</strong> si le
-        ballon passe entre les poteaux et au-dessus de la barre. C’est l’option choisie quand
-        l’attaque est bloquée mais assez proche pour tenter sa chance, typiquement sur la quatrième
-        tentative. En cas d’échec, l’adversaire récupère le ballon.
+        ballon passe entre les poteaux et au-dessus de la barre. Quand une équipe le choisit plutôt
+        que de jouer, c’est une question de position sur le terrain :{' '}
+        <Link href="/blog/regles-football-americain/">le calcul est expliqué ici</Link>.
       </p>
 
       <h3 id="safety-score">Safety (les deux points de la défense)</h3>
       <p>
         Une situation rare et spectaculaire : le porteur du ballon est arrêté à l’intérieur de sa
-        propre zone d’en-but. La <strong>défense marque alors deux points</strong> et récupère en
-        prime le ballon. Attention à l’homonymie avec le poste de safety, décrit plus haut : ce sont
-        deux notions sans rapport.
+        propre zone d’en-but, et la <strong>défense marque deux points</strong>. Attention à
+        l’homonymie avec le poste de safety, décrit plus haut : ce sont deux notions sans rapport.
+        Les quatre façons de marquer sont récapitulées dans{' '}
+        <Link href="/blog/regles-football-americain/">notre guide des règles</Link>.
       </p>
 
       <h3 id="interception">Interception</h3>
@@ -444,10 +530,10 @@ export default function ArticleLexique() {
 
       <h3 id="quatrieme-tentative">Quatrième tentative (fourth down)</h3>
       <p>
-        Le moment de décision du football américain. L’attaque a trois choix : tenter de gagner les
-        yards manquants, dégager au pied, ou tenter un field goal si elle est assez proche. Échouer
-        en tentant sa chance rend le ballon à l’adversaire exactement là où l’action s’est arrêtée,
-        ce qui explique la prudence habituelle.
+        Le moment de décision du football américain : l’attaque a trois choix, tenter de gagner les
+        yards manquants, dégager au pied, ou tenter un field goal si elle est assez proche. Ce que
+        chacun coûte et rapporte est détaillé dans{' '}
+        <Link href="/blog/regles-football-americain/">les règles du jeu</Link>.
       </p>
 
       <h3 id="red-zone">Red zone</h3>
@@ -627,65 +713,94 @@ export default function ArticleLexique() {
         bouton="Je réserve mes séances d’essai"
       />
 
-      <h2 id="faq">Questions fréquentes sur le vocabulaire du football américain</h2>
-
-      <h3>Faut-il connaître tout ce vocabulaire avant de commencer ?</h3>
-      <p>
-        Non, absolument pas. Les dix termes de l’encadré en début d’article suffisent largement pour
-        ta première séance, et encore : personne ne te posera de question. Le reste s’apprend en
-        jouant, dans l’ordre où les mots deviennent utiles pour toi. Un joueur de ligne offensive
-        maîtrisera vite tout le vocabulaire du blocage et connaîtra beaucoup moins celui de la
-        couverture, et c’est parfaitement normal. Notre guide{' '}
-        <Link href="/blog/commencer-le-football-americain-adulte/">commencer le football américain
-        à l’âge adulte</Link> décrit à quoi ressemble cette première saison.
-      </p>
-
-      <h3>Pourquoi les termes ne sont-ils pas traduits en français ?</h3>
-      <p>
-        Parce que le sport s’est diffusé en France avec son vocabulaire d’origine, et que les
-        traductions proposées n’ont jamais réussi à s’imposer. Quelques mots ont une équivalence
-        courante, comme la zone d’en-but pour l’end zone ou le plaquage pour le tackle, mais la
-        plupart des postes et des actions restent en anglais dans tous les vestiaires français. Le
-        bon réflexe est donc d’apprendre le mot anglais directement plutôt que de chercher une
-        traduction que personne n’emploie sur le terrain.
-      </p>
-
-      <h3>Quelle est la différence entre le football américain et le flag football ?</h3>
-      <p>
-        Le contact et le nombre de joueurs. Le football américain se joue à onze contre onze avec
-        plaquage et équipement de protection complet ; le flag se joue à cinq contre cinq, sans
-        contact, en retirant une bande de tissu à la ceinture du porteur du ballon. La logique de
-        jeu reste la même, avec des tentatives, une ligne d’engagement, des passes et des tracés.
-        Beaucoup de joueurs pratiquent les deux, et le flag sert souvent d’entrée en matière. Le
-        détail est dans notre article{' '}
-        <Link href="/blog/flag-football-cest-quoi/">le flag football, c’est quoi ?</Link>
-      </p>
-
-      <h3>Que veut dire « 3rd and 7 » ?</h3>
-      <p>
-        Troisième tentative sur les quatre disponibles, avec sept yards encore à parcourir pour
-        obtenir un nouveau first down. C’est la manière standard d’annoncer la situation, et elle
-        contient tout ce qu’il faut savoir : combien de chances il reste, et quelle distance il faut
-        couvrir. Une fois ce code compris, la moitié du commentaire télévisé devient limpide.
-      </p>
-
-      <h3>Le touchdown vaut-il vraiment six points ?</h3>
-      <p>
-        Oui, six points, auxquels s’ajoute presque toujours une tentative de transformation qui vaut
-        un point au pied ou deux points en jouant une action. C’est pour cela qu’on voit très
-        souvent des scores en sept points par touchdown. Les autres façons de marquer sont le field
-        goal, à trois points, et le safety, à deux points pour la défense.
-      </p>
-
-      <h3>Où voir tout ce vocabulaire en vrai, près de Tours ?</h3>
-      <p>
-        Au stade de la Chambrerie, rue Tartifume à Tours, où les Pionniers s’entraînent et reçoivent
-        leurs adversaires. Assister à une séance ou à un match est de très loin le moyen le plus
-        rapide de faire le lien entre les mots et ce qui se passe sur le terrain. On a écrit un guide
-        complet pour cela :{' '}
-        <Link href="/blog/stade-de-la-chambrerie-tours/">venir voir un match au stade de la
-        Chambrerie</Link>.
-      </p>
+      <Faq
+        titre="Questions fréquentes sur le vocabulaire du football américain"
+        items={[
+          {
+            q: 'Faut-il connaître tout ce vocabulaire avant de commencer ?',
+            r: (
+              <p>
+                Non, absolument pas. Les dix termes de l’encadré en début d’article suffisent
+                largement pour ta première séance, et encore : personne ne te posera de question. Le
+                reste s’apprend en jouant, dans l’ordre où les mots deviennent utiles pour toi. Un
+                joueur de ligne offensive maîtrisera vite tout le vocabulaire du blocage et
+                connaîtra beaucoup moins celui de la couverture, et c’est parfaitement normal. Notre
+                guide sur{' '}
+                <Link href="/blog/commencer-le-football-americain-adulte/">
+                  débuter le foot US adulte
+                </Link>{' '}
+                décrit à quoi ressemble cette première saison.
+              </p>
+            ),
+          },
+          {
+            q: 'Pourquoi les termes ne sont-ils pas traduits en français ?',
+            r: (
+              <p>
+                Parce que le sport s’est diffusé en France avec son vocabulaire d’origine, et que
+                les traductions proposées n’ont jamais réussi à s’imposer. Quelques mots ont une
+                équivalence courante, comme la zone d’en-but pour l’end zone ou le plaquage pour le
+                tackle, mais la plupart des postes et des actions restent en anglais dans tous les
+                vestiaires français. Le bon réflexe est donc d’apprendre le mot anglais directement
+                plutôt que de chercher une traduction que personne n’emploie sur le terrain.
+              </p>
+            ),
+          },
+          {
+            q: 'Quelle est la différence entre le football américain et le flag football ?',
+            r: (
+              <p>
+                Le contact et le nombre de joueurs. Le football américain se joue à onze contre onze
+                avec plaquage et équipement de protection complet ; le flag se joue à cinq contre
+                cinq, sans contact, en retirant une bande de tissu à la ceinture du porteur du
+                ballon. La logique de jeu reste la même, avec des tentatives, une ligne
+                d’engagement, des passes et des tracés. Beaucoup de joueurs pratiquent les deux, et
+                le flag sert souvent d’entrée en matière. Le règlement complet est dans{' '}
+                <Link href="/blog/regles-flag-football/">les règles du flag football</Link>.
+              </p>
+            ),
+          },
+          {
+            q: 'Que veut dire « 3rd and 7 » ?',
+            r: (
+              <p>
+                Troisième tentative sur les quatre disponibles, avec sept yards encore à parcourir
+                pour obtenir un nouveau first down. C’est la manière standard d’annoncer la
+                situation, et elle contient tout ce qu’il faut savoir : combien de chances il reste,
+                et quelle distance il faut couvrir. Une fois ce code compris, la moitié du
+                commentaire télévisé devient limpide.
+              </p>
+            ),
+          },
+          {
+            q: 'Le touchdown vaut-il vraiment six points ?',
+            r: (
+              <p>
+                Oui, six points, auxquels s’ajoute presque toujours une tentative de transformation
+                qui vaut un point au pied ou deux points en jouant une action. C’est pour cela qu’on
+                voit très souvent des scores en sept points par touchdown. Les autres façons de
+                marquer sont le field goal, à trois points, et le safety, à deux points pour la
+                défense.
+              </p>
+            ),
+          },
+          {
+            q: 'Où voir tout ce vocabulaire en vrai, près de Tours ?',
+            r: (
+              <p>
+                Au stade de la Chambrerie, rue Tartifume à Tours, où les Pionniers s’entraînent et
+                reçoivent leurs adversaires. Assister à une séance ou à un match est de très loin le
+                moyen le plus rapide de faire le lien entre les mots et ce qui se passe sur le
+                terrain. On a écrit un guide complet pour cela :{' '}
+                <Link href="/blog/stade-de-la-chambrerie-tours/">
+                  venir voir un match au stade de la Chambrerie
+                </Link>
+                .
+              </p>
+            ),
+          },
+        ]}
+      />
 
       <h2 id="conclusion">Soixante mots, et le jeu devient limpide</h2>
       <p>
@@ -698,12 +813,18 @@ export default function ArticleLexique() {
         La suite logique, c’est de venir voir à quoi ça ressemble. Les Pionniers de Touraine
         s’entraînent au <strong>stade de la Chambrerie, rue Tartifume à Tours</strong>, en football
         américain le lundi et le vendredi de 20 h 00 à 23 h 00 et le mercredi de 21 h 00 à 23 h 00,
-        et en flag mixte le lundi et le jeudi de 20 h 15 à 22 h 45. Tous les créneaux, y compris
-        ceux des jeunes et de l’école de flag du samedi, sont sur{' '}
+        et en flag mixte le lundi et le jeudi de 20 h 15 à 22 h 45. Le détail est sur la page de{' '}
+        <Link href="/football-americain/">la section football américain</Link>, et tous les
+        créneaux, y compris ceux des jeunes et de l’école de flag du samedi, sont sur{' '}
         <Link href="/nos-sections/">la page de nos sections</Link>. Pour une question avant de
         venir, la page <Link href="/contact/">contact</Link> est là pour ça, et si tu veux
         simplement soutenir le club autrement,{' '}
         <Link href="/partenaires/">la page partenaires</Link> explique comment.
+      </p>
+      <p>
+        En attendant ta première séance, entendre ces mots en situation aide beaucoup : notre guide
+        pour <Link href="/blog/comment-regarder-le-college-football-en-france/">regarder le college
+        football en France</Link> indique où suivre des matchs commentés depuis la France.
       </p>
     </>
   );

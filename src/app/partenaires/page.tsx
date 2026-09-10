@@ -11,7 +11,7 @@ import { STADE, CONTACT, REJOINDRE_TUNNEL_URL } from '@/lib/infos';
 export const metadata: Metadata = {
   title: 'Partenaires et sponsoring à Tours',
   description:
-    'Associez votre entreprise aux Pionniers de Touraine, club de football américain fondé en 1987 à Tours. Visibilité locale, valeurs sportives et mécénat sportif.',
+    'Associez votre entreprise aux Pionniers de Touraine, club de foot US fondé en 1987 à Tours : visibilité locale, valeurs sportives et mécénat.',
   alternates: { canonical: '/partenaires/' },
   openGraph: {
     title: 'Devenir partenaire des Pionniers de Touraine',
@@ -112,7 +112,7 @@ export default function Page() {
           eyebrow="Sponsoring et mécénat"
           titre={
             <>
-              Devenez partenaire d’un club
+              Devenez partenaire d’un club{' '}
               <br />
               tourangeau historique
             </>
@@ -308,6 +308,54 @@ export default function Page() {
                 <Link className="sc-btn-ghost" href="/contact/">
                   Nous écrire
                 </Link>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        {/* ── Soutenir autrement ── */}
+        <section className="sc-sec" id="soutenir-autrement">
+          <YardLine n="50" />
+          <div className="sc-wrap">
+            <div data-reveal>
+              <p className="sc-eyebrow">Deux façons de s’engager</p>
+              <h2 className="sc-title">Soutenir le club autrement.</h2>
+              <p className="sc-lead">
+                Le sponsoring et le mécénat sont la voie des entreprises. Les particuliers, eux,
+                soutiennent les Pionniers en donnant un peu de temps : le club en a autant besoin.
+              </p>
+            </div>
+            <div className="sc-cards sc-cards--deux" data-reveal>
+              <article className="sc-card sc-card--statique">
+                <h3 className="sc-card-title">Vous représentez une entreprise</h3>
+                <p className="sc-card-desc">
+                  Sponsoring avec contreparties, mécénat sportif, don en nature ou en compétences :
+                  tout est décrit sur cette page, et le contenu exact se construit avec vous. Le
+                  club existe depuis 1987 : découvrez{' '}
+                  <Link href="/le-club/">le club depuis 1987</Link> avant d’en parler avec nous.
+                </p>
+                <Link className="sc-btn-ghost" href="/contact/">
+                  Nous écrire
+                </Link>
+              </article>
+              <article className="sc-card sc-card--statique">
+                <h3 className="sc-card-title">Vous êtes un particulier</h3>
+                <p className="sc-card-desc">
+                  Un club associatif tient grâce à ses bénévoles : siffler une rencontre, encadrer
+                  un groupe, tenir un poste un jour de match. Nous expliquons chaque rôle dans{' '}
+                  <Link href="/blog/arbitre-coach-benevole-club-football-americain/">
+                    devenir arbitre, coach ou bénévole
+                  </Link>
+                  . Côté image et captation, il est aussi possible de{' '}
+                  <a
+                    href="https://recrutement.pionniersdetouraine.fr/#offre-broadcast-regie"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    rejoindre l’équipe broadcast FFFA TV
+                  </a>
+                  .
+                </p>
               </article>
             </div>
           </div>

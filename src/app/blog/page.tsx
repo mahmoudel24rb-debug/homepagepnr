@@ -9,20 +9,56 @@ import '@/components/blog/blog.css';
 
 // Démo GitHub Pages : pas de canonical (et noindex hérité du layout).
 const IS_DEMO = (process.env.NEXT_PUBLIC_BASE_PATH ?? '/homepagepnr') !== '/';
+const SITE = 'https://pionniersdetouraine.fr';
 
 /** Le test de poste vit sur le site de recrutement. */
 const QUIZ_URL = 'https://recrutement.pionniersdetouraine.fr/quel-poste-football-americain/';
 
 export const metadata: Metadata = {
-  title: 'Blog football américain & flag',
+  title: 'Blog football américain et flag',
   description:
-    'Guides et conseils pour débuter le football américain et le flag football : règles, équipement, clubs, postes. Par les Pionniers de Touraine, club fondé en 1987.',
+    'Guides pour débuter le foot US et le flag : règles, postes, équipement, budget. Écrits par les Pionniers de Touraine, club de Tours fondé en 1987.',
   ...(IS_DEMO ? {} : { alternates: { canonical: '/blog/' } }),
 };
+
+// JSON-LD : le blog (nœud référencé par chaque article via isPartOf) et le fil
+// d'Ariane. URLs prod uniquement, la démo est noindex.
+const jsonLd = IS_DEMO
+  ? null
+  : {
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'Blog',
+          '@id': `${SITE}/blog/#blog`,
+          url: `${SITE}/blog/`,
+          name: 'Le blog des Pionniers de Touraine',
+          inLanguage: 'fr-FR',
+          publisher: { '@id': `${SITE}/#organization` },
+          blogPost: ARTICLES.map((a) => ({
+            '@type': 'BlogPosting',
+            '@id': `${SITE}/blog/${a.slug}/#article`,
+            headline: a.titre,
+            url: `${SITE}/blog/${a.slug}/`,
+            datePublished: a.datePublication,
+          })),
+        },
+        {
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Accueil', item: `${SITE}/` },
+            { '@type': 'ListItem', position: 2, name: 'Blog', item: `${SITE}/blog/` },
+          ],
+        },
+      ],
+    };
 
 export default function BlogPage() {
   return (
     <>
+      {jsonLd && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      )}
       <SiteHeader />
       <main>
         <section className="blogc-hero">

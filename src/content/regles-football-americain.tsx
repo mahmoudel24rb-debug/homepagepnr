@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { CtaQuiz, CtaTunnel } from '@/components/blog/CtaEncart';
+import Faq from '@/components/blog/Faq';
 
 /**
  * Article. Mot-clé : « règles football américain ».
@@ -43,6 +44,7 @@ export default function ArticleRegles() {
           <li><a href="#fautes">Les fautes les plus courantes, sans jargon</a></li>
           <li><a href="#france">Ce qui change entre la NFL et le jeu en France</a></li>
           <li><a href="#survie">Regarder un match sans être perdu : le guide de survie</a></li>
+          <li><a href="#sources">Sources</a></li>
           <li><a href="#faq">Questions fréquentes</a></li>
         </ol>
       </div>
@@ -356,14 +358,8 @@ export default function ArticleRegles() {
         football américain en France</Link>.
       </p>
       <p>
-        Un mot enfin sur le <strong>flag football</strong>, qui obéit à un règlement nettement
-        différent : cinq contre cinq, terrain réduit, aucun contact, et le plaquage remplacé par
-        l’arrachage d’une bande de tissu accrochée à la ceinture. Le compteur de tentatives, le
-        principe de progression et la logique de passe restent proches, mais tout le volet blocage
-        et contact disparaît. Le détail est dans notre article{' '}
-        <Link href="/blog/flag-football-cest-quoi/">le flag football, c’est quoi ?</Link>, et le
-        format olympique de la discipline aux Jeux de Los Angeles 2028 est en train de le rendre
-        beaucoup plus visible.
+        Le <strong>flag football</strong>, lui, obéit à un règlement écrit à part, que nous avons
+        détaillé dans <Link href="/blog/regles-flag-football/">les règles du flag football</Link>.
       </p>
 
       <h2 id="survie">Regarder un match sans être perdu : le guide de survie</h2>
@@ -401,79 +397,135 @@ export default function ArticleRegles() {
       </ul>
       <p>
         Fais ça pendant un match entier, et le suivant sera beaucoup plus clair. Fais ça pendant
-        trois matchs, et tu commenceras à anticiper les choix avant qu’ils ne soient faits.
+        trois matchs, et tu commenceras à anticiper les choix avant qu’ils ne soient faits. Reste à
+        trouver les matchs : on a listé chaînes, abonnements et horaires pour{' '}
+        <Link href="/blog/comment-regarder-le-college-football-en-france/">
+          voir un match à la télévision en France
+        </Link>
+        .
       </p>
 
-      <h2 id="faq">Questions fréquentes sur les règles du football américain</h2>
-
-      <h3>Combien de temps dure un match de football américain ?</h3>
+      <h2 id="sources">Sources</h2>
       <p>
-        Un match se joue en quatre quarts-temps, mais le temps affiché n’est pas le temps réel :
-        comme le chronomètre s’arrête très fréquemment, à chaque passe non attrapée, à chaque sortie
-        de terrain, à chaque faute et à chaque temps mort, la durée totale d’une rencontre est
-        nettement supérieure à la somme des quarts-temps. En pratique, il faut prévoir de l’ordre de
-        deux heures à deux heures et demie du coup d’envoi au coup de sifflet final, mi-temps
-        comprise. C’est donc un format d’après-midi ou de soirée, et c’est une information utile
-        quand on prévoit d’aller voir un match en famille pour la première fois.
+        Règles décrites d’après le règlement de la Fédération Française de Football Américain
+        applicable à la saison 2026-2027, et d’après le règlement professionnel américain pour les
+        points signalés comme spécifiques à la NFL.
       </p>
+      <ul>
+        <li>
+          <a href="https://www.fffa.org" target="_blank" rel="noopener noreferrer">
+            Fédération Française de Football Américain (FFFA)
+          </a>{' '}
+          : règlement applicable en compétition française.
+        </li>
+        <li>
+          <a
+            href="https://operations.nfl.com/the-rules/nfl-rulebook/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            NFL Rulebook
+          </a>{' '}
+          : règlement officiel du championnat professionnel américain.
+        </li>
+      </ul>
 
-      <h3>Quelle est la différence entre un touchdown et un field goal ?</h3>
-      <p>
-        Le touchdown vaut six points et s’obtient en amenant le ballon dans la zone d’en-but adverse,
-        à la course ou en attrapant une passe. Il est suivi d’une transformation, au pied pour un
-        point ou en jouant une action pour deux points. Le field goal vaut trois points et s’obtient
-        en frappant le ballon entre les poteaux depuis le terrain. Une équipe tente un field goal
-        quand elle est assez proche pour espérer réussir mais pas assez efficace pour aller jusqu’à
-        l’en-but : c’est le lot de consolation d’une possession qui s’essouffle, et c’est très
-        souvent ce qui sépare deux équipes à la fin.
-      </p>
-
-      <h3>Pourquoi une équipe donne-t-elle volontairement le ballon à l’adversaire ?</h3>
-      <p>
-        Parce que le terrain est une monnaie. Quand une attaque arrive à sa quatrième tentative sans
-        avoir gagné ses dix yards, tenter de les gagner quand même est risqué : en cas d’échec,
-        l’adversaire récupère le ballon sur place, donc très près de sa cible. Dégager au pied revient
-        à échanger la possession contre soixante ou soixante-dix mètres de terrain, ce qui est
-        souvent le meilleur calcul. C’est l’une des idées les plus contre-intuitives du sport pour un
-        spectateur venu du football ou du rugby, et c’est précisément ce qui rend les décisions de
-        quatrième tentative si passionnantes en fin de match.
-      </p>
-
-      <h3>La passe en avant est-elle vraiment autorisée ?</h3>
-      <p>
-        Oui, et c’est la différence structurelle majeure avec le rugby. Mais elle est encadrée par
-        deux limites simples : une seule passe vers l’avant par action, et elle doit partir de
-        derrière la ligne de mêlée. Une fois cette passe effectuée, plus rien ne peut être lancé vers
-        l’avant. Les passes vers l’arrière ou latérales, elles, sont autorisées sans limite, et on
-        les voit surtout dans les fins de match désespérées. Cette règle unique explique toute la
-        géométrie du jeu : les tracés des receveurs, la protection du lanceur, la couverture des
-        défenseurs.
-      </p>
-
-      <h3>Faut-il connaître les règles avant de commencer en club ?</h3>
-      <p>
-        Non, et personne ne te le demandera. La quasi-totalité des joueurs français ont découvert les
-        règles en jouant, pas en lisant. Savoir qu’une attaque a quatre tentatives pour avancer de
-        dix yards suffit très largement pour ton premier entraînement : le reste s’acquiert par
-        couches, poste par poste, au fil des séances. En un mois d’entraînements réguliers, tu
-        regarderas un match en comprenant ce qui se passe, et en trois mois tu commenteras les choix
-        de quatrième tentative avec les autres. Si tu veux te faire une idée avant de venir, notre
-        article sur{' '}
-        <Link href="/blog/commencer-le-football-americain-adulte/">commencer le football américain
-        à l’âge adulte</Link> raconte le déroulé réel d’une première saison.
-      </p>
-
-      <h3>Les règles sont-elles les mêmes pour les femmes et pour les jeunes ?</h3>
-      <p>
-        Le règlement de jeu est le même : quatre tentatives, dix yards, mêmes valeurs de points,
-        mêmes fautes. Ce qui varie selon les catégories, ce sont les modalités d’encadrement,
-        certaines adaptations de format et les niveaux de contact autorisés chez les plus jeunes,
-        avec une progression très encadrée avant l’arrivée au contact complet. Chez les enfants, la
-        porte d’entrée est d’ailleurs le flag football, sans aucun contact, ce qui permet
-        d’apprendre les règles, les tracés et la lecture du jeu en toute sécurité. C’est le principe
-        de notre <Link href="/ecole-de-flag/">école de flag</Link>, ouverte de U7 à U18 le samedi
-        matin.
-      </p>
+      <Faq
+        titre="Questions fréquentes sur les règles du football américain"
+        items={[
+          {
+            q: 'Combien de temps dure un match de football américain ?',
+            r: (
+              <p>
+                Un match se joue en quatre quarts-temps, mais le temps affiché n’est pas le temps
+                réel : comme le chronomètre s’arrête très fréquemment, à chaque passe non attrapée,
+                à chaque sortie de terrain, à chaque faute et à chaque temps mort, la durée totale
+                d’une rencontre est nettement supérieure à la somme des quarts-temps. En pratique,
+                il faut prévoir de l’ordre de deux heures à deux heures et demie du coup d’envoi au
+                coup de sifflet final, mi-temps comprise. C’est donc un format d’après-midi ou de
+                soirée, et c’est une information utile quand on prévoit d’aller voir un match en
+                famille pour la première fois.
+              </p>
+            ),
+          },
+          {
+            q: 'Quelle est la différence entre un touchdown et un field goal ?',
+            r: (
+              <p>
+                Le touchdown vaut six points et s’obtient en amenant le ballon dans la zone d’en-but
+                adverse, à la course ou en attrapant une passe. Il est suivi d’une transformation,
+                au pied pour un point ou en jouant une action pour deux points. Le field goal vaut
+                trois points et s’obtient en frappant le ballon entre les poteaux depuis le terrain.
+                Une équipe tente un field goal quand elle est assez proche pour espérer réussir mais
+                pas assez efficace pour aller jusqu’à l’en-but : c’est le lot de consolation d’une
+                possession qui s’essouffle, et c’est très souvent ce qui sépare deux équipes à la
+                fin.
+              </p>
+            ),
+          },
+          {
+            q: 'Pourquoi une équipe donne-t-elle volontairement le ballon à l’adversaire ?',
+            r: (
+              <p>
+                Parce que le terrain est une monnaie. Quand une attaque arrive à sa quatrième
+                tentative sans avoir gagné ses dix yards, tenter de les gagner quand même est
+                risqué : en cas d’échec, l’adversaire récupère le ballon sur place, donc très près
+                de sa cible. Dégager au pied revient à échanger la possession contre soixante ou
+                soixante-dix mètres de terrain, ce qui est souvent le meilleur calcul. C’est l’une
+                des idées les plus contre-intuitives du sport pour un spectateur venu du football ou
+                du rugby, et c’est précisément ce qui rend les décisions de quatrième tentative si
+                passionnantes en fin de match.
+              </p>
+            ),
+          },
+          {
+            q: 'La passe en avant est-elle vraiment autorisée ?',
+            r: (
+              <p>
+                Oui, et c’est la différence structurelle majeure avec le rugby. Mais elle est
+                encadrée par deux limites simples : une seule passe vers l’avant par action, et elle
+                doit partir de derrière la ligne de mêlée. Une fois cette passe effectuée, plus rien
+                ne peut être lancé vers l’avant. Les passes vers l’arrière ou latérales, elles, sont
+                autorisées sans limite, et on les voit surtout dans les fins de match désespérées.
+                Cette règle unique explique toute la géométrie du jeu : les tracés des receveurs, la
+                protection du lanceur, la couverture des défenseurs.
+              </p>
+            ),
+          },
+          {
+            q: 'Faut-il connaître les règles avant de commencer en club ?',
+            r: (
+              <p>
+                Non, et personne ne te le demandera. La quasi-totalité des joueurs français ont
+                découvert les règles en jouant, pas en lisant. Savoir qu’une attaque a quatre
+                tentatives pour avancer de dix yards suffit très largement pour ton premier
+                entraînement : le reste s’acquiert par couches, poste par poste, au fil des séances.
+                En un mois d’entraînements réguliers, tu regarderas un match en comprenant ce qui se
+                passe, et en trois mois tu commenteras les choix de quatrième tentative avec les
+                autres. Si tu veux te faire une idée avant de venir, notre article sur{' '}
+                <Link href="/blog/commencer-le-football-americain-adulte/">
+                  commencer à 30 ans
+                </Link>{' '}
+                raconte le déroulé réel d’une première saison.
+              </p>
+            ),
+          },
+          {
+            q: 'Les règles sont-elles les mêmes pour les femmes et pour les jeunes ?',
+            r: (
+              <p>
+                Le règlement de jeu est le même : quatre tentatives, dix yards, mêmes valeurs de
+                points, mêmes fautes. Ce qui varie selon les catégories, ce sont les modalités
+                d’encadrement, certaines adaptations de format et les niveaux de contact autorisés
+                chez les plus jeunes, avec une progression très encadrée avant l’arrivée au contact
+                complet. Chez les enfants, la porte d’entrée est notre{' '}
+                <Link href="/ecole-de-flag/">école de flag</Link>, ouverte de U7 à U18 le samedi
+                matin.
+              </p>
+            ),
+          },
+        ]}
+      />
 
       <h2 id="conclusion">Une soirée de règles, une saison de plaisir</h2>
       <p>
@@ -487,9 +539,9 @@ export default function ArticleRegles() {
         suite logique est simple. Les Pionniers de Touraine s’entraînent au{' '}
         <strong>Stade de la Chambrerie, rue Tartifume à Tours</strong>, en football américain le
         lundi et le vendredi de 20 h à 23 h et le mercredi de 21 h à 23 h, en flag mixte le lundi et
-        le jeudi de 20 h 15 à 22 h 45. Tout est détaillé sur la page{' '}
-        <Link href="/football-americain/">football américain</Link> et dans le récapitulatif de{' '}
-        <Link href="/nos-sections/">nos sections</Link>.
+        le jeudi de 20 h 15 à 22 h 45. Tout est détaillé sur la page de{' '}
+        <Link href="/football-americain/">la section football américain à Tours</Link> et dans le
+        récapitulatif de <Link href="/nos-sections/">nos sections</Link>.
       </p>
 
       <CtaTunnel

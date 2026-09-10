@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { CtaQuiz, CtaTunnel } from '@/components/blog/CtaEncart';
+import Faq from '@/components/blog/Faq';
 
 /**
  * Article. Mot-clé : « équipement football américain ».
@@ -187,6 +188,9 @@ export default function ArticleEquipement() {
         Aux Pionniers de Touraine, l’équipement complet est prêté aux débutants pour la découverte,
         et la <strong>semaine d’essai est offerte</strong> : tu viens en tenue de sport, on
         t’équipe, et tu ne débourses rien tant que tu n’as pas décidé de t’engager pour la saison.
+        La page de la section détaille{' '}
+        <Link href="/football-americain/">le matériel prêté par le club</Link> et le fonctionnement
+        du parc.
         La <strong>licence FFFA est incluse dans l’adhésion</strong>, ce qui simplifie le calcul :
         tu n’as pas de ligne d’assurance ou d’affiliation à ajouter par-dessus.
       </p>
@@ -366,7 +370,7 @@ export default function ArticleEquipement() {
         programme des <strong>Jeux olympiques de Los Angeles 2028</strong>. Chez les Pionniers, le
         flag mixte seniors s’entraîne le lundi et le jeudi de 20 h 15 à 22 h 45, avec une équipe
         engagée en championnat mixte D1. Tout est expliqué dans notre article{' '}
-        <Link href="/blog/flag-football-cest-quoi/">le flag football, c’est quoi ?</Link> et sur la
+        <Link href="/blog/regles-flag-football/">les règles du flag football</Link> et sur la
         page de <Link href="/flag-football/">notre section flag</Link>.
       </p>
 
@@ -387,73 +391,101 @@ export default function ArticleEquipement() {
         Tours</Link>.
       </p>
 
-      <h2 id="faq">Questions fréquentes sur l’équipement</h2>
-
-      <h3>Combien coûte un équipement complet de football américain ?</h3>
-      <p>
-        Il est impossible de donner un chiffre honnête, parce que l’écart entre une configuration
-        d’entrée de gamme et une configuration haut de gamme est considérable, et parce que les prix
-        évoluent selon les marques, les modèles et les périodes. Ce qui est stable, en revanche,
-        c’est la hiérarchie : le casque représente à lui seul la majeure partie du budget, les
-        épaulières viennent ensuite, et tout le reste, pantalon à pads, crampons, protège-dents,
-        pèse beaucoup moins. Le bon réflexe est de demander directement au club dans lequel tu
-        comptes jouer : le staff connaît les modèles adaptés à ton poste, les fournisseurs sérieux et
-        les périodes où il vaut mieux acheter. C’est le conseil le plus rentable de tout cet article.
-      </p>
-
-      <h3>Le club prête-t-il vraiment l’équipement aux débutants ?</h3>
-      <p>
-        Beaucoup de clubs le font, parce que c’est la condition pour que des adultes viennent
-        essayer un sport qu’ils n’ont jamais pratiqué. Mais l’étendue du prêt varie, et c’est une
-        question à poser explicitement plutôt qu’à supposer. Aux Pionniers de Touraine, l’équipement
-        complet est prêté aux débutants pendant la découverte, et la semaine d’essai est offerte : tu
-        viens en tenue de sport, on t’équipe sur place, et tu n’engages rien tant que tu n’as pas
-        décidé de rester. Si tu contactes un autre club, pose la question dès le premier message,
-        avec celle de ce que tu dois apporter toi-même.
-      </p>
-
-      <h3>Peut-on acheter du matériel d’occasion ?</h3>
-      <p>
-        Oui pour la plupart des pièces, avec une réserve absolue sur le casque. Un pantalon à pads,
-        des crampons ou des épaulières d’occasion en bon état sont une bonne affaire, à condition de
-        vérifier les mousses, les sangles et les coutures. Le casque, lui, est un équipement de
-        sécurité dont l’état interne ne se juge pas à l’œil nu : il a une durée de vie, un historique
-        de reconditionnement, et un choc ancien peut avoir dégradé sa capacité d’absorption sans que
-        rien ne se voie de l’extérieur. La règle raisonnable est simple : ne jamais acheter un casque
-        d’occasion sans son historique et sans le faire inspecter par le staff de ton club.
-      </p>
-
-      <h3>Quelles chaussures pour débuter ?</h3>
-      <p>
-        Des crampons moulés de football ou de rugby. C’est la réponse dans quatre-vingt-dix pour cent
-        des cas, et elle vaut aussi bien pour le foot US que pour le flag. Ils offrent l’accroche
-        nécessaire aux changements d’appui, qui sont l’essentiel du mouvement dans ce sport, et ils
-        coûtent le prix d’une paire de sport classique. Les modèles spécifiques au football
-        américain existent et présentent de vrais avantages selon les postes, mais ils n’ont aucun
-        intérêt tant que tu ne sais pas où tu joues. Évite en revanche de rester longtemps en
-        chaussures de running : sur herbe humide, le manque d’accroche est un facteur de blessure
-        bien plus qu’un inconfort.
-      </p>
-
-      <h3>Faut-il un protège-dents même au flag football ?</h3>
-      <p>
-        Il n’y a pas de plaquage au flag, mais il y a des courses à pleine vitesse, des joueurs qui
-        se croisent et des chutes. Le protège-dents y est donc largement recommandé, et il est de
-        toute façon si peu coûteux qu’il n’y a pas vraiment de débat. Prends un modèle
-        thermoformable du commerce pour commencer, apprends à le mouler correctement en suivant la
-        notice, et remplace-le quand il se déforme. C’est le meilleur rapport protection sur prix de
-        tout le sport.
-      </p>
-
-      <h3>Que faut-il apporter à une première séance d’essai ?</h3>
-      <p>
-        Une tenue de sport adaptée à la météo, des crampons, une bouteille d’eau, et de quoi te
-        changer après. Rien d’autre. Tu ne feras pas de contact le premier soir dans un club sérieux,
-        donc tu n’as besoin d’aucune protection à ce stade, et si le club prête du matériel, il te
-        l’ajustera le moment venu. Prévois aussi une couche chaude si la séance est en soirée : les
-        entraînements adultes des Pionniers commencent à 20 h ou 20 h 15 selon les sections, et un
-        terrain en hiver refroidit vite dès qu’on s’arrête de courir.
-      </p>
+      <Faq
+        titre="Questions fréquentes sur l’équipement"
+        items={[
+          {
+            q: 'Combien coûte un équipement complet de football américain ?',
+            r: (
+              <p>
+                Il est impossible de donner un chiffre honnête, parce que l’écart entre une
+                configuration d’entrée de gamme et une configuration haut de gamme est
+                considérable, et parce que les prix évoluent selon les marques, les modèles et les
+                périodes. Ce qui est stable, en revanche, c’est la hiérarchie : le casque représente
+                à lui seul la majeure partie du budget, les épaulières viennent ensuite, et tout le
+                reste, pantalon à pads, crampons, protège-dents, pèse beaucoup moins. Le budget
+                complet d’une saison, licence comprise, est détaillé dans{' '}
+                <Link href="/blog/combien-coute-le-football-americain/">
+                  combien coûte le football américain
+                </Link>
+                .
+              </p>
+            ),
+          },
+          {
+            q: 'Le club prête-t-il vraiment l’équipement aux débutants ?',
+            r: (
+              <p>
+                Beaucoup de clubs le font, parce que c’est la condition pour que des adultes
+                viennent essayer un sport qu’ils n’ont jamais pratiqué. Mais l’étendue du prêt
+                varie, et c’est une question à poser explicitement plutôt qu’à supposer. Aux
+                Pionniers de Touraine, l’équipement complet est prêté aux débutants pendant la
+                découverte, et la semaine d’essai est offerte : tu viens en tenue de sport, on
+                t’équipe sur place, et tu n’engages rien tant que tu n’as pas décidé de rester. Si
+                tu contactes un autre club, pose la question dès le premier message, avec celle de
+                ce que tu dois apporter toi-même.
+              </p>
+            ),
+          },
+          {
+            q: 'Peut-on acheter du matériel d’occasion ?',
+            r: (
+              <p>
+                Oui pour la plupart des pièces, avec une réserve absolue sur le casque. Un pantalon
+                à pads, des crampons ou des épaulières d’occasion en bon état sont une bonne
+                affaire, à condition de vérifier les mousses, les sangles et les coutures. Le
+                casque, lui, est un équipement de sécurité dont l’état interne ne se juge pas à
+                l’œil nu : il a une durée de vie, un historique de reconditionnement, et un choc
+                ancien peut avoir dégradé sa capacité d’absorption sans que rien ne se voie de
+                l’extérieur. La règle raisonnable est simple : ne jamais acheter un casque
+                d’occasion sans son historique et sans le faire inspecter par le staff de ton club.
+              </p>
+            ),
+          },
+          {
+            q: 'Quelles chaussures pour débuter ?',
+            r: (
+              <p>
+                Des crampons moulés de football ou de rugby. C’est la réponse dans quatre-vingt-dix
+                pour cent des cas, et elle vaut aussi bien pour le foot US que pour le flag. Ils
+                offrent l’accroche nécessaire aux changements d’appui, qui sont l’essentiel du
+                mouvement dans ce sport, et ils coûtent le prix d’une paire de sport classique. Les
+                modèles spécifiques au football américain existent et présentent de vrais avantages
+                selon les postes, mais ils n’ont aucun intérêt tant que tu ne sais pas où tu joues.
+                Évite en revanche de rester longtemps en chaussures de running : sur herbe humide,
+                le manque d’accroche est un facteur de blessure bien plus qu’un inconfort.
+              </p>
+            ),
+          },
+          {
+            q: 'Faut-il un protège-dents même au flag football ?',
+            r: (
+              <p>
+                Il n’y a pas de plaquage au flag, mais il y a des courses à pleine vitesse, des
+                joueurs qui se croisent et des chutes. Le protège-dents y est donc largement
+                recommandé, et il est de toute façon si peu coûteux qu’il n’y a pas vraiment de
+                débat. Prends un modèle thermoformable du commerce pour commencer, apprends à le
+                mouler correctement en suivant la notice, et remplace-le quand il se déforme. C’est
+                le meilleur rapport protection sur prix de tout le sport.
+              </p>
+            ),
+          },
+          {
+            q: 'Que faut-il apporter à une première séance d’essai ?',
+            r: (
+              <p>
+                Une tenue de sport adaptée à la météo, des crampons, une bouteille d’eau, et de quoi
+                te changer après. Rien d’autre. Tu ne feras pas de contact le premier soir dans un
+                club sérieux, donc tu n’as besoin d’aucune protection à ce stade, et si le club
+                prête du matériel, il te l’ajustera le moment venu. Prévois aussi une couche chaude
+                si la séance est en soirée : les entraînements adultes des Pionniers commencent à
+                20 h ou 20 h 15 selon les sections, et un terrain en hiver refroidit vite dès qu’on
+                s’arrête de courir.
+              </p>
+            ),
+          },
+        ]}
+      />
 
       <h2 id="conclusion">Le matériel n’est pas ce qui t’empêche de commencer</h2>
       <p>
@@ -469,8 +501,8 @@ export default function ArticleEquipement() {
         juniors le lundi et le jeudi, école de flag le samedi matin. Tout est récapitulé sur{' '}
         <Link href="/nos-sections/">nos sections</Link>, et si tu hésites encore entre le contact et
         le flag, notre article{' '}
-        <Link href="/blog/commencer-le-football-americain-adulte/">commencer le football américain
-        à l’âge adulte</Link> raconte ce qui se passe vraiment lors d’une première saison. Une
+        <Link href="/blog/commencer-le-football-americain-adulte/">ta première saison de football
+        américain</Link> raconte ce qui se passe vraiment quand on débute adulte. Une
         question avant de venir ? La page <Link href="/contact/">contact</Link> est faite pour ça.
       </p>
 

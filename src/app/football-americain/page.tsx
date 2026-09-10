@@ -5,8 +5,29 @@ import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
 import PageHero from '@/components/PageHero';
 import YardLine from '@/components/YardLine';
+import FaqSection from '@/components/FaqSection';
 import { asset } from '@/lib/asset';
 import { STADE, HORAIRES, CONTACT, REJOINDRE_TUNNEL_URL } from '@/lib/infos';
+
+/** FAQ de la page, affichée et exposée en données structurées FAQPage. */
+const FAQ = [
+  {
+    q: 'Faut-il de l’expérience ?',
+    r: 'Non. Le football américain ne s’apprend pas à l’école en France : la grande majorité des joueurs des championnats français ont découvert le sport à l’âge adulte. Arriver sans rien connaître est le cas le plus fréquent aux Pionniers, et personne ne vous demandera votre passé sportif avant de vous faire entrer sur le terrain.',
+  },
+  {
+    q: 'Que dois-je apporter ?',
+    r: 'Une tenue de sport et des chaussures adaptées à un terrain extérieur suffisent pour un premier entraînement. L’équipement de protection, casque et épaulières compris, est prêté aux débutants : vous n’avez rien à acheter pour essayer. Prévoyez aussi une gourde, les séances durent deux à trois heures.',
+  },
+  {
+    q: 'Y a-t-il du contact ?',
+    r: 'Oui, c’est la discipline au contact du club, avec casque et épaulières. Mais le contact ne s’improvise pas : on commence sans opposition, à vide, puis à faible intensité avec un partenaire coopératif. La technique de chute s’acquiert avant toute mise en situation réelle. Le flag football, lui, se joue sans aucun contact.',
+  },
+  {
+    q: 'Comment essayer ?',
+    r: `Écrivez au club à ${CONTACT.email}, appelez le ${CONTACT.telephone}, ou lancez le parcours en ligne en quelques minutes. Vous venez ensuite vous entraîner avec le groupe, sur un créneau adapté à votre âge, au stade de la Chambrerie. La semaine découverte est offerte, sans licence ni engagement.`,
+  },
+];
 
 /** Créneaux affichés sur cette page : les deux collectifs de football américain. */
 const HORAIRES_FOOTUS = HORAIRES.filter(
@@ -55,6 +76,25 @@ export default function Page() {
           </div>
         </PageHero>
 
+        {/* ── Réponse directe : qui, quoi, quand, où, comment essayer ── */}
+        <section className="sc-sec" id="en-resume">
+          <div className="sc-wrap" data-reveal>
+            <p className="sc-lead">
+              Les Pionniers de Touraine font pratiquer le football américain à Tours depuis 1987, au{' '}
+              {STADE.nom}, {STADE.rue}, {STADE.codePostal} {STADE.ville}. Deux collectifs
+              s’entraînent au contact : les seniors, en compétition, le lundi et le vendredi de
+              20h00 à 23h00 puis le mercredi de 21h00 à 23h00, et les juniors, en formation, le
+              lundi et le jeudi de 19h00 à 21h00. Aucune expérience n’est demandée : la grande
+              majorité des joueurs ont découvert le sport à l’âge adulte, et le contact s’apprend par
+              étapes, en commençant par la technique de chute. L’équipement de protection, casque et
+              épaulières, est prêté aux débutants : il suffit d’arriver en tenue de sport avec des
+              chaussures de terrain. Une semaine découverte est offerte, et cette séance d’essai
+              gratuite n’engage à rien : la licence FFFA vient ensuite, incluse dans les formules
+              d’adhésion.
+            </p>
+          </div>
+        </section>
+
         {/* ── Le sport ── */}
         <section className="sc-sec" id="le-sport">
           <YardLine n="10" />
@@ -71,7 +111,12 @@ export default function Page() {
                   dispose de quatre tentatives pour gagner dix yards ; si elle y parvient, le
                   compteur repart à zéro. Le jeu s’interrompt, tout le monde se replace, et une
                   nouvelle action commence. C’est ce rythme haché qui rend le sport lisible, même
-                  quand on le découvre depuis le bord du terrain.
+                  quand on le découvre depuis le bord du terrain. Pour entrer dans le détail, nous
+                  avons résumé{' '}
+                  <Link href="/blog/regles-football-americain/">
+                    les règles du football américain
+                  </Link>{' '}
+                  dans un article à part.
                 </p>
                 <p className="sc-legal-text">
                   Deux unités distinctes se relaient : l’attaque, qui porte le ballon, et la
@@ -84,14 +129,31 @@ export default function Page() {
                   C’est aussi le sport collectif où le gabarit ferme le moins de portes. Un joueur
                   rapide et léger trouve sa place au large du terrain, un joueur puissant la trouve
                   au centre, dans la ligne. Grand, petit, fin ou massif : il existe un poste pour
-                  chaque morphologie.
+                  chaque morphologie, et nous passons en revue{' '}
+                  <Link href="/blog/postes-football-americain/">
+                    les postes au football américain
+                  </Link>{' '}
+                  un par un.
                 </p>
                 <h3 className="sc-h3">Débuter adulte, c’est la norme</h3>
                 <p className="sc-legal-text">
                   Le football américain ne s’apprend pas à l’école en France. L’immense majorité des
                   joueurs des championnats français ont donc découvert le sport à l’âge adulte,
-                  souvent après avoir regardé un match à la télévision. Arriver sans rien connaître
-                  n’est pas l’exception ici, c’est le cas le plus fréquent.
+                  souvent après avoir regardé un match à la télévision, comme nous l’expliquons dans
+                  notre guide pour{' '}
+                  <Link href="/blog/comment-regarder-le-college-football-en-france/">
+                    regarder le college football en France
+                  </Link>
+                  . Arriver sans rien connaître n’est pas l’exception ici, c’est le cas le plus
+                  fréquent : voyez{' '}
+                  <Link href="/blog/commencer-le-football-americain-adulte/">
+                    commencer le football américain à l’âge adulte
+                  </Link>{' '}
+                  et{' '}
+                  <Link href="/blog/comment-pratiquer-le-football-americain-en-france/">
+                    comment pratiquer le football américain en France
+                  </Link>
+                  .
                 </p>
                 <p className="sc-legal-text">
                   Les Pionniers de Touraine forment des débutants depuis 1987, ce qui fait du club
@@ -153,7 +215,11 @@ export default function Page() {
               </p>
               <p className="sc-legal-text">
                 L’équipement complet, casque et épaulières, est <strong>prêté aux débutants</strong>
-                . Vous n’avez donc rien à acheter pour essayer. L’échauffement et la préparation
+                . Vous n’avez donc rien à acheter pour essayer, et nous détaillons par ailleurs{' '}
+                <Link href="/blog/equipement-football-americain-debutant/">
+                  l’équipement pour débuter
+                </Link>
+                . L’échauffement et la préparation
                 physique sont encadrés par le PPP, le Pionniers Programme Performance, qui couvre le
                 physique, la technique, la tactique et le mental. On avance quand les bases sont là,
                 pas avant.
@@ -232,9 +298,12 @@ export default function Page() {
               <p className="sc-eyebrow">Infos pratiques</p>
               <h2 className="sc-title">Horaires, stade et accès.</h2>
               <p className="sc-lead">
-                Tous les entraînements de foot US à Tours ont lieu au {STADE.nom}, à Tours Nord.
-                Deux créneaux vous concernent selon votre âge. Venez en tenue de sport : le reste
-                vous est prêté.
+                Tous les entraînements de foot US à Tours ont lieu au{' '}
+                <Link href="/blog/stade-de-la-chambrerie-tours/">
+                  stade de la Chambrerie à Tours
+                </Link>
+                , à Tours Nord. Deux créneaux vous concernent selon votre âge. Venez en tenue de
+                sport : le reste vous est prêté.
               </p>
             </div>
             <div className="sc-two" data-reveal>
@@ -302,6 +371,13 @@ export default function Page() {
                   incluse dans les formules d’adhésion.
                 </li>
               </ul>
+              <p className="sc-legal-text" style={{ marginTop: 18 }}>
+                Avant de vous décider, vous voulez sans doute savoir{' '}
+                <Link href="/blog/combien-coute-le-football-americain/">
+                  combien coûte une saison de football américain
+                </Link>{' '}
+                : nous détaillons les postes de dépense, licence comprise.
+              </p>
             </div>
 
             <div className="sc-contacts" data-reveal>
@@ -339,6 +415,9 @@ export default function Page() {
             </div>
           </div>
         </section>
+
+        {/* ── FAQ ── */}
+        <FaqSection titre="Avant votre premier entraînement." items={FAQ} />
 
         {/* ── CTA final ── */}
         <section className="sc-sec sc-endzone" id="nous-rejoindre">

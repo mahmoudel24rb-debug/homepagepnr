@@ -5,14 +5,35 @@ import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
 import PageHero from '@/components/PageHero';
 import YardLine from '@/components/YardLine';
+import FaqSection from '@/components/FaqSection';
 import { asset } from '@/lib/asset';
 import { STADE, HORAIRES, CONTACT, REJOINDRE_TUNNEL_URL } from '@/lib/infos';
 
 /** Créneaux affichés sur cette page : les trois pratiques de flag du club. */
 const CATS_FLAG = ['Flag mixte seniors', 'Flag mixte juniors', 'École de flag'];
 
+/** FAQ de la page, affichée et exposée en données structurées FAQPage. */
+const FAQ = [
+  {
+    q: 'Faut-il de l’expérience ?',
+    r: 'Non. Beaucoup de joueuses et de joueurs arrivent sans avoir jamais touché un ballon ovale : les règles s’apprennent en une séance et le reste vient en jouant. La progression est encadrée par le PPP, le Pionniers Programme Performance, qui couvre la préparation physique, la technique, la tactique et le mental.',
+  },
+  {
+    q: 'Y a-t-il du contact ?',
+    r: 'Non. Le flag football se joue sans aucun contact : au lieu de plaquer le porteur de balle, on arrache un ruban accroché à sa ceinture, et l’action s’arrête là. Aucun équipement de protection n’est donc nécessaire, ni casque ni épaulières. L’intensité vient de la vitesse et de la lecture du jeu, pas du choc.',
+  },
+  {
+    q: 'Le flag est-il vraiment mixte ?',
+    r: 'Oui. Femmes et hommes jouent dans la même équipe, sur le même terrain, au même moment : il n’y a pas une équipe masculine d’un côté et une équipe féminine de l’autre. Les rôles se répartissent selon les qualités de chacun, vitesse, lecture du jeu ou précision de passe, pas selon les gabarits.',
+  },
+  {
+    q: 'Comment essayer ?',
+    r: `Écrivez au club à ${CONTACT.email}, appelez le ${CONTACT.telephone}, ou remplissez le parcours en ligne. Vous venez ensuite à un entraînement de flag mixte seniors, le lundi ou le jeudi de 20h15 à 22h45, au stade de la Chambrerie, simplement en tenue de sport. La semaine découverte est offerte, sans engagement.`,
+  },
+];
+
 export const metadata: Metadata = {
-  title: 'Flag football à Tours, mixte et sans contact',
+  title: 'Flag football à Tours : mixte et sans contact',
   description:
     'Jouer au flag football à Tours : 5 contre 5, sans contact, mixte, olympique en 2028. Horaires des entraînements et semaine découverte offerte au club.',
   alternates: { canonical: '/flag-football/' },
@@ -53,23 +74,46 @@ export default function Page() {
           </div>
         </PageHero>
 
+        {/* ── Réponse directe : qui, quoi, quand, où, comment essayer ── */}
+        <section className="sc-sec" id="en-resume">
+          <div className="sc-wrap" data-reveal>
+            <p className="sc-lead">
+              Le flag football est la version sans contact du football américain : on arrache un
+              ruban porté à la ceinture au lieu de plaquer, et l’on joue à 5 contre 5. Aux Pionniers
+              de Touraine, il se pratique au {STADE.nom}, {STADE.rue}, {STADE.codePostal}{' '}
+              {STADE.ville}. L’équipe flag mixte seniors, où femmes et hommes jouent ensemble,
+              s’entraîne le lundi et le jeudi de 20h15 à 22h45 ; les juniors ont leur créneau flag le
+              jeudi de 19h00 à 20h30, et les plus jeunes le samedi de 10h00 à 12h00. Aucun
+              équipement de protection n’est nécessaire : une tenue de sport et des baskets
+              suffisent. La semaine découverte est offerte et cette séance d’essai gratuite n’engage
+              à rien, la licence FFFA étant ensuite incluse dans les formules d’adhésion. Le flag
+              entre au programme des Jeux olympiques de Los Angeles 2028.
+            </p>
+          </div>
+        </section>
+
         {/* ── Le sport ── */}
         <section className="sc-sec" id="decouvrir">
           <YardLine n="10" />
           <div className="sc-wrap">
             <div data-reveal>
               <p className="sc-eyebrow">Le sport</p>
-              <h2 className="sc-title">Le flag football, c’est quoi ?</h2>
+              <h2 className="sc-title">Le flag football aux Pionniers de Touraine.</h2>
             </div>
             <div className="sc-two" data-reveal>
               <div className="sc-body">
                 <p className="sc-legal-text">
-                  Le flag football se joue à 5 contre 5, sans aucun contact. Au lieu de plaquer, on
-                  arrache un ruban, le flag, porté à la ceinture de l’adversaire. Le geste remplace
-                  le plaquage et tout le reste du football américain demeure : les tracés, les
-                  combinaisons, la lecture du jeu. Pour découvrir le flag football à Tours, aucun
-                  équipement de protection n’est nécessaire : une tenue de sport, des baskets, et
-                  c’est parti.
+                  Le flag football se joue à 5 contre 5, sans aucun contact : au lieu de plaquer, on
+                  arrache un ruban, le flag, porté à la ceinture de l’adversaire. Tout le reste du
+                  football américain demeure, les tracés, les combinaisons et la lecture du jeu, et
+                  la définition complète de la discipline est détaillée dans{' '}
+                  <Link href="/blog/flag-football-cest-quoi/">le flag football, c’est quoi</Link>.
+                </p>
+                <p className="sc-legal-text">
+                  Aux Pionniers de Touraine, le flag se pratique au {STADE.nom}, sur trois
+                  collectifs : une équipe mixte seniors, un créneau juniors et l’école de flag pour
+                  les plus jeunes. Pour découvrir le flag football à Tours, aucun équipement de
+                  protection n’est nécessaire : une tenue de sport, des baskets, et c’est parti.
                 </p>
                 <p className="sc-legal-text">
                   L’intensité ne vient donc pas du choc mais de la vitesse. Il faut se démarquer,
@@ -135,7 +179,9 @@ export default function Page() {
               <p className="sc-legal-text">
                 Le flag entre au programme des Jeux olympiques de Los Angeles 2028. Une discipline
                 qui devient olympique, c’est une discipline qui accélère : nouvelles équipes,
-                nouveaux championnats, nouveaux publics, partout en France.
+                nouveaux championnats, nouveaux publics, partout en France. Nous racontons ce
+                basculement en détail dans{' '}
+                <Link href="/blog/flag-football-jo-2028/">le flag football aux JO 2028</Link>.
               </p>
               <p className="sc-legal-text">
                 Commencer maintenant, c’est prendre le train au bon moment. Celles et ceux qui
@@ -252,9 +298,7 @@ export default function Page() {
                 disciplines qui cherchent une équipe, des étudiants arrivés à Tours et qui veulent
                 un groupe en dehors des cours. Aucune expérience n’est demandée, rien n’est à
                 acheter. Pour arriver en connaissant déjà le jeu, lis{' '}
-                <Link href="/blog/regles-flag-football/">les règles du flag football</Link> ou notre
-                présentation générale :{' '}
-                <Link href="/blog/flag-football-cest-quoi/">le flag football, c’est quoi</Link>.
+                <Link href="/blog/regles-flag-football/">les règles du flag football</Link>.
               </p>
               <p className="sc-legal-text">
                 À peu près tout le monde, et ce n’est pas une formule. Le flag ne réclame ni gabarit
@@ -347,6 +391,9 @@ export default function Page() {
             </div>
           </div>
         </section>
+
+        {/* ── FAQ ── */}
+        <FaqSection titre="Avant votre première séance de flag." items={FAQ} />
 
         {/* ── CTA final ── */}
         <section className="sc-sec sc-endzone" id="nous-rejoindre">

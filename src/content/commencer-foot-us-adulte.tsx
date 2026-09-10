@@ -73,8 +73,9 @@ export default function ArticleAdulte() {
         travaille par efforts courts et intenses (une action dure 5 à 10 secondes) entrecoupés de
         récupération : c'est un format beaucoup plus abordable pour un corps d'adulte qui reprend
         que 90 minutes de course continue. La condition physique vient avec les semaines, et si
-        tu veux reprendre encore plus en douceur, le <Link href="/blog/flag-football-cest-quoi/">flag
-        football</Link> offre le même jeu sans les impacts.
+        tu veux reprendre encore plus en douceur,{' '}
+        <Link href="/blog/flag-football-cest-quoi/">le flag football, c’est quoi</Link> t’explique
+        une version du même jeu sans les impacts.
       </p>
       <h3>« Je ne comprends rien aux règles »</h3>
       <p>
@@ -372,7 +373,9 @@ export default function ArticleAdulte() {
         jeudi), et la <strong>semaine découverte est offerte</strong> : plusieurs séances d'essai,
         équipement prêté, aucun engagement. Tu viens, tu essaies, tu décides. Le club a été fondé
         en 1987 : ça fait presque quarante ans qu'on transforme des « je regarde la NFL dans mon
-        canapé » en joueurs. Tu es exactement le profil qu'on attend.
+        canapé » en joueurs. Tu es exactement le profil qu'on attend. Les créneaux, les catégories
+        et l’encadrement sont détaillés sur la page de{' '}
+        <Link href="/football-americain/">la section football américain à Tours</Link>.
       </p>
     </>
   );

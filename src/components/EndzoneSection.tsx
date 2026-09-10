@@ -20,7 +20,7 @@ export default function EndzoneSection() {
       <div className="sc-wrap" data-reveal>
         <p className="sc-eyebrow">Kickoff · Saison 2026/2027</p>
         <h2 className="sc-title">
-          Prêt à entrer
+          Prêt à entrer{' '}
           <br />
           sur le terrain ?
         </h2>

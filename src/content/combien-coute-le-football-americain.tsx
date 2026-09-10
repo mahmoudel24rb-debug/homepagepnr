@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { CtaQuiz, CtaTunnel } from '@/components/blog/CtaEncart';
+import Faq from '@/components/blog/Faq';
 
 /**
  * Article. Mot-clé : « combien coûte le football américain ».
@@ -332,9 +333,9 @@ export default function ArticleCombienCoute() {
         section.
       </p>
       <p>
-        Pour les enfants, le raisonnement est encore plus net : à l’{' '}
-        <Link href="/ecole-de-flag/">école de flag</Link>, ouverte de U7 à U18 le samedi de 10 h à
-        12 h, l’adhésion est de <strong>100 € licence comprise</strong> et il n’y a strictement
+        Pour les enfants, le raisonnement est encore plus net :{' '}
+        <Link href="/ecole-de-flag/">l’école de flag pour les enfants</Link>, ouverte de U7 à U18 le
+        samedi de 10 h à 12 h, est à <strong>100 € licence comprise</strong> et il n’y a strictement
         rien à acheter en dehors d’une tenue de sport. Pas de matériel spécifique qui sera trop
         petit l’année suivante, ce qui n’est pas un détail quand on équipe un enfant en pleine
         croissance.
@@ -451,8 +452,8 @@ export default function ArticleCombienCoute() {
       <p>
         Une fois que tu sais où tu veux jouer, la formule découle de ton âge et de ton envie de
         compétition : école de flag pour les enfants, flag loisir ou flag compétition pour les
-        adultes, juniors U18 ou seniors pour le football américain avec contact. Les pages{' '}
-        <Link href="/football-americain/">football américain</Link> et{' '}
+        adultes, juniors U18 ou seniors pour le football américain avec contact.{' '}
+        <Link href="/football-americain/">Les tarifs de la section foot US</Link> et la page{' '}
         <Link href="/flag-football/">flag football</Link> décrivent chaque section en détail.
       </p>
 
@@ -471,86 +472,122 @@ export default function ArticleCombienCoute() {
         <Link href="/blog/stade-de-la-chambrerie-tours/">le Stade de la Chambrerie</Link>.
       </p>
 
-      <h2 id="faq">Questions fréquentes sur le prix</h2>
-
-      <h3>Combien coûte une licence de football américain ?</h3>
-      <p>
-        Chez les Pionniers de Touraine, la licence FFFA n’est pas facturée à part : elle est{' '}
-        <strong>incluse dans l’adhésion</strong>, qui va de 100 € à 249,99 € selon la formule. Tu
-        n’as donc pas de licence à ajouter au tarif affiché, ce qui rend la comparaison entre
-        clubs parfois trompeuse : ailleurs, le montant annoncé peut ne couvrir que la cotisation
-        associative, la licence et l’assurance venant ensuite. Pose systématiquement la question
-        « est-ce que la licence est comprise ? » quand tu compares deux clubs, quel que soit le
-        sport.
-      </p>
-
-      <h3>Faut-il acheter un casque pour commencer ?</h3>
-      <p>
-        Non. L’<strong>équipement complet est prêté aux débutants pour la première saison</strong>,
-        casque et épaulières compris, et il est ajusté par le staff du club, ce qui compte autant
-        que le matériel lui-même : un casque trop grand ne protège pas correctement. Tu n’achètes
-        ton propre équipement que si tu accroches, quand tu connais ton poste et tes préférences.
-        Et si tu ne veux jamais de casque, le flag football existe pour ça.
-      </p>
-
-      <h3>Le flag football coûte-t-il moins cher que le football américain ?</h3>
-      <p>
-        Oui, sur les deux tableaux. L’adhésion d’abord : 100 € en flag loisir seniors et 150 € en
-        flag compétition seniors, contre 249,99 € pour les seniors au contact. L’équipement
-        ensuite : une ceinture à flags fournie par le club, un short sans poches et des crampons
-        suffisent, là où le contact demande un jeu de protections. C’est ce qui fait du flag la
-        porte d’entrée la plus accessible du sport, pour un adulte comme pour un enfant.
-      </p>
-
-      <h3>Peut-on payer en plusieurs fois ?</h3>
-      <p>
-        Oui, le <strong>paiement en trois fois</strong> est possible. Il suffit de le préciser au
-        moment de l’inscription en ligne. C’est une pratique courante dans le monde associatif et
-        elle ne change rien à ton statut de licencié : tu joues dès la première échéance réglée,
-        pas à la dernière.
-      </p>
-
-      <h3>Y a-t-il des aides pour payer une licence sportive ?</h3>
-      <p>
-        Selon ta situation,{' '}
-        <strong>certaines collectivités ou comités d’entreprise proposent des aides</strong> à la
-        pratique sportive, avec des conditions et des montants qui leur sont propres. Nous ne
-        pouvons pas te dire à l’avance ce à quoi tu as droit, mais nous pouvons t’encourager à te
-        renseigner auprès de ta commune, de ton employeur ou de ton organisme social avant de
-        régler ton adhésion. C’est cinq minutes de recherche pour une économie parfois
-        substantielle.
-      </p>
-
-      <h3>Combien coûte l’inscription d’un enfant ?</h3>
-      <p>
-        L’<Link href="/ecole-de-flag/">école de flag</Link>, qui accueille les U7 à U18 nés entre
-        2009 et 2021 le samedi de 10 h à 12 h, est à <strong>100 € pour la saison, licence
-        comprise</strong>. Il n’y a aucun équipement à acheter : les ceintures à flags et les
-        ballons sont fournis, une tenue de sport suffit. Pour un adolescent qui veut passer au
-        football américain avec contact, l’équipe juniors U18 est à 150 €, équipement prêté. Le
-        parcours complet par âge est détaillé dans notre article{' '}
-        <Link href="/blog/football-americain-jeunes-u13-u16-u18/">football américain et flag pour
-        les jeunes</Link>.
-      </p>
-
-      <h3>Que se passe-t-il si j’arrête en cours de saison ?</h3>
-      <p>
-        C’est une question à poser directement au club plutôt qu’à un article, parce qu’elle
-        dépend de ta situation et du moment. Ce que nous pouvons dire, c’est que la meilleure
-        façon de ne pas se retrouver dans ce cas est d’utiliser la semaine découverte : plusieurs
-        séances d’essai gratuites permettent de savoir si le sport te correspond avant de
-        t’engager pour l’année. Écris-nous via la page <Link href="/contact/">contact</Link> si tu
-        as un doute sur ta disponibilité pour la saison.
-      </p>
-
-      <h3>Y a-t-il des frais cachés en cours d’année ?</h3>
-      <p>
-        Le principe d’un club associatif est de ne pas en avoir. Ton adhésion couvre la licence,
-        les entraînements, l’encadrement et l’engagement de ton équipe en compétition. Restent les
-        dépenses personnelles habituelles de n’importe quel sportif : ta paire de crampons quand
-        elle est usée, ton protège-dents, et éventuellement, plus tard, ton propre équipement si
-        tu décides d’en acheter un. Rien d’obligatoire, rien de surprise.
-      </p>
+      <Faq
+        titre="Questions fréquentes sur le prix"
+        items={[
+          {
+            q: 'Combien coûte une licence de football américain ?',
+            r: (
+              <p>
+                Chez les Pionniers de Touraine, la licence FFFA n’est pas facturée à part : elle
+                est <strong>incluse dans l’adhésion</strong>, qui va de 100 € à 249,99 € selon la
+                formule. Tu n’as donc pas de licence à ajouter au tarif affiché, ce qui rend la
+                comparaison entre clubs parfois trompeuse : ailleurs, le montant annoncé peut ne
+                couvrir que la cotisation associative, la licence et l’assurance venant ensuite.
+                Pose systématiquement la question « est-ce que la licence est comprise ? » quand tu
+                compares deux clubs, quel que soit le sport.
+              </p>
+            ),
+          },
+          {
+            q: 'Faut-il acheter un casque pour commencer ?',
+            r: (
+              <p>
+                Non. L’
+                <strong>équipement complet est prêté aux débutants pour la première saison</strong>
+                , casque et épaulières compris, et il est ajusté par le staff du club, ce qui compte
+                autant que le matériel lui-même : un casque trop grand ne protège pas correctement.
+                Tu n’achètes ton propre équipement que si tu accroches, quand tu connais ton poste
+                et tes préférences. Et si tu ne veux jamais de casque, le flag football existe pour
+                ça.
+              </p>
+            ),
+          },
+          {
+            q: 'Le flag football coûte-t-il moins cher que le football américain ?',
+            r: (
+              <p>
+                Oui, sur les deux tableaux. L’adhésion d’abord : 100 € en flag loisir seniors et
+                150 € en flag compétition seniors, contre 249,99 € pour les seniors au contact.
+                L’équipement ensuite : une ceinture à flags fournie par le club, un short sans
+                poches et des crampons suffisent, là où le contact demande un jeu de protections.
+                C’est ce qui fait du flag la porte d’entrée la plus accessible du sport, pour un
+                adulte comme pour un enfant.
+              </p>
+            ),
+          },
+          {
+            q: 'Peut-on payer en plusieurs fois ?',
+            r: (
+              <p>
+                Oui, le <strong>paiement en trois fois</strong> est possible. Il suffit de le
+                préciser au moment de l’inscription en ligne. C’est une pratique courante dans le
+                monde associatif et elle ne change rien à ton statut de licencié : tu joues dès la
+                première échéance réglée, pas à la dernière.
+              </p>
+            ),
+          },
+          {
+            q: 'Y a-t-il des aides pour payer une licence sportive ?',
+            r: (
+              <p>
+                Selon ta situation,{' '}
+                <strong>certaines collectivités ou comités d’entreprise proposent des aides</strong>{' '}
+                à la pratique sportive, avec des conditions et des montants qui leur sont propres.
+                Nous ne pouvons pas te dire à l’avance ce à quoi tu as droit, mais nous pouvons
+                t’encourager à te renseigner auprès de ta commune, de ton employeur ou de ton
+                organisme social avant de régler ton adhésion. C’est cinq minutes de recherche pour
+                une économie parfois substantielle.
+              </p>
+            ),
+          },
+          {
+            q: 'Combien coûte l’inscription d’un enfant ?',
+            r: (
+              <p>
+                <Link href="/ecole-de-flag/">L’école de flag pour les enfants</Link>, qui accueille
+                les U7 à U18 nés entre 2009 et 2021 le samedi de 10 h à 12 h, est à{' '}
+                <strong>100 € pour la saison, licence comprise</strong>. Il n’y a aucun équipement à
+                acheter : les ceintures à flags et les ballons sont fournis, une tenue de sport
+                suffit. Pour un adolescent qui veut passer au football américain avec contact,
+                l’équipe juniors U18 est à 150 €, équipement prêté. Le parcours complet par âge est
+                détaillé dans notre article{' '}
+                <Link href="/blog/football-americain-jeunes-u13-u16-u18/">
+                  football américain et flag pour les jeunes
+                </Link>
+                .
+              </p>
+            ),
+          },
+          {
+            q: 'Que se passe-t-il si j’arrête en cours de saison ?',
+            r: (
+              <p>
+                C’est une question à poser directement au club plutôt qu’à un article, parce qu’elle
+                dépend de ta situation et du moment. Ce que nous pouvons dire, c’est que la
+                meilleure façon de ne pas se retrouver dans ce cas est d’utiliser la semaine
+                découverte : plusieurs séances d’essai gratuites permettent de savoir si le sport te
+                correspond avant de t’engager pour l’année. Écris-nous via la page{' '}
+                <Link href="/contact/">contact</Link> si tu as un doute sur ta disponibilité pour la
+                saison.
+              </p>
+            ),
+          },
+          {
+            q: 'Y a-t-il des frais cachés en cours d’année ?',
+            r: (
+              <p>
+                Le principe d’un club associatif est de ne pas en avoir. Ton adhésion couvre la
+                licence, les entraînements, l’encadrement et l’engagement de ton équipe en
+                compétition. Restent les dépenses personnelles habituelles de n’importe quel
+                sportif : ta paire de crampons quand elle est usée, ton protège-dents, et
+                éventuellement, plus tard, ton propre équipement si tu décides d’en acheter un. Rien
+                d’obligatoire, rien de surprise.
+              </p>
+            ),
+          },
+        ]}
+      />
 
       <h2 id="conclusion">Le budget n’est pas ce qui doit t’empêcher d’essayer</h2>
       <p>
@@ -565,8 +602,8 @@ export default function ArticleCombienCoute() {
         au Stade de la Chambrerie, avec une tenue de sport et une bouteille d’eau. Tout le reste
         se décide après, en connaissance de cause. Si tu hésites encore entre le contact et le
         flag, notre article{' '}
-        <Link href="/blog/commencer-le-football-americain-adulte/">commencer le football américain
-        à l’âge adulte</Link> raconte ce qui se passe vraiment pendant une première saison, et la
+        <Link href="/blog/commencer-le-football-americain-adulte/">débuter le foot US adulte</Link>{' '}
+        raconte ce qui se passe vraiment pendant une première saison, et la
         page <Link href="/nos-sections/">nos sections</Link> te montre tous les créneaux d’un
         coup d’œil.
       </p>

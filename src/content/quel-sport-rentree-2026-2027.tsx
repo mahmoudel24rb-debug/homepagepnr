@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { CtaQuiz, CtaTunnel } from '@/components/blog/CtaEncart';
+import Faq from '@/components/blog/Faq';
 
 /**
  * Article saisonnier. Mot-clé : « quel sport rentrée 2026 ».
@@ -44,7 +45,7 @@ export default function ArticleRentree() {
         un ami qui y va, une couleur de maillot.
       </p>
       <p>
-        La bonne méthode commence par quatre questions à te poser honnêtement, avant même de
+        La bonne méthode commence par trois questions à te poser honnêtement, avant même de
         regarder la moindre offre. Personne ne lira tes réponses, donc autant qu’elles soient vraies.
       </p>
       <ul>
@@ -67,17 +68,12 @@ export default function ArticleRentree() {
           <Link href="/blog/sport-de-combat-tours/">quel sport de combat choisir à Tours</Link>.
         </li>
         <li>
-          <strong>Quels créneaux sont réellement compatibles ?</strong> Pas ceux que tu aimerais
-          tenir : ceux que tu tiendras. Sors ton agenda réel, celui avec les horaires de travail, les
-          trajets, les enfants à récupérer et le mardi soir où tu es systématiquement en retard. Un
-          sport parfait à un créneau impossible est un sport que tu abandonneras en novembre.
-        </li>
-        <li>
-          <strong>Qu’est-ce que tu viens chercher ?</strong> Te défouler, retrouver du lien social,
-          faire de la compétition, prendre soin de ta santé, ou simplement sortir de chez toi une
-          fois par semaine ? Ces objectifs ne mènent pas au même sport, et surtout pas au même type
-          de club. Un groupe orienté compétition rendra malheureux quelqu’un qui cherchait du loisir,
-          et l’inverse est tout aussi vrai.
+          <strong>Quels créneaux, et qu’est-ce que tu viens chercher ?</strong> Ces deux filtres
+          décident du reste, et ils ne sont pas propres à septembre : on les a traités en entier,
+          avec le guide par créneau, par âge et par envie, dans{' '}
+          <Link href="/blog/club-de-sport-tours/">
+            le guide pour choisir un club de sport à Tours
+          </Link>.
         </li>
       </ul>
       <p>
@@ -164,18 +160,16 @@ export default function ArticleRentree() {
       </p>
       <h3>Mais s’inscrire en cours d’année reste possible</h3>
       <p>
-        Et ce n’est même pas une mauvaise idée. La plupart des clubs accueillent des arrivées toute
-        l’année, avec parfois une cotisation ajustée au prorata. Tu seras intégré à la reprise des
-        fondamentaux plutôt qu’au groupe principal, ce qui, pour un vrai débutant, n’est pas
-        pénalisant du tout : tu bénéficies d’un encadrement plus individualisé et tu arrives dans un
-        club dont l’ambiance de saison est déjà installée. Le meilleur moment pour venir essayer
-        reste, tout simplement, celui où tu y penses.
+        Et ce n’est même pas une mauvaise idée : la plupart des clubs accueillent des arrivées toute
+        l’année. Le détail de ce que tu perds et de ce que tu gagnes en arrivant en janvier est dans{' '}
+        <Link href="/blog/club-de-sport-tours/">le guide des clubs de sport à Tours</Link>. Le
+        meilleur moment pour venir essayer reste, tout simplement, celui où tu y penses.
       </p>
 
       <h2 id="checklist">La checklist avant de s’engager</h2>
       <p>
-        Avant de sortir la carte bleue et le certificat médical, passe ces cinq points en revue. Ils
-        prennent une soirée à vérifier et ils te feront gagner une saison.
+        Avant de sortir la carte bleue et le certificat médical, passe ces trois points en revue.
+        Ils prennent une soirée à vérifier et ils te feront gagner une saison.
       </p>
       <ul>
         <li>
@@ -185,29 +179,16 @@ export default function ArticleRentree() {
           Deux ou trois essais suffisent pour que la différence saute aux yeux.
         </li>
         <li>
-          <strong>Confronte les horaires à ta vraie semaine.</strong> Jour par jour, trajet compris.
-          Un entraînement à 20 h 30 à vingt minutes de chez toi n’est pas le même engagement qu’un
-          entraînement à 19 h à cinq minutes. Regarde aussi le rythme des matchs : week-ends complets
-          avec déplacements, ou rencontres locales ? C’est souvent là que les surprises arrivent.
+          <strong>Bloque tes créneaux de septembre à février, pas juste de septembre.</strong> Le
+          test n’est pas « est-ce que ça rentre cette semaine » mais « est-ce que ça rentrera encore
+          quand il fera nuit à 18 h ». Regarde l’heure de fin réelle et le rythme des week-ends de
+          match avant de signer.
         </li>
         <li>
-          <strong>Calcule le budget complet.</strong> Pas seulement la licence : ajoute l’équipement
-          personnel, les déplacements, les à-côtés. Puis pose la question inverse au club : qu’est-ce
-          qui est prêté ? Demande aussi s’il existe un paiement échelonné ou des dispositifs d’aide,
-          type pass sport, comité d’entreprise ou aide municipale. Beaucoup de clubs les acceptent
-          sans en faire la publicité.
-        </li>
-        <li>
-          <strong>Juge l’accueil des débutants, pas la qualité du site web.</strong> Observe comment
-          on te parle quand tu ne sers encore à rien : est-ce que quelqu’un vient te chercher, est-ce
-          qu’on te présente au groupe, est-ce que les anciens parlent aux nouveaux ou entre eux ?
-          C’est ce critère, et pas la discipline, qui déterminera si tu es encore là dans deux ans.
-        </li>
-        <li>
-          <strong>Vérifie le format de compétition attendu.</strong> Certains clubs attendent une
-          disponibilité de week-end quasi systématique, d’autres proposent une pratique purement
-          loisir. Aucune des deux options n’est meilleure, mais découvrir la mauvaise en janvier est
-          une source de conflit inutile. Demande dès le premier soir.
+          <strong>Pose les trois questions qui comptent avant de payer.</strong> Combien coûte la
+          première année tout compris, qu’est-ce qui est prêté, et est-ce que des débutants arrivent
+          chaque année ici. Les réponses détaillées, critère par critère, sont dans{' '}
+          <Link href="/blog/club-de-sport-tours/">comment choisir son club à Tours</Link>.
         </li>
       </ul>
 
@@ -240,13 +221,10 @@ export default function ArticleRentree() {
       </p>
       <h3>Abandonner après une seule séance</h3>
       <p>
-        La première séance est presque toujours la pire de la saison. Tu ne connais personne, tu ne
-        comprends pas les consignes, tu es en retard sur chaque exercice, tu as l’impression d’être
-        observé, et tu rentres en te disant que ce n’est pas pour toi. C’est un ressenti universel et
-        très trompeur. Juge plutôt sur trois séances, et juge sur les bons critères : est-ce qu’on
-        s’occupe de toi, est-ce que tu comprends un peu mieux à chaque fois, est-ce que tu as envie
-        d’y retourner deux jours après. Si les trois réponses sont oui, reste, même si tu es encore
-        mauvais. Tu seras toujours mauvais au début, c’est le principe.
+        La première séance de septembre est presque toujours la pire de la saison, et c’est un
+        ressenti universel : juge sur trois séances, pas sur une. C’est d’autant plus dommage
+        d’arrêter là qu’en septembre tu es entouré d’autres débutants qui vivent exactement la même
+        soirée, ce qui ne sera plus vrai en janvier.
       </p>
 
       <h2 id="footus">Et si cette année, c’était le foot US ou le flag ?</h2>
@@ -305,54 +283,77 @@ export default function ArticleRentree() {
         bouton="Je viens essayer"
       />
 
-      <h2 id="faq">Questions fréquentes sur la rentrée sportive 2026/2027</h2>
-      <h3>Quand commencent les inscriptions dans les clubs ?</h3>
-      <p>
-        La plupart des clubs ouvrent leurs inscriptions à la fin du mois d’août et les tiennent
-        ouvertes tout le mois de septembre, souvent avec un pic autour des forums des associations
-        organisés par les communes au début du mois. Beaucoup permettent aussi de préinscrire en
-        ligne dès l’été. Mais l’inscription administrative n’est pas le sujet le plus important :
-        ce qui compte, c’est la date de reprise des entraînements, qui tombe généralement dans les
-        derniers jours d’août ou la première semaine de septembre. C’est là que se forment les
-        groupes de débutants, et c’est donc le moment idéal pour se présenter. Chez nous, la semaine
-        découverte est proposée toute l’année, ce qui te permet d’essayer avant même de remplir quoi
-        que ce soit.
-      </p>
-      <h3>Est-il trop tard pour s’inscrire en janvier ?</h3>
-      <p>
-        Non, et cette idée reçue prive beaucoup de gens d’une demi-saison. La quasi-totalité des
-        clubs acceptent les arrivées en cours d’année, parfois avec une cotisation ajustée. Ce que tu
-        perds en arrivant en janvier, c’est le confort d’un groupe de débutants qui progresse au même
-        rythme que toi : tu seras plus souvent en apprentissage individualisé, ce qui a d’ailleurs
-        ses avantages. Ce que tu gagnes, c’est six mois de pratique au lieu de zéro, et un club où
-        l’ambiance de saison est déjà installée. Le seul vrai risque de janvier, c’est de te comparer
-        à des gens qui ont commencé en septembre. Ne le fais pas : compare-toi à toi-même il y a
-        trois semaines.
-      </p>
-      <h3>Quel sport reprendre quand on n’a pas fait de sport depuis dix ans ?</h3>
-      <p>
-        La réponse tient moins à la discipline qu’à la manière de reprendre. Choisis un sport où
-        l’effort est fractionné plutôt que continu : des actions courtes entrecoupées de pauses sont
-        beaucoup plus accessibles à un corps désentraîné qu’une heure d’effort ininterrompu. Choisis
-        un club qui accueille réellement des débutants, pour ne pas passer six mois à courir derrière
-        un groupe. Et choisis un format où quelqu’un remarque ton absence, parce que la régularité
-        est ton vrai défi, pas la performance. Dernier point de bon sens : après dix ans d’arrêt, un
-        avis médical avant de reprendre n’a jamais fait de mal, surtout si tu as des antécédents. Le
-        flag football coche pas mal de ces cases, mais beaucoup d’autres sports aussi : l’important
-        est que les cases soient cochées.
-      </p>
-      <h3>Combien coûte une licence de sport pour la saison ?</h3>
-      <p>
-        En ordre de grandeur, une licence de sport associatif en France se situe le plus souvent dans
-        une fourchette de quelques dizaines à quelques centaines d’euros à l’année, selon la
-        discipline, le niveau, et ce que la cotisation inclut. Cette fourchette est trop large pour
-        être utile telle quelle, alors voici la bonne façon de comparer : demande au club le montant
-        total de la première année, équipement compris, puis demande ce qui est prêté. Deux clubs
-        affichant la même cotisation peuvent représenter un coût réel très différent une fois le
-        matériel ajouté. Renseigne-toi aussi sur le paiement échelonné et sur les aides existantes,
-        que beaucoup de clubs acceptent sans les mettre en avant. Et rappelle-toi que les séances
-        d’essai sont gratuites presque partout : tester ne coûte rien.
-      </p>
+      <Faq
+        titre="Questions fréquentes sur la rentrée sportive 2026/2027"
+        items={[
+          {
+            q: 'Quand commencent les inscriptions dans les clubs ?',
+            r: (
+              <p>
+                La plupart des clubs ouvrent leurs inscriptions à la fin du mois d’août et les
+                tiennent ouvertes tout le mois de septembre, souvent avec un pic autour des forums
+                des associations organisés par les communes au début du mois. Beaucoup permettent
+                aussi de préinscrire en ligne dès l’été. Mais l’inscription administrative n’est pas
+                le sujet le plus important : ce qui compte, c’est la date de reprise des
+                entraînements, qui tombe généralement dans les derniers jours d’août ou la première
+                semaine de septembre. C’est là que se forment les groupes de débutants, et c’est
+                donc le moment idéal pour se présenter. Chez nous, la semaine découverte est
+                proposée toute l’année, ce qui te permet d’essayer avant même de remplir quoi que ce
+                soit.
+              </p>
+            ),
+          },
+          {
+            q: 'Est-il trop tard pour s’inscrire en janvier ?',
+            r: (
+              <p>
+                Non, et cette idée reçue prive beaucoup de gens d’une demi-saison. La quasi-totalité
+                des clubs acceptent les arrivées en cours d’année, parfois avec une cotisation
+                ajustée. Ce que tu perds en arrivant en janvier, c’est le confort d’un groupe de
+                débutants qui progresse au même rythme que toi : tu seras plus souvent en
+                apprentissage individualisé, ce qui a d’ailleurs ses avantages. Ce que tu gagnes,
+                c’est six mois de pratique au lieu de zéro, et un club où l’ambiance de saison est
+                déjà installée. Le seul vrai risque de janvier, c’est de te comparer à des gens qui
+                ont commencé en septembre. Ne le fais pas : compare-toi à toi-même il y a trois
+                semaines.
+              </p>
+            ),
+          },
+          {
+            q: 'Quel sport reprendre quand on n’a pas fait de sport depuis dix ans ?',
+            r: (
+              <p>
+                La réponse tient moins à la discipline qu’à la manière de reprendre. Choisis un
+                sport où l’effort est fractionné plutôt que continu : des actions courtes
+                entrecoupées de pauses sont beaucoup plus accessibles à un corps désentraîné qu’une
+                heure d’effort ininterrompu. Choisis un club qui accueille réellement des débutants,
+                pour ne pas passer six mois à courir derrière un groupe. Et choisis un format où
+                quelqu’un remarque ton absence, parce que la régularité est ton vrai défi, pas la
+                performance. Dernier point de bon sens : après dix ans d’arrêt, un avis médical
+                avant de reprendre n’a jamais fait de mal, surtout si tu as des antécédents. La
+                méthode complète est dans{' '}
+                <Link href="/blog/reprendre-le-sport-a-30-ans-tours/">
+                  reprendre le sport à 30 ans à Tours
+                </Link>.
+              </p>
+            ),
+          },
+          {
+            q: 'Combien coûte une licence de sport pour la saison ?',
+            r: (
+              <p>
+                En ordre de grandeur, une licence de sport associatif en France se situe le plus
+                souvent dans une fourchette de quelques dizaines à quelques centaines d’euros à
+                l’année. Cette fourchette est trop large pour être utile telle quelle : la seule
+                comparaison qui vaut est le coût total de la première année, équipement compris.
+                Rappelle-toi surtout que les séances d’essai de septembre sont gratuites presque
+                partout : tester trois clubs ne coûte rien d’autre que trois soirées, et c’est le
+                meilleur investissement de ta rentrée.
+              </p>
+            ),
+          },
+        ]}
+      />
 
       <h2 id="conclusion">Le meilleur sport est celui où tu seras encore en février</h2>
       <p>
@@ -367,6 +368,12 @@ export default function ArticleRentree() {
         ou le flag font partie de tes pistes, la semaine découverte est offerte et l’équipement est
         prêté : la seule chose que tu risques, c’est d’y prendre goût.
       </p>
+
+      <CtaTunnel
+        titre="Septembre, c’est maintenant ou dans un an"
+        texte="Semaine découverte offerte aux Pionniers de Touraine : plusieurs séances d’essai au Stade de la Chambrerie, équipement complet prêté, groupe de débutants chaque rentrée, aucun engagement."
+        bouton="Je réserve ma séance d’essai"
+      />
     </>
   );
 }

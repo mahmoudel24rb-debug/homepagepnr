@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { CtaQuiz, CtaTunnel } from '@/components/blog/CtaEncart';
+import Faq from '@/components/blog/Faq';
 
 /**
  * Article. Mots-clés : « stade de la chambrerie », « stade chambrerie tours »,
@@ -32,8 +33,8 @@ export default function ArticleChambrerie() {
         <strong>1987</strong>, ce qui en fait l’un des plus anciens clubs de football américain de
         France. Aujourd’hui, la structure fait vivre une équipe senior de football américain, des
         juniors, une équipe de flag mixte engagée en championnat mixte D1, des jeunes en flag et une
-        école de flag pour les enfants. L’histoire complète est sur{' '}
-        <Link href="/le-club/">la page du club</Link>.
+        école de flag pour les enfants. L’histoire complète est sur la page{' '}
+        <Link href="/le-club/">le club des Pionniers de Touraine</Link>.
       </p>
 
       <div className="blogc-toc">
@@ -166,6 +167,13 @@ export default function ArticleChambrerie() {
         quelques secondes, un arrêt, tout le monde se replace, ça repart. Ces respirations
         permettent de commenter, de poser une question à ton voisin, de comprendre ce qui vient de
         se passer. C’est probablement le sport collectif le plus facile à regarder en discutant.
+      </p>
+      <p>
+        Si tu veux te faire l’œil avant de venir, la meilleure préparation reste de regarder du
+        football américain à la télévision : on a détaillé où et comment{' '}
+        <Link href="/blog/comment-regarder-le-college-football-en-france/">
+          regarder le college football en France
+        </Link>, plateforme par plateforme.
       </p>
 
       <h3>Les infos pratiques du match</h3>
@@ -389,75 +397,118 @@ export default function ArticleChambrerie() {
         bouton="Je réserve mes séances d’essai"
       />
 
-      <h2 id="faq">Questions fréquentes sur le stade de la Chambrerie</h2>
-
-      <h3>Où se trouve exactement le stade de la Chambrerie ?</h3>
-      <p>
-        Rue Tartifume, 37100 Tours, au nord de la ville. C’est l’adresse des entraînements et des
-        matchs à domicile des Pionniers de Touraine. Pour calculer ton itinéraire, le plus fiable
-        est de partir de{' '}
-        <a href="https://maps.app.goo.gl/cnVghabaHrhx9qaQA" target="_blank" rel="noopener noreferrer">
-          la fiche du stade sur Google Maps
-        </a>, qui te donnera le trajet adapté à ton point de départ et à ton mode de transport.
-        L’adresse et une carte figurent également sur <Link href="/contact/">la page contact</Link>.
-      </p>
-
-      <h3>Peut-on assister à un match ou à un entraînement ?</h3>
-      <p>
-        Oui. Les entraînements se déroulent en soirée et le samedi matin pour l’école de flag, et
-        venir observer une séance est une très bonne façon de découvrir le sport sans engagement.
-        Pour les matchs, les dates et les conditions d’accès dépendent de chaque rencontre :
-        renseigne-toi sur nos réseaux sociaux, où le club publie l’affiche de chaque réception, ou
-        écris-nous depuis la page contact pour une date précise.
-      </p>
-
-      <h3>Combien de temps dure un match de football américain ?</h3>
-      <p>
-        Une rencontre se joue en quatre quarts-temps séparés par une mi-temps, mais la durée réelle
-        dépasse largement le temps de jeu affiché, parce que le chronomètre s’arrête très
-        fréquemment. Compte un après-midi ou une soirée plutôt qu’une heure. Les formats des
-        catégories de jeunes et du flag sont plus courts, et la durée exacte d’un quart-temps dépend
-        du règlement de la compétition concernée.
-      </p>
-
-      <h3>Faut-il connaître les règles pour venir voir un match ?</h3>
-      <p>
-        Non. Le principe de base tient en une phrase : quatre tentatives pour avancer de dix yards,
-        et l’objectif est d’atteindre la zone d’en-but. Avec ça, tu suis une rencontre entière. Le
-        jeu étant découpé en actions courtes séparées par des arrêts, tu as tout le temps de poser
-        des questions à ton voisin. Si tu veux préparer un peu, lis{' '}
-        <Link href="/blog/regles-football-americain/">les règles expliquées simplement</Link> et
-        garde notre <Link href="/blog/lexique-football-americain/">lexique</Link> sous la main.
-      </p>
-
-      <h3>Peut-on venir avec des enfants ?</h3>
-      <p>
-        Oui, et beaucoup de familles le font, notamment celles de l’école de flag. Un match est un
-        spectacle bruyant et spectaculaire qui plaît généralement beaucoup aux enfants, et le club
-        accueille chaque samedi matin les plus jeunes sur son créneau d’école de flag, sans contact.
-        Pour choisir la discipline adaptée à l’âge de ton enfant, va voir{' '}
-        <Link href="/blog/a-quel-age-commencer-le-football-americain/">à quel âge commencer le
-        football américain</Link>.
-      </p>
-
-      <h3>Comment suivre un match si je ne peux pas me déplacer ?</h3>
-      <p>
-        La fédération permet désormais aux clubs de diffuser leurs matchs sur la FFFA TV, et les
-        Pionniers construisent l’équipe de bénévoles qui fait vivre ce direct depuis la Chambrerie.
-        Les rencontres concernées sont annoncées sur les réseaux du club. Si le sujet t’intéresse
-        au-delà du visionnage, le club recrute justement pour le tournage et la régie, sans aucune
-        expérience requise.
-      </p>
-
-      <h3>Le club recrute-t-il des joueurs toute l’année ?</h3>
-      <p>
-        Les arrivées se concentrent logiquement autour de la rentrée, mais un club amateur accueille
-        des curieux à d’autres moments de la saison, en fonction des groupes et des catégories. Le
-        plus simple est de poser la question directement : selon la période, on t’orientera vers le
-        créneau le plus adapté, en football américain, en flag ou à l’école de flag. Notre article{' '}
-        <Link href="/blog/quel-sport-rentree-2026-2027/">quel sport pour la rentrée 2026-2027</Link>{' '}
-        aide à faire le point si tu hésites encore entre plusieurs disciplines.
-      </p>
+      <Faq
+        titre="Questions fréquentes sur le stade de la Chambrerie"
+        items={[
+          {
+            q: 'Où se trouve exactement le stade de la Chambrerie ?',
+            r: (
+              <p>
+                Rue Tartifume, 37100 Tours, au nord de la ville. C’est l’adresse des entraînements
+                et des matchs à domicile des Pionniers de Touraine. Pour calculer ton itinéraire, le
+                plus fiable est de partir de{' '}
+                <a
+                  href="https://maps.app.goo.gl/cnVghabaHrhx9qaQA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  la fiche du stade sur Google Maps
+                </a>
+                , qui te donnera le trajet adapté à ton point de départ et à ton mode de transport.
+                L’adresse et une carte figurent également sur{' '}
+                <Link href="/contact/">la page contact</Link>.
+              </p>
+            ),
+          },
+          {
+            q: 'Peut-on assister à un match ou à un entraînement ?',
+            r: (
+              <p>
+                Oui. Les entraînements se déroulent en soirée et le samedi matin pour l’école de
+                flag, et venir observer une séance est une très bonne façon de découvrir le sport
+                sans engagement. Pour les matchs, les dates et les conditions d’accès dépendent de
+                chaque rencontre : renseigne-toi sur nos réseaux sociaux, où le club publie
+                l’affiche de chaque réception, ou écris-nous depuis la page contact pour une date
+                précise.
+              </p>
+            ),
+          },
+          {
+            q: 'Combien de temps dure un match de football américain ?',
+            r: (
+              <p>
+                Une rencontre se joue en quatre quarts-temps séparés par une mi-temps, mais la durée
+                réelle dépasse largement le temps de jeu affiché, parce que le chronomètre s’arrête
+                très fréquemment. Compte un après-midi ou une soirée plutôt qu’une heure. Les
+                formats des catégories de jeunes et du flag sont plus courts, et la durée exacte
+                d’un quart-temps dépend du règlement de la compétition concernée.
+              </p>
+            ),
+          },
+          {
+            q: 'Faut-il connaître les règles pour venir voir un match ?',
+            r: (
+              <p>
+                Non. Le principe de base tient en une phrase : quatre tentatives pour avancer de dix
+                yards, et l’objectif est d’atteindre la zone d’en-but. Avec ça, tu suis une
+                rencontre entière. Le jeu étant découpé en actions courtes séparées par des arrêts,
+                tu as tout le temps de poser des questions à ton voisin. Si tu veux préparer un peu,
+                lis <Link href="/blog/regles-football-americain/">
+                  les règles expliquées simplement
+                </Link>{' '}
+                et garde{' '}
+                <Link href="/blog/lexique-football-americain/">
+                  le lexique du football américain
+                </Link>{' '}
+                sous la main.
+              </p>
+            ),
+          },
+          {
+            q: 'Peut-on venir avec des enfants ?',
+            r: (
+              <p>
+                Oui, et beaucoup de familles le font, notamment celles de l’école de flag. Un match
+                est un spectacle bruyant et spectaculaire qui plaît généralement beaucoup aux
+                enfants, et le club accueille chaque samedi matin les plus jeunes sur son créneau
+                d’école de flag, sans contact. Pour choisir la discipline adaptée à l’âge de ton
+                enfant, va voir{' '}
+                <Link href="/blog/a-quel-age-commencer-le-football-americain/">
+                  à quel âge commencer le football américain
+                </Link>.
+              </p>
+            ),
+          },
+          {
+            q: 'Comment suivre un match si je ne peux pas me déplacer ?',
+            r: (
+              <p>
+                La fédération permet désormais aux clubs de diffuser leurs matchs sur la FFFA TV, et
+                les Pionniers construisent l’équipe de bénévoles qui fait vivre ce direct depuis la
+                Chambrerie. Les rencontres concernées sont annoncées sur les réseaux du club. Si le
+                sujet t’intéresse au-delà du visionnage, le club recrute justement pour le tournage
+                et la régie, sans aucune expérience requise.
+              </p>
+            ),
+          },
+          {
+            q: 'Le club recrute-t-il des joueurs toute l’année ?',
+            r: (
+              <p>
+                Les arrivées se concentrent logiquement autour de la rentrée, mais un club amateur
+                accueille des curieux à d’autres moments de la saison, en fonction des groupes et
+                des catégories. Le plus simple est de poser la question directement : selon la
+                période, on t’orientera vers le créneau le plus adapté, en football américain, en
+                flag ou à l’école de flag. Notre article{' '}
+                <Link href="/blog/quel-sport-rentree-2026-2027/">
+                  quel sport pour la rentrée 2026-2027
+                </Link>{' '}
+                aide à faire le point si tu hésites encore entre plusieurs disciplines.
+              </p>
+            ),
+          },
+        ]}
+      />
 
       <h2 id="conclusion">Une adresse, une équipe, une porte ouverte</h2>
       <p>
@@ -470,8 +521,8 @@ export default function ArticleChambrerie() {
         Alors viens. Regarde un match, observe un entraînement, amène tes enfants un samedi matin.
         Et si l’envie te prend d’aller plus loin, il y a trois façons d’y revenir : en tenue avec la{' '}
         <Link href="/nos-sections/">section qui te correspond</Link>, en bénévole{' '}
-        <Link href="/blog/arbitre-coach-benevole-club-football-americain/">sur l’un des rôles
-        ouverts du club</Link>, ou en partenaire depuis{' '}
+        <Link href="/blog/arbitre-coach-benevole-club-football-americain/">devenir arbitre, coach
+        ou bénévole</Link>, ou en partenaire depuis{' '}
         <Link href="/partenaires/">la page partenaires</Link>. Rue Tartifume, 37100 Tours.
       </p>
     </>

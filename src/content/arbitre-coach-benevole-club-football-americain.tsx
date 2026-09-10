@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { CtaQuiz, CtaTunnel } from '@/components/blog/CtaEncart';
+import Faq from '@/components/blog/Faq';
 
 /**
  * Article. Mots-clés : « arbitre football américain », « devenir coach
@@ -79,7 +80,9 @@ export default function ArticleBenevoles() {
         une séance, compté les présents et refermé derrière tout le monde. Multiplie par une saison
         entière et tu obtiens la vraie définition d’un club associatif : un collectif où une partie
         des membres joue et où une autre partie, souvent la même, fait tourner la structure. C’est
-        exactement ce que raconte <Link href="/le-club/">l’histoire du club depuis 1987</Link>.
+        exactement ce que raconte <Link href="/le-club/">l’histoire du club depuis 1987</Link>. Et
+        si tu ne peux pas donner de temps, il reste possible de{' '}
+        <Link href="/partenaires/">soutenir le club autrement</Link>.
       </p>
 
       <h3>Le point commun de tous les rôles décrits ici</h3>
@@ -248,8 +251,11 @@ export default function ArticleBenevoles() {
 
       <h2 id="broadcast">L’équipe broadcast : diffuser les matchs sur la FFFA TV</h2>
       <p>
-        C’est la nouveauté la plus enthousiasmante de la saison. La fédération permet désormais aux
-        clubs de <strong>diffuser leurs matchs sur la FFFA TV</strong>. Concrètement, une rencontre
+        C’est la nouveauté la plus enthousiasmante de la saison. La{' '}
+        <a href="https://www.fffa.org" target="_blank" rel="noopener noreferrer">
+          Fédération Française de Football Américain
+        </a>{' '}
+        permet désormais aux clubs de <strong>diffuser leurs matchs sur la FFFA TV</strong>. Concrètement, une rencontre
         jouée au stade de la Chambrerie peut être suivie en direct par des gens qui ne sont pas dans
         les tribunes : des familles, des joueurs blessés, des curieux, des partenaires, des
         supporters à l’autre bout du pays.
@@ -270,8 +276,9 @@ export default function ArticleBenevoles() {
       </p>
       <p>
         L’offre :{' '}
-        <a href="https://recrutement.pionniersdetouraine.fr/#offre-broadcast-regie">rejoindre
-        l’équipe broadcast FFFA TV</a>.
+        <a href="https://recrutement.pionniersdetouraine.fr/#offre-broadcast-regie">
+          l’équipe broadcast FFFA TV recrute des bénévoles
+        </a>.
       </p>
 
       <h2 id="jour-de-match">Le jour de match : logistique, accueil, buvette</h2>
@@ -602,77 +609,106 @@ export default function ArticleBenevoles() {
         bouton="Je choisis ma mission"
       />
 
-      <h2 id="faq">Questions fréquentes sur le bénévolat en club sportif</h2>
-
-      <h3>Faut-il avoir joué au football américain pour être bénévole ou coach ?</h3>
-      <p>
-        Non, et c’est vrai pour tous les rôles décrits ici, y compris le coaching. Une expérience
-        dans la discipline est un atout, mais le club dispose d’un parcours de formation interne et
-        intègre les nouveaux venus dans un staff déjà structuré. Les rôles de logistique, d’accueil,
-        d’événementiel, de communication et de broadcast ne demandent aucune connaissance préalable
-        du sport. Pour l’arbitrage, la formation est justement prévue pour partir de zéro. La seule
-        chose qu’on te demande vraiment, c’est d’être fiable sur les créneaux que tu as acceptés.
-      </p>
-
-      <h3>Combien coûte une licence bénévole ou une licence coach ?</h3>
-      <p>
-        La licence bénévole est à <strong>6,90 €</strong> et la licence coach à{' '}
-        <strong>20,50 €</strong>. Ces montants couvrent le rattachement fédéral lié à ton rôle, et
-        ils sont sans commune mesure avec le coût d’une licence de joueur. L’inscription se fait en
-        ligne, et le club t’accompagne au moment où ta mission est définie. Il n’y a aucun autre
-        frais à prévoir pour être bénévole.
-      </p>
-
-      <h3>L’arbitrage est-il rémunéré ?</h3>
-      <p>
-        L’arbitrage donne lieu à des <strong>indemnités de match</strong>, selon les missions
-        réalisées. C’est le seul rôle indemnisé parmi ceux présentés dans cet article, tous les
-        autres relevant du bénévolat classique. Il faut le voir comme une compensation liée à la
-        mission, pas comme un revenu : personne ne devient arbitre pour cela. En revanche, cela rend
-        le rôle beaucoup plus soutenable pour un étudiant ou pour quelqu’un qui se déplace
-        régulièrement, et c’est une information que trop peu de clubs mettent en avant.
-      </p>
-
-      <h3>Combien de temps faut-il donner par semaine ?</h3>
-      <p>
-        Cela dépend entièrement du rôle et de ce que tu décides. Un coach est présent sur une à deux
-        séances hebdomadaires, plus la préparation. Un bénévole logistique ou accueil intervient sur
-        des créneaux courts, souvent uniquement les jours de match. Un bénévole communication peut
-        travailler à distance, quelques heures par mois, quand cela l’arrange. Le principe est que
-        tu annonces ce que tu peux tenir, et que le club construit autour. Un engagement modeste et
-        régulier est infiniment plus utile qu’une promesse ambitieuse non tenue.
-      </p>
-
-      <h3>Peut-on être bénévole et joueur en même temps ?</h3>
-      <p>
-        Oui, et c’est même très fréquent. Beaucoup de joueurs assurent aussi une mission au club :
-        un poste sur les équipes spéciales le samedi et la gestion du matériel le reste de la
-        semaine, par exemple. À l’inverse, beaucoup de bénévoles finissent par essayer le terrain
-        après une saison passée à regarder de près. Les deux statuts se cumulent sans difficulté,
-        chacun avec sa licence. Si l’idée de jouer te trotte dans la tête, la{' '}
-        <Link href="/football-americain/">section football américain</Link> et la{' '}
-        <Link href="/flag-football/">section flag</Link> t’expliquent comment commencer.
-      </p>
-
-      <h3>Mon entreprise peut-elle aider autrement qu’avec de l’argent ?</h3>
-      <p>
-        Absolument, et c’est même souvent le plus efficace. Le mécénat en nature et le mécénat de
-        compétences permettent de soutenir le club avec du matériel, des services, de l’impression,
-        du transport, de l’hébergement ou quelques heures de savoir-faire professionnel. Une
-        entreprise qui prend en charge un besoin concret libère immédiatement du budget pour le
-        sportif. Le cadre et les différentes formules sont détaillés sur{' '}
-        <Link href="/partenaires/">la page partenaires</Link>, et le plus simple reste de nous
-        écrire pour en discuter.
-      </p>
-
-      <h3>Je n’habite pas Tours, puis-je quand même aider ?</h3>
-      <p>
-        Pour tout ce qui touche au terrain, il faut évidemment être là. Mais plusieurs missions se
-        font largement à distance : la communication, la création visuelle, une partie du travail
-        d’analyse vidéo, la prospection de partenaires. Si tu es de la région tourangelle sans être
-        de Tours même, la question ne se pose pas vraiment : le stade est au nord de la ville et la
-        plupart des bénévoles viennent de toute l’agglomération et du département.
-      </p>
+      <Faq
+        titre="Questions fréquentes sur le bénévolat en club sportif"
+        items={[
+          {
+            q: 'Faut-il avoir joué au football américain pour être bénévole ou coach ?',
+            r: (
+              <p>
+                Non, et c’est vrai pour tous les rôles décrits ici, y compris le coaching. Une
+                expérience dans la discipline est un atout, mais le club dispose d’un parcours de
+                formation interne et intègre les nouveaux venus dans un staff déjà structuré. Les
+                rôles de logistique, d’accueil, d’événementiel, de communication et de broadcast ne
+                demandent aucune connaissance préalable du sport. Pour l’arbitrage, la formation est
+                justement prévue pour partir de zéro. La seule chose qu’on te demande vraiment,
+                c’est d’être fiable sur les créneaux que tu as acceptés.
+              </p>
+            ),
+          },
+          {
+            q: 'Combien coûte une licence bénévole ou une licence coach ?',
+            r: (
+              <p>
+                La licence bénévole est à <strong>6,90 €</strong> et la licence coach à{' '}
+                <strong>20,50 €</strong>. Ces montants couvrent le rattachement fédéral lié à ton
+                rôle, et ils sont sans commune mesure avec le coût d’une licence de joueur.
+                L’inscription se fait en ligne, et le club t’accompagne au moment où ta mission est
+                définie. Il n’y a aucun autre frais à prévoir pour être bénévole.
+              </p>
+            ),
+          },
+          {
+            q: 'L’arbitrage est-il rémunéré ?',
+            r: (
+              <p>
+                L’arbitrage donne lieu à des <strong>indemnités de match</strong>, selon les
+                missions réalisées. C’est le seul rôle indemnisé parmi ceux présentés dans cet
+                article, tous les autres relevant du bénévolat classique. Il faut le voir comme une
+                compensation liée à la mission, pas comme un revenu : personne ne devient arbitre
+                pour cela. En revanche, cela rend le rôle beaucoup plus soutenable pour un étudiant
+                ou pour quelqu’un qui se déplace régulièrement, et c’est une information que trop
+                peu de clubs mettent en avant.
+              </p>
+            ),
+          },
+          {
+            q: 'Combien de temps faut-il donner par semaine ?',
+            r: (
+              <p>
+                Cela dépend entièrement du rôle et de ce que tu décides. Un coach est présent sur
+                une à deux séances hebdomadaires, plus la préparation. Un bénévole logistique ou
+                accueil intervient sur des créneaux courts, souvent uniquement les jours de match.
+                Un bénévole communication peut travailler à distance, quelques heures par mois,
+                quand cela l’arrange. Le principe est que tu annonces ce que tu peux tenir, et que
+                le club construit autour. Un engagement modeste et régulier est infiniment plus
+                utile qu’une promesse ambitieuse non tenue.
+              </p>
+            ),
+          },
+          {
+            q: 'Peut-on être bénévole et joueur en même temps ?',
+            r: (
+              <p>
+                Oui, et c’est même très fréquent. Beaucoup de joueurs assurent aussi une mission au
+                club : un poste sur les équipes spéciales le samedi et la gestion du matériel le
+                reste de la semaine, par exemple. À l’inverse, beaucoup de bénévoles finissent par
+                essayer le terrain après une saison passée à regarder de près. Les deux statuts se
+                cumulent sans difficulté, chacun avec sa licence. Si l’idée de jouer te trotte dans
+                la tête, la <Link href="/football-americain/">section football américain</Link> et
+                la <Link href="/flag-football/">section flag</Link> t’expliquent comment commencer.
+              </p>
+            ),
+          },
+          {
+            q: 'Mon entreprise peut-elle aider autrement qu’avec de l’argent ?',
+            r: (
+              <p>
+                Absolument, et c’est même souvent le plus efficace. Le mécénat en nature et le
+                mécénat de compétences permettent de soutenir le club avec du matériel, des
+                services, de l’impression, du transport, de l’hébergement ou quelques heures de
+                savoir-faire professionnel. Une entreprise qui prend en charge un besoin concret
+                libère immédiatement du budget pour le sportif. Le cadre et les différentes formules
+                sont détaillés sur <Link href="/partenaires/">la page partenaires</Link>, et le plus
+                simple reste de nous écrire pour en discuter.
+              </p>
+            ),
+          },
+          {
+            q: 'Je n’habite pas Tours, puis-je quand même aider ?',
+            r: (
+              <p>
+                Pour tout ce qui touche au terrain, il faut évidemment être là. Mais plusieurs
+                missions se font largement à distance : la communication, la création visuelle, une
+                partie du travail d’analyse vidéo, la prospection de partenaires. Si tu es de la
+                région tourangelle sans être de Tours même, la question ne se pose pas vraiment : le
+                stade est au nord de la ville et la plupart des bénévoles viennent de toute
+                l’agglomération et du département.
+              </p>
+            ),
+          },
+        ]}
+      />
 
       <h2 id="conclusion">Un club, ça se construit à plusieurs</h2>
       <p>

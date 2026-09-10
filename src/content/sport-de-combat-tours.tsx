@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { CtaQuiz, CtaTunnel } from '@/components/blog/CtaEncart';
+import Faq from '@/components/blog/Faq';
 
 /**
  * Article. Mot-clé : « sport de combat tours ».
@@ -173,14 +174,7 @@ export default function ArticleSportCombat() {
         semaine, et ils le disent souvent avec surprise.
       </p>
       <p>
-        Le deuxième point, c’est que chaque action est une{' '}
-        <strong>série de duels un contre un</strong>. Ton adversaire direct est identifié, il est en
-        face de toi, et l’action se joue sur qui gagne ce duel. L’engagement est réel, l’impact est
-        réel, l’adrénaline est réelle. Ce n’est pas une version édulcorée du combat : c’est du
-        combat, distribué sur onze personnes.
-      </p>
-      <p>
-        Le troisième point est celui qui change tout pour beaucoup de gens : il n’y a{' '}
+        Le deuxième point est celui qui change tout pour beaucoup de gens : il n’y a{' '}
         <strong>pas d’exposition solitaire</strong>. Sur un ring ou un tatami, quand ça se passe
         mal, tout le monde regarde une seule personne, et cette personne c’est toi. Certains adorent
         cette pression, et tant mieux pour eux. D’autres découvrent qu’elle les paralyse et
@@ -190,24 +184,13 @@ export default function ArticleSportCombat() {
         suffit à faire rester des gens qui avaient abandonné les sports individuels.
       </p>
       <p>
-        Le quatrième point est intellectuel, et il surprend toujours : il y a un{' '}
-        <strong>playbook</strong>. Des schémas à apprendre, des ajustements à lire avant l’action,
-        des lectures d’adversaire à faire en deux secondes. Ceux qui aiment dans le combat la
-        dimension d’échecs à haute vitesse, celle du jiu-jitsu ou de la lecture d’un boxeur,
-        retrouvent exactement ça, mais à onze. Ajoute l’équipement complet, casque et épaulières,
-        qui transforme le rapport au choc, et une pédagogie du plaquage par étapes qu’on détaille
-        dans notre guide sur{' '}
-        <Link href="/blog/sport-de-contact-tours/">les sports de contact à Tours</Link>.
-      </p>
-      <p>
-        Dernier argument, et c’est un vrai : au football américain français,{' '}
-        <strong>débuter adulte est la norme</strong>. La grande majorité des joueurs seniors ont
-        découvert le sport après vingt ans. Tu n’arriveras pas dans une salle où tout le monde a
-        quinze ans de pratique d’avance, et tu ne seras pas le seul débutant du groupe. On a raconté
-        à quoi ressemble une première saison, mois par mois, dans{' '}
-        <Link href="/blog/commencer-le-football-americain-adulte/">
-          commencer le football américain à l’âge adulte
-        </Link>.
+        Le reste (le rugby, la pédagogie du plaquage par étapes, l’équipement, le playbook, le fait
+        qu’au football américain français <strong>débuter adulte soit la norme</strong>) sort du
+        sujet de cet article : on l’a traité en entier dans{' '}
+        <Link href="/blog/sport-de-contact-tours/">les sports de contact à Tours</Link>. Et si tu
+        veux d’abord savoir{' '}
+        <Link href="/blog/club-de-sport-tours/">comment choisir son club à Tours</Link>, quelle que
+        soit la discipline, c’est là que ça se passe.
       </p>
 
       <CtaQuiz
@@ -312,55 +295,77 @@ export default function ArticleSportCombat() {
         bouton="Je viens essayer"
       />
 
-      <h2 id="faq">Questions fréquentes sur les sports de combat à Tours</h2>
-      <h3>Quel sport de combat pour un débutant complet ?</h3>
-      <p>
-        Deux pistes reviennent souvent, et elles dépendent de ton rapport aux coups. Si l’idée d’en
-        recevoir te bloque, oriente-toi vers une discipline de préhension : judo, lutte, grappling
-        ou jiu-jitsu brésilien. L’apprentissage y est progressif, on ne prend pas de frappes, et
-        l’intensité physique est immédiate, ce qui donne très vite la sensation de faire un vrai
-        sport. Si au contraire c’est le jeu de distance qui t’attire, la boxe anglaise reste une
-        entrée exemplaire, parce que sa technique de base est limitée en nombre de gestes et se
-        travaille dès la première séance. Dans les deux cas, le vrai conseil est ailleurs : va faire
-        deux séances d’essai dans deux familles différentes avant de décider. La théorie ne te dira
-        jamais ce que ton corps te dira en une soirée.
-      </p>
-      <h3>Quel sport de combat pour se défouler et perdre du poids ?</h3>
-      <p>
-        Les boxes, anglaise comme pieds-poings, sont probablement le format le plus efficace pour se
-        vider la tête et dépenser beaucoup en peu de temps : l’alternance d’efforts intenses et de
-        récupérations courtes est exigeante, et une séance bien menée laisse peu d’énergie pour
-        ruminer la journée. Les disciplines de préhension brûlent tout autant, mais différemment,
-        avec une charge musculaire plus continue. Cela dit, méfie-toi d’un raccourci classique :
-        aucun sport ne fait perdre du poids tout seul, c’est la régularité sur plusieurs mois plus
-        l’alimentation qui font le travail. Le meilleur sport pour perdre du poids reste, en ordre
-        de grandeur et sans surprise, celui où tu iras deux fois par semaine pendant un an, ce qui
-        ramène toujours à la même question : lequel vas-tu avoir envie de retrouver en février ?
-      </p>
-      <h3>Peut-on commencer un sport de combat à 30 ou 40 ans ?</h3>
-      <p>
-        Oui, et c’est même très courant : les cours adultes sont remplis de gens qui ont commencé
-        après trente ans, souvent après une longue coupure sportive. Deux précautions rendent
-        l’expérience nettement plus agréable. La première est de prévenir le coach de l’état réel de
-        ton corps dès la première séance, y compris de ce qui te semble anodin : un dos sensible ou
-        une épaule ancienne changent la manière dont on te fait travailler. La seconde est de
-        résister à la sur-motivation des premières semaines, celle qui pousse à venir quatre fois et
-        à se blesser à la troisième. Deux séances par semaine tenues sur six mois valent infiniment
-        mieux que cinq séances tenues sur trois semaines, dans les sports de combat comme partout
-        ailleurs.
-      </p>
-      <h3>Sport de combat ou sport de contact collectif : comment trancher ?</h3>
-      <p>
-        Pose-toi une seule question, et réponds-y sans te raconter d’histoire : est-ce que tu as
-        envie d’être seul face à quelqu’un, ou est-ce que tu as envie d’être engagé physiquement
-        avec une équipe autour de toi ? Si l’idée du face-à-face solitaire te stimule, va vers un
-        sport de combat, c’est exactement ce qu’il te faut et rien d’autre ne le remplacera. Si
-        cette même idée te crispe alors que l’engagement physique t’attire, alors ce que tu cherches
-        est un sport de contact collectif, et tu as le rugby ou le football américain à portée. Le
-        test le plus fiable reste empirique : fais une séance d’essai dans une salle de combat et
-        une séance d’essai chez nous, à quelques jours d’intervalle. Ton envie d’y retourner
-        tranchera mieux que n’importe quel tableau comparatif.
-      </p>
+      <Faq
+        titre="Questions fréquentes sur les sports de combat à Tours"
+        items={[
+          {
+            q: 'Quel sport de combat pour un débutant complet ?',
+            r: (
+              <p>
+                Deux pistes reviennent souvent, et elles dépendent de ton rapport aux coups. Si
+                l’idée d’en recevoir te bloque, oriente-toi vers une discipline de préhension :
+                judo, lutte, grappling ou jiu-jitsu brésilien. L’apprentissage y est progressif, on
+                ne prend pas de frappes, et l’intensité physique est immédiate, ce qui donne très
+                vite la sensation de faire un vrai sport. Si au contraire c’est le jeu de distance
+                qui t’attire, la boxe anglaise reste une entrée exemplaire, parce que sa technique
+                de base est limitée en nombre de gestes et se travaille dès la première séance. Dans
+                les deux cas, le vrai conseil est ailleurs : va faire deux séances d’essai dans deux
+                familles différentes avant de décider. La théorie ne te dira jamais ce que ton corps
+                te dira en une soirée.
+              </p>
+            ),
+          },
+          {
+            q: 'Quel sport de combat pour se défouler et perdre du poids ?',
+            r: (
+              <p>
+                Les boxes, anglaise comme pieds-poings, sont probablement le format le plus efficace
+                pour se vider la tête et dépenser beaucoup en peu de temps : l’alternance d’efforts
+                intenses et de récupérations courtes est exigeante, et une séance bien menée laisse
+                peu d’énergie pour ruminer la journée. Les disciplines de préhension brûlent tout
+                autant, mais différemment, avec une charge musculaire plus continue. Cela dit,
+                méfie-toi d’un raccourci classique : aucun sport ne fait perdre du poids tout seul,
+                c’est la régularité sur plusieurs mois plus l’alimentation qui font le travail. Le
+                meilleur sport pour perdre du poids reste, en ordre de grandeur et sans surprise,
+                celui où tu iras deux fois par semaine pendant un an, ce qui ramène toujours à la
+                même question : lequel vas-tu avoir envie de retrouver en février ?
+              </p>
+            ),
+          },
+          {
+            q: 'Peut-on commencer un sport de combat à 30 ou 40 ans ?',
+            r: (
+              <p>
+                Oui, et c’est même très courant : les cours adultes sont remplis de gens qui ont
+                commencé après trente ans, souvent après une longue coupure sportive. Deux
+                précautions rendent l’expérience nettement plus agréable. La première est de
+                prévenir le coach de l’état réel de ton corps dès la première séance, y compris de
+                ce qui te semble anodin : un dos sensible ou une épaule ancienne changent la manière
+                dont on te fait travailler. La seconde est de résister à la sur-motivation des
+                premières semaines, celle qui pousse à venir quatre fois et à se blesser à la
+                troisième. Deux séances par semaine tenues sur six mois valent infiniment mieux que
+                cinq séances tenues sur trois semaines, dans les sports de combat comme partout
+                ailleurs.
+              </p>
+            ),
+          },
+          {
+            q: 'Sport de combat ou sport de contact collectif : comment trancher ?',
+            r: (
+              <p>
+                Pose-toi une seule question : as-tu envie d’être seul face à quelqu’un, ou engagé
+                physiquement avec une équipe autour de toi ? Si le face-à-face solitaire te stimule,
+                va vers un sport de combat, rien d’autre ne le remplacera. Si cette même idée te
+                crispe alors que l’engagement physique t’attire, la comparaison des options se
+                trouve dans{' '}
+                <Link href="/blog/sport-de-contact-tours/">
+                  quel sport de contact pratiquer à Tours
+                </Link>.
+              </p>
+            ),
+          },
+        ]}
+      />
 
       <h2 id="conclusion">Une séance vaut trois semaines de comparaison</h2>
       <p>
@@ -373,6 +378,12 @@ export default function ArticleSportCombat() {
         cherchais », alors viens voir. La semaine découverte est offerte, l’équipement est prêté, et
         tu sauras en une soirée si le vestiaire te manquait sans que tu le saches.
       </p>
+
+      <CtaTunnel
+        titre="Une soirée suffit pour trancher"
+        texte="Semaine découverte offerte aux Pionniers de Touraine : plusieurs séances d’essai au Stade de la Chambrerie, équipement complet prêté, débutants adultes accueillis chaque saison, zéro engagement."
+        bouton="Je réserve ma séance d’essai"
+      />
     </>
   );
 }

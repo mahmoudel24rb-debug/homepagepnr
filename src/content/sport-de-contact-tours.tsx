@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { CtaQuiz, CtaTunnel } from '@/components/blog/CtaEncart';
+import Faq from '@/components/blog/Faq';
 
 /**
  * Article. Mot-clé : « sport de contact tours ».
@@ -190,8 +191,10 @@ export default function ArticleSportContact() {
         quinze ans de technique d’avance sur toi. On a détaillé ce que vit un adulte pendant sa
         première saison, mois par mois, dans notre guide{' '}
         <Link href="/blog/commencer-le-football-americain-adulte/">
-          commencer le football américain à l’âge adulte
-        </Link>.
+          ta première saison de football américain
+        </Link>. Et si ta question porte encore sur la structure plutôt que sur la discipline, on a
+        listé les critères qui comptent pour choisir parmi{' '}
+        <Link href="/blog/club-de-sport-tours/">les clubs de sport à Tours</Link>.
       </p>
 
       <h2 id="comparatif">Le comparatif des sports de contact</h2>
@@ -331,8 +334,8 @@ export default function ArticleSportContact() {
         Et surtout : la <strong>semaine découverte est offerte</strong>. Plusieurs séances d’essai,
         équipement prêté, zéro engagement et zéro euro. Tu viens en tenue de sport, on s’occupe du
         reste, et tu décides après avoir essayé, pas après avoir lu une page web. Tous les détails
-        de la pratique, du calendrier et des postes sont sur la page de{' '}
-        <Link href="/football-americain/">notre section football américain</Link>.
+        de la pratique, du calendrier et des postes sont sur la page pour{' '}
+        <Link href="/football-americain/">jouer au football américain à Tours</Link>.
       </p>
 
       <CtaTunnel
@@ -341,62 +344,86 @@ export default function ArticleSportContact() {
         bouton="Je viens essayer"
       />
 
-      <h2 id="faq">Questions fréquentes sur les sports de contact à Tours</h2>
-      <h3>Un sport de contact, c’est dangereux ?</h3>
-      <p>
-        Le risque n’est pas nul, et personne de sérieux ne te dira le contraire : dans tout sport où
-        des corps se rencontrent, il existe un risque de blessure. Ce qu’il faut comparer, ce n’est
-        pas « risque » contre « pas de risque », c’est un contact appris et encadré contre un
-        contact improvisé. Trois éléments changent radicalement l’équation : la{' '}
-        <strong>technique</strong>, parce que la grande majorité des blessures de contact viennent
-        d’un placement de corps incorrect qu’on apprend précisément à corriger ; l’{' '}
-        <strong>équipement</strong>, conçu et normé pour absorber ce que le corps encaisserait seul ;
-        et l’<strong>arbitrage</strong>, qui sanctionne immédiatement les gestes dangereux. Ajoute à
-        ça un échauffement sérieux et un renforcement musculaire régulier, et tu obtiens un cadre où
-        la blessure devient l’exception plutôt que la règle. Sois quand même honnête avec toi-même :
-        si tu as des antécédents particuliers, parles-en à ton médecin avant, comme pour n’importe
-        quelle reprise sportive.
-      </p>
-      <h3>Faut-il être costaud pour faire un sport de contact ?</h3>
-      <p>
-        Non, et c’est probablement l’idée reçue la plus tenace. En sport de combat, les catégories
-        de poids existent justement pour que personne n’affronte quelqu’un de deux fois son gabarit.
-        En football américain, la logique est encore différente : le sport a besoin d’une dizaine de
-        morphologies différentes en même temps. Il faut des joueurs lourds et puissants sur la
-        ligne, des joueurs fins et rapides à l’extérieur, des profils compacts et explosifs au
-        milieu, des cerveaux tactiques qui lisent le jeu avant qu’il n’arrive. Ton corps, quel qu’il
-        soit, correspond à un poste, et ce n’est pas une formule d’accueil : c’est la structure même
-        du sport. Beaucoup de nos joueurs arrivent en pensant qu’ils sont « trop maigres » ou « trop
-        lourds », et découvrent qu’ils sont exactement au bon endroit pour un rôle précis. Ce qui
-        compte bien davantage, c’est la régularité et l’envie d’apprendre.
-      </p>
-      <h3>À quel âge peut-on commencer un sport de contact ?</h3>
-      <p>
-        Plus tôt qu’on ne croit pour les enfants, et bien plus tard qu’on ne croit pour les adultes.
-        Chez les jeunes, le contact s’introduit progressivement, après des années de travail des
-        appuis, de la coordination et des règles, et les formats sans contact comme le flag existent
-        précisément pour découvrir le jeu avant de découvrir l’impact. Chez les adultes, la
-        vingtaine et la trentaine sont les tranches d’âge les plus représentées dans nos effectifs
-        seniors, et il n’est pas rare de voir des débutants complets au-delà. La question pertinente
-        n’est pas ton âge sur le papier, c’est l’état de ton corps et ta régularité : quelqu’un qui
-        vient deux fois par semaine, qui s’échauffe et qui écoute les coachs progressera à trente ou
-        trente-cinq ans sans difficulté particulière. La seule vraie précaution, après une longue
-        coupure, c’est de reprendre progressivement au lieu de vouloir tout rattraper en trois
-        semaines.
-      </p>
-      <h3>Et si finalement le contact ne me plaît pas ?</h3>
-      <p>
-        C’est une réponse parfaitement acceptable, et il vaut mieux la découvrir en une séance
-        d’essai qu’après une année de licence. La bonne nouvelle, c’est qu’il existe une porte de
-        sortie qui garde tout ce qui t’attirait : le <strong>flag football</strong>. C’est le même
-        jeu, les mêmes tracés, la même adrénaline, les mêmes duels de vitesse et de lecture, mais on
-        arrache un tissu à la ceinture au lieu de plaquer. Ça se joue à cinq contre cinq, c’est
-        mixte, ça demande une tenue de sport et rien d’autre, et ce sera un sport olympique aux Jeux
-        de Los Angeles en 2028. Beaucoup d’adultes passent d’ailleurs d’une section à l’autre dans
-        les deux sens, selon leur envie du moment, et personne ne considère ça comme un renoncement.
-        On a détaillé les règles et les différences ici :{' '}
-        <Link href="/blog/flag-football-cest-quoi/">le flag football, c’est quoi</Link>.
-      </p>
+      <Faq
+        titre="Questions fréquentes sur les sports de contact à Tours"
+        items={[
+          {
+            q: 'Un sport de contact, c’est dangereux ?',
+            r: (
+              <p>
+                Le risque n’est pas nul, et personne de sérieux ne te dira le contraire : dans tout
+                sport où des corps se rencontrent, il existe un risque de blessure. Ce qu’il faut
+                comparer, ce n’est pas « risque » contre « pas de risque », c’est un contact appris
+                et encadré contre un contact improvisé. Trois éléments changent radicalement
+                l’équation : la <strong>technique</strong>, parce que la grande majorité des
+                blessures de contact viennent d’un placement de corps incorrect qu’on apprend
+                précisément à corriger ; l’<strong>équipement</strong>, conçu et normé pour absorber
+                ce que le corps encaisserait seul ; et l’<strong>arbitrage</strong>, qui sanctionne
+                immédiatement les gestes dangereux. Ajoute à ça un échauffement sérieux et un
+                renforcement musculaire régulier, et tu obtiens un cadre où la blessure devient
+                l’exception plutôt que la règle. Sois quand même honnête avec toi-même : si tu as
+                des antécédents particuliers, parles-en à ton médecin avant, comme pour n’importe
+                quelle reprise sportive.
+              </p>
+            ),
+          },
+          {
+            q: 'Faut-il être costaud pour faire un sport de contact ?',
+            r: (
+              <p>
+                Non, et c’est probablement l’idée reçue la plus tenace. En sport de combat, les
+                catégories de poids existent justement pour que personne n’affronte quelqu’un de
+                deux fois son gabarit. En football américain, la logique est encore différente : le
+                sport a besoin d’une dizaine de morphologies différentes en même temps. Il faut des
+                joueurs lourds et puissants sur la ligne, des joueurs fins et rapides à l’extérieur,
+                des profils compacts et explosifs au milieu, des cerveaux tactiques qui lisent le
+                jeu avant qu’il n’arrive. Ton corps, quel qu’il soit, correspond à un poste, et ce
+                n’est pas une formule d’accueil : c’est la structure même du sport. Beaucoup de nos
+                joueurs arrivent en pensant qu’ils sont « trop maigres » ou « trop lourds », et
+                découvrent qu’ils sont exactement au bon endroit pour un rôle précis. Ce qui compte
+                bien davantage, c’est la régularité et l’envie d’apprendre.
+              </p>
+            ),
+          },
+          {
+            q: 'À quel âge peut-on commencer un sport de contact ?',
+            r: (
+              <p>
+                Plus tôt qu’on ne croit pour les enfants, et bien plus tard qu’on ne croit pour les
+                adultes. Chez les jeunes, le contact s’introduit progressivement, après des années
+                de travail des appuis, de la coordination et des règles, et les formats sans contact
+                comme le flag existent précisément pour découvrir le jeu avant de découvrir
+                l’impact. Chez les adultes, la vingtaine et la trentaine sont les tranches d’âge les
+                plus représentées dans nos effectifs seniors, et il n’est pas rare de voir des
+                débutants complets au-delà. La question pertinente n’est pas ton âge sur le papier,
+                c’est l’état de ton corps et ta régularité : quelqu’un qui vient deux fois par
+                semaine, qui s’échauffe et qui écoute les coachs progressera à trente ou
+                trente-cinq ans sans difficulté particulière. La seule vraie précaution, après une
+                longue coupure, c’est de reprendre progressivement au lieu de vouloir tout rattraper
+                en trois semaines.
+              </p>
+            ),
+          },
+          {
+            q: 'Et si finalement le contact ne me plaît pas ?',
+            r: (
+              <p>
+                C’est une réponse parfaitement acceptable, et il vaut mieux la découvrir en une
+                séance d’essai qu’après une année de licence. La bonne nouvelle, c’est qu’il existe
+                une porte de sortie qui garde tout ce qui t’attirait : le{' '}
+                <strong>flag football</strong>. C’est le même jeu, les mêmes tracés, la même
+                adrénaline, les mêmes duels de vitesse et de lecture, mais on arrache un tissu à la
+                ceinture au lieu de plaquer. Ça se joue à cinq contre cinq, c’est mixte, ça demande
+                une tenue de sport et rien d’autre, et ce sera un sport olympique aux Jeux de Los
+                Angeles en 2028. Beaucoup d’adultes passent d’ailleurs d’une section à l’autre dans
+                les deux sens, selon leur envie du moment, et personne ne considère ça comme un
+                renoncement. Tout est sur la page{' '}
+                <Link href="/flag-football/">le flag football à Tours</Link>.
+              </p>
+            ),
+          },
+        ]}
+      />
 
       <h2 id="conclusion">Alors, on essaie ?</h2>
       <p>
@@ -411,6 +438,12 @@ export default function ArticleSportContact() {
         sur le terrain. La semaine découverte est offerte, l’équipement est prêté, et la seule chose
         que tu risques, c’est d’y prendre goût.
       </p>
+
+      <CtaTunnel
+        titre="Le contact, ça ne se lit pas, ça se prend"
+        texte="Plusieurs séances d’essai au Stade de la Chambrerie, équipement complet prêté, apprentissage du contact par étapes et aucun engagement : viens voir ce que ça fait avant de décider."
+        bouton="Je réserve ma séance d’essai"
+      />
     </>
   );
 }

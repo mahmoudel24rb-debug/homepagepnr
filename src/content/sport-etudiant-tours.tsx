@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { CtaQuiz, CtaTunnel } from '@/components/blog/CtaEncart';
+import Faq from '@/components/blog/Faq';
 
 /**
  * Article. Mot-clé : « sport étudiant Tours ».
@@ -21,7 +22,7 @@ export default function ArticleSportEtudiant() {
       </p>
       <p>
         Ce guide est écrit par les Pionniers de Touraine, un club tourangeau fondé en 1987 qui
-        pratique le football américain et le <Link href="/flag-football/">flag football</Link>. On
+        pratique le football américain et <Link href="/flag-football/">le flag football à Tours</Link>. On
         a donc un intérêt dans l’histoire, autant l’annoncer d’entrée. Mais on accueille beaucoup
         d’étudiants chaque saison, et on voit très bien ce qui marche et ce qui casse dans une
         année sportive étudiante. Alors on va d’abord parler de ta situation réelle, pas de la
@@ -165,7 +166,9 @@ export default function ArticleSportEtudiant() {
         semaine, et accepter une forme d’engagement envers le groupe. C’est précisément ce qui
         fait tenir la pratique, mais ce n’est pas confortable pour tout le monde. Autre point à
         vérifier : la localisation, souvent en périphérie, d’où l’importance du trajet réel et du
-        covoiturage.
+        covoiturage. Les critères à passer en revue avant de{' '}
+        <Link href="/blog/club-de-sport-tours/">choisir un club de sport à Tours</Link> sont les
+        mêmes pour un étudiant que pour un salarié.
       </p>
 
       <h3>La pratique libre et auto-organisée</h3>
@@ -319,7 +322,7 @@ export default function ArticleSportEtudiant() {
           n’est pas un slogan, c’est la structure du sport. Le sujet est développé dans notre
           article sur le fait de{' '}
           <Link href="/blog/commencer-le-football-americain-adulte/">
-            commencer le football américain à l’âge adulte
+            débuter le foot US adulte
           </Link>.
         </li>
         <li>
@@ -332,8 +335,8 @@ export default function ArticleSportEtudiant() {
           <strong>Le flag est mixte, sans contact et olympique en 2028.</strong> Même jeu, mêmes
           tracés, même adrénaline, mais on arrache un tissu à la ceinture au lieu de plaquer.
           Cinq contre cinq, femmes et hommes sur le même terrain, une tenue de sport suffit, et
-          l’équipe évolue en championnat mixte D1. Les règles sont expliquées ici :{' '}
-          <Link href="/blog/flag-football-cest-quoi/">le flag football, c’est quoi</Link>.
+          l’équipe évolue en championnat mixte D1. Les règles sont détaillées dans{' '}
+          <Link href="/blog/regles-flag-football/">les règles du flag football</Link>.
         </li>
         <li>
           <strong>Licence incluse et matériel prêté.</strong> L’adhésion comprend la licence FFFA,
@@ -400,70 +403,98 @@ export default function ArticleSportEtudiant() {
         vraiment personne.
       </p>
 
-      <h2 id="faq">Questions fréquentes des étudiants</h2>
-
-      <h3>Quel sport choisir quand on est étudiant à Tours et qu’on n’a jamais rien fait ?</h3>
-      <p>
-        Vise une discipline où les débutants adultes arrivent chaque année, plutôt qu’une
-        discipline où tout le monde joue depuis ses six ans : l’écart technique décourage vite. En
-        pratique, ça veut dire regarder du côté des sports où l’on débute tard par défaut, des
-        sections loisir, des cours collectifs encadrés ou des pratiques émergentes. Le football
-        américain et le flag entrent typiquement dans cette catégorie, mais ce ne sont pas les
-        seules options, et notre{' '}
-        <Link href="/blog/sport-collectif-tours/">panorama des sports collectifs</Link> t’aidera à
-        comparer.
-      </p>
-
-      <h3>Combien coûte le sport pour un étudiant à l’année ?</h3>
-      <p>
-        En ordre de grandeur, compte une centaine à trois cent cinquante euros pour une adhésion
-        annuelle en club associatif, licence et assurance souvent comprises, et un montant
-        comparable voire supérieur pour un abonnement en salle tenu douze mois. Ajoute
-        l’équipement personnel, très variable. Les essais, eux, sont gratuits partout ou presque,
-        donc la phase de test ne doit rien te coûter.
-      </p>
-
-      <h3>Je n’ai pas de voiture, est-ce que c’est bloquant ?</h3>
-      <p>
-        Rarement, à condition de vérifier le trajet réel avant de t’engager. Beaucoup de lieux de
-        pratique sont accessibles en transport ou à vélo, et le covoiturage entre coéquipiers est
-        une pratique spontanée dans les clubs, surtout pour les créneaux tardifs et les
-        déplacements. Pose la question directement : « comment font ceux qui n’ont pas de
-        voiture ? ». La réponse existe toujours.
-      </p>
-
-      <h3>Est-ce compatible avec les partiels et les stages ?</h3>
-      <p>
-        Oui, et les clubs vivent avec cette réalité depuis toujours. Deux à trois créneaux par
-        semaine te laissent de la marge, la période d’examens est un trou classique que tout le
-        monde comprend, et un stage lointain se gère par une pause assumée plutôt qu’un abandon
-        silencieux. Le seul vrai risque, c’est de ne pas revenir : préviens et fixe une date.
-      </p>
-
-      <h3>Je suis une fille, est-ce que je peux jouer au flag ou au foot US ?</h3>
-      <p>
-        Oui. Le flag football se pratique couramment en mixte, femmes et hommes sur le même
-        terrain, et notre équipe seniors évolue en championnat mixte D1. C’est l’une des rares
-        pratiques collectives réellement mixtes en compétition, et la dynamique féminine du flag
-        est très forte depuis son entrée aux Jeux Olympiques de Los Angeles en 2028.
-      </p>
-
-      <h3>Peut-on s’inscrire après septembre ?</h3>
-      <p>
-        Oui, dans la quasi-totalité des clubs. La rentrée est le moment le plus confortable parce
-        que c’est là que se forment les groupes de débutants, mais arriver en novembre, en
-        janvier ou même au printemps reste tout à fait possible : tu seras intégré à la reprise
-        des fondamentaux. Chez nous, la semaine découverte est disponible toute l’année.
-      </p>
-
-      <h3>Et si je ne reste qu’un an à Tours ?</h3>
-      <p>
-        C’est une raison de plus de rejoindre un club plutôt qu’une salle. Une année, c’est une
-        saison complète, c’est-à-dire exactement le format d’un club associatif : tu arrives à la
-        rentrée, tu progresses, tu joues, et tu repars avec un groupe d’amis et des souvenirs
-        qui ne tiennent pas dans un abonnement mensuel. Beaucoup d’étudiants passés par le club
-        n’étaient là que pour un ou deux ans.
-      </p>
+      <Faq
+        titre="Questions fréquentes des étudiants"
+        items={[
+          {
+            q: 'Quel sport choisir quand on est étudiant à Tours et qu’on n’a jamais rien fait ?',
+            r: (
+              <p>
+                Vise une discipline où les débutants adultes arrivent chaque année, plutôt qu’une
+                discipline où tout le monde joue depuis ses six ans : l’écart technique décourage
+                vite. En pratique, ça veut dire regarder du côté des sports où l’on débute tard par
+                défaut, des sections loisir, des cours collectifs encadrés ou des pratiques
+                émergentes. Le football américain et le flag entrent typiquement dans cette
+                catégorie, mais ce ne sont pas les seules options, et notre{' '}
+                <Link href="/blog/sport-collectif-tours/">panorama des sports collectifs</Link>{' '}
+                t’aidera à comparer.
+              </p>
+            ),
+          },
+          {
+            q: 'Combien coûte le sport pour un étudiant à l’année ?',
+            r: (
+              <p>
+                En ordre de grandeur, compte une centaine à trois cent cinquante euros pour une
+                adhésion annuelle en club associatif, licence et assurance souvent comprises, et un
+                montant comparable voire supérieur pour un abonnement en salle tenu douze mois.
+                Ajoute l’équipement personnel, très variable. Les essais, eux, sont gratuits partout
+                ou presque, donc la phase de test ne doit rien te coûter.
+              </p>
+            ),
+          },
+          {
+            q: 'Je n’ai pas de voiture, est-ce que c’est bloquant ?',
+            r: (
+              <p>
+                Rarement, à condition de vérifier le trajet réel avant de t’engager. Beaucoup de
+                lieux de pratique sont accessibles en transport ou à vélo, et le covoiturage entre
+                coéquipiers est une pratique spontanée dans les clubs, surtout pour les créneaux
+                tardifs et les déplacements. Pose la question directement : « comment font ceux qui
+                n’ont pas de voiture ? ». La réponse existe toujours.
+              </p>
+            ),
+          },
+          {
+            q: 'Est-ce compatible avec les partiels et les stages ?',
+            r: (
+              <p>
+                Oui, et les clubs vivent avec cette réalité depuis toujours. Deux à trois créneaux
+                par semaine te laissent de la marge, la période d’examens est un trou classique que
+                tout le monde comprend, et un stage lointain se gère par une pause assumée plutôt
+                qu’un abandon silencieux. Le seul vrai risque, c’est de ne pas revenir : préviens et
+                fixe une date.
+              </p>
+            ),
+          },
+          {
+            q: 'Je suis une fille, est-ce que je peux jouer au flag ou au foot US ?',
+            r: (
+              <p>
+                Oui. Le flag football se pratique couramment en mixte, femmes et hommes sur le même
+                terrain, et notre équipe seniors évolue en championnat mixte D1. C’est l’une des
+                rares pratiques collectives réellement mixtes en compétition, et la dynamique
+                féminine du flag est très forte depuis son entrée aux Jeux Olympiques de Los Angeles
+                en 2028.
+              </p>
+            ),
+          },
+          {
+            q: 'Peut-on s’inscrire après septembre ?',
+            r: (
+              <p>
+                Oui, dans la quasi-totalité des clubs. La rentrée est le moment le plus confortable
+                parce que c’est là que se forment les groupes de débutants, mais arriver en
+                novembre, en janvier ou même au printemps reste tout à fait possible : tu seras
+                intégré à la reprise des fondamentaux. Chez nous, la semaine découverte est
+                disponible toute l’année.
+              </p>
+            ),
+          },
+          {
+            q: 'Et si je ne reste qu’un an à Tours ?',
+            r: (
+              <p>
+                C’est une raison de plus de rejoindre un club plutôt qu’une salle. Une année, c’est
+                une saison complète, c’est-à-dire exactement le format d’un club associatif : tu
+                arrives à la rentrée, tu progresses, tu joues, et tu repars avec un groupe d’amis et
+                des souvenirs qui ne tiennent pas dans un abonnement mensuel. Beaucoup d’étudiants
+                passés par le club n’étaient là que pour un ou deux ans.
+              </p>
+            ),
+          },
+        ]}
+      />
 
       <CtaTunnel
         titre="Ta rentrée sportive commence par une soirée d’essai"

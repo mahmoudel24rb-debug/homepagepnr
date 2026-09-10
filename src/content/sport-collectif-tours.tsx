@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { CtaQuiz, CtaTunnel } from '@/components/blog/CtaEncart';
+import Faq from '@/components/blog/Faq';
 
 /**
  * Article. Mot-clé : « sport collectif Tours ».
@@ -31,6 +32,18 @@ export default function ArticleSportCollectif() {
         celui où tu vas t’inscrire en septembre. Parce que le vrai sujet n’est pas de trouver un
         club : c’est d’en trouver un que tu auras encore envie de retrouver un mardi soir de
         février, sous la pluie, quand la motivation de la rentrée aura fondu.
+      </p>
+      <p>
+        Deux précisions avant de commencer. Ce guide s’adresse à un <strong>adulte</strong> : les
+        critères qui suivent, le niveau d’entrée, les créneaux du soir et le budget sont pensés
+        pour toi, pas pour un enfant. Pour un enfant, notre guide{' '}
+        <Link href="/blog/quel-sport-pour-mon-enfant-tours/">
+          quel sport pour mon enfant à Tours
+        </Link>{' '}
+        est fait pour ça. Et si ta question porte plus largement sur la structure que sur la
+        discipline, la méthode pour{' '}
+        <Link href="/blog/club-de-sport-tours/">trouver un club de sport à Tours</Link> est
+        détaillée à part.
       </p>
 
       <h2 id="pourquoi">Pourquoi un sport collectif change tout (surtout adulte)</h2>
@@ -107,7 +120,10 @@ export default function ArticleSportCollectif() {
         dans un flux continu où il n’y a jamais de pause pour réfléchir. Un débutant met souvent
         une saison entière à simplement comprendre où se placer. Beaucoup de clubs proposent des
         formules loisir ou du touch pour amortir cette marche : si le rugby t’attire, c’est par là
-        qu’il faut entrer.
+        qu’il faut entrer. Et si c’est l’engagement physique en lui-même que tu cherches, on a
+        comparé{' '}
+        <Link href="/blog/sport-de-contact-tours/">les sports de contact à Tours</Link> famille par
+        famille.
       </p>
 
       <h3>Basket, handball, volley : les sports de salle</h3>
@@ -163,7 +179,8 @@ export default function ArticleSportCollectif() {
         équipement), on a écrit le guide complet :{' '}
         <Link href="/blog/comment-pratiquer-le-football-americain-en-france/">
           comment pratiquer le football américain en France
-        </Link>.
+        </Link>. Côté club, tout est sur la page de{' '}
+        <Link href="/football-americain/">notre section football américain</Link>.
       </p>
       <p>
         Troisième particularité : le jeu est découpé. Chaque action dure quelques secondes, puis
@@ -178,10 +195,13 @@ export default function ArticleSportCollectif() {
         les mêmes tracés, la même adrénaline, mais on arrache un tissu à la ceinture au lieu de
         plaquer. C’est mixte, ça se joue à 5 contre 5 sur terrain réduit, ça demande une tenue de
         sport et rien d’autre, et ce sera un sport olympique aux Jeux de Los Angeles en 2028. On a
-        détaillé les règles et les différences ici :{' '}
-        <Link href="/blog/flag-football-cest-quoi/">le flag football, c’est quoi</Link>. Pour
-        beaucoup d’adultes qui reprennent, c’est la porte d’entrée la plus douce de tout ce
-        panorama.
+        détaillé les règles et les différences sur la page{' '}
+        <Link href="/flag-football/">le flag football à Tours</Link>. Pour beaucoup d’adultes qui
+        reprennent, c’est la porte d’entrée la plus douce de tout ce panorama, et c’est exactement
+        le sujet de notre guide{' '}
+        <Link href="/blog/reprendre-le-sport-a-30-ans-tours/">
+          reprendre le sport à 30 ans à Tours
+        </Link>.
       </p>
 
       <div className="blogc-table-scroll">
@@ -269,10 +289,12 @@ export default function ArticleSportCollectif() {
           débutants arrivent chaque année, ou est-ce que tu serais le seul ? S’il existe un groupe
           de nouveaux, tu vas progresser en confiance. Si tu es le seul débutant au milieu de gens
           formés depuis l’enfance, tu vas ramer. Pose la question franchement au téléphone, la
-          réponse est très éclairante. On a détaillé le sujet dans notre article sur le fait de{' '}
+          réponse est très éclairante. On a raconté à quoi ressemble{' '}
           <Link href="/blog/commencer-le-football-americain-adulte/">
-            commencer le football américain à l’âge adulte
-          </Link>.
+            ta première saison de football américain
+          </Link>, mois par mois. Le même raisonnement vaut si tu es étudiant : notre guide sur{' '}
+          <Link href="/blog/sport-etudiant-tours/">le sport étudiant à Tours</Link> reprend ces
+          critères avec les contraintes d’un emploi du temps universitaire.
         </li>
         <li>
           <strong>Les horaires, contre ta vraie vie.</strong> Un sport parfait à un créneau
@@ -318,12 +340,11 @@ export default function ArticleSportCollectif() {
         </li>
         <li>
           <strong>Sections jeunes</strong> : le club forme aussi les plus jeunes, en football
-          américain comme en flag.
-        </li>
-        <li>
-          <strong>École de flag le samedi matin</strong>, de 10 h à 12 h : le format idéal pour
-          les enfants qui découvrent, pendant que les parents regardent (ou finissent par
-          essayer).
+          américain comme en flag. Pour un enfant, notre guide{' '}
+          <Link href="/blog/quel-sport-pour-mon-enfant-tours/">
+            quel sport pour mon enfant à Tours
+          </Link>{' '}
+          est fait pour ça.
         </li>
       </ul>
       <p>
@@ -341,48 +362,73 @@ export default function ArticleSportCollectif() {
         bouton="Je viens essayer"
       />
 
-      <h2 id="faq">Questions fréquentes sur le sport collectif à Tours</h2>
-      <h3>Peut-on commencer un sport collectif à 30 ans à Tours ?</h3>
-      <p>
-        Oui, et c’est même un âge très courant dans les effectifs adultes. La vraie question n’est
-        pas l’âge mais le sport que tu choisis : à 30 ans, se lancer dans une discipline où tout le
-        monde a quinze ans de technique d’avance est frustrant, alors que se lancer dans une
-        discipline où l’on débute adulte par défaut est confortable. C’est précisément le cas du
-        football américain et du flag, où la moyenne d’âge des recrues tourne autour de la
-        vingtaine et de la trentaine. Notre article sur le fait de{' '}
-        <Link href="/blog/commencer-le-football-americain-adulte/">débuter le foot US adulte</Link>{' '}
-        détaille comment se passe une première saison, mois par mois.
-      </p>
-      <h3>Quel sport collectif mixte à Tours ?</h3>
-      <p>
-        Trois pistes principales. Le <strong>volley loisir</strong> d’abord : c’est probablement la
-        pratique mixte la plus répandue et la plus facile d’accès dans l’agglomération.
-        L’<strong>ultimate</strong> ensuite, mixte par culture et par règlement dans une grande
-        partie de ses formats. Et le <strong>flag football</strong> enfin, où les équipes loisir
-        alignent couramment femmes et hommes ensemble, avec une vraie dynamique féminine portée par
-        l’entrée du flag aux Jeux Olympiques de 2028. Dans les autres sports, la mixité existe
-        surtout à l’entraînement et en loisir, rarement en compétition officielle.
-      </p>
-      <h3>Quel budget prévoir pour un sport collectif ?</h3>
-      <p>
-        En ordre de grandeur, une licence de sport collectif en France se situe le plus souvent
-        entre 100 et 350 euros à l’année, selon la discipline, le niveau et ce que la cotisation
-        inclut. Il faut y ajouter l’équipement personnel, très variable d’un sport à l’autre. Deux
-        bonnes nouvelles : les <strong>séances d’essai sont gratuites presque partout</strong>,
-        donc tester ne coûte rien ; et beaucoup de clubs acceptent les dispositifs d’aide ou le
-        paiement en plusieurs fois. Demande systématiquement ce qui est prêté par le club avant de
-        budgéter du matériel.
-      </p>
-      <h3>Peut-on s’inscrire en cours d’année ?</h3>
-      <p>
-        Oui, dans la quasi-totalité des clubs. La rentrée de septembre reste le moment le plus
-        confortable, parce que c’est là que se forment les groupes de débutants et que la saison
-        démarre de zéro. Mais arriver en novembre, en janvier ou même au printemps est tout à fait
-        possible : tu seras simplement intégré à la reprise des fondamentaux plutôt qu’au groupe
-        principal, ce qui n’est pas un mauvais deal. Chez nous en particulier, la semaine
-        découverte est disponible toute l’année : le meilleur moment pour venir essayer, c’est
-        celui où tu y penses.
-      </p>
+      <Faq
+        titre="Questions fréquentes sur le sport collectif à Tours"
+        items={[
+          {
+            q: 'Peut-on commencer un sport collectif à 30 ans à Tours ?',
+            r: (
+              <p>
+                Oui, et c’est même un âge très courant dans les effectifs adultes. La vraie question
+                n’est pas l’âge mais le sport que tu choisis : à 30 ans, se lancer dans une
+                discipline où tout le monde a quinze ans de technique d’avance est frustrant, alors
+                que se lancer dans une discipline où l’on débute adulte par défaut est confortable.
+                C’est précisément le cas du football américain et du flag, où la moyenne d’âge des
+                recrues tourne autour de la vingtaine et de la trentaine. Notre article sur le fait
+                de{' '}
+                <Link href="/blog/commencer-le-football-americain-adulte/">
+                  débuter le foot US adulte
+                </Link>{' '}
+                détaille comment se passe une première saison, mois par mois.
+              </p>
+            ),
+          },
+          {
+            q: 'Quel sport collectif mixte à Tours ?',
+            r: (
+              <p>
+                Trois pistes principales. Le <strong>volley loisir</strong> d’abord : c’est
+                probablement la pratique mixte la plus répandue et la plus facile d’accès dans
+                l’agglomération. L’<strong>ultimate</strong> ensuite, mixte par culture et par
+                règlement dans une grande partie de ses formats. Et le{' '}
+                <strong>flag football</strong> enfin, où les équipes loisir alignent couramment
+                femmes et hommes ensemble, avec une vraie dynamique féminine portée par l’entrée du
+                flag aux Jeux Olympiques de 2028. Dans les autres sports, la mixité existe surtout à
+                l’entraînement et en loisir, rarement en compétition officielle.
+              </p>
+            ),
+          },
+          {
+            q: 'Quel budget prévoir pour un sport collectif ?',
+            r: (
+              <p>
+                En ordre de grandeur, une licence de sport collectif en France se situe le plus
+                souvent entre 100 et 350 euros à l’année, selon la discipline, le niveau et ce que
+                la cotisation inclut. Il faut y ajouter l’équipement personnel, très variable d’un
+                sport à l’autre. Deux bonnes nouvelles : les{' '}
+                <strong>séances d’essai sont gratuites presque partout</strong>, donc tester ne
+                coûte rien ; et beaucoup de clubs acceptent les dispositifs d’aide ou le paiement en
+                plusieurs fois. Demande systématiquement ce qui est prêté par le club avant de
+                budgéter du matériel.
+              </p>
+            ),
+          },
+          {
+            q: 'Peut-on s’inscrire en cours d’année ?',
+            r: (
+              <p>
+                Oui, dans la quasi-totalité des clubs. La rentrée de septembre reste le moment le
+                plus confortable, parce que c’est là que se forment les groupes de débutants et que
+                la saison démarre de zéro. Mais arriver en novembre, en janvier ou même au printemps
+                est tout à fait possible : tu seras simplement intégré à la reprise des fondamentaux
+                plutôt qu’au groupe principal, ce qui n’est pas un mauvais deal. Chez nous en
+                particulier, la semaine découverte est disponible toute l’année : le meilleur moment
+                pour venir essayer, c’est celui où tu y penses.
+              </p>
+            ),
+          },
+        ]}
+      />
 
       <h2 id="conclusion">Alors, on essaie ?</h2>
       <p>
@@ -392,6 +438,12 @@ export default function ArticleSportCollectif() {
         hésites, viens quand même, on t’orientera. La semaine découverte est offerte, l’équipement
         est prêté, et la seule chose que tu risques, c’est d’y prendre goût.
       </p>
+
+      <CtaTunnel
+        titre="Un mardi soir de février, tu seras où ?"
+        texte="Entraînements en soirée au Stade de la Chambrerie, groupe de débutants adultes chaque saison, équipement prêté et licence incluse : viens tester une séance avant de t’engager sur quoi que ce soit."
+        bouton="Je réserve ma séance d’essai"
+      />
     </>
   );
 }

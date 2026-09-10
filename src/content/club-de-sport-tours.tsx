@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { CtaQuiz, CtaTunnel } from '@/components/blog/CtaEncart';
+import Faq from '@/components/blog/Faq';
 
 /**
  * Article. Mot-clé : « club de sport Tours ».
@@ -221,16 +222,13 @@ export default function ArticleClubDeSport() {
 
       <h3>Les enfants : découvrir, pas se spécialiser</h3>
       <p>
-        Avant 10 ans, l’objectif n’est ni la performance ni la spécialisation : c’est courir,
-        attraper, lancer, coopérer et avoir envie de revenir. Le bon club, à cet âge, est celui qui
-        fait jouer plutôt que celui qui fait répéter, avec un encadrement patient et des séances où
-        personne ne reste sur le banc. Le créneau du samedi matin est presque toujours le plus
-        adapté. Pour le tri par tempérament (l’enfant timide, celui qui a besoin de se dépenser,
-        celui qui déteste être jugé), on a écrit un guide dédié aux parents :{' '}
+        Avant 10 ans, l’objectif n’est ni la performance ni la spécialisation : c’est jouer
+        beaucoup, attendre peu et avoir envie de revenir. Le sujet mérite son propre guide, et on
+        l’a écrit pour les parents :{' '}
         <Link href="/blog/quel-sport-pour-mon-enfant-tours/">
           quel sport pour mon enfant à Tours
-        </Link>. Et si la question porte spécifiquement sur notre discipline, on a répondu en détail
-        à{' '}
+        </Link>, avec les repères par âge et le tri par tempérament. Sur notre discipline en
+        particulier, la réponse est dans{' '}
         <Link href="/blog/a-quel-age-commencer-le-football-americain/">
           à quel âge commencer le football américain
         </Link>.
@@ -479,64 +477,92 @@ export default function ArticleClubDeSport() {
         bouton="Je réserve mon essai"
       />
 
-      <h2 id="faq">Questions fréquentes</h2>
-
-      <h3>Comment trouver un club de sport à Tours quand on vient d’arriver ?</h3>
-      <p>
-        Commence par tes contraintes, pas par les disciplines : note les créneaux que tu peux
-        réellement tenir, puis cherche ce qui existe sur ces créneaux. Les trois sources utiles sont
-        le forum des associations organisé chaque rentrée en septembre, les annuaires de clubs des
-        fédérations pour la discipline qui t’intéresse, et les sites des clubs eux-mêmes, où les
-        horaires exacts sont en général affichés. Ensuite, appelle deux ou trois clubs et demande un
-        essai. Le tri se fait sur le terrain, pas devant un écran.
-      </p>
-
-      <h3>Quel sport pratiquer le soir à Tours ?</h3>
-      <p>
-        Presque tous, en réalité : la pratique adulte en club est massivement organisée en soirée,
-        entre 19 h et 23 h. La vraie question n’est donc pas de savoir quoi faire le soir, mais quels
-        soirs tu es fiable et jusqu’à quelle heure tu peux tenir. Un sport à deux séances les lundi
-        et jeudi n’a rien à voir avec un sport à trois séances réparties sur toute la semaine.
-        Regarde l’heure de fin, fais le trajet retour une fois, et décide ensuite.
-      </p>
-
-      <h3>Que faire le samedi matin à Tours avec un enfant ?</h3>
-      <p>
-        Le samedi matin est le créneau historique des écoles de sport et des sections d’initiation :
-        c’est là que se concentrent les activités pour les plus jeunes. Cherche un format où l’enfant
-        joue beaucoup et attend peu, où l’encadrement est adapté à son âge, et où tu peux rester
-        regarder les premières fois. Chez nous, l’école de flag occupe ce créneau de 10 h à 12 h, de
-        U7 à U18, sans contact et sans matériel à acheter.
-      </p>
-
-      <h3>Peut-on s’inscrire dans un club en cours d’année ?</h3>
-      <p>
-        Oui, dans la quasi-totalité des cas, parfois avec une cotisation ajustée au prorata. Ce que
-        tu perds en arrivant en janvier, c’est le confort d’un groupe de débutants qui progresse au
-        même rythme que toi. Ce que tu gagnes, c’est six mois de pratique au lieu de zéro, et un
-        encadrement souvent plus individualisé, puisque tu seras intégré à la reprise des
-        fondamentaux plutôt qu’au groupe principal.
-      </p>
-
-      <h3>Combien coûte une adhésion en club à Tours ?</h3>
-      <p>
-        Ça dépend de la discipline, du niveau et surtout de ce que la cotisation inclut : licence,
-        assurance, équipement, encadrement. La seule comparaison utile est le coût total de la
-        première année, matériel compris. À titre d’exemple concret, nos formules vont de 100 € pour
-        l’école de flag et le flag loisir à 249,99 € pour les seniors de football américain, licence
-        incluse dans tous les cas et paiement en trois fois. Demande systématiquement ce qui est
-        prêté avant de budgéter du matériel.
-      </p>
-
-      <h3>Sport universitaire ou club associatif quand on est étudiant à Tours ?</h3>
-      <p>
-        Les deux logiques sont complémentaires, et beaucoup d’étudiants cumulent. Le sport
-        universitaire a l’avantage d’être calé sur le rythme des cours et de rester très accessible
-        financièrement. Le club associatif, lui, offre une saison complète, une équipe qui ne se
-        dissout pas entre deux semestres, et surtout un cercle social en dehors de ta promo, avec des
-        gens de tous âges et de tous métiers. Si tu cherches à la fois à bouger et à rencontrer du
-        monde, le club a un net avantage sur ce dernier point.
-      </p>
+      <Faq
+        titre="Questions fréquentes"
+        items={[
+          {
+            q: 'Comment trouver un club de sport à Tours quand on vient d’arriver ?',
+            r: (
+              <p>
+                Commence par tes contraintes, pas par les disciplines : note les créneaux que tu
+                peux réellement tenir, puis cherche ce qui existe sur ces créneaux. Les trois
+                sources utiles sont le forum des associations organisé chaque rentrée en septembre,
+                les annuaires de clubs des fédérations pour la discipline qui t’intéresse, et les
+                sites des clubs eux-mêmes, où les horaires exacts sont en général affichés. Ensuite,
+                appelle deux ou trois clubs et demande un essai. Le tri se fait sur le terrain, pas
+                devant un écran.
+              </p>
+            ),
+          },
+          {
+            q: 'Quel sport pratiquer le soir à Tours ?',
+            r: (
+              <p>
+                Presque tous, en réalité : la pratique adulte en club est massivement organisée en
+                soirée, entre 19 h et 23 h. La vraie question n’est donc pas de savoir quoi faire le
+                soir, mais quels soirs tu es fiable et jusqu’à quelle heure tu peux tenir. Un sport
+                à deux séances les lundi et jeudi n’a rien à voir avec un sport à trois séances
+                réparties sur toute la semaine. Regarde l’heure de fin, fais le trajet retour une
+                fois, et décide ensuite.
+              </p>
+            ),
+          },
+          {
+            q: 'Que faire le samedi matin à Tours avec un enfant ?',
+            r: (
+              <p>
+                Le samedi matin est le créneau historique des écoles de sport et des sections
+                d’initiation. Chez nous, c’est celui de{' '}
+                <Link href="/ecole-de-flag/">l’école de flag</Link>, de 10 h à 12 h, sans contact et
+                sans matériel à acheter. Pour comparer les activités possibles selon l’âge et le
+                tempérament de l’enfant, tout est dans{' '}
+                <Link href="/blog/quel-sport-pour-mon-enfant-tours/">
+                  quel sport pour mon enfant à Tours
+                </Link>.
+              </p>
+            ),
+          },
+          {
+            q: 'Peut-on s’inscrire dans un club en cours d’année ?',
+            r: (
+              <p>
+                Oui, dans la quasi-totalité des cas, parfois avec une cotisation ajustée au prorata.
+                Ce que tu perds en arrivant en janvier, c’est le confort d’un groupe de débutants
+                qui progresse au même rythme que toi. Ce que tu gagnes, c’est six mois de pratique
+                au lieu de zéro, et un encadrement souvent plus individualisé, puisque tu seras
+                intégré à la reprise des fondamentaux plutôt qu’au groupe principal.
+              </p>
+            ),
+          },
+          {
+            q: 'Combien coûte une adhésion en club à Tours ?',
+            r: (
+              <p>
+                Ça dépend de la discipline, du niveau et surtout de ce que la cotisation inclut :
+                licence, assurance, équipement, encadrement. La seule comparaison utile est le coût
+                total de la première année, matériel compris. À titre d’exemple concret, nos
+                formules vont de 100 € pour l’école de flag et le flag loisir à 249,99 € pour les
+                seniors de football américain, licence incluse dans tous les cas et paiement en
+                trois fois. Demande systématiquement ce qui est prêté avant de budgéter du matériel.
+              </p>
+            ),
+          },
+          {
+            q: 'Sport universitaire ou club associatif quand on est étudiant à Tours ?',
+            r: (
+              <p>
+                Les deux logiques sont complémentaires, et beaucoup d’étudiants cumulent. Le sport
+                universitaire a l’avantage d’être calé sur le rythme des cours et de rester très
+                accessible financièrement. Le club associatif, lui, offre une saison complète, une
+                équipe qui ne se dissout pas entre deux semestres, et surtout un cercle social en
+                dehors de ta promo, avec des gens de tous âges et de tous métiers. Si tu cherches à
+                la fois à bouger et à rencontrer du monde, le club a un net avantage sur ce dernier
+                point.
+              </p>
+            ),
+          },
+        ]}
+      />
 
       <h2 id="conclusion">Le bon club est celui où tu retournes</h2>
       <p>

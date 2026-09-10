@@ -54,9 +54,9 @@ export const ARTICLES: ArticleMeta[] = [
     slug: 'comment-pratiquer-le-football-americain-en-france',
     titre: 'Comment pratiquer le football américain en France : le guide complet pour débuter',
     titreCourt: 'Pratiquer le football américain en France',
-    titleSeo: 'Football américain en France : par où commencer ?',
+    titleSeo: 'Débuter le football américain en France',
     description:
-      'Trouver un club près de chez toi, la licence, l’équipement à prévoir et ton premier entraînement : le guide pas à pas, écrit par un club français fondé en 1987.',
+      'Trouver un club près de chez toi, la licence, l’équipement et ton premier entraînement : le guide pas à pas, écrit par un club français fondé en 1987.',
     emoji: 'foot-us',
     datePublication: '2026-08-20',
     dateModif: '2026-08-31',
@@ -66,11 +66,11 @@ export const ARTICLES: ArticleMeta[] = [
   },
   {
     slug: 'flag-football-cest-quoi',
-    titre: 'Flag football : règles, postes et où jouer à Tours',
-    titreCourt: 'Flag football : règles et postes',
-    titleSeo: 'Flag football : règles, postes et où jouer à Tours',
+    titre: 'Le flag football, c’est quoi ? Définition, mixité et JO 2028',
+    titreCourt: 'Le flag football, c’est quoi ?',
+    titleSeo: 'Le flag football, c’est quoi ? Définition',
     description:
-      'Le flag football expliqué : règles du 5 contre 5, postes et rôles, mixité, JO de Los Angeles 2028 et où jouer à Tours avec les Pionniers de Touraine.',
+      'Le flag football expliqué simplement : d’où il vient, en quoi il diffère du foot US, à qui il s’adresse et pourquoi il entre aux JO de 2028.',
     emoji: 'flag',
     datePublication: '2026-08-20',
     dateModif: '2026-08-22',
@@ -82,9 +82,9 @@ export const ARTICLES: ArticleMeta[] = [
     slug: 'commencer-le-football-americain-adulte',
     titre: 'Commencer le football américain à l’âge adulte : est-ce trop tard ?',
     titreCourt: 'Commencer le foot US à l’âge adulte',
-    titleSeo: 'Commencer le foot US adulte : oui, et voici comment',
+    titleSeo: 'Commencer le football américain adulte à Tours',
     description:
-      'Débuter à 25, 30 ou 35 ans sans aucune base : un poste pour chaque gabarit, équipement prêté, entraînements en soirée et un premier essai gratuit à Tours.',
+      'Commencer le football américain à 25, 30 ou 40 ans, sans jamais y avoir joué : ce qui t’attend, le matériel prêté et une semaine d’essai offerte à Tours.',
     emoji: 'seniors',
     datePublication: '2026-08-20',
     dateModif: '2026-08-31',
@@ -96,7 +96,7 @@ export const ARTICLES: ArticleMeta[] = [
     slug: 'sport-collectif-tours',
     titre: 'Quel sport collectif pratiquer à Tours ? Le guide pour bien choisir',
     titreCourt: 'Quel sport collectif à Tours ?',
-    titleSeo: 'Quel sport collectif pratiquer à Tours ? Le guide',
+    titleSeo: 'Sports collectifs à Tours : le panorama',
     description:
       'Foot, rugby, basket, hand, volley, foot US, flag : le panorama des sports collectifs à Tours et les bons critères pour choisir celui où tu vas rester.',
     emoji: 'partenaire',
@@ -110,9 +110,9 @@ export const ARTICLES: ArticleMeta[] = [
     slug: 'quel-sport-pour-mon-enfant-tours',
     titre: 'Quel sport pour mon enfant à Tours ? Le guide des parents',
     titreCourt: 'Quel sport pour mon enfant ?',
-    titleSeo: 'Quel sport pour mon enfant à Tours ? Guide parents',
+    titleSeo: 'Quel sport pour mon enfant à Tours ?',
     description:
-      'Choisir le sport de votre enfant selon son tempérament : panorama des activités à Tours, repères par âge et école de flag dès 6 ans, sans contact.',
+      'Choisir le sport de votre enfant selon son tempérament : panorama des activités à Tours, repères par âge et école de flag U7 à U18, sans contact.',
     emoji: 'jeunes',
     datePublication: '2026-08-22',
     dateModif: '2026-08-22',
@@ -124,9 +124,9 @@ export const ARTICLES: ArticleMeta[] = [
     slug: 'sport-de-contact-tours',
     titre: 'Quel sport de contact pratiquer à Tours ? Le comparatif',
     titreCourt: 'Quel sport de contact à Tours ?',
-    titleSeo: 'Quel sport de contact pratiquer à Tours ?',
+    titleSeo: 'Sports de contact à Tours : le comparatif',
     description:
-      'Rugby, sports de combat, hockey, football américain : le panorama honnête des sports de contact à Tours et comment le contact s’apprend vraiment, par étapes.',
+      'Rugby, sports de combat, hockey, football américain : le panorama des sports de contact à Tours et comment le contact s’apprend vraiment, par étapes.',
     emoji: 'rejoindre',
     datePublication: '2026-08-22',
     dateModif: '2026-08-22',
@@ -153,9 +153,9 @@ export const ARTICLES: ArticleMeta[] = [
     slug: 'quel-sport-rentree-2026-2027',
     titre: 'Quel sport choisir pour la rentrée 2026/2027 ?',
     titreCourt: 'Quel sport pour la rentrée ?',
-    titleSeo: 'Quel sport choisir pour la rentrée 2026/2027 ?',
+    titleSeo: 'Quel sport à la rentrée 2026/2027 ?',
     description:
-      'Forums des associations, essais gratuits, checklist et erreurs de septembre : la méthode pour choisir le sport de la rentrée 2026/2027 et t’y tenir en février.',
+      'Forums des associations, essais gratuits, checklist : la méthode pour choisir le sport de la rentrée 2026/2027 et t’y tenir jusqu’en février.',
     emoji: 'organiser',
     datePublication: '2026-08-22',
     dateModif: '2026-08-22',
@@ -169,7 +169,7 @@ export const ARTICLES: ArticleMeta[] = [
     titreCourt: 'Les postes au football américain',
     titleSeo: 'Les postes au football américain expliqués',
     description:
-      'Quarterback, ligne, linebacker, kicker : chaque poste du football américain, son rôle, son gabarit et son tempérament. Il y a un poste pour chaque physique.',
+      'Quarterback, ligne, linebacker, kicker : chaque poste du football américain, son rôle, son gabarit, son tempérament. Un poste pour chaque physique.',
     emoji: 'coaching',
     datePublication: '2026-08-31',
     dateModif: '2026-08-31',
@@ -181,7 +181,7 @@ export const ARTICLES: ArticleMeta[] = [
     slug: 'regles-football-americain',
     titre: 'Les règles du football américain expliquées simplement',
     titreCourt: 'Les règles du football américain',
-    titleSeo: 'Les règles du football américain, simplement',
+    titleSeo: 'Règles du football américain expliquées',
     description:
       '4 tentatives pour 10 yards, terrain, touchdown, field goal, fautes, temps de jeu : toutes les règles du football américain expliquées sans jargon.',
     emoji: 'arbitrage',
@@ -195,7 +195,7 @@ export const ARTICLES: ArticleMeta[] = [
     slug: 'equipement-football-americain-debutant',
     titre: 'Quel équipement pour débuter le football américain (et le flag) ?',
     titreCourt: 'L’équipement pour débuter',
-    titleSeo: 'Quel équipement pour débuter le football américain ?',
+    titleSeo: 'Équipement foot US débutant : la liste',
     description:
       'Casque, épaulières, protège-dents, pantalon à pads : ce qui est obligatoire, ce que les clubs prêtent, le budget réel et l’équipement quasi nul du flag.',
     emoji: 'ressources',
@@ -209,7 +209,7 @@ export const ARTICLES: ArticleMeta[] = [
     slug: 'reprendre-le-sport-a-30-ans-tours',
     titre: 'Reprendre le sport à 30 ans (ou après) à Tours : le guide sans bullshit',
     titreCourt: 'Reprendre le sport à 30 ans',
-    titleSeo: 'Reprendre le sport à 30 ans à Tours : le vrai guide',
+    titleSeo: 'Reprendre le sport à 30 ans à Tours',
     description:
       'Pourquoi les résolutions solo cassent, quelles options existent vraiment à Tours et comment tenir jusqu’en février : le guide honnête de la reprise adulte.',
     emoji: 'sante',
@@ -223,9 +223,9 @@ export const ARTICLES: ArticleMeta[] = [
     slug: 'sport-etudiant-tours',
     titre: 'Étudiant à Tours : quel sport choisir cette année ?',
     titreCourt: 'Quel sport quand on est étudiant ?',
-    titleSeo: 'Étudiant à Tours : quel sport choisir cette année ?',
+    titleSeo: 'Sport étudiant à Tours : où s’inscrire',
     description:
-      'Budget serré, emploi du temps mouvant, pas de voiture, envie de rencontrer du monde : comment choisir un sport à Tours quand on est étudiant, et où aller essayer.',
+      'Budget serré, emploi du temps mouvant, pas de voiture : comment choisir un sport à Tours quand on est étudiant, et où aller essayer dès septembre.',
     emoji: 'experience',
     datePublication: '2026-09-02',
     dateModif: '2026-09-02',
@@ -237,9 +237,9 @@ export const ARTICLES: ArticleMeta[] = [
     slug: 'regles-flag-football',
     titre: 'Les règles du flag football (5 contre 5) : terrain, ceinture, temps, fautes',
     titreCourt: 'Les règles du flag football',
-    titleSeo: 'Règles du flag football : le 5 contre 5 expliqué',
+    titleSeo: 'Règles du flag football 5 contre 5 : le guide',
     description:
-      'Terrain de 70 x 25 yards, ceinture à flags, 7 secondes pour lancer, zone sans course, fautes et équipement : les règles du flag football à 5 contre 5.',
+      'Le 5 contre 5 sans contact expliqué : terrain, déflagage, 7 secondes du quarterback, no-run zone, points et fautes. Le guide complet des règles du flag.',
     emoji: 'rejoindre-flag',
     datePublication: '2026-09-02',
     dateModif: '2026-09-02',
@@ -251,7 +251,7 @@ export const ARTICLES: ArticleMeta[] = [
     slug: 'combien-coute-le-football-americain',
     titre: 'Combien coûte le football américain ? Licence, équipement, budget d’une saison',
     titreCourt: 'Combien coûte le football américain ?',
-    titleSeo: 'Combien coûte le football américain ? Prix réels',
+    titleSeo: 'Prix du football américain : le budget réel',
     description:
       'De 100 € à 249,99 € la saison selon la formule, licence FFFA incluse, équipement prêté aux débutants et paiement en 3 fois : le vrai budget d’une saison.',
     emoji: 'finance',
@@ -265,7 +265,7 @@ export const ARTICLES: ArticleMeta[] = [
     slug: 'football-americain-jeunes-u13-u16-u18',
     titre: 'Football américain et flag pour les jeunes : U13, U16, U18, comment ça marche',
     titreCourt: 'Football américain et flag pour les jeunes',
-    titleSeo: 'Football américain jeunes : U13, U16, U18 à Tours',
+    titleSeo: 'Foot US jeunes U13, U16, U18 à Tours',
     description:
       'École de flag dès U7, flag juniors U13-U18, équipe U18 avec initiation au contact : le parcours jeunes des Pionniers de Touraine, horaires et tarifs.',
     emoji: 'decouvrir',
@@ -279,7 +279,7 @@ export const ARTICLES: ArticleMeta[] = [
     slug: 'arbitre-coach-benevole-club-football-americain',
     titre: 'Devenir arbitre, coach ou bénévole dans un club de football américain',
     titreCourt: 'Arbitre, coach ou bénévole en club',
-    titleSeo: 'Arbitre, coach, bénévole : rejoindre un club à Tours',
+    titleSeo: 'Devenir arbitre, coach ou bénévole en club',
     description:
       'Arbitrage indemnisé, coaching, régie FFFA TV, logistique : tous les rôles bénévoles d’un club de football américain à Tours, et comment candidater.',
     emoji: 'competences',
@@ -293,9 +293,9 @@ export const ARTICLES: ArticleMeta[] = [
     slug: 'lexique-football-americain',
     titre: 'Lexique du football américain : 60 termes à connaître',
     titreCourt: 'Lexique du football américain',
-    titleSeo: 'Lexique du football américain : 60 termes clés',
+    titleSeo: 'Lexique foot US : 60 termes traduits',
     description:
-      'Quarterback, linebacker, touchdown, sack, deflag : les 60 mots du football américain expliqués, avec le nombre de joueurs et la durée réelle d’un match.',
+      'Les 60 mots du football américain traduits et expliqués : down, snap, blitz, sack, red zone, deflag. Le glossaire pour comprendre un match.',
     emoji: 'com',
     datePublication: '2026-09-02',
     dateModif: '2026-09-02',
@@ -321,7 +321,7 @@ export const ARTICLES: ArticleMeta[] = [
     slug: 'championnat-de-france-football-americain',
     titre: 'Championnat de France de football américain : divisions, saison et où jouent les Pionniers',
     titreCourt: 'Le championnat de France de foot US',
-    titleSeo: 'Championnat de France de football américain',
+    titleSeo: 'Championnat de France de foot US : divisions',
     description:
       'Divisions du championnat de foot US, championnat mixte de flag, Coupe de France et calendrier type : où jouent les Pionniers de Touraine, club de Tours.',
     emoji: 'jeunes-flag',
@@ -335,7 +335,7 @@ export const ARTICLES: ArticleMeta[] = [
     slug: 'stade-de-la-chambrerie-tours',
     titre: 'Stade de la Chambrerie à Tours : venir voir un match des Pionniers',
     titreCourt: 'Stade de la Chambrerie à Tours',
-    titleSeo: 'Stade de la Chambrerie à Tours : voir un match',
+    titleSeo: 'Stade de la Chambrerie à Tours : accès et matchs',
     description:
       'Adresse, créneaux, ambiance et déroulé d’un match de football américain au stade de la Chambrerie, rue Tartifume à Tours, chez les Pionniers de Touraine.',
     emoji: 'soutenir',
@@ -349,7 +349,7 @@ export const ARTICLES: ArticleMeta[] = [
     slug: 'club-de-sport-tours',
     titre: 'Trouver un club de sport à Tours : le guide par créneau et par âge',
     titreCourt: 'Trouver un club de sport à Tours',
-    titleSeo: 'Club de sport à Tours : le guide par créneau et par âge',
+    titleSeo: 'Trouver un club de sport à Tours',
     description:
       'Choisir un club de sport à Tours : les critères qui comptent vraiment, un guide par créneau, par âge et par envie, et le forum des associations.',
     emoji: 'ambassadeur',
@@ -363,7 +363,7 @@ export const ARTICLES: ArticleMeta[] = [
     slug: 'a-quel-age-commencer-le-football-americain',
     titre: 'À quel âge commencer le football américain ou le flag ?',
     titreCourt: 'À quel âge commencer ?',
-    titleSeo: 'À quel âge commencer le football américain ?',
+    titleSeo: 'À quel âge commencer le foot US ou le flag ?',
     description:
       'Le flag dès 5 ou 6 ans, le contact à partir des U18, et jamais trop tard à 30 ou 40 ans : les repères par âge d’un club de Tours fondé en 1987.',
     emoji: 'temps',
@@ -377,7 +377,7 @@ export const ARTICLES: ArticleMeta[] = [
     slug: 'comment-regarder-le-college-football-en-france',
     titre: 'Comment regarder le college football en France en 2026 : le guide complet',
     titreCourt: 'Regarder le college football en France',
-    titleSeo: 'Regarder le college football en France : guide 2026',
+    titleSeo: 'Regarder le college football en France 2026',
     description:
       'DAZN, Disney+, beIN Sports, Fighting Irish TV : où regarder le college football en France en 2026, à quel prix, et tout le College Football Playoff.',
     emoji: 'jouer',

@@ -1,11 +1,13 @@
 import Link from 'next/link';
 import { CtaQuiz, CtaTunnel } from '@/components/blog/CtaEncart';
+import Faq from '@/components/blog/Faq';
 
 /**
  * Article. Mot-clé : « flag football tours ».
- * Texte rédigé par l’équipe du club, repris au mot près : ne pas réécrire.
- * Seules insertions autorisées : liens internes sur des mots déjà présents,
- * l’encart quiz après la section des postes et l’encart tunnel final.
+ * Page de DÉFINITION : ce qu’est le flag, d’où il vient, en quoi il diffère du
+ * foot US, à qui il s’adresse, mixité, JO en bref. Les règles détaillées, les
+ * postes, les JO et l’offre tourangelle ont chacun leur page : ne pas les
+ * redévelopper ici (décannibalisation), se contenter d’un renvoi court.
  */
 export default function ArticleFlag() {
   return (
@@ -28,8 +30,8 @@ export default function ArticleFlag() {
       </p>
       <p>
         À Tours, les Pionniers de Touraine développent cette pratique des jeunes jusqu’aux seniors,
-        du premier entraînement à la compétition nationale. Voici comment le flag se joue, ce qu’il
-        exige vraiment et à quels profils il peut correspondre.
+        du premier entraînement à la compétition nationale. Voici ce qu’est réellement le flag, ce
+        qu’il exige et à quels profils il peut correspondre.
       </p>
 
       <h2 id="definition">Qu’est-ce que le flag football ?</h2>
@@ -47,7 +49,11 @@ export default function ArticleFlag() {
         secondes.
       </p>
 
-      <h2 id="regles">Les règles du flag football en 3 minutes</h2>
+      <h2 id="principe">Le principe du flag football en cinq points</h2>
+      <p>
+        Le fonctionnement du jeu tient en quelques principes, assimilables dès le premier
+        entraînement.
+      </p>
       <ul>
         <li>
           <strong>Deux équipes de cinq joueurs.</strong> Le format international et olympique se
@@ -58,39 +64,23 @@ export default function ArticleFlag() {
           de large, auxquels s’ajoutent deux zones d’en-but de 10 yards : 70 yards au total.
         </li>
         <li>
-          <strong>Quatre tentatives pour franchir le milieu.</strong> Si l’attaque y parvient, elle
-          obtient une nouvelle série de quatre tentatives pour marquer. Sinon, la possession change
-          de camp.
-        </li>
-        <li>
-          <strong>Chaque action commence par un snap.</strong> Le centre transmet le ballon au
-          quarterback, qui organise le jeu par la passe ou par une transmission.
+          <strong>Le déflagage remplace le plaquage.</strong> Le défenseur met fin à l’action en
+          retirant un flag accessible, sans saisir, bloquer ni plaquer le porteur du ballon.
         </li>
         <li>
           <strong>Sept secondes pour décider.</strong> Après le snap, le quarterback dispose de sept
           secondes pour lancer ou transmettre le ballon.
         </li>
         <li>
-          <strong>Un touchdown vaut 6 points.</strong> Il est suivi d’une tentative de
-          transformation à 1 ou 2 points.
-        </li>
-        <li>
-          <strong>Le déflagage met fin à l’action.</strong> Le défenseur doit retirer un flag
-          accessible sans saisir, bloquer ni plaquer le porteur du ballon.
-        </li>
-        <li>
-          <strong>Pas de course dans les cinq derniers yards avant l’en-but.</strong> Dans cette
-          zone, l’attaque doit compléter un jeu de passe avant.
-        </li>
-        <li>
-          <strong>Les interceptions peuvent être remontées.</strong> Une lecture défensive réussie
-          peut donc inverser immédiatement le rapport de force et aller jusqu’au touchdown.
+          <strong>Aucun contact.</strong> Ni plaquage, ni blocage, ni jeu au pied : tout se gagne
+          par les appuis, la vitesse, les mains et la lecture du jeu.
         </li>
       </ul>
       <p>
-        Cette architecture produit des séquences courtes et très denses. Une équipe n’a que quelques
-        secondes pour s’aligner, identifier la défense, lancer son tracé et exécuter la combinaison.
-        La précision collective compte autant que la vitesse individuelle.
+        Cette architecture produit des séquences courtes et très denses : quelques secondes pour
+        s’aligner, identifier la défense et exécuter la combinaison. Le détail complet, faute par
+        faute, est dans notre guide des{' '}
+        <Link href="/blog/regles-flag-football/">règles du flag football</Link>.
       </p>
 
       <h2 id="differences">Le flag n’est pas du football américain au rabais</h2>
@@ -102,14 +92,14 @@ export default function ArticleFlag() {
         son rythme comme dans ses choix tactiques.
       </p>
       <p>
-        Le{' '}
+        Le football américain au contact valorise notamment le combat de ligne, les blocs, les
+        plaquages, la gestion des unités et la spécialisation de nombreux postes ; pour savoir{' '}
         <Link href="/blog/comment-pratiquer-le-football-americain-en-france/">
-          football américain
-        </Link>{' '}
-        au contact valorise notamment le combat de ligne, les blocs, les plaquages, la gestion des
-        unités et la spécialisation de nombreux postes. Le flag concentre le jeu sur l’espace, les
-        duels d’appuis, la qualité de passe, les mains, le timing et la lecture. Les deux
-        disciplines ont des racines communes ; aucune n’est la version mineure de l’autre.
+          comment pratiquer le football américain en France
+        </Link>
+        , c’est une autre porte d’entrée. Le flag, lui, concentre le jeu sur l’espace, les duels
+        d’appuis, la qualité de passe, les mains, le timing et la lecture. Les deux disciplines ont
+        des racines communes ; aucune n’est la version mineure de l’autre.
       </p>
 
       <h2 id="exigences">Un sport rapide, athlétique et profondément stratégique</h2>
@@ -178,43 +168,23 @@ export default function ArticleFlag() {
         s’engager dans le collectif.
       </p>
 
-      <h2 id="postes">Les postes et rôles au flag football</h2>
+      <h2 id="roles">Qui joue où ?</h2>
       <p>
-        À cinq contre cinq, les rôles sont identifiables mais moins figés qu’au football américain à
-        onze. Selon les systèmes et les remplacements, un même joueur peut contribuer de plusieurs
-        façons.
+        À cinq contre cinq, les rôles existent mais restent bien moins figés qu’au football
+        américain à onze : le quarterback pilote l’attaque, le centre réalise le snap puis devient
+        une option de réception, les receveurs créent la séparation, le porteur de balle progresse
+        ballon en main, et la défense se partage entre blitzeur et joueurs de couverture.
       </p>
-      <ul>
-        <li>
-          <strong>Le quarterback (QB)</strong> pilote l’attaque. Il annonce ou ajuste la
-          combinaison, lit la défense et distribue le ballon avec précision et rythme.
-        </li>
-        <li>
-          <strong>Le centre</strong> réalise le snap puis devient immédiatement une option de
-          réception. Sa disponibilité et sa compréhension des espaces sont essentielles.
-        </li>
-        <li>
-          <strong>Les receveurs</strong> créent la séparation par leurs tracés, leurs changements
-          d’allure et leurs appuis. Ils doivent aussi sécuriser la réception et gagner des yards
-          après la passe.
-        </li>
-        <li>
-          <strong>Le porteur de balle</strong> utilise vision, accélération et pivots pour
-          progresser sans protéger ses flags avec les bras ou les mains.
-        </li>
-        <li>
-          <strong>Le blitzeur</strong> met le quarterback sous pression depuis une position
-          réglementaire. Son départ, sa trajectoire et son timing peuvent accélérer toute la
-          décision offensive.
-        </li>
-        <li>
-          <strong>Les défenseurs de couverture</strong> protègent des zones ou suivent les
-          receveurs. Ils lisent les tracés, ferment les angles de passe, déflaguent et recherchent
-          l’interception.
-        </li>
-      </ul>
+      <p>
+        Selon les systèmes et les remplacements, un même joueur peut assurer plusieurs de ces rôles
+        dans le même match. Le détail de chacun, gabarit par gabarit, est dans notre guide sur{' '}
+        <Link href="/blog/postes-football-americain/">
+          les postes au football américain et au flag
+        </Link>
+        .
+      </p>
 
-      <CtaQuiz />
+      <CtaQuiz bouton="Je fais le test de poste" />
 
       <h2 id="accessible">Accessible ne veut pas dire seulement loisir</h2>
       <p>
@@ -252,41 +222,22 @@ export default function ArticleFlag() {
         compétitions internationales.
       </p>
       <p>
-        À deux ans des Jeux, l’enjeu pour les clubs français est concret : accueillir davantage de
-        pratiquants, former les jeunes, renforcer les équipes féminines et masculines, développer
-        l’arbitrage et élever le niveau de jeu. Commencer aujourd’hui, c’est rejoindre un sport en
-        pleine accélération sans attendre que les projecteurs olympiques s’allument.
+        Ce que cette entrée au programme olympique change concrètement pour les clubs français, on
+        le détaille dans notre article sur{' '}
+        <Link href="/blog/flag-football-jo-2028/">le flag football aux JO 2028</Link>.
       </p>
 
-      <h2 id="tours">Où pratiquer le flag football à Tours ?</h2>
+      <h2 id="jouer">Et pour jouer ?</h2>
       <p>
-        Les Pionniers de Touraine accueillent les joueuses et joueurs de flag football au Stade de
-        la Chambrerie, 2-4 rue de Tartifume à Tours, en Indre-et-Loire et en région
-        Centre-Val de Loire. Pour la saison 2026-2027, le club propose plusieurs parcours :
-      </p>
-      <ul>
-        <li>
-          <strong>Flag mixte seniors :</strong> entraînements le lundi et le jeudi de 20 h 15 à
-          22 h 45 ; équipe engagée en championnat mixte D1 et dans les épreuves féminines et
-          masculines de la Coupe de France.
-        </li>
-        <li>
-          <strong>Juniors :</strong> football américain et flag le lundi et le jeudi de 19 h à
-          21 h.
-        </li>
-        <li>
-          <strong>
-            <Link href="/ecole-de-flag/">École de flag</Link> :
-          </strong>{' '}
-          le samedi de 10 h à 12 h, pour apprendre les fondamentaux, développer la motricité et
-          progresser dans un cadre structuré.
-        </li>
-      </ul>
-      <p>
-        Tu viens du basket, du tennis, du football, du rugby, du handball, de l’athlétisme - ou tu
-        n’as encore aucune expérience ? Le staff t’aide à identifier les qualités que tu peux
-        transférer, le rôle qui te correspond et les axes à travailler. Les débutants sont
-        bienvenus, mais l’objectif reste clair : apprendre, progresser et contribuer au collectif.
+        Les Pionniers de Touraine accueillent les joueuses et joueurs au Stade de la Chambrerie,
+        2-4 rue de Tartifume à Tours : créneaux seniors et juniors en semaine, et une{' '}
+        <Link href="/ecole-de-flag/">école de flag</Link> le samedi matin pour les plus jeunes. Les
+        catégories, les horaires de la saison et les modalités d’essai sont détaillés sur la page
+        consacrée au{' '}
+        <Link href="/flag-football/">flag football à Tours et en Indre-et-Loire</Link>. Que tu
+        viennes du basket, du tennis, du football, du rugby, du handball, de l’athlétisme ou
+        d’aucun sport, le staff t’aide à identifier les qualités que tu peux transférer et le rôle
+        qui te correspond.
       </p>
 
       <CtaTunnel
@@ -295,43 +246,72 @@ export default function ArticleFlag() {
         bouton="Je viens essayer"
       />
 
-      <h2 id="faq">Questions fréquentes sur le flag football</h2>
-      <h3>Quelle est la différence entre le flag football et le football américain ?</h3>
-      <p>
-        Les deux disciplines partagent des origines, le ballon, le touchdown, le snap et une partie
-        du vocabulaire tactique. Le flag se joue principalement à 5 contre 5 sans plaquage, sans
-        blocage ni jeu au pied. Son règlement, son terrain, son rythme et plusieurs de ses concepts
-        sont spécifiques.
-      </p>
-      <h3>Faut-il avoir joué au foot US pour commencer ?</h3>
-      <p>
-        Non. Les techniques et le règlement s’apprennent au club. Les expériences acquises dans
-        d’autres sports collectifs, de raquette ou d’explosivité peuvent même constituer une
-        excellente base.
-      </p>
-      <h3>Le flag football est-il un sport de compétition ?</h3>
-      <p>
-        Oui. La France organise des championnats nationaux et une Coupe de France, et la discipline
-        possède des compétitions internationales ainsi que des équipes nationales. Elle entrera au
-        programme olympique à Los Angeles en 2028.
-      </p>
-      <h3>Le flag football est-il physique ?</h3>
-      <p>
-        Oui. Il demande des sprints, des changements de direction, des freinages, de la coordination
-        et de la répétition d’efforts. L’absence de plaquage réduit les impacts recherchés, mais pas
-        l’intensité athlétique.
-      </p>
-      <h3>Peut-on pratiquer le flag football en mixte ?</h3>
-      <p>
-        Oui. Le championnat de France de clubs comprend une pratique mixte. Il existe également des
-        compétitions féminines et masculines, notamment en Coupe de France et à l’international.
-      </p>
-      <h3>Où faire du flag football à Tours ou en Indre-et-Loire ?</h3>
-      <p>
-        Les Pionniers de Touraine s’entraînent au Stade de la Chambrerie à Tours. Le club propose du
-        flag pour les seniors, les juniors et les enfants, avec des séances de découverte pour les
-        nouveaux pratiquants.
-      </p>
+      <Faq
+        titre="Questions fréquentes sur le flag football"
+        items={[
+          {
+            q: 'Quelle est la différence entre le flag football et le football américain ?',
+            r: (
+              <p>
+                Les deux disciplines partagent des origines, le ballon, le touchdown, le snap et une
+                partie du vocabulaire tactique. Le flag se joue principalement à 5 contre 5 sans
+                plaquage, sans blocage ni jeu au pied. Son règlement, son terrain, son rythme et
+                plusieurs de ses concepts sont spécifiques.
+              </p>
+            ),
+          },
+          {
+            q: 'Faut-il avoir joué au foot US pour commencer ?',
+            r: (
+              <p>
+                Non. Les techniques et le règlement s’apprennent au club. Les expériences acquises
+                dans d’autres sports collectifs, de raquette ou d’explosivité peuvent même
+                constituer une excellente base.
+              </p>
+            ),
+          },
+          {
+            q: 'Le flag football est-il un sport de compétition ?',
+            r: (
+              <p>
+                Oui. La France organise des championnats nationaux et une Coupe de France, et la
+                discipline possède des compétitions internationales ainsi que des équipes
+                nationales. Elle entrera au programme olympique à Los Angeles en 2028.
+              </p>
+            ),
+          },
+          {
+            q: 'Le flag football est-il physique ?',
+            r: (
+              <p>
+                Oui. Il demande des sprints, des changements de direction, des freinages, de la
+                coordination et de la répétition d’efforts. L’absence de plaquage réduit les impacts
+                recherchés, mais pas l’intensité athlétique.
+              </p>
+            ),
+          },
+          {
+            q: 'Peut-on pratiquer le flag football en mixte ?',
+            r: (
+              <p>
+                Oui. Le championnat de France de clubs comprend une pratique mixte. Il existe
+                également des compétitions féminines et masculines, notamment en Coupe de France et
+                à l’international.
+              </p>
+            ),
+          },
+          {
+            q: 'Où faire du flag football à Tours ou en Indre-et-Loire ?',
+            r: (
+              <p>
+                Les Pionniers de Touraine s’entraînent au Stade de la Chambrerie à Tours. Le club
+                propose du flag pour les seniors, les juniors et les enfants, avec des séances de
+                découverte pour les nouveaux pratiquants.
+              </p>
+            ),
+          },
+        ]}
+      />
     </>
   );
 }

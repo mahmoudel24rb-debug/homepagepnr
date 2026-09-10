@@ -12,12 +12,12 @@ import { STADE, HORAIRES, REJOINDRE_TUNNEL_URL } from '@/lib/infos';
 const IS_DEMO = (process.env.NEXT_PUBLIC_BASE_PATH ?? '/homepagepnr') !== '/';
 
 export const metadata: Metadata = {
-  title: 'Nos sections : foot US, flag, école de flag',
+  title: 'Nos sections et créneaux d’entraînement',
   description:
-    'Les trois sections des Pionniers de Touraine à Tours : football américain au contact, flag football mixte sans contact et école de flag le samedi matin.',
+    'Nos trois sections et tous les créneaux d’entraînement au stade de la Chambrerie à Tours : foot US au contact, flag mixte et flag pour les enfants.',
   ...(IS_DEMO ? {} : { alternates: { canonical: '/nos-sections/' } }),
   openGraph: {
-    title: 'Nos sections · Pionniers de Touraine',
+    title: 'Nos sections et créneaux · Pionniers de Touraine',
     description:
       'Football américain, flag football et école de flag : les trois sections du club de Tours, leurs publics, leurs créneaux et leurs pages détaillées.',
     url: '/nos-sections/',
@@ -53,9 +53,9 @@ const SECTIONS = [
     emoji: 'jeunes-flag',
     alt: 'Emoji drapeau NFL Flag',
     titre: 'École de flag',
-    chips: ['Dès 6 à 8 ans', 'Zéro contact', 'Samedi 10h-12h'],
+    chips: ['U7 à U18', 'Zéro contact', 'Samedi 10h-12h'],
     description:
-      'La porte d’entrée du club pour les plus jeunes, le samedi matin au stade. Les enfants apprennent le flag par le jeu : courir, attraper, lancer, se démarquer et tenir son rôle sur une action. Le règlement interdit le contact, il n’y a donc ni casque ni protection à prévoir. Les ceintures et les flags sont fournis par le club : une tenue de sport et une gourde suffisent pour venir essayer.',
+      'La porte d’entrée du club pour les plus jeunes, le samedi matin au stade : le flag s’apprend par le jeu, sans aucun contact ni protection à prévoir. Les ceintures et les flags sont fournis, une tenue de sport et une gourde suffisent pour venir essayer.',
   },
 ];
 
@@ -73,7 +73,7 @@ export default function Page() {
         >
           <div className="sc-chips" style={{ marginTop: 24 }}>
             <span className="sc-chip">Trois sections</span>
-            <span className="sc-chip">De 6 ans aux seniors</span>
+            <span className="sc-chip">U7 à U18 et seniors</span>
             <span className="sc-chip">Stade de la Chambrerie</span>
             <span className="sc-chip">Débutants bienvenus</span>
           </div>
@@ -116,6 +116,26 @@ export default function Page() {
                   </span>
                 </Link>
               ))}
+            </div>
+
+            <div className="sc-body" data-reveal style={{ marginTop: 34 }}>
+              <h3 className="sc-h3">Pour aller plus loin</h3>
+              <p className="sc-legal-text">
+                Avant de choisir, quelques repères écrits pour les curieux :{' '}
+                <Link href="/blog/comment-pratiquer-le-football-americain-en-france/">
+                  comment pratiquer le football américain en France
+                </Link>
+                ,{' '}
+                <Link href="/blog/flag-football-cest-quoi/">le flag football, c’est quoi</Link>,{' '}
+                <Link href="/blog/quel-sport-pour-mon-enfant-tours/">
+                  quel sport pour mon enfant à Tours
+                </Link>{' '}
+                et{' '}
+                <Link href="/blog/combien-coute-le-football-americain/">
+                  combien coûte une saison
+                </Link>
+                .
+              </p>
             </div>
           </div>
         </section>

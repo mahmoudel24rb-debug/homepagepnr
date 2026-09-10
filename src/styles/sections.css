@@ -442,6 +442,9 @@ a.sc-horaires { display: grid; }
 .sc-legal-text:last-child { margin-bottom: 0; }
 .sc-legal-text a { color: var(--rf-amber); text-decoration: none; }
 .sc-legal-text a:hover { text-decoration: underline; }
+/* Liens contextuels ajoutes dans les chapos, cartes et FAQ des pages de section (maillage SEO). */
+.sc-lead a, .sc-card-desc a, .sc-faq-item a, .sc-body a { color: var(--rf-amber); text-decoration: none; }
+.sc-lead a:hover, .sc-card-desc a:hover, .sc-faq-item a:hover, .sc-body a:hover { text-decoration: underline; }
 
 /* ============================================================
    RESPONSIVE

@@ -17,6 +17,13 @@ const TERRAIN: [number, number] = [47.416252, 0.710804];
 
 const GOOGLE_MAPS = 'https://maps.app.goo.gl/cnVghabaHrhx9qaQA';
 
+/**
+ * Adresse affichée par la carte (popup du marqueur ET badge sous la carte).
+ * Un seul point de modification : la forme officielle sera relevée sur la
+ * fiche Google du club, il suffira alors de changer cette constante.
+ */
+const ADRESSE_AFFICHEE = '2-4 Rue de Tartifume, 37100 Tours';
+
 export default function StadeMap() {
   const { lang } = useLang();
   const containerRef = useRef<HTMLDivElement>(null);
@@ -65,7 +72,7 @@ export default function StadeMap() {
             L.marker(TERRAIN, { icon: ballon, alt: 'Stade de la Chambrerie' })
               .addTo(map)
               .bindPopup(
-                `<strong>Stade de la Chambrerie</strong><br>2-4 Rue de Tartifume, 37100 Tours<br><a href="${GOOGLE_MAPS}" target="_blank" rel="noopener noreferrer">${document.documentElement.lang === "en" ? "Directions" : "Itinéraire"} →</a>`,
+                `<strong>Stade de la Chambrerie</strong><br>${ADRESSE_AFFICHEE}<br><a href="${GOOGLE_MAPS}" target="_blank" rel="noopener noreferrer">${document.documentElement.lang === "en" ? "Directions" : "Itinéraire"} →</a>`,
               );
           }));
         }
@@ -87,7 +94,7 @@ export default function StadeMap() {
       <span className="sc-map-address">
         <strong>Stade de la Chambrerie</strong>
         <a href={GOOGLE_MAPS} target="_blank" rel="noopener noreferrer">
-          2-4 Rue de Tartifume, 37100 Tours
+          {ADRESSE_AFFICHEE}
         </a>
       </span>
     </div>

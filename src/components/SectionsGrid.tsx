@@ -31,9 +31,9 @@ const SECTIONS = [
     emoji: 'jeunes-flag',
     alt: 'Emoji drapeau NFL Flag',
     titre: 'École de flag',
-    chips: ['Samedi 10h-12h', 'Dès 6 à 8 ans', 'Zéro contact'],
+    chips: ['Samedi 10h-12h', 'U7 à U18', 'Zéro contact'],
     accroche:
-      'Le samedi matin, les plus jeunes découvrent un sport collectif sans aucun contact : motricité, passes, tracés et esprit d’équipe. Ceintures et flags fournis par le club.',
+      'Le samedi matin, les jeunes nés entre 2009 et 2021 (catégories U7 à U18) découvrent un sport collectif sans aucun contact : motricité, passes, tracés et esprit d’équipe. Ceintures et flags fournis par le club.',
   },
 ];
 

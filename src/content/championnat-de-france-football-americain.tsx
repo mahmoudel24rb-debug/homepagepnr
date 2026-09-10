@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { CtaQuiz, CtaTunnel } from '@/components/blog/CtaEncart';
+import Faq from '@/components/blog/Faq';
 
 /**
  * Article. Mot-clé : « championnat football américain france ».
@@ -54,6 +55,7 @@ export default function ArticleChampionnatFrance() {
           <li><a href="#joueur">Ce que ça change quand on rejoint le club</a></li>
           <li><a href="#suivre">Suivre les matchs : FFFA TV et la diffusion par les clubs</a></li>
           <li><a href="#venir">Venir voir un match au stade</a></li>
+          <li><a href="#sources">Sources</a></li>
           <li><a href="#faq">Questions fréquentes</a></li>
         </ol>
       </div>
@@ -62,7 +64,12 @@ export default function ArticleChampionnatFrance() {
       <p>
         Toutes les compétitions officielles de football américain, de flag football et des
         disciplines associées sont organisées en France par la{' '}
-        <strong>Fédération Française de Football Américain</strong>, la FFFA. C’est elle qui délivre
+        <strong>
+          <a href="https://www.fffa.org" target="_blank" rel="noopener noreferrer">
+            Fédération Française de Football Américain
+          </a>
+        </strong>
+        , la FFFA. C’est elle qui délivre
         les licences, qui écrit et applique les règlements sportifs, qui forme et désigne les
         arbitres, qui homologue les résultats et qui fixe les calendriers.
       </p>
@@ -340,7 +347,7 @@ export default function ArticleChampionnatFrance() {
         ta première saison peut être une saison d’apprentissage. C’est le chemin qu’ont pris la quasi
         totalité des joueurs français, et c’est ce que raconte notre article{' '}
         <Link href="/blog/commencer-le-football-americain-adulte/">
-          commencer le football américain à l’âge adulte
+          arriver débutant à 25 ou 30 ans
         </Link>
         . En flag, la mise en jeu est en général plus rapide, parce que le format à cinq et l’absence
         de contact réduisent les prérequis techniques.
@@ -427,81 +434,142 @@ export default function ArticleChampionnatFrance() {
         les termes que tu entendras autour de toi. Pour toute question pratique, la page{' '}
         <Link href="/contact/">contact</Link> est le chemin le plus direct.
       </p>
-
-      <h2 id="faq">Questions fréquentes sur le championnat de France</h2>
-
-      <h3>Existe-t-il vraiment un championnat de France de football américain ?</h3>
       <p>
-        Oui. Il est organisé par la Fédération Française de Football Américain et structuré en
-        divisions hiérarchisées, avec une Division 1 au sommet, une Division 2 en dessous et des
-        divisions inférieures. Les rencontres se disputent avec des arbitres officiels, selon un
-        règlement publié, sur des terrains homologués, et les résultats sont homologués par la
-        fédération. Le nombre de divisions, de poules et d’équipes ainsi que les modalités de montée
-        et de descente évoluent d’une saison à l’autre : le règlement sportif de la FFFA est la
-        référence.
+        Entre deux journées de championnat, on peut aussi se faire l’œil sur le championnat
+        universitaire américain : notre guide pour{' '}
+        <Link href="/blog/comment-regarder-le-college-football-en-france/">
+          regarder le college football en France
+        </Link>{' '}
+        indique les chaînes et les horaires. Et pour savoir qui reçoit ces matchs à Tours,{' '}
+        <Link href="/le-club/">le club des Pionniers de Touraine</Link> raconte son histoire depuis
+        1987.
       </p>
 
-      <h3>En quelle division jouent les Pionniers de Touraine ?</h3>
+      <h2 id="sources">Sources</h2>
       <p>
-        L’équipe senior de football américain, au contact, évolue en <strong>Division 2</strong>.
-        L’équipe mixte de flag football est engagée en <strong>championnat mixte D1</strong> ainsi
-        qu’en Coupe de France. Le club est également présent en compétitions jeunes, avec le
-        championnat U13, U15 et U18 en flag, le programme NFL Flag en U13 et U15, et une équipe
-        junior U18 en football américain.
+        Organisation et formats des compétitions décrits d’après le règlement sportif publié par la
+        Fédération Française de Football Américain pour la saison 2026-2027.
       </p>
+      <ul>
+        <li>
+          <a href="https://www.fffa.org" target="_blank" rel="noopener noreferrer">
+            Fédération Française de Football Américain (FFFA)
+          </a>{' '}
+          : règlements sportifs, calendriers et résultats des championnats.
+        </li>
+        <li>
+          <a href="https://americanfootball.sport" target="_blank" rel="noopener noreferrer">
+            IFAF, International Federation of American Football
+          </a>{' '}
+          : compétitions internationales de football américain et de flag.
+        </li>
+      </ul>
 
-      <h3>Le flag football a-t-il son propre championnat ?</h3>
-      <p>
-        Oui, et il est distinct de celui du football américain, avec un règlement écrit
-        indépendamment. Sa spécificité française est la pratique mixte : hommes et femmes jouent dans
-        la même équipe, y compris au plus haut niveau national. La Coupe de France propose par
-        ailleurs des épreuves féminines et masculines. Le format des compétitions, souvent organisé
-        en journées de plateau plutôt qu’en match unique hebdomadaire, est fixé chaque saison par la
-        fédération.
-      </p>
-
-      <h3>Quand se joue la saison ?</h3>
-      <p>
-        En général, la compétition de football américain occupe la période allant de l’automne à
-        l’hiver, et le flag football plutôt le printemps. Ce décalage permet à un club de mener les
-        deux pratiques dans la même saison. Il s’agit d’une tendance générale et non d’une règle :
-        les dates précises, la répartition des journées et la place des phases finales varient d’une
-        saison et d’une division à l’autre, et le calendrier officiel est publié par la FFFA.
-      </p>
-
-      <h3>Comment regarder un match de championnat de France ?</h3>
-      <p>
-        FFFA TV permet désormais aux clubs de diffuser leurs propres rencontres, ce qui rend le
-        championnat accessible bien au-delà des personnes présentes au stade. Chaque diffusion repose
-        sur une équipe de bénévoles au tournage et à la régie. C’est d’ailleurs l’un des postes pour
-        lesquels le club recrute :{' '}
-        <a href="https://recrutement.pionniersdetouraine.fr/#offre-broadcast-regie">
-          l’équipe broadcast et régie de transmission
-        </a>{' '}
-        est ouverte à des bénévoles sans expérience préalable, formés sur place.
-      </p>
-
-      <h3>Faut-il un bon niveau pour rejoindre un club engagé en championnat national ?</h3>
-      <p>
-        Non. Un club engagé en compétition a besoin de renouveler son effectif en permanence, et la
-        formation des débutants fait partie de son fonctionnement normal. La quasi totalité des
-        joueurs français ont découvert la discipline à l’âge adulte, sans aucune base. Ce qui est
-        demandé, c’est l’assiduité et l’envie de progresser, pas un passé sportif. La semaine
-        découverte est offerte, avec l’équipement prêté, précisément pour te permettre de juger sur
-        pièces. Si tu reprends le sport après une coupure, notre article sur{' '}
-        <Link href="/blog/reprendre-le-sport-a-30-ans-tours/">reprendre le sport à 30 ans</Link>{' '}
-        décrit honnêtement les premières semaines.
-      </p>
-
-      <h3>Y a-t-il des montées et des descentes ?</h3>
-      <p>
-        Le principe existe : une équipe qui domine sa division peut accéder au niveau supérieur, une
-        équipe en difficulté peut redescendre. Les modalités concrètes, nombre de places, existence
-        de barrages, conditions d’accession, sont fixées chaque saison par le règlement sportif
-        fédéral. Il faut aussi savoir qu’une montée peut s’accompagner d’exigences qui ne sont pas
-        seulement sportives, liées à la capacité du club à assumer le niveau supérieur en effectif,
-        en encadrement et en organisation.
-      </p>
+      <Faq
+        titre="Questions fréquentes sur le championnat de France"
+        items={[
+          {
+            q: 'Existe-t-il vraiment un championnat de France de football américain ?',
+            r: (
+              <p>
+                Oui. Il est organisé par la Fédération Française de Football Américain et structuré
+                en divisions hiérarchisées, avec une Division 1 au sommet, une Division 2 en dessous
+                et des divisions inférieures. Les rencontres se disputent avec des arbitres
+                officiels, selon un règlement publié, sur des terrains homologués, et les résultats
+                sont homologués par la fédération. Le nombre de divisions, de poules et d’équipes
+                ainsi que les modalités de montée et de descente évoluent d’une saison à l’autre :
+                le règlement sportif de la FFFA est la référence.
+              </p>
+            ),
+          },
+          {
+            q: 'En quelle division jouent les Pionniers de Touraine ?',
+            r: (
+              <p>
+                L’équipe senior de football américain, au contact, évolue en{' '}
+                <strong>Division 2</strong>. L’équipe mixte de flag football est engagée en{' '}
+                <strong>championnat mixte D1</strong> ainsi qu’en Coupe de France. Le club est
+                également présent en compétitions jeunes, avec le championnat U13, U15 et U18 en
+                flag, le programme NFL Flag en U13 et U15, et une équipe junior U18 en football
+                américain.
+              </p>
+            ),
+          },
+          {
+            q: 'Le flag football a-t-il son propre championnat ?',
+            r: (
+              <p>
+                Oui, et il est distinct de celui du football américain, avec un règlement écrit
+                indépendamment. Sa spécificité française est la pratique mixte : hommes et femmes
+                jouent dans la même équipe, y compris au plus haut niveau national. La Coupe de
+                France propose par ailleurs des épreuves féminines et masculines. Le format des
+                compétitions, souvent organisé en journées de plateau plutôt qu’en match unique
+                hebdomadaire, est fixé chaque saison par la fédération.
+              </p>
+            ),
+          },
+          {
+            q: 'Quand se joue la saison ?',
+            r: (
+              <p>
+                En général, la compétition de football américain occupe la période allant de
+                l’automne à l’hiver, et le flag football plutôt le printemps. Ce décalage permet à
+                un club de mener les deux pratiques dans la même saison. Il s’agit d’une tendance
+                générale et non d’une règle : les dates précises, la répartition des journées et la
+                place des phases finales varient d’une saison et d’une division à l’autre, et le
+                calendrier officiel est publié par la FFFA.
+              </p>
+            ),
+          },
+          {
+            q: 'Comment regarder un match de championnat de France ?',
+            r: (
+              <p>
+                FFFA TV permet désormais aux clubs de diffuser leurs propres rencontres, ce qui rend
+                le championnat accessible bien au-delà des personnes présentes au stade. Chaque
+                diffusion repose sur une équipe de bénévoles au tournage et à la régie. C’est
+                d’ailleurs l’un des postes pour lesquels le club recrute :{' '}
+                <a href="https://recrutement.pionniersdetouraine.fr/#offre-broadcast-regie">
+                  l’équipe broadcast et régie de transmission
+                </a>{' '}
+                est ouverte à des bénévoles sans expérience préalable, formés sur place.
+              </p>
+            ),
+          },
+          {
+            q: 'Faut-il un bon niveau pour rejoindre un club engagé en championnat national ?',
+            r: (
+              <p>
+                Non. Un club engagé en compétition a besoin de renouveler son effectif en
+                permanence, et la formation des débutants fait partie de son fonctionnement normal.
+                La quasi totalité des joueurs français ont découvert la discipline à l’âge adulte,
+                sans aucune base. Ce qui est demandé, c’est l’assiduité et l’envie de progresser,
+                pas un passé sportif. La semaine découverte est offerte, avec l’équipement prêté,
+                précisément pour te permettre de juger sur pièces. Si tu reprends le sport après une
+                coupure, notre article sur{' '}
+                <Link href="/blog/reprendre-le-sport-a-30-ans-tours/">
+                  reprendre le sport à 30 ans
+                </Link>{' '}
+                décrit honnêtement les premières semaines.
+              </p>
+            ),
+          },
+          {
+            q: 'Y a-t-il des montées et des descentes ?',
+            r: (
+              <p>
+                Le principe existe : une équipe qui domine sa division peut accéder au niveau
+                supérieur, une équipe en difficulté peut redescendre. Les modalités concrètes,
+                nombre de places, existence de barrages, conditions d’accession, sont fixées chaque
+                saison par le règlement sportif fédéral. Il faut aussi savoir qu’une montée peut
+                s’accompagner d’exigences qui ne sont pas seulement sportives, liées à la capacité
+                du club à assumer le niveau supérieur en effectif, en encadrement et en
+                organisation.
+              </p>
+            ),
+          },
+        ]}
+      />
 
       <CtaTunnel
         titre="La saison prochaine se prépare maintenant"

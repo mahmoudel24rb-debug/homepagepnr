@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { CtaQuiz, CtaTunnel } from '@/components/blog/CtaEncart';
+import Faq from '@/components/blog/Faq';
 
 /**
  * Article. Mot-clé : « football américain enfant » / « u13 u16 u18 ».
@@ -39,7 +40,7 @@ export default function ArticleJeunes() {
         <ol>
           <li><a href="#parcours">Le parcours au club, âge par âge</a></li>
           <li><a href="#categories">U13, U15, U16, U18 : comment lire ces catégories</a></li>
-          <li><a href="#ecole-de-flag">L’école de flag, le samedi matin</a></li>
+          <li><a href="#ecole-de-flag">Avant 13 ans : l’école de flag</a></li>
           <li><a href="#flag-juniors">Le flag mixte juniors, le jeudi soir</a></li>
           <li><a href="#u18">L’équipe U18 de football américain</a></li>
           <li><a href="#securite">Sécurité, encadrement, équipement : ce qu’un parent doit savoir</a></li>
@@ -134,7 +135,11 @@ export default function ArticleJeunes() {
         Concrètement, chez nous, cela donne trois repères à retenir. L’école de flag accueille les
         jeunes <strong>nés entre 2009 et 2021</strong>, soit toute la tranche U7 à U18. Le flag
         mixte juniors s’adresse aux <strong>U13 à U18</strong>. Et l’équipe de football américain
-        juniors U18 concerne les jeunes <strong>nés entre 2009 et 2011</strong>.
+        juniors U18 concerne les jeunes <strong>nés entre 2009 et 2011</strong>. Si votre question
+        porte d’abord sur l’âge de départ, nous y avons répondu à part :{' '}
+        <Link href="/blog/a-quel-age-commencer-le-football-americain/">
+          à quel âge commencer le football américain
+        </Link>.
       </p>
       <p>
         Vous avez peut-être cherché « football américain U16 » : c’est une formulation naturelle
@@ -151,35 +156,15 @@ export default function ArticleJeunes() {
         revenons en détail plus bas.
       </p>
 
-      <h2 id="ecole-de-flag">L’école de flag, le samedi matin</h2>
+      <h2 id="ecole-de-flag">Avant 13 ans : l’école de flag</h2>
       <p>
-        C’est la porte d’entrée du club pour les enfants, et de loin la plus fréquentée. L’{' '}
-        <Link href="/ecole-de-flag/">école de flag</Link> se tient{' '}
-        <strong>le samedi de 10 h à 12 h</strong>, au Stade de la Chambrerie, et accueille les
-        jeunes de <strong>U7 à U18</strong>, c’est-à-dire nés entre 2009 et 2021. L’adhésion est
-        de <strong>100 € pour la saison, licence comprise</strong>.
-      </p>
-      <p>
-        Aucune base n’est nécessaire. La majorité des enfants qui arrivent chez nous n’ont jamais
-        vu un match en entier, ne connaissent aucune règle et n’ont jamais tenu un ballon ovale.
-        Ce n’est pas un handicap, parce que personne autour d’eux n’a d’avance : c’est même l’un
-        des grands avantages d’un sport encore peu répandu à l’école primaire. Votre enfant ne
-        rejoint pas un groupe où les autres jouent depuis cinq ans.
-      </p>
-      <p>
-        Une séance mélange trois choses. De la <strong>motricité générale</strong> d’abord :
-        courses, appuis, changements de direction, réception de ballon. Ce socle sert dans tous les
-        sports, et c’est une des raisons pour lesquelles le flag est une excellente première
-        activité collective. Ensuite, du <strong>travail technique</strong> : attraper, lancer,
-        courir un tracé, arracher un flag proprement. Enfin, des <strong>matchs</strong>, parce
-        que c’est pour ça que les enfants viennent, et parce qu’en 5 contre 5 tout le monde touche
-        le ballon.
-      </p>
-      <p>
-        Le matériel est fourni : ceintures à flags et ballons adaptés à la taille des mains des
-        enfants. Vous n’avez donc rien à acheter pour venir essayer, une tenue de sport et des
-        baskets ou des crampons moulés suffisent. Et comme il n’y a strictement{' '}
-        <strong>aucun contact</strong>, il n’y a ni casque ni épaulières à prévoir, jamais.
+        C’est la porte d’entrée du club pour les enfants, et de loin la plus fréquentée :{' '}
+        <Link href="/ecole-de-flag/">l’école de flag du samedi matin</Link> accueille les jeunes nés
+        entre 2009 et 2021 (catégories U7 à U18), de 10 h à 12 h au Stade de la Chambrerie, sans
+        aucun contact, avec le matériel fourni et une adhésion à 100 € pour la saison, licence
+        comprise. Le déroulé d’une séance, ce qu’il faut apporter et les repères d’âge sont
+        détaillés sur cette page dédiée ; la suite de cet article commence là où l’école de flag
+        s’arrête, c’est-à-dire à l’adolescence.
       </p>
 
       <h2 id="flag-juniors">Le flag mixte juniors, le jeudi soir</h2>
@@ -417,87 +402,105 @@ export default function ArticleJeunes() {
         <Link href="/partenaires/">partenaires</Link>.
       </p>
 
-      <h2 id="faq">Questions fréquentes des parents</h2>
-
-      <h3>À partir de quel âge un enfant peut-il commencer ?</h3>
-      <p>
-        Notre <Link href="/ecole-de-flag/">école de flag</Link> accueille les jeunes de{' '}
-        <strong>U7 à U18</strong>, c’est-à-dire nés entre 2009 et 2021. C’est l’âge où un enfant
-        devient capable de comprendre des règles simples, de tenir un rôle sur une action et de
-        coopérer avec quatre coéquipiers. Nous avons consacré un article entier à cette question,
-        avec les repères par tranche d’âge :{' '}
-        <Link href="/blog/a-quel-age-commencer-le-football-americain/">à quel âge commencer le
-        football américain ou le flag</Link>.
-      </p>
-
-      <h3>Le football américain est-il dangereux pour un enfant ?</h3>
-      <p>
-        Avant les U18, la question ne se pose pas dans les termes que vous imaginez, parce que les
-        enfants jouent au <strong>flag, sans aucun contact</strong> : ni casque, ni plaquage, ni
-        collision. À partir de l’équipe U18, la pratique avec contact se fait entièrement équipée,
-        avec un apprentissage technique progressif qui précède toute situation réelle. Ajoutons un
-        élément que les parents oublient souvent : dans un club, la pratique est encadrée,
-        arbitrée et assurée, ce qui n’a rien à voir avec des chocs improvisés entre copains.
-      </p>
-
-      <h3>Mon enfant n’a jamais fait de sport collectif, est-ce un problème ?</h3>
-      <p>
-        Non, et c’est même la situation la plus fréquente chez nous. Le flag a une particularité
-        très utile pour un débutant : le jeu s’arrête toutes les quelques secondes. On peut donc
-        expliquer, corriger, recommencer, ce qui est un cadre d’apprentissage idéal pour un enfant
-        qui découvre. Ajoutez à cela que presque personne n’a d’avance dans une discipline encore
-        peu enseignée à l’école, et vous obtenez un sport où arriver sans aucune base n’est pas un
-        désavantage.
-      </p>
-
-      <h3>Les filles peuvent-elles jouer ?</h3>
-      <p>
-        Oui, et pas dans une équipe à part : le flag se joue en <strong>mixité</strong>, à
-        l’école de flag comme chez les juniors et les seniors. Filles et garçons évoluent ensemble,
-        aux mêmes postes, avec les mêmes règles. C’est l’une des raisons pour lesquelles la
-        discipline séduit autant les adolescentes, et l’une des forces du flag à l’approche des
-        Jeux de Los Angeles 2028.
-      </p>
-
-      <h3>Combien coûte l’inscription pour un jeune ?</h3>
-      <p>
-        <strong>100 € pour l’école de flag</strong> et <strong>150 € pour l’équipe juniors U18 de
-        football américain</strong>, pour la saison complète et <strong>licence FFFA
-        comprise</strong>. Le paiement en trois fois est possible, et l’équipement de protection
-        est prêté aux débutants la première saison. Le détail de ce que couvre l’adhésion se
-        trouve dans notre article{' '}
-        <Link href="/blog/combien-coute-le-football-americain/">combien coûte le football
-        américain</Link>.
-      </p>
-
-      <h3>Faut-il acheter du matériel ?</h3>
-      <p>
-        Pour le flag, non : ceintures et ballons sont fournis par le club, une tenue de sport et
-        des baskets ou des crampons moulés suffisent. Pour l’équipe U18 au contact, l’équipement
-        complet est prêté aux débutants la première saison, et seul le protège-dents doit être
-        personnel, pour des raisons d’hygiène. Vous n’avez donc rien à acheter pour venir essayer,
-        ni même pour commencer la saison.
-      </p>
-
-      <h3>Mon enfant peut-il faire du flag et un autre sport ?</h3>
-      <p>
-        Tout à fait, et c’est même une bonne chose à cet âge. L’école de flag occupe le samedi
-        matin, ce qui laisse la semaine entière libre pour une autre activité. Beaucoup de nos
-        jeunes pratiquent un second sport, et la polyvalence motrice qu’ils y gagnent leur profite
-        des deux côtés. Ce n’est qu’à l’adolescence, quand vient l’envie de compétition, que la
-        question d’une discipline principale se pose vraiment.
-      </p>
-
-      <h3>Et s’il veut arrêter au bout de deux mois ?</h3>
-      <p>
-        Cela arrive, et ce n’est pas un échec : essayer plusieurs activités fait partie de
-        l’apprentissage. Avant d’acter l’arrêt, prenez trois minutes pour comprendre ce qui bloque,
-        parce que la cause n’est pas toujours le sport lui-même. Un camarade, une consigne mal
-        comprise ou la peur de mal faire devant les autres expliquent une bonne partie des
-        abandons, et un mot à l’éducateur suffit souvent à débloquer la situation. C’est
-        exactement pour éviter ce scénario que la semaine découverte existe : plusieurs séances
-        gratuites avant de s’engager pour l’année.
-      </p>
+      <Faq
+        titre="Questions fréquentes des parents"
+        items={[
+          {
+            q: 'À partir de quel âge un enfant peut-il commencer ?',
+            r: (
+              <p>
+                Notre <Link href="/ecole-de-flag/">école de flag</Link> accueille les jeunes nés
+                entre 2009 et 2021 (catégories U7 à U18). C’est l’âge où un enfant devient capable
+                de comprendre des règles simples, de tenir un rôle sur une action et de coopérer
+                avec quatre coéquipiers. Nous avons consacré un article entier à cette question,
+                avec les repères par tranche d’âge :{' '}
+                <Link href="/blog/a-quel-age-commencer-le-football-americain/">
+                  à quel âge commencer le football américain ou le flag
+                </Link>.
+              </p>
+            ),
+          },
+          {
+            q: 'Le football américain est-il dangereux pour un enfant ?',
+            r: (
+              <p>
+                Avant les U18, la question ne se pose pas dans les termes que vous imaginez, parce
+                que les enfants jouent au <strong>flag, sans aucun contact</strong> : ni casque, ni
+                plaquage, ni collision. À partir de l’équipe U18, la pratique avec contact se fait
+                entièrement équipée, avec un apprentissage technique progressif qui précède toute
+                situation réelle. Ajoutons un élément que les parents oublient souvent : dans un
+                club, la pratique est encadrée, arbitrée et assurée, ce qui n’a rien à voir avec des
+                chocs improvisés entre copains.
+              </p>
+            ),
+          },
+          {
+            q: 'Mon enfant n’a jamais fait de sport collectif, est-ce un problème ?',
+            r: (
+              <p>
+                Non, et c’est même la situation la plus fréquente chez nous. Le flag a une
+                particularité très utile pour un débutant : le jeu s’arrête toutes les quelques
+                secondes. On peut donc expliquer, corriger, recommencer, ce qui est un cadre
+                d’apprentissage idéal pour un enfant qui découvre. Ajoutez à cela que presque
+                personne n’a d’avance dans une discipline encore peu enseignée à l’école, et vous
+                obtenez un sport où arriver sans aucune base n’est pas un désavantage.
+              </p>
+            ),
+          },
+          {
+            q: 'Les filles peuvent-elles jouer ?',
+            r: (
+              <p>
+                Oui, et pas dans une équipe à part : le flag se joue en <strong>mixité</strong>, à
+                l’école de flag comme chez les juniors et les seniors. Filles et garçons évoluent
+                ensemble, aux mêmes postes, avec les mêmes règles. C’est l’une des raisons pour
+                lesquelles la discipline séduit autant les adolescentes, et l’une des forces du flag
+                à l’approche des Jeux de Los Angeles 2028.
+              </p>
+            ),
+          },
+          {
+            q: 'Combien coûte l’inscription pour un jeune ?',
+            r: (
+              <p>
+                <strong>100 € pour l’école de flag</strong> et{' '}
+                <strong>150 € pour l’équipe juniors U18 de football américain</strong>, pour la
+                saison complète et <strong>licence FFFA comprise</strong>. Le paiement en trois fois
+                est possible, et l’équipement de protection est prêté aux débutants la première
+                saison. Le détail de ce que couvre l’adhésion se trouve dans notre article{' '}
+                <Link href="/blog/combien-coute-le-football-americain/">
+                  combien coûte le football américain
+                </Link>.
+              </p>
+            ),
+          },
+          {
+            q: 'Faut-il acheter du matériel ?',
+            r: (
+              <p>
+                Pour le flag, non : ceintures et ballons sont fournis par le club, une tenue de
+                sport et des baskets ou des crampons moulés suffisent. Pour l’équipe U18 au contact,
+                l’équipement complet est prêté aux débutants la première saison, et seul le
+                protège-dents doit être personnel, pour des raisons d’hygiène. Vous n’avez donc rien
+                à acheter pour venir essayer, ni même pour commencer la saison.
+              </p>
+            ),
+          },
+          {
+            q: 'Mon enfant peut-il faire du flag et un autre sport ?',
+            r: (
+              <p>
+                Tout à fait, et c’est même une bonne chose à cet âge. L’école de flag occupe le
+                samedi matin, ce qui laisse la semaine entière libre pour une autre activité.
+                Beaucoup de nos jeunes pratiquent un second sport, et la polyvalence motrice qu’ils
+                y gagnent leur profite des deux côtés. Ce n’est qu’à l’adolescence, quand vient
+                l’envie de compétition, que la question d’une discipline principale se pose
+                vraiment.
+              </p>
+            ),
+          },
+        ]}
+      />
 
       <h2 id="conclusion">Le plus simple reste de venir voir</h2>
       <p>

@@ -10,7 +10,7 @@ import PPPSection from '@/components/PPPSection';
 import { STADE, REJOINDRE_TUNNEL_URL } from '@/lib/infos';
 
 export const metadata: Metadata = {
-  title: 'Le club, foot US à Tours depuis 1987',
+  title: 'Le club de foot US à Tours depuis 1987',
   description:
     'Fondés en 1987, les Pionniers de Touraine sont l’un des plus anciens clubs de football américain de France. Histoire, valeurs, palmarès et programme PPP.',
   alternates: { canonical: '/le-club/' },
@@ -80,7 +80,7 @@ export default function Page() {
           eyebrow="Depuis 1987"
           titre={
             <>
-              Le club de football
+              Le club de football{' '}
               <br />
               américain à Tours
             </>
@@ -126,7 +126,9 @@ export default function Page() {
                   {STADE.ville} Nord. C’est là que se retrouvent les seniors du football américain,
                   l’équipe de flag mixte, les juniors et les enfants de l’école de flag, du lundi au
                   samedi selon les catégories. Le stade est accessible en bus comme en voiture, à
-                  quelques minutes du périphérique.
+                  quelques minutes du périphérique. Nous avons consacré un article entier à{' '}
+                  <Link href="/blog/stade-de-la-chambrerie-tours/">le stade de la Chambrerie</Link>,
+                  son terrain, ses accès et son histoire.
                 </p>
 
                 <h3 className="sc-h3">Un club ancré dans son territoire</h3>
@@ -205,7 +207,12 @@ export default function Page() {
               <h2 className="sc-title">Ce qui tient le club debout.</h2>
               <p className="sc-lead">
                 Un club de quarante ans ne survit pas grâce à ses résultats. Il survit grâce à ce
-                qu’on y trouve, saison après saison.
+                qu’on y trouve, saison après saison, et grâce à celles et ceux qui le font tourner
+                en dehors du terrain :{' '}
+                <Link href="/blog/arbitre-coach-benevole-club-football-americain/">
+                  devenir arbitre, coach ou bénévole
+                </Link>{' '}
+                est une façon de prendre sa place aux Pionniers.
               </p>
             </div>
             <div className="sc-cards" data-reveal>
@@ -253,7 +260,12 @@ export default function Page() {
               <h2 className="sc-title">Nos résultats, section par section.</h2>
               <p className="sc-lead">
                 Le club met à jour cette page à la fin de chaque saison. Les lignes marquées comme à
-                compléter attendent les résultats officiels.
+                compléter attendent les résultats officiels. Pour comprendre comment s’organisent
+                les divisions et les phases finales, lisez{' '}
+                <Link href="/blog/championnat-de-france-football-americain/">
+                  le championnat de France de football américain
+                </Link>
+                .
               </p>
             </div>
             {/* À COMPLÉTER : palmarès saison par saison pour chaque section.
@@ -312,7 +324,7 @@ export default function Page() {
               <Link className="sc-card" href="/ecole-de-flag/">
                 <h3 className="sc-card-title">École de flag</h3>
                 <p className="sc-card-desc">
-                  Le samedi matin, dès 6 à 8 ans, zéro contact et matériel fourni.
+                  Le samedi matin, pour les U7 à U18, zéro contact et matériel fourni.
                 </p>
                 <span className="sc-card-cta">
                   Découvrir la section <ArrowRight size={15} strokeWidth={2.6} />

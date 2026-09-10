@@ -28,7 +28,7 @@ export default function SiteHero() {
         <p className="rf-sub">
           {mobileLines(
             'Depuis 1987, le club fait pratiquer le football américain\net le flag football au stade de la Chambrerie.',
-          )}
+          )}{' '}
           <br />
           Seniors, juniors U18, flag mixte et école de flag : chacun trouve son terrain.
         </p>

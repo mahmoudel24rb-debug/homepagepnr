@@ -35,9 +35,24 @@ export const metadata: Metadata = {
   ...(IS_DEMO ? {} : { alternates: { canonical: '/mentions-legales/' } }),
 };
 
+// Cette page n'utilise pas PageHero : le fil d'Ariane structuré est déclaré ici.
+const SITE = 'https://pionniersdetouraine.fr';
+const BREADCRUMB_JSONLD = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: `${SITE}/` },
+    { '@type': 'ListItem', position: 2, name: 'Mentions légales', item: `${SITE}/mentions-legales/` },
+  ],
+};
+
 export default function MentionsLegalesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_JSONLD) }}
+      />
       <SiteHeader />
       <main className="sc-sec sc-legal">
         <div className="sc-wrap">

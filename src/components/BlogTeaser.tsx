@@ -69,6 +69,18 @@ export default function BlogTeaser() {
           ))}
         </div>
 
+        <div className="sc-body" data-reveal style={{ marginTop: 30 }}>
+          <p className="sc-legal-text">
+            Le blog va plus loin que le terrain : on y explique aussi comment{' '}
+            <Link href="/blog/comment-regarder-le-college-football-en-france/">
+              regarder le college football en France
+            </Link>{' '}
+            et comment{' '}
+            <Link href="/blog/club-de-sport-tours/">trouver un club de sport à Tours</Link> quand on
+            hésite encore entre plusieurs disciplines.
+          </p>
+        </div>
+
         <div style={{ marginTop: 34 }} data-reveal>
           <Link className="sc-btn-ghost" href="/blog/">
             Tous les articles

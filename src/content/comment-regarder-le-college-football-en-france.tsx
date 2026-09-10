@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { CtaQuiz, CtaTunnel } from '@/components/blog/CtaEncart';
+import Faq from '@/components/blog/Faq';
 import { asset } from '@/lib/asset';
 
 /**
@@ -226,7 +227,7 @@ export default function ArticleCollegeFootballFrance() {
         Sur la page française de Disney+, trois niveaux sont proposés, et les prix affichés
         correspondent à une remise valable six mois avant retour au tarif courant :
       </p>
-      <div className="blogc-table-scroll">
+      <div className="blogc-table-scroll" role="region" tabIndex={0} aria-label="Tarifs des formules Disney+ en France">
         <table>
           <thead>
             <tr>
@@ -375,7 +376,7 @@ export default function ArticleCollegeFootballFrance() {
         Voici les quatre solutions résumées côte à côte. Les tarifs sont ceux affichés par les
         plateformes elles-mêmes au 7 septembre 2026.
       </p>
-      <div className="blogc-table-scroll">
+      <div className="blogc-table-scroll" role="region" tabIndex={0} aria-label="Comparatif des offres DAZN, Disney+, beIN Sports et Fighting Irish TV">
         <table>
           <thead>
             <tr>
@@ -538,7 +539,7 @@ export default function ArticleCollegeFootballFrance() {
         Les heures françaises ci-dessous tiennent compte des six heures de décalage en vigueur en
         décembre et en janvier.
       </p>
-      <div className="blogc-table-scroll">
+      <div className="blogc-table-scroll" role="region" tabIndex={0} aria-label="Calendrier du College Football Playoff en heure française">
         <table>
           <thead>
             <tr>
@@ -665,7 +666,7 @@ export default function ArticleCollegeFootballFrance() {
         l’Est, et non six. Une semaine par an où les matchs commencent une heure plus tôt chez nous :
         c’est peu, mais ça suffit à rater un coup d’envoi si on ne l’a pas anticipé.
       </p>
-      <div className="blogc-table-scroll">
+      <div className="blogc-table-scroll" role="region" tabIndex={0} aria-label="Correspondance des créneaux américains en heure française">
         <table>
           <thead>
             <tr>
@@ -952,7 +953,7 @@ export default function ArticleCollegeFootballFrance() {
         la même : identifie la conférence de l’équipe qui reçoit, puis le diffuseur américain
         annoncé, et déduis-en la plateforme française.
       </p>
-      <div className="blogc-table-scroll">
+      <div className="blogc-table-scroll" role="region" tabIndex={0} aria-label="Conférences, diffuseurs américains et plateformes françaises">
         <table>
           <thead>
             <tr>
@@ -1026,116 +1027,157 @@ export default function ArticleCollegeFootballFrance() {
         </table>
       </div>
 
-      <h2 id="faq">Questions fréquentes</h2>
-
-      <h3>Est-ce légal de regarder le college football en France ?</h3>
-      <p>
-        Oui, totalement, dès lors que tu passes par les plateformes qui détiennent les droits pour
-        le territoire français : DAZN, Disney+, beIN Sports et le service officiel de Notre Dame
-        pour les spectateurs internationaux. Ces quatre solutions sont des offres légales,
-        souscrites en France, payées en euros et soumises au droit français. C’est précisément la
-        grande évolution de ces deux dernières années : ce qui relevait autrefois du contournement
-        est aujourd’hui disponible en souscription directe.
-      </p>
-
-      <h3>Peut-on regarder du college football gratuitement ?</h3>
-      <p>
-        Une partie, oui. <strong>Fighting Irish TV</strong> diffuse les matchs à domicile de Notre
-        Dame sans frais pour les spectateurs situés hors des États-Unis, sur simple inscription.
-        C’est la seule offre entièrement gratuite du paysage français. En dehors de ça, les résumés
-        et les temps forts sont largement diffusés gratuitement sur les chaînes vidéo officielles
-        des conférences et des diffuseurs américains, mais les matchs complets en direct supposent
-        un abonnement. Attention aussi : l’accès gratuit à la Big Ten via DAZN, en vigueur depuis
-        octobre 2025, a pris fin pour cette saison.
-      </p>
-
-      <h3>Les matchs sont-ils commentés en français ?</h3>
-      <p>
-        Partiellement. <strong>beIN Sports</strong> est la seule plateforme qui propose du
-        commentaire en français, sur une partie de ses affiches du samedi. DAZN, Disney+ et Fighting
-        Irish TV diffusent le son américain d’origine. Si l’anglais est un frein pour toi, beIN
-        Sports devient l’option principale malgré son tarif plus élevé et son volume de matchs plus
-        restreint. Sinon, sache que la barrière tombe assez vite : au bout de trois ou quatre
-        matchs, le vocabulaire tourne en boucle et devient familier.
-      </p>
-
-      <h3>Peut-on regarder sur une télévision, ou seulement sur ordinateur ?</h3>
-      <p>
-        Les trois plateformes payantes disposent d’applications pour les téléviseurs connectés, les
-        boîtiers de streaming, les consoles, les tablettes et les smartphones, en plus du navigateur
-        web. Concrètement, tu peux lancer un match sur le téléviseur du salon comme sur ton
-        téléphone dans le train. Le nombre d’écrans simultanés varie selon la formule : deux
-        appareils en DAZN Standard, cinq en Ultimate, et un nombre croissant selon la formule chez
-        Disney+.
-      </p>
-
-      <h3>Les replays sont-ils disponibles, et combien de temps ?</h3>
-      <p>
-        DAZN propose les rediffusions complètes et les résumés quelques heures après la fin des
-        rencontres, ainsi que son format condensé de quarante minutes. Disney+ met à disposition les
-        contenus concernés en rattrapage selon les accords propres à chaque compétition. Les durées
-        de mise à disposition dépendent des contrats et ne sont pas garanties dans la durée : si un
-        match compte pour toi, mieux vaut le regarder dans les jours qui suivent plutôt que des
-        semaines après.
-      </p>
-
-      <h3>Combien coûte au total le fait de tout suivre ?</h3>
-      <p>
-        Faisons le calcul honnêtement. Avec <strong>DAZN Standard en engagement annuel à 7,99 €</strong>{' '}
-        et <strong>Disney+ Standard avec pub à 6,99 €</strong> après la période promotionnelle, tu es
-        à environ <strong>15 € par mois</strong> et tu couvres la Big Ten, la SEC, l’ACC, la Big 12,
-        la Sun Belt et la majorité du Group of Five, playoffs et bowls compris. En montant sur DAZN
-        Ultimate pour le multiview, compte environ 19 € par mois. En ajoutant beIN Sports pour le
-        commentaire français, le total dépasse la trentaine d’euros mensuels. Dernier point : rien
-        n’oblige à s’abonner douze mois. La saison dure de fin août à fin janvier, et les formules
-        sans engagement existent précisément pour ça.
-      </p>
-
-      <h3>Où voir College GameDay depuis la France ?</h3>
-      <p>
-        L’émission figure au programme de <strong>DAZN France</strong>. C’est une bonne porte
-        d’entrée pour un néophyte : on y présente les enjeux de la journée, les équipes en forme et
-        les histoires du moment, ce qui donne du contexte avant de se lancer dans trois heures de
-        match.
-      </p>
-
-      <h3>Quelle différence entre la NFL et le college football ?</h3>
-      <p>
-        La NFL est la ligue professionnelle, fermée, composée de trente-deux franchises. Le college
-        football regroupe des équipes universitaires, avec un nombre de programmes bien plus élevé,
-        des règles légèrement différentes sur certains points et une organisation en conférences.
-        Sportivement, le niveau moyen est inférieur mais l’écart entre équipes est bien plus grand,
-        ce qui produit des scores fleuves et des scénarios plus imprévisibles. Culturellement, la
-        différence est encore plus nette : les stades universitaires sont souvent plus grands que
-        ceux de la NFL, les fanfares jouent pendant tout le match, et l’attachement local dépasse
-        largement le cadre sportif. Beaucoup de spectateurs français finissent par préférer le
-        samedi au dimanche.
-      </p>
-
-      <h3>Où trouver les résumés et les temps forts gratuitement ?</h3>
-      <p>
-        Les conférences américaines et les grands diffuseurs animent des chaînes vidéo officielles
-        où sont publiés, souvent quelques heures après les matchs, des résumés de plusieurs minutes
-        et les actions marquantes de la journée. C’est gratuit, c’est légal, et c’est le meilleur
-        moyen de garder un œil sur une conférence à laquelle tu n’es pas abonné. Le principe vaut
-        aussi pour les émissions de débrief, largement diffusées en accès libre.
-      </p>
-
-      <h3>Peut-on jouer au football américain en France ?</h3>
-      <p>
-        Oui, et bien plus qu’on ne l’imagine. La fédération française compte des clubs dans toutes
-        les régions, avec un championnat national structuré en divisions, des catégories de jeunes,
-        du flag football mixte et une pratique loisir. On l’a détaillé dans nos guides sur{' '}
-        <Link href="/blog/comment-pratiquer-le-football-americain-en-france/">
-          comment pratiquer le football américain en France
-        </Link>{' '}
-        et sur le{' '}
-        <Link href="/blog/championnat-de-france-football-americain/">
-          championnat de France de football américain
-        </Link>
-        . La saison française se joue d’ailleurs à contretemps de la saison américaine, ce qui
-        permet de regarder l’une et de pratiquer l’autre.
-      </p>
+      <Faq
+        titre="Questions fréquentes"
+        items={[
+          {
+            q: 'Est-ce légal de regarder le college football en France ?',
+            r: (
+              <p>
+                Oui, totalement, dès lors que tu passes par les plateformes qui détiennent les
+                droits pour le territoire français : DAZN, Disney+, beIN Sports et le service
+                officiel de Notre Dame pour les spectateurs internationaux. Ces quatre solutions
+                sont des offres légales, souscrites en France, payées en euros et soumises au droit
+                français. C’est précisément la grande évolution de ces deux dernières années : ce
+                qui relevait autrefois du contournement est aujourd’hui disponible en souscription
+                directe.
+              </p>
+            ),
+          },
+          {
+            q: 'Peut-on regarder du college football gratuitement ?',
+            r: (
+              <p>
+                Une partie, oui. <strong>Fighting Irish TV</strong> diffuse les matchs à domicile de
+                Notre Dame sans frais pour les spectateurs situés hors des États-Unis, sur simple
+                inscription. C’est la seule offre entièrement gratuite du paysage français. En
+                dehors de ça, les résumés et les temps forts sont largement diffusés gratuitement
+                sur les chaînes vidéo officielles des conférences et des diffuseurs américains, mais
+                les matchs complets en direct supposent un abonnement. Attention aussi : l’accès
+                gratuit à la Big Ten via DAZN, en vigueur depuis octobre 2025, a pris fin pour cette
+                saison.
+              </p>
+            ),
+          },
+          {
+            q: 'Les matchs sont-ils commentés en français ?',
+            r: (
+              <p>
+                Partiellement. <strong>beIN Sports</strong> est la seule plateforme qui propose du
+                commentaire en français, sur une partie de ses affiches du samedi. DAZN, Disney+ et
+                Fighting Irish TV diffusent le son américain d’origine. Si l’anglais est un frein
+                pour toi, beIN Sports devient l’option principale malgré son tarif plus élevé et son
+                volume de matchs plus restreint. Sinon, sache que la barrière tombe assez vite : au
+                bout de trois ou quatre matchs, le vocabulaire tourne en boucle et devient familier.
+              </p>
+            ),
+          },
+          {
+            q: 'Peut-on regarder sur une télévision, ou seulement sur ordinateur ?',
+            r: (
+              <p>
+                Les trois plateformes payantes disposent d’applications pour les téléviseurs
+                connectés, les boîtiers de streaming, les consoles, les tablettes et les
+                smartphones, en plus du navigateur web. Concrètement, tu peux lancer un match sur le
+                téléviseur du salon comme sur ton téléphone dans le train. Le nombre d’écrans
+                simultanés varie selon la formule : deux appareils en DAZN Standard, cinq en
+                Ultimate, et un nombre croissant selon la formule chez Disney+.
+              </p>
+            ),
+          },
+          {
+            q: 'Les replays sont-ils disponibles, et combien de temps ?',
+            r: (
+              <p>
+                DAZN propose les rediffusions complètes et les résumés quelques heures après la fin
+                des rencontres, ainsi que son format condensé de quarante minutes. Disney+ met à
+                disposition les contenus concernés en rattrapage selon les accords propres à chaque
+                compétition. Les durées de mise à disposition dépendent des contrats et ne sont pas
+                garanties dans la durée : si un match compte pour toi, mieux vaut le regarder dans
+                les jours qui suivent plutôt que des semaines après.
+              </p>
+            ),
+          },
+          {
+            q: 'Combien coûte au total le fait de tout suivre ?',
+            r: (
+              <p>
+                Faisons le calcul honnêtement. Avec{' '}
+                <strong>DAZN Standard en engagement annuel à 7,99 €</strong> et{' '}
+                <strong>Disney+ Standard avec pub à 6,99 €</strong> après la période promotionnelle,
+                tu es à environ <strong>15 € par mois</strong> et tu couvres la Big Ten, la SEC,
+                l’ACC, la Big 12, la Sun Belt et la majorité du Group of Five, playoffs et bowls
+                compris. En montant sur DAZN Ultimate pour le multiview, compte environ 19 € par
+                mois. En ajoutant beIN Sports pour le commentaire français, le total dépasse la
+                trentaine d’euros mensuels. Dernier point : rien n’oblige à s’abonner douze mois. La
+                saison dure de fin août à fin janvier, et les formules sans engagement existent
+                précisément pour ça.
+              </p>
+            ),
+          },
+          {
+            q: 'Où voir College GameDay depuis la France ?',
+            r: (
+              <p>
+                L’émission figure au programme de <strong>DAZN France</strong>. C’est une bonne
+                porte d’entrée pour un néophyte : on y présente les enjeux de la journée, les
+                équipes en forme et les histoires du moment, ce qui donne du contexte avant de se
+                lancer dans trois heures de match.
+              </p>
+            ),
+          },
+          {
+            q: 'Quelle différence entre la NFL et le college football ?',
+            r: (
+              <p>
+                La NFL est la ligue professionnelle, fermée, composée de trente-deux franchises. Le
+                college football regroupe des équipes universitaires, avec un nombre de programmes
+                bien plus élevé, des règles légèrement différentes sur certains points et une
+                organisation en conférences. Sportivement, le niveau moyen est inférieur mais
+                l’écart entre équipes est bien plus grand, ce qui produit des scores fleuves et des
+                scénarios plus imprévisibles. Culturellement, la différence est encore plus nette :
+                les stades universitaires sont souvent plus grands que ceux de la NFL, les fanfares
+                jouent pendant tout le match, et l’attachement local dépasse largement le cadre
+                sportif. Beaucoup de spectateurs français finissent par préférer le samedi au
+                dimanche.
+              </p>
+            ),
+          },
+          {
+            q: 'Où trouver les résumés et les temps forts gratuitement ?',
+            r: (
+              <p>
+                Les conférences américaines et les grands diffuseurs animent des chaînes vidéo
+                officielles où sont publiés, souvent quelques heures après les matchs, des résumés
+                de plusieurs minutes et les actions marquantes de la journée. C’est gratuit, c’est
+                légal, et c’est le meilleur moyen de garder un œil sur une conférence à laquelle tu
+                n’es pas abonné. Le principe vaut aussi pour les émissions de débrief, largement
+                diffusées en accès libre.
+              </p>
+            ),
+          },
+          {
+            q: 'Peut-on jouer au football américain en France ?',
+            r: (
+              <p>
+                Oui, et bien plus qu’on ne l’imagine. La fédération française compte des clubs dans
+                toutes les régions, avec un championnat national structuré en divisions, des
+                catégories de jeunes, du flag football mixte et une pratique loisir. On l’a détaillé
+                dans nos guides sur{' '}
+                <Link href="/blog/comment-pratiquer-le-football-americain-en-france/">
+                  comment pratiquer le football américain en France
+                </Link>{' '}
+                et sur le{' '}
+                <Link href="/blog/championnat-de-france-football-americain/">
+                  championnat de France de football américain
+                </Link>
+                . La saison française se joue d’ailleurs à contretemps de la saison américaine, ce
+                qui permet de regarder l’une et de pratiquer l’autre.
+              </p>
+            ),
+          },
+        ]}
+      />
 
       <h2 id="jouer">Et si tu jouais au lieu de regarder ?</h2>
       <p>
@@ -1157,7 +1199,7 @@ export default function ArticleCollegeFootballFrance() {
       <p>
         Si tu hésites sur le poste, notre article sur{' '}
         <Link href="/blog/commencer-le-football-americain-adulte/">
-          commencer le football américain à l’âge adulte
+          ta première saison de football américain
         </Link>{' '}
         raconte à quoi ressemble une première saison, sans enjoliver. Le détail des créneaux et des
         catégories est sur la page <Link href="/football-americain/">football américain</Link> et
@@ -1170,6 +1212,18 @@ export default function ArticleCollegeFootballFrance() {
         matchs sur la plateforme de la fédération. Caméra, régie, ralentis, habillage : c’est le
         même métier que celui qui produit les images que tu regardes le samedi soir, à une échelle
         près.
+      </p>
+
+      <p>
+        <strong>Envie de passer de l’écran au terrain ?</strong> Les créneaux, les catégories et le
+        fonctionnement des groupes sont sur la page pour{' '}
+        <Link href="/football-americain/">jouer au football américain à Tours</Link>. Si tu préfères
+        commencer par les gradins, notre guide explique comment{' '}
+        <Link href="/blog/stade-de-la-chambrerie-tours/">
+          voir un match au stade de la Chambrerie
+        </Link>
+        . Et si tu te demandes où tu jouerais, tout est dans{' '}
+        <Link href="/blog/postes-football-americain/">les postes au football américain</Link>.
       </p>
 
       <CtaTunnel

@@ -20,7 +20,7 @@ const FAQ = [
   },
   {
     q: 'À partir de quel âge peut-on jouer ?',
-    r: "Le club accueille les jeunes à l'école de flag (le samedi matin) puis en catégorie juniors U18 (football américain et flag), et les adultes dans les équipes seniors. Chaque catégorie bénéficie d'un encadrement adapté.",
+    r: "L'école de flag accueille les jeunes nés entre 2009 et 2021 (catégories U7 à U18), le samedi matin. Les plus grands rejoignent ensuite la catégorie juniors U18 (football américain et flag), et les adultes les équipes seniors. Chaque catégorie bénéficie d'un encadrement adapté.",
   },
   {
     q: "Comment s'inscrire aux Pionniers de Touraine ?",

@@ -66,7 +66,24 @@ export const CONTACT = {
   email: 'recrutement@pionniersdetouraine.fr',
   telephone: '07 87 01 80 26',
   telHref: 'tel:+33787018026',
+  /** Format E.164, attendu par les données structurées schema.org. */
+  telE164: '+33787018026',
 };
+
+/** Fiche Google Business du club (sameAs et hasMap des données structurées). */
+export const GOOGLE_MAPS_URL = 'https://maps.app.goo.gl/cnVghabaHrhx9qaQA';
+
+/** Fédération de rattachement du club. */
+export const FEDERATION = {
+  nom: 'Fédération Française de Football Américain',
+  sigle: 'FFFA',
+};
+
+/**
+ * Formulation canonique unique de l'âge d'entrée à l'école de flag,
+ * validée par le club : à réutiliser telle quelle partout.
+ */
+export const ECOLE_DE_FLAG_AGES = 'jeunes nés entre 2009 et 2021 (catégories U7 à U18)';
 
 export const RESEAUX = [
   { nom: 'Facebook', url: 'https://www.facebook.com/p/Pionniers-de-Touraine-61578271450029/' },

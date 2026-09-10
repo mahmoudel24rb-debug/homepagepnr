@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { CtaQuiz, CtaTunnel } from '@/components/blog/CtaEncart';
+import Faq from '@/components/blog/Faq';
 
 /**
  * Article. Mot-clé : « quel sport pour mon enfant » (+ ancrage Tours).
@@ -36,7 +37,88 @@ export default function ArticleSportEnfant() {
         méthode pour partir du tempérament de votre enfant, un panorama honnête de ce qui existe
         autour de Tours, et des repères d’âge. Si vous cherchez plutôt un sport pour vous, nous
         avons écrit le guide généraliste :{' '}
-        <Link href="/blog/sport-collectif-tours/">quel sport collectif pratiquer à Tours</Link>.
+        <Link href="/blog/sport-collectif-tours/">
+          les sports collectifs à Tours, pour les adultes
+        </Link>.
+      </p>
+
+      <p>
+        <strong>La réponse courte.</strong> À Tours, un enfant peut commencer un sport collectif dès
+        5 ou 6 ans : c’est l’âge où il comprend une règle, tient un rôle sur une action et coopère
+        avec les autres. Avant, une activité d’éveil multisport lui apportera davantage. Chez les
+        Pionniers de Touraine, l’école de flag accueille les jeunes nés entre 2009 et 2021
+        (catégories U7 à U18), le samedi de 10 h à 12 h, sans aucun contact.
+      </p>
+
+      <h2 id="tableau-ages">Quel sport selon l’âge de l’enfant : le tableau</h2>
+      <p>
+        Ces tranches sont des ordres de grandeur, pas des prescriptions : deux enfants du même âge
+        peuvent avoir un an et demi d’écart de maturité motrice. La dernière colonne indique
+        simplement ce que nous proposons nous, avec les créneaux réels, pour que vous ayez un point
+        de comparaison concret.
+      </p>
+
+      <div
+        className="blogc-table-scroll"
+        role="region"
+        tabIndex={0}
+        aria-label="Quel sport selon l’âge de l’enfant"
+      >
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Âge</th>
+              <th scope="col">Type de sport</th>
+              <th scope="col">Ce que ça développe</th>
+              <th scope="col">Exemple aux Pionniers</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">5 à 6 ans</th>
+              <td>Premier sport codifié, encore très ludique</td>
+              <td>Courir, attraper, lancer, comprendre une règle simple</td>
+              <td>École de flag, samedi 10 h - 12 h, sans contact</td>
+            </tr>
+            <tr>
+              <th scope="row">7 à 9 ans</th>
+              <td>Sport collectif d’apprentissage</td>
+              <td>Coordination, attente de son tour, coopération à plusieurs</td>
+              <td>École de flag, samedi 10 h - 12 h</td>
+            </tr>
+            <tr>
+              <th scope="row">10 à 12 ans</th>
+              <td>Sport collectif tactique, spécialisation douce</td>
+              <td>Lecture du jeu, mémorisation de schémas, autonomie</td>
+              <td>École de flag, samedi 10 h - 12 h</td>
+            </tr>
+            <tr>
+              <th scope="row">13 à 17 ans</th>
+              <td>Sport collectif mixte, sans contact</td>
+              <td>Engagement, endurance, place assumée dans une équipe</td>
+              <td>Flag mixte juniors, jeudi 19 h - 20 h 30</td>
+            </tr>
+            <tr>
+              <th scope="row">15 à 17 ans</th>
+              <td>Sport de contact encadré, appris par étapes</td>
+              <td>Confiance, discipline d’exécution, responsabilité collective</td>
+              <td>Juniors football américain, lundi et jeudi 19 h - 21 h</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        Trois articles complètent ce tableau selon ce que vous cherchez. Pour les plus jeunes,{' '}
+        <Link href="/ecole-de-flag/">l’école de flag pour enfants à Tours</Link> décrit la séance du
+        samedi matin. Pour les repères par tranche d’âge dans notre discipline, nous avons répondu
+        en détail à{' '}
+        <Link href="/blog/a-quel-age-commencer-le-football-americain/">
+          à quel âge commencer le football américain
+        </Link>. Et pour les adolescents, le parcours est décrit dans{' '}
+        <Link href="/blog/football-americain-jeunes-u13-u16-u18/">
+          le parcours jeunes U13 à U18
+        </Link>.
       </p>
 
       <h2 id="partir-de-l-enfant">Choisissez selon l’enfant, pas selon le sport</h2>
@@ -163,8 +245,8 @@ export default function ArticleSportEnfant() {
         est simple : au lieu de plaquer le porteur du ballon, on lui arrache un ruban accroché à sa
         ceinture par un scratch. Tout le reste du jeu est identique, les passes, les courses, les
         feintes, les touchdowns, mais le contact volontaire est purement et simplement interdit par
-        le règlement. Si le sujet vous intéresse, nous avons détaillé les règles complètes ici :{' '}
-        <Link href="/blog/flag-football-cest-quoi/">le flag football, c’est quoi</Link>.
+        le règlement. Si le sujet vous intéresse, nous avons détaillé{' '}
+        <Link href="/blog/regles-flag-football/">les règles complètes du flag football</Link>.
       </p>
 
       <h3>Il rêve de sports américains devant vos écrans</h3>
@@ -201,9 +283,9 @@ export default function ArticleSportEnfant() {
       <p>
         <strong>De 6 à 8 ans, les premiers sports codifiés.</strong> C’est la fenêtre où l’enfant
         devient capable de comprendre des règles, d’attendre son tour, de tenir un rôle dans une
-        équipe. La plupart des clubs ouvrent leurs écoles de sport à cet âge, et c’est précisément
-        là que démarre notre école de flag. La forme reste ludique, mais on commence à travailler
-        des gestes réels.
+        équipe. La plupart des clubs ouvrent leurs écoles de sport à cet âge, et c’est la tranche
+        la plus représentée à notre école de flag. La forme reste ludique, mais on commence à
+        travailler des gestes réels.
       </p>
       <p>
         <strong>De 9 à 12 ans, la spécialisation douce.</strong> L’enfant sait ce qu’il aime, la
@@ -233,7 +315,9 @@ export default function ArticleSportEnfant() {
         Voici concrètement ce que nous proposons, pour que vous puissiez nous comparer aux autres
         avec les mêmes critères que le reste de cet article. L’école de flag des Pionniers de
         Touraine a lieu <strong>le samedi de 10 h à 12 h, au Stade de la Chambrerie, à Tours
-        Nord</strong>, et elle accueille les enfants <strong>dès 6 à 8 ans</strong>.
+        Nord</strong>, et <strong>l’école de flag accueille les jeunes nés entre 2009 et 2021
+        (catégories U7 à U18)</strong>. Le détail de la séance est sur la page de{' '}
+        <Link href="/ecole-de-flag/">l’école de flag pour enfants à Tours</Link>.
       </p>
       <p>
         Aucune base n’est requise. Vraiment aucune : la majorité des enfants qui arrivent chez nous
@@ -255,7 +339,10 @@ export default function ArticleSportEnfant() {
         Les parents sont les bienvenus en bord de terrain, et beaucoup restent regarder. Certains
         finissent d’ailleurs par essayer eux-mêmes, ce qui n’était pas prévu au programme. Pour les
         plus grands, le club dispose ensuite de sections jeunes en football américain et en flag,
-        qui s’entraînent en soirée, le lundi et le jeudi. Le tout est encadré par un club fondé en
+        qui s’entraînent en soirée, le lundi et le jeudi : c’est{' '}
+        <Link href="/blog/football-americain-jeunes-u13-u16-u18/">
+          le parcours jeunes U13 à U18
+        </Link>. Le tout est encadré par un club fondé en
         1987, ce qui fait bientôt quarante ans que nous accompagnons des débutants, enfants comme
         adultes. Et comme pour nos adultes, la <strong>semaine découverte est offerte aux
         enfants</strong> : plusieurs séances d’essai, sans engagement et sans un euro.
@@ -267,71 +354,58 @@ export default function ArticleSportEnfant() {
         bouton="Je demande une séance d’essai"
       />
 
-      <h2 id="faq">Questions fréquentes des parents</h2>
-
-      <h3>À partir de quel âge le flag football ?</h3>
-      <p>
-        Notre école de flag accueille les enfants à partir de 6 à 8 ans, ce qui correspond au moment
-        où un enfant devient capable de comprendre des règles simples, de tenir un rôle sur une
-        action et de coopérer avec quatre coéquipiers. Avant cet âge, une activité d’éveil
-        multisport lui apportera davantage. Après, il n’y a aucune limite haute : on peut commencer
-        le flag à neuf ans, à quatorze ans ou à trente ans, et de toute façon, dans notre sport,
-        presque tout le monde commence tard. C’est même l’une de ses grandes particularités,
-        détaillée dans notre guide sur{' '}
-        <Link href="/blog/comment-pratiquer-le-football-americain-en-france/">
-          comment pratiquer le football américain en France
-        </Link>.
-      </p>
-
-      <h3>Le football américain est-il dangereux pour un enfant ?</h3>
-      <p>
-        C’est la question qui revient à chaque forum des associations, et la réponse tient en une
-        phrase : <strong>en France, les enfants ne jouent pas au football américain avec contact,
-        ils jouent au flag</strong>. Pas de casque, pas de plaquage, pas de collision, puisque le
-        règlement interdit purement et simplement le contact volontaire. L’image que vous avez en
-        tête, celle des chocs de la NFL, ne correspond à rien de ce que vit un enfant de huit ans
-        dans un club français.
-      </p>
-      <p>
-        La pratique avec casque et protections arrive plus tard, à l’adolescence, de façon
-        progressive et toujours entièrement équipée. Les jeunes y apprennent d’abord la technique
-        de contact et la protection de la tête avant tout affrontement réel, exactement comme un
-        judoka apprend à chuter avant de combattre. Beaucoup de familles arrivent chez nous par le
-        flag et n’en bougent jamais, ce qui est un choix parfaitement légitime.
-      </p>
-
-      <h3>Quel budget prévoir pour le sport d’un enfant ?</h3>
-      <p>
-        En ordre de grandeur, une licence enfant est souvent nettement moins chère qu’une licence
-        adulte dans la même discipline, et se situe généralement dans une fourchette de quelques
-        dizaines à environ deux cents euros à l’année selon le sport, le club et ce que la
-        cotisation inclut. À cela s’ajoute l’équipement personnel, très variable : certaines
-        activités ne demandent qu’une paire de baskets, d’autres du matériel spécifique. Le bon
-        réflexe est de demander au club ce qui est prêté et ce qui reste à votre charge.
-      </p>
-      <p>
-        Pensez aussi aux aides : le dispositif <strong>Pass’Sport</strong> permet, sous conditions,
-        de déduire une somme de la licence, et beaucoup de comités d’entreprise, de mairies ou de
-        caisses d’allocations proposent des coups de pouce. Enfin, rappelez-vous que{' '}
-        <strong>les séances d’essai sont gratuites presque partout</strong> : tester trois clubs ne
-        coûte rien d’autre que trois samedis matin.
-      </p>
-
-      <h3>Et si mon enfant veut arrêter au bout d’un mois ?</h3>
-      <p>
-        C’est fréquent, et ce n’est pas un échec. Essayer plusieurs sports fait partie de
-        l’apprentissage, et un enfant qui change deux fois avant de trouver sa discipline n’est pas
-        instable : il cherche. Cela dit, avant d’acter l’arrêt, prenez trois minutes pour
-        comprendre ce qui bloque, car la cause n’est pas toujours le sport lui-même. Un conflit
-        avec un camarade, une consigne mal comprise, la peur de mal faire devant les autres ou
-        simplement un horaire trop tardif expliquent une grande partie des abandons.
-      </p>
-      <p>
-        Notre conseil pratique : proposez-lui de finir le cycle en cours plutôt que de partir du
-        jour au lendemain, parlez-en à l’éducateur qui a souvent une explication très simple, et
-        s’il veut vraiment arrêter, laissez-le arrêter sans en faire un drame. L’objectif n’est pas
-        qu’il tienne dans ce club-là, c’est qu’il garde envie de bouger.
-      </p>
+      <Faq
+        titre="Questions fréquentes des parents"
+        items={[
+          {
+            q: 'Quel budget prévoir pour le sport d’un enfant ?',
+            r: (
+              <>
+                <p>
+                  En ordre de grandeur, une licence enfant est souvent nettement moins chère qu’une
+                  licence adulte dans la même discipline, et se situe généralement dans une
+                  fourchette de quelques dizaines à environ deux cents euros à l’année selon le
+                  sport, le club et ce que la cotisation inclut. À cela s’ajoute l’équipement
+                  personnel, très variable : certaines activités ne demandent qu’une paire de
+                  baskets, d’autres du matériel spécifique. Le bon réflexe est de demander au club
+                  ce qui est prêté et ce qui reste à votre charge.
+                </p>
+                <p>
+                  Pensez aussi aux aides : le dispositif <strong>Pass’Sport</strong> permet, sous
+                  conditions, de déduire une somme de la licence, et beaucoup de comités
+                  d’entreprise, de mairies ou de caisses d’allocations proposent des coups de
+                  pouce. Enfin, rappelez-vous que{' '}
+                  <strong>les séances d’essai sont gratuites presque partout</strong> : tester trois
+                  clubs ne coûte rien d’autre que trois samedis matin.
+                </p>
+              </>
+            ),
+          },
+          {
+            q: 'Et si mon enfant veut arrêter au bout d’un mois ?',
+            r: (
+              <>
+                <p>
+                  C’est fréquent, et ce n’est pas un échec. Essayer plusieurs sports fait partie de
+                  l’apprentissage, et un enfant qui change deux fois avant de trouver sa discipline
+                  n’est pas instable : il cherche. Cela dit, avant d’acter l’arrêt, prenez trois
+                  minutes pour comprendre ce qui bloque, car la cause n’est pas toujours le sport
+                  lui-même. Un conflit avec un camarade, une consigne mal comprise, la peur de mal
+                  faire devant les autres ou simplement un horaire trop tardif expliquent une grande
+                  partie des abandons.
+                </p>
+                <p>
+                  Notre conseil pratique : proposez-lui de finir le cycle en cours plutôt que de
+                  partir du jour au lendemain, parlez-en à l’éducateur qui a souvent une explication
+                  très simple, et s’il veut vraiment arrêter, laissez-le arrêter sans en faire un
+                  drame. L’objectif n’est pas qu’il tienne dans ce club-là, c’est qu’il garde envie
+                  de bouger.
+                </p>
+              </>
+            ),
+          },
+        ]}
+      />
 
       <h2 id="conclusion">Le meilleur sport, c’est celui qu’il aura envie de retrouver</h2>
       <p>
@@ -351,6 +425,12 @@ export default function ArticleSportEnfant() {
         bord du terrain, et vous vous ferez un avis bien plus vite qu’en comparant des sites
         internet.
       </p>
+
+      <CtaTunnel
+        titre="Dites-nous son âge, on vous dit par où commencer"
+        texte="École de flag du samedi matin, flag mixte juniors du jeudi soir ou juniors football américain : indiquez l’âge de votre enfant et ce qu’il cherche, on vous oriente vers le bon créneau et on organise sa séance d’essai."
+        bouton="Je trouve sa section"
+      />
     </>
   );
 }

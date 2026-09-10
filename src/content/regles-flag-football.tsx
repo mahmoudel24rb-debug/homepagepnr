@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { CtaQuiz, CtaTunnel } from '@/components/blog/CtaEncart';
+import Faq from '@/components/blog/Faq';
 
 /**
  * Article. Mot-clé : « règles flag football ».
@@ -35,8 +36,10 @@ export default function ArticleReglesFlag() {
         une partie du vocabulaire, mais son règlement est écrit à part, ses situations de jeu lui
         sont propres et ses qualités déterminantes ne sont pas les mêmes. Si tu veux la présentation
         générale de la discipline, ses profils de joueurs et sa culture, c’est dans notre article{' '}
-        <Link href="/blog/flag-football-cest-quoi/">le flag football, c’est quoi ?</Link>. Ici, on
-        entre dans les règles.
+        <Link href="/blog/flag-football-cest-quoi/">à qui s’adresse le flag football</Link>.
+        Et si tu cherches simplement où t’inscrire, la page pour{' '}
+        <Link href="/flag-football/">jouer au flag football à Tours</Link> récapitule les créneaux.
+        Ici, on entre dans les règles.
       </p>
 
       <div className="blogc-toc">
@@ -50,9 +53,10 @@ export default function ArticleReglesFlag() {
           <li><a href="#temps">Le temps de jeu et le déroulé d’un match</a></li>
           <li><a href="#fautes">Les fautes les plus courantes</a></li>
           <li><a href="#equipement">L’équipement : ceinture, flags, protège-dents, crampons</a></li>
-          <li><a href="#comparatif">Flag football et football américain : le comparatif</a></li>
+          <li><a href="#comparatif">Ce qui change par rapport au football américain</a></li>
           <li><a href="#mixte">Le format mixte, une spécificité française</a></li>
           <li><a href="#club">Comment ça se joue aux Pionniers de Touraine</a></li>
+          <li><a href="#sources">Sources</a></li>
           <li><a href="#faq">Questions fréquentes</a></li>
         </ol>
       </div>
@@ -380,6 +384,12 @@ export default function ArticleReglesFlag() {
         sanctionnent par un recul. Elles sont bénignes au milieu d’une rencontre et coûteuses dans
         les dernières minutes.
       </p>
+      <p>
+        <em>
+          Règles issues du règlement IFAF Flag 5 contre 5 appliqué par la FFFA pour la saison
+          2026-2027.
+        </em>
+      </p>
 
       <CtaTunnel
         titre="Les règles s’apprennent en jouant, pas en lisant"
@@ -438,7 +448,7 @@ export default function ArticleReglesFlag() {
         .
       </p>
 
-      <h2 id="comparatif">Flag football et football américain : le comparatif</h2>
+      <h2 id="comparatif">Ce qui change par rapport au football américain</h2>
       <p>
         Les deux disciplines partagent le ballon, le touchdown, le snap et une partie du vocabulaire
         tactique. Tout le reste diverge. Voici les différences qui comptent réellement quand on
@@ -507,9 +517,11 @@ export default function ArticleReglesFlag() {
         s’adressent pas au même besoin. Le flag récompense la vitesse, les appuis, la qualité de
         passe, les mains et la lecture. Le{' '}
         <Link href="/football-americain/">football américain</Link> y ajoute le combat de ligne, la
-        puissance, la technique de bloc et la spécialisation par poste. Beaucoup de joueurs pratiquent
-        les deux, et c’est le cas chez nous. Si l’aspect olympique t’intéresse, on lui a consacré un
-        article entier :{' '}
+        puissance, la technique de bloc et la spécialisation par poste. Son propre règlement, avec
+        les quatre tentatives, les coups de pied et les fautes de contact, est détaillé dans{' '}
+        <Link href="/blog/regles-football-americain/">les règles du football américain</Link>.
+        Beaucoup de joueurs pratiquent les deux, et c’est le cas chez nous. Si l’aspect olympique
+        t’intéresse, on lui a consacré un article entier :{' '}
         <Link href="/blog/flag-football-jo-2028/">le flag football aux JO de Los Angeles 2028</Link>.
       </p>
 
@@ -580,77 +592,123 @@ export default function ArticleReglesFlag() {
         .
       </p>
 
-      <h2 id="faq">Questions fréquentes sur les règles du flag football</h2>
+      <h2 id="sources">Sources</h2>
+      <ul>
+        <li>
+          <a href="https://www.fffa.org" target="_blank" rel="noopener noreferrer">
+            Fédération Française de Football Américain (FFFA)
+          </a>{' '}
+          : règlements et compétitions de flag en France.
+        </li>
+        <li>
+          <a href="https://americanfootball.sport" target="_blank" rel="noopener noreferrer">
+            IFAF, International Federation of American Football
+          </a>{' '}
+          : règlement international du flag à 5 contre 5.
+        </li>
+      </ul>
 
-      <h3>Combien de joueurs sur un terrain de flag football ?</h3>
-      <p>
-        Cinq contre cinq. C’est le format international, celui du championnat de France mixte et
-        celui retenu pour les Jeux Olympiques de Los Angeles 2028. Une équipe compte évidemment plus
-        de cinq joueurs sur la feuille de match : les remplacements se font librement entre les
-        actions, et tout le monde joue à la fois en attaque et en défense, ce qui change beaucoup par
-        rapport au football américain et à ses escouades spécialisées.
-      </p>
-
-      <h3>Quelles sont les dimensions d’un terrain de flag football ?</h3>
-      <p>
-        La zone de jeu mesure 50 yards de long sur 25 yards de large, à laquelle s’ajoutent deux
-        zones d’en-but de 10 yards, soit 70 yards au total d’une ligne de fond à l’autre. En mètres,
-        cela représente environ 64 mètres sur 23. C’est à peu près la moitié d’un terrain de football
-        américain, ce qui permet d’installer deux terrains de flag sur une même surface et explique
-        en partie la facilité d’implantation de la discipline.
-      </p>
-
-      <h3>Comment fonctionne la ceinture de flag football ?</h3>
-      <p>
-        Chaque joueur porte une ceinture à la taille, sur laquelle sont fixés deux flags, un de
-        chaque côté des hanches. Ils se détachent par un système d’attache rapide. Pour arrêter une
-        action, un défenseur doit en retirer un, et le ballon est alors replacé à l’endroit où se
-        trouvaient les hanches du porteur au moment du retrait. Le porteur, lui, n’a pas le droit de
-        protéger ses flags : c’est la faute de flag guarding, la plus fréquente chez les débutants.
-        Les ceintures sont fournies par le club à l’entraînement.
-      </p>
-
-      <h3>Y a-t-il vraiment zéro contact au flag football ?</h3>
-      <p>
-        Le plaquage, le blocage, la poussée et la saisie sont interdits et sanctionnés. Cela ne
-        signifie pas qu’aucun corps ne se touche jamais : dans un sport joué à pleine vitesse sur un
-        terrain court, des contacts fortuits se produisent, comme au basketball ou au handball. La
-        différence est fondamentale : au flag, le contact n’est jamais un moyen légitime d’arrêter
-        l’adversaire, alors qu’au football américain il en est l’instrument principal. Si c’est
-        justement le contact que tu cherches, notre article sur les{' '}
-        <Link href="/blog/sport-de-contact-tours/">sports de contact à Tours</Link> compare les
-        options.
-      </p>
-
-      <h3>Combien de temps le quarterback a-t-il pour lancer ?</h3>
-      <p>
-        Sept secondes après le snap. S’il n’a ni lancé ni transmis le ballon dans ce délai, l’action
-        est terminée et la tentative est perdue. Cette horloge est la contrainte la plus
-        caractéristique du flag : elle interdit les longues protections, elle force les receveurs à
-        créer leur séparation très vite, et elle donne à la défense une arme passive puissante. Bien
-        couvrir pendant sept secondes suffit parfois à gagner une action sans avoir touché personne.
-      </p>
-
-      <h3>Peut-on courir avec le ballon au flag football ?</h3>
-      <p>
-        Oui, la course fait partie du jeu, à une exception près : dans les cinq derniers yards avant
-        l’en-but, la progression à la course est interdite et l’attaque doit compléter une passe
-        avant. Le nombre de zones concernées et leur emplacement exact figurent dans le règlement de
-        la saison en cours. Cette règle empêche une équipe simplement plus rapide de forcer le
-        passage systématiquement à l’approche de la cible, et elle produit les situations tactiques
-        les plus intéressantes d’un match.
-      </p>
-
-      <h3>Faut-il connaître toutes les règles avant son premier entraînement ?</h3>
-      <p>
-        Non, et personne ne te le demandera. Savoir qu’on joue à cinq, qu’on arrête l’adversaire en
-        retirant un flag et qu’on ne protège pas ses propres flags suffit très largement pour une
-        première séance. Le reste s’apprend par couches, situation après situation. En quelques
-        entraînements, tu joueras sans y penser. Le club propose une semaine découverte offerte, avec
-        l’équipement prêté, précisément pour permettre de tester avant de décider. Si tu as une
-        question particulière avant de venir, la page <Link href="/contact/">contact</Link> est là
-        pour ça.
-      </p>
+      <Faq
+        titre="Questions fréquentes sur les règles du flag football"
+        items={[
+          {
+            q: 'Combien de joueurs sur un terrain de flag football ?',
+            r: (
+              <p>
+                Cinq contre cinq. C’est le format international, celui du championnat de France
+                mixte et celui retenu pour les Jeux Olympiques de Los Angeles 2028. Une équipe
+                compte évidemment plus de cinq joueurs sur la feuille de match : les remplacements
+                se font librement entre les actions, et tout le monde joue à la fois en attaque et
+                en défense, ce qui change beaucoup par rapport au football américain et à ses
+                escouades spécialisées.
+              </p>
+            ),
+          },
+          {
+            q: 'Quelles sont les dimensions d’un terrain de flag football ?',
+            r: (
+              <p>
+                La zone de jeu mesure 50 yards de long sur 25 yards de large, à laquelle s’ajoutent
+                deux zones d’en-but de 10 yards, soit 70 yards au total d’une ligne de fond à
+                l’autre. En mètres, cela représente environ 64 mètres sur 23. C’est à peu près la
+                moitié d’un terrain de football américain, ce qui permet d’installer deux terrains
+                de flag sur une même surface et explique en partie la facilité d’implantation de la
+                discipline.
+              </p>
+            ),
+          },
+          {
+            q: 'Comment fonctionne la ceinture de flag football ?',
+            r: (
+              <p>
+                Chaque joueur porte une ceinture à la taille, sur laquelle sont fixés deux flags, un
+                de chaque côté des hanches. Ils se détachent par un système d’attache rapide. Pour
+                arrêter une action, un défenseur doit en retirer un, et le ballon est alors replacé
+                à l’endroit où se trouvaient les hanches du porteur au moment du retrait. Le
+                porteur, lui, n’a pas le droit de protéger ses flags : c’est la faute de flag
+                guarding, la plus fréquente chez les débutants. Les ceintures sont fournies par le
+                club à l’entraînement.
+              </p>
+            ),
+          },
+          {
+            q: 'Y a-t-il vraiment zéro contact au flag football ?',
+            r: (
+              <p>
+                Le plaquage, le blocage, la poussée et la saisie sont interdits et sanctionnés. Cela
+                ne signifie pas qu’aucun corps ne se touche jamais : dans un sport joué à pleine
+                vitesse sur un terrain court, des contacts fortuits se produisent, comme au
+                basketball ou au handball. La différence est fondamentale : au flag, le contact
+                n’est jamais un moyen légitime d’arrêter l’adversaire, alors qu’au football
+                américain il en est l’instrument principal. Si c’est justement le contact que tu
+                cherches, notre article sur les{' '}
+                <Link href="/blog/sport-de-contact-tours/">sports de contact à Tours</Link> compare
+                les options.
+              </p>
+            ),
+          },
+          {
+            q: 'Combien de temps le quarterback a-t-il pour lancer ?',
+            r: (
+              <p>
+                Sept secondes après le snap. S’il n’a ni lancé ni transmis le ballon dans ce délai,
+                l’action est terminée et la tentative est perdue. Cette horloge est la contrainte la
+                plus caractéristique du flag : elle interdit les longues protections, elle force les
+                receveurs à créer leur séparation très vite, et elle donne à la défense une arme
+                passive puissante. Bien couvrir pendant sept secondes suffit parfois à gagner une
+                action sans avoir touché personne.
+              </p>
+            ),
+          },
+          {
+            q: 'Peut-on courir avec le ballon au flag football ?',
+            r: (
+              <p>
+                Oui, la course fait partie du jeu, à une exception près : dans les cinq derniers
+                yards avant l’en-but, la progression à la course est interdite et l’attaque doit
+                compléter une passe avant. Le nombre de zones concernées et leur emplacement exact
+                figurent dans le règlement de la saison en cours. Cette règle empêche une équipe
+                simplement plus rapide de forcer le passage systématiquement à l’approche de la
+                cible, et elle produit les situations tactiques les plus intéressantes d’un match.
+              </p>
+            ),
+          },
+          {
+            q: 'Faut-il connaître toutes les règles avant son premier entraînement ?',
+            r: (
+              <p>
+                Non, et personne ne te le demandera. Savoir qu’on joue à cinq, qu’on arrête
+                l’adversaire en retirant un flag et qu’on ne protège pas ses propres flags suffit
+                très largement pour une première séance. Le reste s’apprend par couches, situation
+                après situation. En quelques entraînements, tu joueras sans y penser. Le club
+                propose une semaine découverte offerte, avec l’équipement prêté, précisément pour
+                permettre de tester avant de décider. Si tu as une question particulière avant de
+                venir, la page <Link href="/contact/">contact</Link> est là pour ça.
+              </p>
+            ),
+          },
+        ]}
+      />
 
       <CtaTunnel
         titre="Le flag se comprend en deux séances"
