@@ -41,7 +41,7 @@ const FAQ = [
 export const metadata: Metadata = {
   title: 'École de flag football à Tours, U7 à U18',
   description:
-    'L’école de flag accueille les enfants de 6 à 17 ans (catégories U7 à U18), le samedi de 10h00 à 12h00, au stade de la Chambrerie à Tours. Zéro contact, matériel fourni.',
+    'École de flag pour les enfants de 6 à 17 ans (U7 à U18), le samedi de 10h00 à 12h00 au stade de la Chambrerie à Tours. Zéro contact, matériel fourni, essai gratuit.',
   alternates: { canonical: '/ecole-de-flag/' },
   openGraph: {
     title: 'École de flag football à Tours, U7 à U18',
