@@ -14,7 +14,7 @@ import { STADE, HORAIRES, CONTACT, REJOINDRE_TUNNEL_URL } from '@/lib/infos';
 const FAQ = [
   {
     q: 'À partir de quel âge ?',
-    r: 'L’école de flag accueille les enfants et les jeunes de 6 à 17 ans, soit les catégories U7 à U18 (nés entre 2009 et 2021). Les groupes sont constitués par âge, pour que chacun joue avec des enfants de son gabarit. Les juniors, à partir de la catégorie U13, peuvent doubler leur licence avec la section junior de football américain.',
+    r: 'L’école de flag accueille les enfants et les jeunes de 6 à 17 ans (catégories U7 à U18). Les groupes sont constitués par âge, pour que chacun joue avec des enfants de son gabarit. Les juniors, à partir de la catégorie U13, peuvent doubler leur licence avec la section junior de football américain.',
   },
   {
     q: 'Y a-t-il du contact ?',
@@ -115,7 +115,7 @@ export default function Page() {
             <p className="sc-lead">
               L’école de flag des Pionniers de Touraine est la section jeunes du club de football
               américain et de flag football de Tours. Elle accueille les enfants et les jeunes de 6 à 17 ans
-              (catégories U7 à U18, nés entre 2009 et 2021), chaque samedi de 10h00 à 12h00, au {STADE.nom},{' '}
+              (catégories U7 à U18), chaque samedi de 10h00 à 12h00, au {STADE.nom},{' '}
               {STADE.rue}, {STADE.codePostal} {STADE.ville}. On y pratique le flag football, la
               version sans contact du football américain : plaquages interdits, pas de casque, pas de
               protection à acheter. Le club fournit les ceintures de flags et les ballons ; une tenue
@@ -158,8 +158,7 @@ export default function Page() {
                 <h3 className="sc-h3">Pour quels âges ?</h3>
                 <p className="sc-legal-text">
                   L’école de flag accueille les{' '}
-                  <strong>enfants et les jeunes de 6 à 17 ans</strong> (catégories U7 à U18, nés
-                  entre 2009 et 2021). Les groupes
+                  <strong>enfants et les jeunes de 6 à 17 ans</strong> (catégories U7 à U18). Les groupes
                   sont constitués par âge, pour que chacun joue avec des enfants de son gabarit et
                   de son niveau. Si vous vous demandez{' '}
                   <Link href="/blog/a-quel-age-commencer-le-football-americain/">
