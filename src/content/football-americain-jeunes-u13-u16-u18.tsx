@@ -119,7 +119,8 @@ export default function ArticleJeunes() {
         de votre enfant. Comme la formule et le tarif dépendent de ce choix, écrivez-nous via la
         page <Link href="/contact/">contact</Link> : nous vous orientons vers la bonne case sans
         vous faire remplir trois formulaires. Le récapitulatif de tous les groupes du club se
-        trouve sur la page <Link href="/nos-sections/">nos sections</Link>.
+        trouve sur la page <Link href="/nos-sections/">nos sections</Link>, et celui des créneaux
+        réservés aux jeunes sur <Link href="/jeunes/">le parcours jeunes au club</Link>.
       </p>
 
       <h2 id="categories">U13, U15, U16, U18 : comment lire ces catégories</h2>

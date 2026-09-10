@@ -4,7 +4,7 @@ import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
 import YardLine from '@/components/YardLine';
 import { ARTICLES, dateFr } from '@/data/blog';
-import { getEmoji } from '@/lib/funnelIcons';
+import { EMOJI_SIZE, getEmoji } from '@/lib/funnelIcons';
 import '@/components/blog/blog.css';
 
 // Démo GitHub Pages : pas de canonical (et noindex hérité du layout).
@@ -79,7 +79,15 @@ export default function BlogPage() {
             <div className="sc-cards">
               {ARTICLES.map((a) => (
                 <Link key={a.slug} className="sc-card" href={`/blog/${a.slug}/`}>
-                  <span className="blogc-card-icon"><img src={getEmoji(a.emoji)} alt="" loading="lazy" /></span>
+                  <span className="blogc-card-icon">
+                    <img
+                      src={getEmoji(a.emoji)}
+                      alt=""
+                      width={EMOJI_SIZE.width}
+                      height={EMOJI_SIZE.height}
+                      loading="lazy"
+                    />
+                  </span>
                   <h2 className="sc-card-title">{a.titreCourt}</h2>
                   <p className="sc-card-desc">{a.description}</p>
                   <span className="blogc-card-meta">{dateFr(a.datePublication)} · {a.minutesLecture} min de lecture</span>
@@ -87,7 +95,15 @@ export default function BlogPage() {
                 </Link>
               ))}
               <a className="sc-card blogc-quiz-card" href={QUIZ_URL}>
-                <span className="blogc-card-icon"><img src={getEmoji('jouer')} alt="" loading="lazy" /></span>
+                <span className="blogc-card-icon">
+                  <img
+                    src={getEmoji('jouer')}
+                    alt=""
+                    width={EMOJI_SIZE.width}
+                    height={EMOJI_SIZE.height}
+                    loading="lazy"
+                  />
+                </span>
                 <h2 className="sc-card-title">Quel poste jouer ? Fais le test</h2>
                 <p className="sc-card-desc">
                   8 questions, un algorithme de scouting calibré sur les gabarits NFL et NCAA, et

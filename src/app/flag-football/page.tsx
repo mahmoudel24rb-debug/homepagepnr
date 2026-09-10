@@ -6,6 +6,7 @@ import SiteFooter from '@/components/SiteFooter';
 import PageHero from '@/components/PageHero';
 import YardLine from '@/components/YardLine';
 import FaqSection from '@/components/FaqSection';
+import TarifsBloc from '@/components/TarifsBloc';
 import { asset } from '@/lib/asset';
 import { STADE, HORAIRES, CONTACT, REJOINDRE_TUNNEL_URL } from '@/lib/infos';
 
@@ -25,6 +26,10 @@ const FAQ = [
   {
     q: 'Le flag est-il vraiment mixte ?',
     r: 'Oui. Femmes et hommes jouent dans la même équipe, sur le même terrain, au même moment : il n’y a pas une équipe masculine d’un côté et une équipe féminine de l’autre. Les rôles se répartissent selon les qualités de chacun, vitesse, lecture du jeu ou précision de passe, pas selon les gabarits.',
+  },
+  {
+    q: 'Combien coûte la saison ?',
+    r: 'L’adhésion 2026/2027 au flag seniors est de 150 € par saison en compétition et de 100 € par saison en pratique loisir, licence FFFA incluse dans les deux cas. La formule compétition peut être réglée en trois fois de 50 €. La semaine découverte, elle, est offerte : rien n’est demandé avant de se décider.',
   },
   {
     q: 'Comment essayer ?',
@@ -213,6 +218,8 @@ export default function Page() {
                     className="sc-card-badge"
                     src={asset('/assets/refonte/badge-2-olympique.webp')}
                     alt="Écusson Sport Olympique, JO de Los Angeles 2028"
+                    width={400}
+                    height={400}
                     loading="lazy"
                   />
                 </div>
@@ -237,6 +244,8 @@ export default function Page() {
                     className="sc-card-badge"
                     src={asset('/assets/refonte/badge-1-footus.webp')}
                     alt="Écusson Foot US et Flag des Pionniers de Touraine"
+                    width={560}
+                    height={400}
                     loading="lazy"
                   />
                 </div>
@@ -248,7 +257,8 @@ export default function Page() {
                 <p className="sc-card-desc">
                   Les juniors abordent les deux disciplines : le flag pour la vitesse et la lecture
                   du jeu, le football américain pour la technique et le collectif. Encadrement
-                  adapté, aucune expérience exigée pour commencer.
+                  adapté, aucune expérience exigée pour commencer. Voir{' '}
+                  <Link href="/jeunes/">le flag pour les jeunes, U7 à U18</Link>.
                 </p>
                 <a className="sc-card-cta" href="#horaires">
                   Voir les horaires <ArrowRight size={15} strokeWidth={2.6} />
@@ -260,6 +270,8 @@ export default function Page() {
                     className="sc-card-badge"
                     src={asset('/assets/refonte/badge-5-ecole.webp')}
                     alt="Écusson École de Flag des Pionniers de Touraine"
+                    width={462}
+                    height={400}
                     loading="lazy"
                   />
                 </div>
@@ -392,6 +404,9 @@ export default function Page() {
           </div>
         </section>
 
+        {/* ── Tarifs ── */}
+        <TarifsBloc sections={['flag']} />
+
         {/* ── FAQ ── */}
         <FaqSection titre="Avant votre première séance de flag." items={FAQ} />
 
@@ -402,9 +417,10 @@ export default function Page() {
             <p className="sc-eyebrow">Première séance</p>
             <h2 className="sc-title">Comment nous rejoindre</h2>
             <p className="sc-lead" style={{ maxWidth: 640 }}>
-              La <strong>semaine découverte est offerte</strong>, sans engagement. Vous venez, vous
-              jouez, vous décidez ensuite. La licence FFFA est ensuite incluse dans les formules
-              d’adhésion.
+              Une séance d’essai gratuite, puis une{' '}
+              <strong>semaine découverte offerte</strong> : venez tester avant de vous licencier.
+              Vous venez, vous jouez, vous décidez ensuite. La licence FFFA est ensuite incluse dans
+              les formules d’adhésion.
             </p>
             <ul className="sc-liste" style={{ display: 'inline-grid', textAlign: 'left', margin: '20px auto 0' }}>
               <li>Vous nous écrivez, ou vous remplissez le parcours en ligne.</li>

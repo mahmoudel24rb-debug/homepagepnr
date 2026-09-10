@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import YardLine from './YardLine';
-import { getEmoji } from '@/lib/funnelIcons';
+import { EMOJI_SIZE, getEmoji } from '@/lib/funnelIcons';
 
 /**
  * Aperçu du blog : trois articles EN DUR, volontairement indépendants de tout
@@ -11,7 +11,6 @@ const ARTICLES = [
   {
     href: '/blog/comment-pratiquer-le-football-americain-en-france/',
     emoji: 'foot-us',
-    alt: 'Emoji football américain',
     kicker: 'Guide',
     titre: 'Comment pratiquer le football américain en France',
     extrait:
@@ -20,7 +19,6 @@ const ARTICLES = [
   {
     href: '/blog/flag-football-cest-quoi/',
     emoji: 'flag',
-    alt: 'Emoji flag football',
     kicker: 'Décryptage',
     titre: 'Le flag football, c’est quoi ?',
     extrait:
@@ -29,7 +27,6 @@ const ARTICLES = [
   {
     href: '/blog/sport-collectif-tours/',
     emoji: 'partenaire',
-    alt: 'Emoji équipe soudée',
     kicker: 'Tours',
     titre: 'Quel sport collectif pratiquer à Tours ?',
     extrait:
@@ -55,7 +52,15 @@ export default function BlogTeaser() {
           {ARTICLES.map((a) => (
             <Link key={a.href} className="sc-card" href={a.href}>
               <div className="sc-card-badges">
-                <img className="sc-card-badge" src={getEmoji(a.emoji)} alt={a.alt} loading="lazy" />
+                {/* Emoji purement décoratif : le titre de la carte porte déjà l'information. */}
+                <img
+                  className="sc-card-badge"
+                  src={getEmoji(a.emoji)}
+                  alt=""
+                  width={EMOJI_SIZE.width}
+                  height={EMOJI_SIZE.height}
+                  loading="lazy"
+                />
               </div>
               <div className="sc-chips">
                 <span className="sc-chip">{a.kicker}</span>

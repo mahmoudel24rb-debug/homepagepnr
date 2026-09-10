@@ -47,7 +47,9 @@ export default function SectionsGrid() {
           <h2 className="sc-title">Trouvez votre terrain.</h2>
           <p className="sc-lead">
             Un seul stade, plusieurs collectifs. Selon votre âge, votre envie de contact et vos
-            disponibilités, il y a une section faite pour vous.
+            disponibilités, il y a une section faite pour vous. Pour les enfants et les adolescents,
+            tout est réuni sur{' '}
+            <Link href="/jeunes/">football américain et flag pour les jeunes</Link>.
           </p>
         </div>
 
@@ -59,6 +61,8 @@ export default function SectionsGrid() {
                   className="sc-card-badge"
                   src={getEmoji(s.emoji)}
                   alt={s.alt}
+                  width={160}
+                  height={160}
                   loading="lazy"
                 />
               </div>

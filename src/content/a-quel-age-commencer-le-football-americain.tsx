@@ -490,7 +490,8 @@ export default function ArticleQuelAge() {
       <p>
         La seule chose que l’âge détermine vraiment, c’est la porte par laquelle tu entres. Le
         panorama complet des groupes et des horaires est sur la page{' '}
-        <Link href="/nos-sections/">nos sections</Link>, les deux disciplines sont présentées sur{' '}
+        <Link href="/nos-sections/">nos sections</Link>, celui des créneaux réservés aux mineurs sur{' '}
+        <Link href="/jeunes/">les sections jeunes des Pionniers</Link>, les deux disciplines sont présentées sur{' '}
         <Link href="/football-americain/">football américain</Link> et{' '}
         <Link href="/flag-football/">flag football</Link>, et si tu veux savoir à quoi ressemble
         notre terrain avant de venir, on en a fait une page :{' '}

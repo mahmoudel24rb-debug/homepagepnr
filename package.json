@@ -6,6 +6,7 @@
     "dev": "next dev -p 3001",
     "build": "next build",
     "build:prod": "node scripts/build-prod.mjs",
+    "images": "node scripts/images.mjs",
     "start": "next start"
   },
   "dependencies": {
@@ -21,6 +22,11 @@
     "@types/node": "^20.14.10",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "sharp": "^0.35.4",
     "typescript": "^5.5.4"
-  }
+  },
+  "browserslist": [
+    "defaults and supports es6-module",
+    "not dead"
+  ]
 }

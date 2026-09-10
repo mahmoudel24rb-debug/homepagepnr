@@ -77,8 +77,9 @@ export default function StadeMap() {
           }));
         }
       },
-      // 900px : le travail se déclenche bien avant que la section soit visible.
-      { rootMargin: '900px 0px' },
+      // 300px : le travail se déclenche juste avant que la section soit
+      // visible, sans charger Leaflet pour une visite qui n'ira pas jusque-là.
+      { rootMargin: '300px 0px' },
     );
     io.observe(el);
     return () => {

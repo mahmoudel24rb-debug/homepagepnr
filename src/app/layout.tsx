@@ -166,12 +166,14 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body>
-        {/* Préchargements LCP : fond du hero + polices (les <link> preload sont
-            valides dans <body> et traités immédiatement par le navigateur). */}
+        {/* Préchargements LCP, réduits au strict nécessaire : le fond du hero
+            (élément LCP) et les deux polices du premier écran, en woff2 (les
+            <link> preload sont valides dans <body> et traités immédiatement).
+            Le Neuething Bold n'est PAS préchargé : il ne sert qu'aux surtitres
+            et se charge très bien via son @font-face (font-display: swap). */}
         <link rel="preload" as="image" href={asset('/assets/refonte/fond-hero.webp')} />
-        <link rel="preload" as="font" type="font/otf" href={asset('/assets/fonts/FuturaStdCondensedExtraBd.otf')} crossOrigin="anonymous" />
-        <link rel="preload" as="font" type="font/ttf" href={asset('/assets/fonts/NeuethingSans-RegularSemiExpanded.ttf')} crossOrigin="anonymous" />
-        <link rel="preload" as="font" type="font/ttf" href={asset('/assets/fonts/NeuethingSans-BoldSemiExpanded.ttf')} crossOrigin="anonymous" />
+        <link rel="preload" as="font" type="font/woff2" href={asset('/assets/fonts/FuturaStdCondensedExtraBd.woff2')} crossOrigin="anonymous" />
+        <link rel="preload" as="font" type="font/woff2" href={asset('/assets/fonts/NeuethingSans-RegularSemiExpanded.woff2')} crossOrigin="anonymous" />
         {/* Ancre réelle en haut du flux : le header est fixed (hors flux), un
             #top pointant sur lui ne déclenche aucun défilement. */}
         <div id="top" />

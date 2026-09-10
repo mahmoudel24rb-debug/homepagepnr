@@ -44,3 +44,11 @@ const MAP: Record<string, string> = {
 /** Chemin de l'emoji d'une clé du tunnel (ballon par défaut). WebP 160px (poids ÷7 vs PNG). */
 export const getEmoji = (key: string): string =>
   asset(`/assets/refonte/emojis/${MAP[key] ?? '19-ballon'}.webp`);
+
+/**
+ * Dimensions intrinsèques des emojis : tous les WebP du pack sont exportés en
+ * 160 × 160. À poser en attributs `width`/`height` sur chaque `<img>` pour que
+ * le navigateur réserve le ratio avant le chargement (pas de décalage, CLS).
+ * La taille affichée reste pilotée par le CSS.
+ */
+export const EMOJI_SIZE = { width: 160, height: 160 } as const;

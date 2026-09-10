@@ -21,6 +21,8 @@ export default function PPPSection() {
               className="sc-ppp-logo"
               src={asset('/assets/logo-ppp.png')}
               alt="Logo PPP"
+              width={785}
+              height={617}
               loading="lazy"
             />
             <p className="sc-eyebrow">Pionniers Programme Performance</p>

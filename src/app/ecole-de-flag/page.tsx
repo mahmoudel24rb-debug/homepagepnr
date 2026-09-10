@@ -6,6 +6,7 @@ import SiteFooter from '@/components/SiteFooter';
 import PageHero from '@/components/PageHero';
 import YardLine from '@/components/YardLine';
 import FaqSection from '@/components/FaqSection';
+import TarifsBloc from '@/components/TarifsBloc';
 import { asset } from '@/lib/asset';
 import { STADE, HORAIRES, CONTACT, REJOINDRE_TUNNEL_URL } from '@/lib/infos';
 
@@ -26,6 +27,10 @@ const FAQ = [
   {
     q: 'Faut-il savoir jouer ?',
     r: 'Non. Les enfants arrivent sans rien connaître du flag football, et beaucoup de parents le découvrent en même temps qu’eux. Chaque samedi, les encadrants décomposent les gestes en petits groupes : courir, attraper, lancer, arracher le flag, puis on remet le geste dans le jeu. Aucun niveau n’est demandé à l’entrée.',
+  },
+  {
+    q: 'Combien coûte l’école de flag ?',
+    r: 'L’adhésion à l’école de flag est de 100 € par saison pour 2026/2027, licence FFFA incluse. Ce montant couvre l’encadrement diplômé, la découverte du flag, le championnat jeunes U13, U15 et U18 et le programme NFL Flag en U13 et U15. La semaine découverte, elle, est offerte : rien n’est demandé avant de se décider.',
   },
   {
     q: 'Comment essayer ?',
@@ -179,7 +184,9 @@ export default function Page() {
                       className="sc-card-badge"
                       src={asset('/assets/refonte/badge-5-ecole.webp')}
                       alt="Écusson de l’école de flag des Pionniers de Touraine"
-                      loading="lazy"
+                      width={462}
+                    height={400}
+                    loading="lazy"
                     />
                   </div>
                   <h3 className="sc-panel-title">En bref</h3>
@@ -345,7 +352,8 @@ export default function Page() {
                   Après l’école de flag, les enfants rejoignent les <strong>juniors</strong>, qui
                   pratiquent le football américain et le flag, puis les équipes{' '}
                   <strong>seniors</strong>. Tout se passe sur le même terrain, au {STADE.nom}. Pour
-                  savoir ce qui attend les plus grands, nous détaillons{' '}
+                  savoir ce qui attend les plus grands, voyez{' '}
+                  <Link href="/jeunes/">la suite du parcours jeunes</Link> et, plus en détail,{' '}
                   <Link href="/blog/football-americain-jeunes-u13-u16-u18/">
                     le parcours jeunes U13, U16, U18
                   </Link>{' '}
@@ -416,10 +424,15 @@ export default function Page() {
                   Les <strong>ceintures et les flags sont fournis</strong> par le club
                 </li>
               </ul>
-              {/* À COMPLÉTER : le club doit préciser les pièces d’inscription (certificat médical ou questionnaire de santé, documents à fournir, montant de la cotisation et modes de paiement). */}
+              <p className="sc-legal-text" style={{ marginTop: 18 }}>
+                Côté budget, l’adhésion à l’école de flag est de{' '}
+                <strong>100 € par saison, licence FFFA incluse</strong>. Le détail des formules est
+                plus bas sur cette page, dans les <a href="#tarifs">tarifs de la saison</a>.
+              </p>
+              {/* À COMPLÉTER : le club doit préciser les pièces d’inscription (certificat médical ou questionnaire de santé, documents à fournir). */}
               <p className="sc-legal-text" style={{ marginTop: 18 }}>
                 Pour l’inscription définitive, quelques éléments administratifs sont demandés :
-                pièces à fournir, questions de santé et montant de l’adhésion.{' '}
+                pièces à fournir et questions de santé.{' '}
                 <span className="sc-todo">À compléter</span>
               </p>
             </div>
@@ -456,6 +469,8 @@ export default function Page() {
                     className="sc-card-badge"
                     src={asset('/assets/refonte/badge-2-olympique.webp')}
                     alt="Écusson flag football, sport olympique"
+                    width={400}
+                    height={400}
                     loading="lazy"
                   />
                 </div>
@@ -503,6 +518,9 @@ export default function Page() {
           </div>
         </section>
 
+        {/* ── Tarifs ── */}
+        <TarifsBloc sections={['ecole']} />
+
         {/* ── FAQ ── */}
         <FaqSection titre="Les questions des parents." items={FAQ} />
 
@@ -513,8 +531,9 @@ export default function Page() {
             <p className="sc-eyebrow">Première séance</p>
             <h2 className="sc-title">Comment nous rejoindre</h2>
             <p className="sc-lead" style={{ maxWidth: 620 }}>
-              La <strong>semaine découverte est offerte</strong> aux enfants, sans engagement : on
-              essaie d’abord, on décide ensuite.
+              Une séance d’essai gratuite, puis une{' '}
+              <strong>semaine découverte offerte</strong> aux enfants : venez tester avant de vous
+              licencier. On essaie d’abord, on décide ensuite.
             </p>
             <ul
               className="sc-liste"

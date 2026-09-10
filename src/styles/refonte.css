@@ -2,21 +2,27 @@
    Refonte design (maquette Figma) : header + hero.
    Polices fournies par le designer + palette exacte.
    ============================================================ */
+/* woff2 d'abord (2 a 3 fois plus leger), otf/ttf en repli pour les
+   navigateurs anciens. Les url() gardent le prefixe /homepagepnr/ :
+   scripts/build-prod.mjs les ramene a la racine pour la prod o2switch. */
 @font-face {
   font-family: 'Futura Condensed';
-  src: url('/homepagepnr/assets/fonts/FuturaStdCondensedExtraBd.otf') format('opentype');
+  src: url('/homepagepnr/assets/fonts/FuturaStdCondensedExtraBd.woff2') format('woff2'),
+       url('/homepagepnr/assets/fonts/FuturaStdCondensedExtraBd.otf') format('opentype');
   font-weight: 800;
   font-display: swap;
 }
 @font-face {
   font-family: 'Neuething';
-  src: url('/homepagepnr/assets/fonts/NeuethingSans-BoldSemiExpanded.ttf') format('truetype');
+  src: url('/homepagepnr/assets/fonts/NeuethingSans-BoldSemiExpanded.woff2') format('woff2'),
+       url('/homepagepnr/assets/fonts/NeuethingSans-BoldSemiExpanded.ttf') format('truetype');
   font-weight: 700;
   font-display: swap;
 }
 @font-face {
   font-family: 'Neuething';
-  src: url('/homepagepnr/assets/fonts/NeuethingSans-RegularSemiExpanded.ttf') format('truetype');
+  src: url('/homepagepnr/assets/fonts/NeuethingSans-RegularSemiExpanded.woff2') format('woff2'),
+       url('/homepagepnr/assets/fonts/NeuethingSans-RegularSemiExpanded.ttf') format('truetype');
   font-weight: 400;
   font-display: swap;
 }

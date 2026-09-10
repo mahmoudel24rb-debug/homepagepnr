@@ -7,6 +7,7 @@ import PageHero from '@/components/PageHero';
 import YardLine from '@/components/YardLine';
 import { getEmoji } from '@/lib/funnelIcons';
 import { STADE, HORAIRES, REJOINDRE_TUNNEL_URL } from '@/lib/infos';
+import { TARIFS } from '@/lib/tarifs';
 
 // Démo GitHub Pages : pas de canonique, la démo est déjà noindex (layout).
 const IS_DEMO = (process.env.NEXT_PUBLIC_BASE_PATH ?? '/homepagepnr') !== '/';
@@ -59,6 +60,13 @@ const SECTIONS = [
   },
 ];
 
+/** Page de section vers laquelle renvoie chaque formule du récapitulatif. */
+const PAGE_SECTION: Record<string, string> = {
+  'foot-us': '/football-americain/',
+  flag: '/flag-football/',
+  ecole: '/ecole-de-flag/',
+};
+
 export default function Page() {
   return (
     <>
@@ -100,7 +108,13 @@ export default function Page() {
               {SECTIONS.map((s) => (
                 <Link key={s.href} className="sc-card sc-card--grande" href={s.href}>
                   <div className="sc-card-badges">
-                    <img className="sc-card-badge" src={getEmoji(s.emoji)} alt={s.alt} loading="lazy" />
+                    <img
+                      className="sc-card-badge"
+                      src={getEmoji(s.emoji)}
+                      alt={s.alt}
+                      width={160}
+                      height={160}
+                    />
                   </div>
                   <h3 className="sc-card-title">{s.titre}</h3>
                   <div className="sc-chips">
@@ -120,6 +134,13 @@ export default function Page() {
 
             <div className="sc-body" data-reveal style={{ marginTop: 34 }}>
               <h3 className="sc-h3">Pour aller plus loin</h3>
+              <p className="sc-legal-text">
+                Vous cherchez un créneau pour un enfant ou un adolescent ? Tout est réuni sur{' '}
+                <Link href="/jeunes/">les sections jeunes</Link> : école de flag du samedi, flag
+                mixte juniors du jeudi et juniors de football américain, avec leurs années de
+                naissance et leurs tarifs. Une séance d’essai gratuite, puis une semaine découverte
+                offerte : venez tester avant de vous licencier.
+              </p>
               <p className="sc-legal-text">
                 Avant de choisir, quelques repères écrits pour les curieux :{' '}
                 <Link href="/blog/comment-pratiquer-le-football-americain-en-france/">
@@ -179,6 +200,91 @@ export default function Page() {
                 </li>
               </ul>
             </div>
+          </div>
+        </section>
+
+        {/* ── Récapitulatif des tarifs ── */}
+        <section className="sc-sec" id="tarifs">
+          <YardLine n="50" />
+          <div className="sc-wrap">
+            <div data-reveal>
+              <p className="sc-eyebrow">Adhésion 2026/2027</p>
+              <h2 className="sc-title">Les tarifs, section par section.</h2>
+              <p className="sc-lead">
+                Cinq formules couvrent l’ensemble des collectifs du club, licence FFFA incluse dans
+                chacune. Le détail de chaque formule est repris sur la page de sa section.
+              </p>
+            </div>
+            <div
+              data-reveal
+              role="region"
+              tabIndex={0}
+              aria-label="Tarifs 2026/2027"
+              style={{ overflowX: 'auto', marginTop: 30 }}
+            >
+              <table
+                style={{
+                  width: '100%',
+                  minWidth: 620,
+                  borderCollapse: 'collapse',
+                  fontSize: 'clamp(14px, 1.2vw, 16px)',
+                  color: 'var(--sc-cream-72)',
+                  textAlign: 'left',
+                }}
+              >
+                <thead>
+                  <tr>
+                    {['Formule', 'Public', 'Tarif', 'En 3 fois', 'Section'].map((c) => (
+                      <th
+                        key={c}
+                        scope="col"
+                        style={{
+                          padding: '12px 14px',
+                          borderBottom: '1px solid var(--sc-line)',
+                          color: 'var(--rf-cream)',
+                        }}
+                      >
+                        {c}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {TARIFS.map((t) => (
+                    <tr key={t.nom}>
+                      <th
+                        scope="row"
+                        style={{
+                          padding: '12px 14px',
+                          borderBottom: '1px solid var(--sc-line)',
+                          color: 'var(--rf-cream)',
+                          fontWeight: 700,
+                        }}
+                      >
+                        {t.nom}
+                      </th>
+                      <td style={{ padding: '12px 14px', borderBottom: '1px solid var(--sc-line)' }}>
+                        {t.qui}
+                      </td>
+                      <td style={{ padding: '12px 14px', borderBottom: '1px solid var(--sc-line)' }}>
+                        {t.prixAffiche} {t.periode}
+                      </td>
+                      <td style={{ padding: '12px 14px', borderBottom: '1px solid var(--sc-line)' }}>
+                        {t.paiement3x ?? 'Non'}
+                      </td>
+                      <td style={{ padding: '12px 14px', borderBottom: '1px solid var(--sc-line)' }}>
+                        <Link href={PAGE_SECTION[t.section]}>Voir la section</Link>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="sc-legal-text" data-reveal style={{ marginTop: 20 }}>
+              La licence FFFA est incluse dans chaque formule. Pour les jeunes, le récapitulatif
+              complet des créneaux et des catégories est sur{' '}
+              <Link href="/jeunes/">football américain et flag pour les jeunes</Link>.
+            </p>
           </div>
         </section>
 

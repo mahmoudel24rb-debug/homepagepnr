@@ -3,6 +3,9 @@ import YardLine from './YardLine';
 import { asset } from '@/lib/asset';
 import { PARTENAIRES } from '@/lib/partenaires';
 
+/** Les logos partenaires sont tous exportés en carré 703 × 703 (WebP). */
+const LOGO_SIZE = { width: 703, height: 703 } as const;
+
 /**
  * Bandeau de réassurance : les partenaires actuels du club.
  * Les logos étant fournis sur fond blanc, chaque carte pose un aplat crème
@@ -28,6 +31,8 @@ export default function PartenairesBand() {
               <img
                 src={asset(p.fichier)}
                 alt={`Logo ${p.nom}, partenaire des Pionniers de Touraine`}
+                width={LOGO_SIZE.width}
+                height={LOGO_SIZE.height}
                 loading="lazy"
               />
               <p className="sc-partenaire-nom">{p.nom}</p>

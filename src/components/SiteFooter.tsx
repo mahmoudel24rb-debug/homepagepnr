@@ -26,12 +26,22 @@ const EN_LIGNE = [
   { href: CALENDRIER_URL, label: 'Calendrier des matchs' },
 ];
 
+/**
+ * Badges du pied de page. `width`/`height` = dimensions intrinsèques réelles
+ * des fichiers (viewBox pour le SVG), pour réserver le ratio avant chargement.
+ * La hauteur affichée reste imposée par le CSS (.sc-footer-badges img).
+ */
 const BADGES = [
-  { src: '/assets/refonte/badge-1-footus.webp', alt: 'Foot US & Flag' },
-  { src: '/assets/refonte/badge-2-olympique.webp', alt: 'Sport Olympique · JO de Los Angeles 2028' },
-  { src: '/assets/refonte/badge-3-ppp.svg', alt: 'Programme PPP' },
-  { src: '/assets/refonte/badge-4-u18.webp', alt: 'U18' },
-  { src: '/assets/refonte/badge-5-ecole.webp', alt: 'École de Flag' },
+  { src: '/assets/refonte/badge-1-footus.webp', alt: 'Foot US & Flag', width: 560, height: 400 },
+  {
+    src: '/assets/refonte/badge-2-olympique.webp',
+    alt: 'Sport Olympique · JO de Los Angeles 2028',
+    width: 400,
+    height: 400,
+  },
+  { src: '/assets/refonte/badge-3-ppp.svg', alt: 'Programme PPP', width: 72, height: 61 },
+  { src: '/assets/refonte/badge-4-u18.webp', alt: 'U18', width: 460, height: 400 },
+  { src: '/assets/refonte/badge-5-ecole.webp', alt: 'École de Flag', width: 462, height: 400 },
 ];
 
 export default function SiteFooter() {
@@ -43,6 +53,8 @@ export default function SiteFooter() {
             className="sc-footer-logo"
             src={asset('/assets/refonte/logo-pionniers.svg')}
             alt="Pionniers de Touraine"
+            width={80}
+            height={53}
             loading="lazy"
           />
           <p className="sc-footer-tagline">
@@ -51,7 +63,14 @@ export default function SiteFooter() {
           </p>
           <div className="sc-footer-badges">
             {BADGES.map((b) => (
-              <img key={b.alt} src={asset(b.src)} alt={b.alt} loading="lazy" />
+              <img
+                key={b.alt}
+                src={asset(b.src)}
+                alt={b.alt}
+                width={b.width}
+                height={b.height}
+                loading="lazy"
+              />
             ))}
           </div>
         </div>

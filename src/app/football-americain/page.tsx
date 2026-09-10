@@ -6,6 +6,7 @@ import SiteFooter from '@/components/SiteFooter';
 import PageHero from '@/components/PageHero';
 import YardLine from '@/components/YardLine';
 import FaqSection from '@/components/FaqSection';
+import TarifsBloc from '@/components/TarifsBloc';
 import { asset } from '@/lib/asset';
 import { STADE, HORAIRES, CONTACT, REJOINDRE_TUNNEL_URL } from '@/lib/infos';
 
@@ -22,6 +23,10 @@ const FAQ = [
   {
     q: 'Y a-t-il du contact ?',
     r: 'Oui, c’est la discipline au contact du club, avec casque et épaulières. Mais le contact ne s’improvise pas : on commence sans opposition, à vide, puis à faible intensité avec un partenaire coopératif. La technique de chute s’acquiert avant toute mise en situation réelle. Le flag football, lui, se joue sans aucun contact.',
+  },
+  {
+    q: 'Combien coûte la saison ?',
+    r: 'L’adhésion 2026/2027 est de 249,99 € par saison pour les seniors en compétition et de 150 € par saison pour les juniors U18, licence FFFA incluse dans les deux cas. Le paiement peut être fractionné en trois fois : 3 × 83,33 € pour les seniors, 3 × 50 € pour les juniors. La semaine découverte, elle, est offerte.',
   },
   {
     q: 'Comment essayer ?',
@@ -243,6 +248,8 @@ export default function Page() {
                     className="sc-card-badge"
                     src={asset('/assets/refonte/badge-1-footus.webp')}
                     alt="Écusson Foot US et Flag des Pionniers de Touraine"
+                    width={560}
+                    height={400}
                     loading="lazy"
                   />
                 </div>
@@ -267,6 +274,8 @@ export default function Page() {
                     className="sc-card-badge sc-card-badge--u18"
                     src={asset('/assets/refonte/badge-4-u18.webp')}
                     alt="Écusson de la section juniors des Pionniers de Touraine"
+                    width={460}
+                    height={400}
                     loading="lazy"
                   />
                 </div>
@@ -280,7 +289,8 @@ export default function Page() {
                   Les juniors alternent football américain et flag football : la lecture du jeu et
                   la vitesse se travaillent sans passer tout de suite par le contact. Le passage
                   vers le groupe senior se prépare ici, saison après saison, avec le même
-                  encadrement.
+                  encadrement. Le détail des créneaux et des tarifs est réuni sur la page{' '}
+                  <Link href="/jeunes/">football américain et flag pour les jeunes</Link>.
                 </p>
                 <a className="sc-card-cta" href={REJOINDRE_TUNNEL_URL}>
                   Commencer le parcours <ArrowRight size={15} strokeWidth={2.6} />
@@ -343,6 +353,9 @@ export default function Page() {
           </div>
         </section>
 
+        {/* ── Tarifs ── */}
+        <TarifsBloc sections={['foot-us']} />
+
         {/* ── Premiers pas ── */}
         <section className="sc-sec" id="premiers-pas">
           <YardLine n="50" />
@@ -353,9 +366,10 @@ export default function Page() {
             </div>
             <div className="sc-body" data-reveal style={{ marginTop: 30 }}>
               <p className="sc-legal-text">
-                Essayer ne demande ni licence ni engagement. La semaine découverte est offerte :
-                vous vous entraînez avec le groupe, dans les conditions réelles, et vous décidez
-                après. Voilà comment cela se passe.
+                Une séance d’essai gratuite, puis une semaine découverte offerte : venez tester
+                avant de vous licencier. Essayer ne demande ni licence ni engagement : vous vous
+                entraînez avec le groupe, dans les conditions réelles, et vous décidez après.
+                Voilà comment cela se passe.
               </p>
               <ul className="sc-liste">
                 <li>

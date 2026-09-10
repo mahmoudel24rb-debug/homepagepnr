@@ -151,6 +151,9 @@ img { max-width: 100%; }
   background: rgba(20, 7, 8, 0.6);
   box-shadow: 0 30px 50px -18px rgba(0, 0, 0, 0.55);
 }
+/* <picture> transparent pour la mise en page : l'<img> reste l'enfant
+   absolu de .sc-slide-stage et le crossfade fonctionne a l'identique. */
+.sc-slide-pic { display: contents; }
 .sc-slide {
   position: absolute; inset: 0;
   width: 100%; height: 100%; object-fit: cover; display: block;
@@ -443,8 +446,8 @@ a.sc-horaires { display: grid; }
 .sc-legal-text a { color: var(--rf-amber); text-decoration: none; }
 .sc-legal-text a:hover { text-decoration: underline; }
 /* Liens contextuels ajoutes dans les chapos, cartes et FAQ des pages de section (maillage SEO). */
-.sc-lead a, .sc-card-desc a, .sc-faq-item a, .sc-body a { color: var(--rf-amber); text-decoration: none; }
-.sc-lead a:hover, .sc-card-desc a:hover, .sc-faq-item a:hover, .sc-body a:hover { text-decoration: underline; }
+.sc-lead a, .sc-card-desc a, .sc-faq-item a, .sc-body a, .sc-sec table a { color: var(--rf-amber); text-decoration: none; }
+.sc-lead a:hover, .sc-card-desc a:hover, .sc-faq-item a:hover, .sc-body a:hover, .sc-sec table a:hover { text-decoration: underline; }
 
 /* ============================================================
    RESPONSIVE

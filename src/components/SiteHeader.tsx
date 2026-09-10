@@ -17,6 +17,7 @@ const SOUS_SECTIONS = [
   { href: '/football-americain/', label: 'Football américain' },
   { href: '/flag-football/', label: 'Flag football' },
   { href: '/ecole-de-flag/', label: 'École de flag' },
+  { href: '/jeunes/', label: 'Jeunes' },
 ];
 
 const LIENS_APRES = [
@@ -88,6 +89,9 @@ export default function SiteHeader() {
             className="rf-logo"
             src={asset('/assets/refonte/logo-pionniers.svg')}
             alt="Pionniers de Touraine"
+            width={80}
+            height={53}
+            fetchPriority="low"
           />
         </Link>
 

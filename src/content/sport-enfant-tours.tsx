@@ -118,7 +118,8 @@ export default function ArticleSportEnfant() {
         </Link>. Et pour les adolescents, le parcours est décrit dans{' '}
         <Link href="/blog/football-americain-jeunes-u13-u16-u18/">
           le parcours jeunes U13 à U18
-        </Link>.
+        </Link>. Les trois créneaux et leurs tarifs sont réunis sur{' '}
+        <Link href="/jeunes/">football américain et flag pour les jeunes à Tours</Link>.
       </p>
 
       <h2 id="partir-de-l-enfant">Choisissez selon l’enfant, pas selon le sport</h2>

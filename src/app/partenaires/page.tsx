@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   },
 };
 
+/** Les logos partenaires sont tous exportés en carré 703 × 703 (WebP). */
+const LOGO_SIZE = { width: 703, height: 703 } as const;
+
 /**
  * Niveaux de partenariat : noms d'exemple et contreparties génériques.
  * VOLONTAIREMENT SANS PRIX : la grille tarifaire est établie au cas par cas
@@ -154,6 +157,8 @@ export default function Page() {
                   <img
                     src={asset(p.fichier)}
                     alt={`Logo ${p.nom}, partenaire des Pionniers de Touraine`}
+                    width={LOGO_SIZE.width}
+                    height={LOGO_SIZE.height}
                     loading="lazy"
                   />
                   <p className="sc-partenaire-nom">{p.nom}</p>
