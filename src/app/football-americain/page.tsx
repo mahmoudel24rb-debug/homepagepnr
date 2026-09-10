@@ -4,6 +4,7 @@ import { ArrowRight } from 'lucide-react';
 import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
 import PageHero from '@/components/PageHero';
+import ReponseDirecte from '@/components/ReponseDirecte';
 import YardLine from '@/components/YardLine';
 import FaqSection from '@/components/FaqSection';
 import TarifsBloc from '@/components/TarifsBloc';
@@ -81,10 +82,18 @@ export default function Page() {
           </div>
         </PageHero>
 
-        {/* ── Réponse directe : qui, quoi, quand, où, comment essayer ── */}
-        <section className="sc-sec" id="en-resume">
-          <div className="sc-wrap" data-reveal>
-            <p className="sc-lead">
+        {/* ── Réponse directe : qui, quoi, quand, où, combien, comment essayer ── */}
+        <ReponseDirecte
+          bouton="Venir essayer"
+          reperes={[
+            <><strong>Seniors</strong> : lundi et vendredi de 20h00 à 23h00, mercredi de 21h00 à 23h00</>,
+            <><strong>Juniors U18</strong> : lundi et jeudi de 19h00 à 21h00</>,
+            <><strong>{STADE.nom}</strong>, {STADE.rue}, {STADE.codePostal} {STADE.ville}</>,
+            <>Casque et épaulières <strong>prêtés aux débutants</strong></>,
+            <><strong>Séance d’essai gratuite</strong>, semaine découverte offerte</>,
+            <>Licence FFFA incluse : <a href="#tarifs">voir les tarifs</a></>,
+          ]}
+        >
               Les Pionniers de Touraine font pratiquer le football américain à Tours depuis 1987, au{' '}
               {STADE.nom}, {STADE.rue}, {STADE.codePostal} {STADE.ville}. Deux collectifs
               s’entraînent au contact : les seniors, en compétition, le lundi et le vendredi de
@@ -96,9 +105,7 @@ export default function Page() {
               chaussures de terrain. Une semaine découverte est offerte, et cette séance d’essai
               gratuite n’engage à rien : la licence FFFA vient ensuite, incluse dans les formules
               d’adhésion.
-            </p>
-          </div>
-        </section>
+        </ReponseDirecte>
 
         {/* ── Le sport ── */}
         <section className="sc-sec" id="le-sport">

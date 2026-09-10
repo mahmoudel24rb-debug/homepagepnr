@@ -4,6 +4,7 @@ import { ArrowRight } from 'lucide-react';
 import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
 import PageHero from '@/components/PageHero';
+import ReponseDirecte from '@/components/ReponseDirecte';
 import YardLine from '@/components/YardLine';
 import FaqSection from '@/components/FaqSection';
 import TarifsBloc from '@/components/TarifsBloc';
@@ -109,10 +110,18 @@ export default function Page() {
           </div>
         </PageHero>
 
-        {/* ── Réponse directe : qui, quoi, quand, où, comment essayer ── */}
-        <section className="sc-sec" id="en-resume">
-          <div className="sc-wrap" data-reveal>
-            <p className="sc-lead">
+        {/* ── Réponse directe : qui, quoi, quand, où, combien, comment essayer ── */}
+        <ReponseDirecte
+          bouton="Inscrire mon enfant"
+          reperes={[
+            <><strong>Samedi de 10h00 à 12h00</strong>, toute la saison</>,
+            <><strong>De 6 à 17 ans</strong> (catégories U7 à U18)</>,
+            <><strong>{STADE.nom}</strong>, {STADE.rue}, {STADE.codePostal} {STADE.ville}</>,
+            <><strong>Zéro contact</strong>, ceintures de flags et ballons fournis</>,
+            <><strong>100 € par saison</strong>, licence FFFA incluse</>,
+            <><strong>Séance d’essai gratuite</strong>, semaine découverte offerte</>,
+          ]}
+        >
               L’école de flag des Pionniers de Touraine est la section jeunes du club de football
               américain et de flag football de Tours. Elle accueille les enfants et les jeunes de 6 à 17 ans
               (catégories U7 à U18), chaque samedi de 10h00 à 12h00, au {STADE.nom},{' '}
@@ -125,9 +134,7 @@ export default function Page() {
               remplissant le parcours en ligne. Au fil de la saison, les équipes jouent des
               championnats régionaux, des championnats nationaux et des rencontres au format NFL
               FLAG.
-            </p>
-          </div>
-        </section>
+        </ReponseDirecte>
 
         {/* ── Découvrir la discipline ── */}
         <section className="sc-sec" id="decouvrir">

@@ -4,6 +4,7 @@ import { ArrowRight } from 'lucide-react';
 import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
 import PageHero from '@/components/PageHero';
+import ReponseDirecte from '@/components/ReponseDirecte';
 import YardLine from '@/components/YardLine';
 import FaqSection from '@/components/FaqSection';
 import TarifsBloc from '@/components/TarifsBloc';
@@ -117,10 +118,18 @@ export default function Page() {
           </div>
         </PageHero>
 
-        {/* ── Réponse directe : qui, quoi, quand, où, combien, comment ── */}
-        <section className="sc-sec" id="en-resume">
-          <div className="sc-wrap" data-reveal>
-            <p className="sc-lead">
+        {/* ── Réponse directe : qui, quoi, quand, où, combien, comment essayer ── */}
+        <ReponseDirecte
+          bouton="Inscrire mon enfant"
+          reperes={[
+            <><strong>École de flag</strong> : samedi de 10h00 à 12h00</>,
+            <><strong>Flag mixte juniors</strong> : jeudi de 19h00 à 20h30</>,
+            <><strong>Foot US juniors U18</strong> : lundi et jeudi de 19h00 à 21h00</>,
+            <><strong>{STADE.nom}</strong>, {STADE.rue}, {STADE.codePostal} {STADE.ville}</>,
+            <><strong>100 €</strong> école de flag, <strong>150 €</strong> juniors U18, licence FFFA incluse</>,
+            <><strong>Séance d’essai gratuite</strong>, semaine découverte offerte</>,
+          ]}
+        >
               Les Pionniers de Touraine font jouer les jeunes au football américain et au flag
               football à Tours depuis 1987, au {STADE.nom}, {STADE.rue}, {STADE.codePostal}{' '}
               {STADE.ville}. Trois créneaux leur sont réservés : l’école de flag, sans aucun
@@ -131,9 +140,7 @@ export default function Page() {
               à l’école de flag et de 150 € par saison chez les juniors U18, licence FFFA incluse
               dans les deux cas. Une séance d’essai gratuite, puis une semaine découverte offerte :
               venez tester avant de vous licencier, en tenue de sport, sans rien acheter.
-            </p>
-          </div>
-        </section>
+        </ReponseDirecte>
 
         {/* ── Le parcours par âge ── */}
         <section className="sc-sec" id="parcours">

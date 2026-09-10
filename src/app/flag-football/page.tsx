@@ -4,6 +4,7 @@ import { ArrowRight } from 'lucide-react';
 import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
 import PageHero from '@/components/PageHero';
+import ReponseDirecte from '@/components/ReponseDirecte';
 import YardLine from '@/components/YardLine';
 import FaqSection from '@/components/FaqSection';
 import TarifsBloc from '@/components/TarifsBloc';
@@ -79,10 +80,18 @@ export default function Page() {
           </div>
         </PageHero>
 
-        {/* ── Réponse directe : qui, quoi, quand, où, comment essayer ── */}
-        <section className="sc-sec" id="en-resume">
-          <div className="sc-wrap" data-reveal>
-            <p className="sc-lead">
+        {/* ── Réponse directe : qui, quoi, quand, où, combien, comment essayer ── */}
+        <ReponseDirecte
+          bouton="Venir essayer"
+          reperes={[
+            <><strong>Flag mixte seniors</strong> : lundi et jeudi de 20h15 à 22h45</>,
+            <><strong>Flag mixte juniors</strong> : jeudi de 19h00 à 20h30</>,
+            <><strong>{STADE.nom}</strong>, {STADE.rue}, {STADE.codePostal} {STADE.ville}</>,
+            <><strong>5 contre 5</strong>, mixte, sans contact, sans protection</>,
+            <><strong>Séance d’essai gratuite</strong>, semaine découverte offerte</>,
+            <>Licence FFFA incluse : <a href="#tarifs">voir les tarifs</a></>,
+          ]}
+        >
               Le flag football est la version sans contact du football américain : on arrache un
               ruban porté à la ceinture au lieu de plaquer, et l’on joue à 5 contre 5. Aux Pionniers
               de Touraine, il se pratique au {STADE.nom}, {STADE.rue}, {STADE.codePostal}{' '}
@@ -93,9 +102,7 @@ export default function Page() {
               suffisent. La semaine découverte est offerte et cette séance d’essai gratuite n’engage
               à rien, la licence FFFA étant ensuite incluse dans les formules d’adhésion. Le flag
               entre au programme des Jeux olympiques de Los Angeles 2028.
-            </p>
-          </div>
-        </section>
+        </ReponseDirecte>
 
         {/* ── Le sport ── */}
         <section className="sc-sec" id="decouvrir">

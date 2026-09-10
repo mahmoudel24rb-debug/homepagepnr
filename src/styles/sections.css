@@ -585,6 +585,11 @@ a.sc-card { text-decoration: none; }
 }
 .sc-aside { display: grid; gap: 20px; }
 
+/* Bloc reponse directe sous le hero des pages de section : colle au hero,
+   texte legerement plus grand que le corps courant. */
+.sc-resume { padding-top: 0; }
+.sc-resume .sc-resume-text { font-size: clamp(16px, 1.25vw, 18px); line-height: 1.65; margin-top: 0; }
+
 /* Corps de texte long : les paragraphes portent .sc-legal-text. */
 .sc-body { max-width: 780px; }
 .sc-two .sc-body { max-width: none; }
