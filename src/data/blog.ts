@@ -24,6 +24,7 @@ import ArticleStadeDeLaChambrerieTours from '@/content/stade-de-la-chambrerie-to
 import ArticleClubDeSportTours from '@/content/club-de-sport-tours';
 import ArticleAQuelAgeCommencerLeFootballAmericain from '@/content/a-quel-age-commencer-le-football-americain';
 import ArticleCommentRegarderLeCollegeFootballEnFrance from '@/content/comment-regarder-le-college-football-en-france';
+import ArticleQuelSportQuandOnEstGros from '@/content/quel-sport-quand-on-est-gros';
 /**
  * Registre des articles du blog (FR uniquement : le SEO vise des requêtes
  * françaises). L'ordre du tableau = ordre d'affichage sur /blog/.
@@ -386,6 +387,20 @@ export const ARTICLES: ArticleMeta[] = [
     minutesLecture: 26,
     motCle: 'regarder college football en France',
     content: ArticleCommentRegarderLeCollegeFootballEnFrance,
+  },
+  {
+    slug: 'quel-sport-quand-on-est-gros',
+    titre: 'Quel sport quand on est gros ? Celui qui te recrute pour ton gabarit',
+    titreCourt: 'Quel sport quand on est gros ?',
+    titleSeo: 'Quel sport quand on est gros ? On te recrute',
+    description:
+      'Tu fais 100 ou 120 kg et tu cherches un sport ? Le football américain recrute les gros gabarits sur la ligne : essai gratuit à Tours, équipement prêté.',
+    emoji: 'seniors',
+    datePublication: '2026-09-15',
+    dateModif: '2026-09-15',
+    minutesLecture: 17,
+    motCle: 'quel sport quand on est gros',
+    content: ArticleQuelSportQuandOnEstGros,
   },
 ];
 

@@ -326,8 +326,10 @@ export default function ArticleReprendreSport() {
         fins et rapides, des compacts et explosifs, des gabarits lourds pour qui la ligne est le
         poste le plus technique du jeu, des lecteurs de jeu qui compensent la vitesse par
         l’intelligence tactique. Si tu as pris du poids pendant tes années d’arrêt, ce n’est pas
-        un handicap à corriger avant de venir : c’est une donnée d’orientation. On développe le
-        sujet dans notre article sur le fait de{' '}
+        un handicap à corriger avant de venir : c’est une donnée d’orientation, et même un atout
+        recherché, comme on l’explique dans{' '}
+        <Link href="/blog/quel-sport-quand-on-est-gros/">quel sport quand on est gros</Link>. On
+        développe aussi le sujet dans notre article sur le fait de{' '}
         <Link href="/blog/commencer-le-football-americain-adulte/">
           commencer à 30 ans
         </Link>.

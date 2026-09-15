@@ -65,7 +65,8 @@ export default function ArticleAdulte() {
         <strong>Ton gabarit n'est pas un obstacle : c'est une donnée d'orientation.</strong> Trop
         « petit » ? Les slot receivers vivent de leur agilité. Du poids en trop ? La ligne
         t'accueille à bras ouverts, et tu découvriras que c'est le poste le plus technique du
-        jeu. Rapide mais léger ? La défense adore les cornerbacks nerveux.
+        jeu (on a écrit un guide entier sur{' '}
+        <Link href="/blog/quel-sport-quand-on-est-gros/">le sport quand on est gros</Link>). Rapide mais léger ? La défense adore les cornerbacks nerveux.
       </p>
       <h3>« Je ne suis pas assez en forme »</h3>
       <p>

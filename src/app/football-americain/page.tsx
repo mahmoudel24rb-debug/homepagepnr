@@ -140,8 +140,10 @@ export default function Page() {
                 <p className="sc-legal-text">
                   C’est aussi le sport collectif où le gabarit ferme le moins de portes. Un joueur
                   rapide et léger trouve sa place au large du terrain, un joueur puissant la trouve
-                  au centre, dans la ligne. Grand, petit, fin ou massif : il existe un poste pour
-                  chaque morphologie, et nous passons en revue{' '}
+                  au centre, dans la ligne (nous cherchons d’ailleurs des joueurs de ligne : voyez{' '}
+                  <Link href="/blog/quel-sport-quand-on-est-gros/">quel sport quand on est gros</Link>).
+                  Grand, petit, fin ou massif : il existe un poste pour chaque morphologie, et nous
+                  passons en revue{' '}
                   <Link href="/blog/postes-football-americain/">
                     les postes au football américain
                   </Link>{' '}

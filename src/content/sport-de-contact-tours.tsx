@@ -109,7 +109,9 @@ export default function ArticleSportContact() {
         reste. C’est brutal, c’est technique, et c’est le poste le plus injustement méconnu du
         sport : on y travaille les appuis, les mains, le placement, l’explosivité sur le premier
         pas. Les gabarits lourds, qui n’ont leur place nulle part ailleurs, y trouvent le rôle
-        central.
+        central : si c’est ton cas, lis{' '}
+        <Link href="/blog/quel-sport-quand-on-est-gros/">quel sport quand on est gros</Link>, le
+        club recrute des joueurs de ligne.
       </p>
       <p>
         Ensuite, la <strong>progression pédagogique du plaquage</strong>. Contrairement à l’image

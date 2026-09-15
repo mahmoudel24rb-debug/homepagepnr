@@ -192,7 +192,9 @@ export default function ArticlePostes() {
         coordination énorme et une culture de groupe très forte. Si tu es costaud, si le corps à
         corps te plaît et si l’idée d’être le socle plutôt que la vedette te convient, tu vas
         adorer. C’est aussi, et de loin, le poste où un adulte débutant costaud a le plus de
-        chances de jouer vite.
+        chances de jouer vite. Si tu fais 100 ou 120 kg et que tu te demandes encore{' '}
+        <Link href="/blog/quel-sport-quand-on-est-gros/">quel sport quand on est gros</Link>, la
+        réponse est ici, et le club recrute justement des joueurs de ligne.
       </p>
 
       <CtaQuiz
