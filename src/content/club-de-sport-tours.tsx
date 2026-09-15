@@ -580,6 +580,11 @@ export default function ArticleClubDeSport() {
         <Link href="/contact/">page contact</Link>, avec un message du genre « débutant complet,
         j’aimerais essayer ». La réponse sera toujours oui.
       </p>
+      <CtaTunnel
+        titre="Prêt à essayer en vrai ?"
+        texte="Semaine découverte offerte aux Pionniers de Touraine : viens tester le foot US ou le flag au Stade de la Chambrerie, à Tours, sans engagement et sans matériel à acheter."
+        bouton="Je tente la semaine découverte"
+      />
     </>
   );
 }

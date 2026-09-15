@@ -1311,6 +1311,11 @@ export default function ArticleCollegeFootballFrance() {
           News, 25 août 2026.
         </li>
       </ul>
+      <CtaTunnel
+        titre="Prêt à essayer en vrai ?"
+        texte="Semaine découverte offerte aux Pionniers de Touraine : viens tester le foot US ou le flag au Stade de la Chambrerie, à Tours, sans engagement et sans matériel à acheter."
+        bouton="Je tente la semaine découverte"
+      />
     </>
   );
 }

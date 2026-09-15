@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { REJOINDRE_TUNNEL_URL } from '@/lib/infos';
 
 /** Test de poste : il vit sur le site de recrutement, pas sur celui-ci. */
@@ -29,6 +30,17 @@ export function CtaQuiz({ titre, texte, bouton }: { titre?: string; texte?: stri
           'Réponds à 8 questions : notre algorithme de scouting, calibré sur les gabarits réels des joueurs NFL et NCAA, te propose ton poste idéal, en foot US ou en flag.'}
       </p>
       <a className="sc-btn" href={QUIZ_URL}>{bouton ?? 'Je fais le test'}</a>
+    </aside>
+  );
+}
+
+/** Encart vers une page du site (section, hub) : même habillage, lien interne. */
+export function CtaPage({ titre, texte, bouton, href }: { titre: string; texte: string; bouton: string; href: string }) {
+  return (
+    <aside className="blogc-cta">
+      <p className="blogc-cta-title">{titre}</p>
+      <p>{texte}</p>
+      <Link className="sc-btn" href={href}>{bouton}</Link>
     </aside>
   );
 }

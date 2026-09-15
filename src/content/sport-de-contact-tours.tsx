@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { CtaQuiz, CtaTunnel } from '@/components/blog/CtaEncart';
+import { CtaPage, CtaQuiz, CtaTunnel } from '@/components/blog/CtaEncart';
 import Faq from '@/components/blog/Faq';
 
 /**
@@ -36,6 +36,13 @@ export default function ArticleSportContact() {
         offre à un adulte qui débute, y compris quand ce n’est pas chez nous que tu devrais aller,
         et seulement ensuite t’expliquer ce que le contact collectif a de particulier.
       </p>
+
+      <CtaPage
+        titre="Le football américain à Tours, c’est aux Pionniers de Touraine"
+        texte="Club fondé en 1987 au stade de la Chambrerie : seniors le lundi, le mercredi et le vendredi, juniors le lundi et le jeudi, casque et épaulières prêtés aux débutants, séance d’essai gratuite."
+        bouton="Découvrir la section football américain"
+        href="/football-americain/"
+      />
 
       <h2 id="pourquoi">Pourquoi chercher un sport de contact (et pourquoi c’est légitime)</h2>
       <p>
@@ -88,6 +95,53 @@ export default function ArticleSportContact() {
         point de vue d’un adulte qui veut de l’engagement physique réel. On ne cite volontairement
         aucun club : les structures changent, les créneaux bougent, et ce qui compte ici c’est de
         comprendre ce que chaque famille de sport te demandera vraiment.
+      </p>
+
+      <h3>Le football américain : le contact collectif et stratégique</h3>
+      <p>
+        On commence par notre famille, parce que c’est celle que l’on connaît le mieux, et parce qu’elle porte la vraie spécificité de ce panorama. Le football
+        américain n’est pas seulement un sport de contact, c’est un sport où le contact est{' '}
+        <strong>collectif, découpé et pensé</strong>. La différence tient à trois choses.
+      </p>
+      <p>
+        D’abord, le <strong>combat de ligne</strong>. À chaque action, cinq joueurs affrontent
+        physiquement cinq joueurs, dans un corps à corps de quelques secondes qui décide de tout le
+        reste. C’est brutal, c’est technique, et c’est le poste le plus injustement méconnu du
+        sport : on y travaille les appuis, les mains, le placement, l’explosivité sur le premier
+        pas. Les gabarits lourds, qui n’ont leur place nulle part ailleurs, y trouvent le rôle
+        central.
+      </p>
+      <p>
+        Ensuite, la <strong>progression pédagogique du plaquage</strong>. Contrairement à l’image
+        que donne la télévision, personne n’apprend à plaquer en se jetant sur quelqu’un. On
+        commence sans opposition, sur des boucliers, à vitesse réduite, pour construire la position
+        du corps, la trajectoire de la tête, le placement des épaules et des bras. On passe ensuite
+        à de l’opposition contrôlée, puis seulement au jeu réel. Un débutant peut passer plusieurs
+        semaines à travailler la technique avant d’être mis dans une situation de contact plein, et
+        c’est très bien ainsi.
+      </p>
+      <p>
+        Enfin, l’<strong>équipement complet, prêté aux débutants</strong>. Casque, épaulières,
+        protections : le contact se prend avec une couche de matériel conçue pour lui. Ça change
+        tout, y compris psychologiquement, parce que la première appréhension tombe dès qu’on
+        comprend ce que l’équipement absorbe. Et comme le jeu est découpé en actions de quelques
+        secondes suivies d’un arrêt, on apprend geste par geste, rôle par rôle, sans jamais avoir à
+        improviser dans un flux continu. C’est aussi ce qui rend ce sport exigeant intellectuellement :
+        il y a un playbook à apprendre, des ajustements à lire, une vraie partie d’échecs jouée à
+        pleine vitesse.
+      </p>
+      <p>
+        Dernier point, et c’est le plus important pour toi : au football américain français,{' '}
+        <strong>débuter adulte est la norme</strong>, pas l’exception. L’immense majorité des
+        joueurs seniors ont découvert le sport après vingt ans. Les clubs ne s’adaptent pas aux
+        débutants, ils sont construits pour eux depuis toujours. Personne dans le vestiaire n’a
+        quinze ans de technique d’avance sur toi. On a détaillé ce que vit un adulte pendant sa
+        première saison, mois par mois, dans notre guide{' '}
+        <Link href="/blog/commencer-le-football-americain-adulte/">
+          ta première saison de football américain
+        </Link>. Et si ta question porte encore sur la structure plutôt que sur la discipline, on a
+        listé les critères qui comptent pour choisir parmi{' '}
+        <Link href="/blog/club-de-sport-tours/">les clubs de sport à Tours</Link>.
       </p>
 
       <h3>Le rugby : le contact continu</h3>
@@ -148,53 +202,6 @@ export default function ArticleSportContact() {
         éloignés, et l’<strong>équipement personnel coûte cher</strong>, souvent à ta charge, ce qui
         change beaucoup le calcul quand on veut simplement essayer. À vérifier au cas par cas, en
         posant systématiquement la question du matériel prêté avant de s’engager.
-      </p>
-
-      <h3>Le football américain : le contact collectif et stratégique</h3>
-      <p>
-        Arrive notre famille, et avec elle la vraie spécificité de ce panorama. Le football
-        américain n’est pas seulement un sport de contact, c’est un sport où le contact est{' '}
-        <strong>collectif, découpé et pensé</strong>. La différence tient à trois choses.
-      </p>
-      <p>
-        D’abord, le <strong>combat de ligne</strong>. À chaque action, cinq joueurs affrontent
-        physiquement cinq joueurs, dans un corps à corps de quelques secondes qui décide de tout le
-        reste. C’est brutal, c’est technique, et c’est le poste le plus injustement méconnu du
-        sport : on y travaille les appuis, les mains, le placement, l’explosivité sur le premier
-        pas. Les gabarits lourds, qui n’ont leur place nulle part ailleurs, y trouvent le rôle
-        central.
-      </p>
-      <p>
-        Ensuite, la <strong>progression pédagogique du plaquage</strong>. Contrairement à l’image
-        que donne la télévision, personne n’apprend à plaquer en se jetant sur quelqu’un. On
-        commence sans opposition, sur des boucliers, à vitesse réduite, pour construire la position
-        du corps, la trajectoire de la tête, le placement des épaules et des bras. On passe ensuite
-        à de l’opposition contrôlée, puis seulement au jeu réel. Un débutant peut passer plusieurs
-        semaines à travailler la technique avant d’être mis dans une situation de contact plein, et
-        c’est très bien ainsi.
-      </p>
-      <p>
-        Enfin, l’<strong>équipement complet, prêté aux débutants</strong>. Casque, épaulières,
-        protections : le contact se prend avec une couche de matériel conçue pour lui. Ça change
-        tout, y compris psychologiquement, parce que la première appréhension tombe dès qu’on
-        comprend ce que l’équipement absorbe. Et comme le jeu est découpé en actions de quelques
-        secondes suivies d’un arrêt, on apprend geste par geste, rôle par rôle, sans jamais avoir à
-        improviser dans un flux continu. C’est aussi ce qui rend ce sport exigeant intellectuellement :
-        il y a un playbook à apprendre, des ajustements à lire, une vraie partie d’échecs jouée à
-        pleine vitesse.
-      </p>
-      <p>
-        Dernier point, et c’est le plus important pour toi : au football américain français,{' '}
-        <strong>débuter adulte est la norme</strong>, pas l’exception. L’immense majorité des
-        joueurs seniors ont découvert le sport après vingt ans. Les clubs ne s’adaptent pas aux
-        débutants, ils sont construits pour eux depuis toujours. Personne dans le vestiaire n’a
-        quinze ans de technique d’avance sur toi. On a détaillé ce que vit un adulte pendant sa
-        première saison, mois par mois, dans notre guide{' '}
-        <Link href="/blog/commencer-le-football-americain-adulte/">
-          ta première saison de football américain
-        </Link>. Et si ta question porte encore sur la structure plutôt que sur la discipline, on a
-        listé les critères qui comptent pour choisir parmi{' '}
-        <Link href="/blog/club-de-sport-tours/">les clubs de sport à Tours</Link>.
       </p>
 
       <h2 id="comparatif">Le comparatif des sports de contact</h2>

@@ -429,6 +429,11 @@ export default function ArticlePratiquer() {
         Clique sur le bouton ci-dessous, réponds à deux questions pour qu'on t'oriente vers le
         bon groupe, et on se voit à l'entraînement.
       </p>
+      <CtaTunnel
+        titre="Prêt à essayer en vrai ?"
+        texte="Semaine découverte offerte aux Pionniers de Touraine : viens tester le foot US ou le flag au Stade de la Chambrerie, à Tours, sans engagement et sans matériel à acheter."
+        bouton="Je tente la semaine découverte"
+      />
     </>
   );
 }

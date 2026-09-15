@@ -2,14 +2,13 @@ import Link from 'next/link';
 import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
 import YardLine from '@/components/YardLine';
-import { CtaTunnel } from './CtaEncart';
 import { dateFr, type ArticleMeta } from '@/data/blog';
 import './blog.css';
 
 /**
  * Gabarit commun des articles : hero sombre (breadcrumb + H1 + méta),
- * zone de lecture claire (fond crème, texte sombre), CTA tunnel en fin
- * de page. Le contenu (children) est le composant de src/content/.
+ * zone de lecture claire (fond crème, texte sombre). Le CTA final est dans
+ * le contenu de chaque article. Le contenu (children) est le composant de src/content/.
  */
 export default function ArticleLayout({ article, children }: { article: ArticleMeta; children: React.ReactNode }) {
   return (
@@ -35,12 +34,8 @@ export default function ArticleLayout({ article, children }: { article: ArticleM
 
         <div className="blogc-body">
           <article className="blogc-prose">
+            {/* Le CTA final est porte par chaque article (contextuel), pas par le gabarit. */}
             {children}
-            <CtaTunnel
-              titre="Prêt à essayer en vrai ?"
-              texte="Semaine découverte offerte aux Pionniers de Touraine : viens tester le foot US ou le flag au Stade de la Chambrerie, à Tours, sans engagement et sans matériel à acheter."
-              bouton="Je tente la semaine découverte"
-            />
           </article>
         </div>
 

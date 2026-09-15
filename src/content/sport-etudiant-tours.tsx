@@ -523,6 +523,11 @@ export default function ArticleSportEtudiant() {
       <p>
         Le reste, tu ne l’apprendras pas en lisant. Viens un lundi soir, on s’occupe de tout.
       </p>
+      <CtaTunnel
+        titre="Prêt à essayer en vrai ?"
+        texte="Semaine découverte offerte aux Pionniers de Touraine : viens tester le foot US ou le flag au Stade de la Chambrerie, à Tours, sans engagement et sans matériel à acheter."
+        bouton="Je tente la semaine découverte"
+      />
     </>
   );
 }

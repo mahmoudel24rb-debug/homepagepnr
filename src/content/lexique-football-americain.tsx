@@ -826,6 +826,11 @@ export default function ArticleLexique() {
         pour <Link href="/blog/comment-regarder-le-college-football-en-france/">regarder le college
         football en France</Link> indique où suivre des matchs commentés depuis la France.
       </p>
+      <CtaTunnel
+        titre="Prêt à essayer en vrai ?"
+        texte="Semaine découverte offerte aux Pionniers de Touraine : viens tester le foot US ou le flag au Stade de la Chambrerie, à Tours, sans engagement et sans matériel à acheter."
+        bouton="Je tente la semaine découverte"
+      />
     </>
   );
 }
