@@ -66,7 +66,8 @@ export default function ArticleAdulte() {
         « petit » ? Les slot receivers vivent de leur agilité. Du poids en trop ? La ligne
         t'accueille à bras ouverts, et tu découvriras que c'est le poste le plus technique du
         jeu (on a écrit un guide entier sur{' '}
-        <Link href="/blog/quel-sport-quand-on-est-gros/">le sport quand on est gros</Link>). Rapide mais léger ? La défense adore les cornerbacks nerveux.
+        <Link href="/blog/quel-sport-quand-on-est-gros/">le sport quand on est gros</Link>). Rapide mais léger ? La défense adore les cornerbacks nerveux. Pour trancher, notre guide répond à la question{' '}
+        <Link href="/blog/postes-football-americain/">quel poste jouer au football américain</Link>, test compris.
       </p>
       <h3>« Je ne suis pas assez en forme »</h3>
       <p>

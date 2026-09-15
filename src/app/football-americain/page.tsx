@@ -143,9 +143,9 @@ export default function Page() {
                   au centre, dans la ligne (nous cherchons d’ailleurs des joueurs de ligne : voyez{' '}
                   <Link href="/blog/quel-sport-quand-on-est-gros/">quel sport quand on est gros</Link>).
                   Grand, petit, fin ou massif : il existe un poste pour chaque morphologie, et nous
-                  passons en revue{' '}
+                  répondons à la question{' '}
                   <Link href="/blog/postes-football-americain/">
-                    les postes au football américain
+                    quel poste jouer au football américain
                   </Link>{' '}
                   un par un.
                 </p>

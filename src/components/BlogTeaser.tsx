@@ -82,7 +82,8 @@ export default function BlogTeaser() {
             </Link>{' '}
             et comment{' '}
             <Link href="/blog/club-de-sport-tours/">trouver un club de sport à Tours</Link> quand on
-            hésite encore entre plusieurs disciplines.
+            hésite encore entre plusieurs disciplines, et on répond, test à l’appui, à la question{' '}
+            <Link href="/blog/postes-football-americain/">quel poste jouer au football américain</Link>.
           </p>
         </div>
 

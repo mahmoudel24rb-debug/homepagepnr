@@ -305,12 +305,12 @@ export default function ArticlePratiquer() {
         pour le sack, les <strong>linebackers</strong>, couteaux suisses de la défense, et les
         <strong> defensive backs</strong>, duellistes des airs. Grand, petit, massif, léger,
         explosif, endurant : <strong>chaque gabarit a un poste où il devient une arme</strong>. On
-        les a tous passés en revue, rôle, gabarit et tempérament, dans notre guide sur{' '}
-        <Link href="/blog/postes-football-americain/">les postes au football américain</Link>.
+        les a tous passés en revue, rôle, gabarit et tempérament, dans notre guide{' '}
+        <Link href="/blog/postes-football-americain/">quel poste jouer au football américain</Link>.
       </p>
       <p>
         Et pour trouver le tien sans lire les onze fiches :{' '}
-        <Link href="https://recrutement.pionniersdetouraine.fr/quel-poste-football-americain/">
+        <Link href="/blog/postes-football-americain/#test">
           je fais le test de poste en 2 minutes
         </Link>
         . Huit questions sur ta taille, ton poids, tes qualités et ton rapport au contact, et notre

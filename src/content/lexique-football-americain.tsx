@@ -321,7 +321,7 @@ export default function ArticleLexique() {
       <p>
         Même principe : la définition, pas la fiche de poste. Pour savoir lequel de ces rôles
         correspond à ton profil, va voir{' '}
-        <Link href="/blog/postes-football-americain/">les postes au football américain expliqués</Link>
+        <Link href="/blog/postes-football-americain/">quel poste jouer au football américain</Link>
         .
       </p>
 

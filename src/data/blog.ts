@@ -166,16 +166,16 @@ export const ARTICLES: ArticleMeta[] = [
   },
   {
     slug: 'postes-football-americain',
-    titre: 'Les postes au football américain expliqués (et comment trouver le tien)',
+    titre: 'Quel poste jouer au football américain ? Les postes expliqués et comment trouver le tien',
     titreCourt: 'Les postes au football américain',
-    titleSeo: 'Les postes au football américain expliqués',
+    titleSeo: 'Quel poste jouer au football américain ? Guide',
     description:
-      'Quarterback, ligne, linebacker, kicker : chaque poste du football américain, son rôle, son gabarit, son tempérament. Un poste pour chaque physique.',
+      'Quel poste jouer au football américain ? Test en 8 questions, puis chaque poste expliqué : rôle, gabarit, tempérament. Un poste pour chaque physique.',
     emoji: 'coaching',
     datePublication: '2026-08-31',
-    dateModif: '2026-08-31',
+    dateModif: '2026-09-15',
     minutesLecture: 15,
-    motCle: 'postes football américain',
+    motCle: 'quel poste jouer au football américain',
     content: ArticlePostes,
   },
   {

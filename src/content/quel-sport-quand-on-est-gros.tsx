@@ -242,9 +242,9 @@ export default function ArticleQuelSportQuandOnEstGros() {
         sa volonté. À technique égale, la masse gagne. Inversement, un homme lourd placé au poste de
         receveur serait tout aussi inutile : ce sport a besoin d’une dizaine de morphologies en même
         temps, et c’est ce qui le rend accueillant. Il n’y a pas un corps idéal, il y a un corps par
-        poste. On les a détaillés dans notre guide sur{' '}
+        poste. On les a détaillés dans notre guide{' '}
         <Link href="/blog/postes-football-americain/">
-          les postes au football américain expliqués
+          quel poste jouer au football américain
         </Link>
         .
       </p>

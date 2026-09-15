@@ -1,15 +1,15 @@
 import Link from 'next/link';
 import { REJOINDRE_TUNNEL_URL } from '@/lib/infos';
 
-/** Test de poste : il vit sur le site de recrutement, pas sur celui-ci. */
-const QUIZ_URL = 'https://recrutement.pionniersdetouraine.fr/quel-poste-football-americain/';
+/** Test de poste : désormais intégré à l'article des postes, sur ce site. */
+const QUIZ_URL = '/blog/postes-football-americain/#test';
 
 /**
  * Encart CTA posé dans la zone de lecture claire des articles.
- * Aucun tunnel n'est monté sur ce site : les deux variantes pointent en lien
- * absolu vers le site de recrutement.
- * - variante « tunnel » : le hash #rejoindre ouvre le tunnel à l'arrivée ;
- * - variante « quiz » : la page du test de poste.
+ * - variante « tunnel » : aucun tunnel n'est monté ici, lien absolu vers le
+ *   site de recrutement où le hash #rejoindre l'ouvre à l'arrivée ;
+ * - variante « quiz » : lien interne vers le test de poste posé dans l'article
+ *   « postes de football américain » (ancre du H2 qui précède le test).
  */
 export function CtaTunnel({ titre, texte, bouton }: { titre: string; texte: string; bouton: string }) {
   return (
@@ -29,7 +29,7 @@ export function CtaQuiz({ titre, texte, bouton }: { titre?: string; texte?: stri
         {texte ??
           'Réponds à 8 questions : notre algorithme de scouting, calibré sur les gabarits réels des joueurs NFL et NCAA, te propose ton poste idéal, en foot US ou en flag.'}
       </p>
-      <a className="sc-btn" href={QUIZ_URL}>{bouton ?? 'Je fais le test'}</a>
+      <Link className="sc-btn" href={QUIZ_URL}>{bouton ?? 'Je fais le test'}</Link>
     </aside>
   );
 }

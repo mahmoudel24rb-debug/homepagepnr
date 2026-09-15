@@ -102,6 +102,67 @@
 .blogc-cta p { margin: 0 0 16px; color: var(--sc-cream-72); font-size: 15px; }
 .blogc-cta .sc-btn { display: inline-flex; }
 
+/* ---------- Conteneur du test de poste (composant PositionQuiz) ----------
+   Même habillage sombre que .blogc-cta, posé pleine largeur de la colonne de
+   lecture claire. Les styles du quiz (quiz.css, préfixe qz-) sont pensés pour
+   un fond sombre : ils restent donc lisibles ici. scroll-margin-top compense
+   le header fixe quand on arrive par l'ancre du H2 qui précède le test. */
+.blogc-quiz {
+  margin: 2.2em 0;
+  padding: clamp(20px, 3vw, 36px);
+  border-radius: 20px;
+  background:
+    radial-gradient(120% 160% at 85% -20%, rgba(255, 173, 0, 0.16) 0%, transparent 55%),
+    linear-gradient(180deg, #401317 0%, #2a0f12 100%);
+  border: 1px solid rgba(255, 173, 0, 0.22);
+  color: var(--rf-cream, #fffaf0);
+  scroll-margin-top: 100px;
+}
+
+/* Le conteneur porte déjà le fond, le cadre et le padding : la zone du quiz
+   redevient transparente et prend toute la largeur de la colonne (720 px). */
+.blogc-quiz .qz-zone {
+  max-width: none;
+  min-height: 380px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+.blogc-quiz .qz-q { font-size: clamp(26px, 3.4vw, 40px); }
+
+/* Rappel des couleurs et des marges du quiz : les règles de la zone de lecture
+   (.blogc-prose p / h2 / ul / li / a, texte sombre) sont plus spécifiques que
+   les classes qz- et prendraient sinon le dessus sur fond sombre. */
+.blogc-prose .blogc-quiz .qz-q {
+  color: var(--rf-cream, #fffaf0);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+  margin: 0 0 8px;
+}
+.blogc-prose .blogc-quiz .qz-sub { color: var(--rf-amber); margin: 0 0 28px; }
+.blogc-prose .blogc-quiz .qz-result-tag { color: var(--rf-amber); margin: 0 0 10px; }
+.blogc-prose .blogc-quiz .qz-result-desc { color: var(--sc-cream-72); margin: 12px auto 0; }
+.blogc-prose .blogc-quiz .qz-refs { color: var(--sc-cream-55); margin: 18px 0 0; }
+.blogc-prose .blogc-quiz .qz-profil { color: var(--sc-cream-72); margin: 14px 0 0; }
+.blogc-prose .blogc-quiz .qz-second { color: var(--rf-amber); margin: 6px 0 0; }
+.blogc-prose .blogc-quiz .qz-disclaimer { color: var(--sc-cream-38); margin: 14px auto 0; }
+.blogc-prose .blogc-quiz .qz-note { color: var(--sc-cream-38); margin: 12px 0 0; }
+.blogc-prose .blogc-quiz .qz-error { color: rgba(255, 180, 120, 0.9); margin: 12px 0 0; }
+.blogc-prose .blogc-quiz .qz-scout-line { color: var(--sc-cream-72); margin: 0; }
+.blogc-prose .blogc-quiz .qz-atouts { margin: 22px auto 0; padding: 0; }
+.blogc-prose .blogc-quiz .qz-atouts li {
+  margin: 0;
+  padding: 6px 0 6px 22px;
+  color: var(--sc-cream-72);
+}
+.blogc-prose .blogc-quiz a { text-decoration: none; font-weight: 700; }
+.blogc-prose .blogc-quiz a.sc-btn { color: var(--sc-ink); }
+.blogc-prose .blogc-quiz a.sc-btn-ghost { color: var(--rf-amber); }
+/* Sauf le lien de repli (mailto) affiché quand l'envoi du lead a échoué. */
+.blogc-prose .blogc-quiz .qz-note a { text-decoration: underline; text-underline-offset: 3px; }
+
 /* ---------- Sommaire (article pilier) ---------- */
 .blogc-toc {
   margin: 0 0 1.6em; padding: 18px 22px;
