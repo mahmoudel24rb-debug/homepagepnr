@@ -13,8 +13,9 @@ export default function ArticleCombienCoute() {
   return (
     <>
       <p>
-        <strong>« Combien coûte le football américain ? »</strong> C’est, avec la question de
-        l’âge, ce qu’on nous demande le plus souvent au bord du terrain. Et derrière la question,
+        <strong>Combien coûte une licence de football américain ?</strong> Entre 100 € et 249,99 €
+        par saison selon la formule, licence FFFA comprise, avec l’équipement prêté aux débutants.
+        C’est, avec la question de l’âge, ce qu’on nous demande le plus souvent au bord du terrain. Et derrière la question,
         il y a presque toujours la même image : des casques, des épaulières, un empilement de
         protections qui semble hors de prix, et l’idée qu’il faudrait sortir plusieurs centaines
         d’euros avant même d’avoir touché un ballon.
@@ -38,7 +39,7 @@ export default function ArticleCombienCoute() {
       <div className="blogc-toc">
         <p className="blogc-toc-title">Sommaire</p>
         <ol>
-          <li><a href="#tarifs">Les tarifs de la saison, formule par formule</a></li>
+          <li><a href="#tarifs">Prix de la licence 2026/2027, formule par formule</a></li>
           <li><a href="#inclus">Ce que l’adhésion comprend (et ce qui reste à ta charge)</a></li>
           <li><a href="#licence">La licence FFFA : à quoi elle sert vraiment</a></li>
           <li><a href="#equipement">Acheter son équipement : combien, et dans quel ordre</a></li>
@@ -51,7 +52,7 @@ export default function ArticleCombienCoute() {
         </ol>
       </div>
 
-      <h2 id="tarifs">Les tarifs de la saison, formule par formule</h2>
+      <h2 id="tarifs">Prix de la licence de football américain 2026/2027, formule par formule</h2>
       <p>
         Commençons par le chiffre que tu es venu chercher. Voici les tarifs d’adhésion des
         Pionniers de Touraine pour une saison complète, qui court de septembre à juin. Chaque

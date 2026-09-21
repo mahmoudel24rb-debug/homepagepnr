@@ -527,6 +527,12 @@ export default function ArticleQuelSportQuandOnEstGros() {
         ]}
       />
 
+      <p>
+        Et si ta question est plutôt la taille que le poids, on a écrit les mêmes guides pour{' '}
+        <Link href="/blog/quel-sport-quand-on-est-grand/">quel sport quand on est grand</Link> et{' '}
+        <Link href="/blog/quel-sport-quand-on-est-petit/">quel sport quand on est petit</Link>.
+      </p>
+
       <h2 id="conclusion">Quel sport quand on est gros ? Celui où on t’attend</h2>
       <p>
         Tout cet article tient en une phrase : ce que le monde entier te présente comme un problème

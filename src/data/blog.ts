@@ -25,6 +25,8 @@ import ArticleClubDeSportTours from '@/content/club-de-sport-tours';
 import ArticleAQuelAgeCommencerLeFootballAmericain from '@/content/a-quel-age-commencer-le-football-americain';
 import ArticleCommentRegarderLeCollegeFootballEnFrance from '@/content/comment-regarder-le-college-football-en-france';
 import ArticleQuelSportQuandOnEstGros from '@/content/quel-sport-quand-on-est-gros';
+import ArticleQuelSportQuandOnEstGrand from '@/content/quel-sport-quand-on-est-grand';
+import ArticleQuelSportQuandOnEstPetit from '@/content/quel-sport-quand-on-est-petit';
 /**
  * Registre des articles du blog (FR uniquement : le SEO vise des requêtes
  * françaises). L'ordre du tableau = ordre d'affichage sur /blog/.
@@ -250,11 +252,11 @@ export const ARTICLES: ArticleMeta[] = [
   },
   {
     slug: 'combien-coute-le-football-americain',
-    titre: 'Combien coûte le football américain ? Licence, équipement, budget d’une saison',
+    titre: 'Combien coûte une licence de football américain ? Prix, tarifs et budget d’une saison',
     titreCourt: 'Combien coûte le football américain ?',
-    titleSeo: 'Prix du football américain : le budget réel',
+    titleSeo: 'Licence football américain : prix 2026/2027',
     description:
-      'De 100 € à 249,99 € la saison selon la formule, licence FFFA incluse, équipement prêté aux débutants et paiement en 3 fois : le vrai budget d’une saison.',
+      'Prix de la licence de football américain à Tours : de 100 € à 249,99 € la saison, licence FFFA incluse, équipement prêté, paiement en 3 fois.',
     emoji: 'finance',
     datePublication: '2026-09-02',
     dateModif: '2026-09-02',
@@ -401,6 +403,34 @@ export const ARTICLES: ArticleMeta[] = [
     minutesLecture: 17,
     motCle: 'quel sport quand on est gros',
     content: ArticleQuelSportQuandOnEstGros,
+  },
+  {
+    slug: 'quel-sport-quand-on-est-grand',
+    titre: 'Quel sport quand on est grand ? Ceux où la taille est un atout, et celui qui te recrute',
+    titreCourt: 'Quel sport quand on est grand ?',
+    titleSeo: 'Quel sport quand on est grand ? On te recrute',
+    description:
+      'Tu mesures 1m85 ou plus et tu cherches un sport ? Le football américain recrute les grands au poste de receveur ou de tight end : essai gratuit à Tours.',
+    emoji: 'rejoindre',
+    datePublication: '2026-09-21',
+    dateModif: '2026-09-21',
+    minutesLecture: 18,
+    motCle: 'quel sport quand on est grand',
+    content: ArticleQuelSportQuandOnEstGrand,
+  },
+  {
+    slug: 'quel-sport-quand-on-est-petit',
+    titre: 'Quel sport quand on est petit ? Ceux où la taille ne compte pas, et celui qui te recrute',
+    titreCourt: 'Quel sport quand on est petit ?',
+    titleSeo: 'Quel sport quand on est petit ? On te recrute',
+    description:
+      'Tu mesures 1m70 ou moins et tu cherches un sport ? Le football américain recrute les petits gabarits au poste de running back : essai gratuit à Tours.',
+    emoji: 'jouer',
+    datePublication: '2026-09-21',
+    dateModif: '2026-09-21',
+    minutesLecture: 18,
+    motCle: 'quel sport quand on est petit',
+    content: ArticleQuelSportQuandOnEstPetit,
   },
 ];
 

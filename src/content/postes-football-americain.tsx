@@ -125,6 +125,13 @@ export default function ArticlePostes() {
         comment pratiquer le football américain en France</Link>.
       </p>
 
+      <p>
+        Selon ton gabarit, on a aussi écrit trois guides dédiés :{' '}
+        <Link href="/blog/quel-sport-quand-on-est-gros/">quel sport quand on est gros</Link>,{' '}
+        <Link href="/blog/quel-sport-quand-on-est-grand/">quel sport quand on est grand</Link> et{' '}
+        <Link href="/blog/quel-sport-quand-on-est-petit/">quel sport quand on est petit</Link>.
+      </p>
+
       <h2 id="escouades">Trois équipes dans une seule équipe</h2>
       <p>
         Une équipe de football américain n’est pas un groupe de onze joueurs qui attaquent puis
