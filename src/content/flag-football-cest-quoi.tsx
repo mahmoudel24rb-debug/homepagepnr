@@ -208,6 +208,11 @@ export default function ArticleFlag() {
         entre femmes et hommes.
       </p>
       <p>
+        Aux Pionniers de Touraine, les deux coexistent : une équipe mixte et une équipe féminine,
+        dont la quarterback joue en équipe de France. On en parle dans notre article sur{' '}
+        <Link href="/blog/flag-football-feminin/">le flag football féminin</Link>.
+      </p>
+      <p>
         La mixité ne signifie pas que toutes les qualités se valent ou que le niveau physique
         disparaît. Elle met en avant la complémentarité : vitesse, précision, mains, lecture,
         explosivité et communication peuvent s’exprimer dans des rôles différents au service du même

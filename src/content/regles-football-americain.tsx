@@ -200,14 +200,16 @@ export default function ArticleRegles() {
       <p>
         Il s’arrête notamment quand une passe n’est pas attrapée, quand un joueur sort du terrain,
         quand une équipe gagne un premier down dans certaines situations, à chaque faute, et à chaque
-        temps mort demandé par une équipe. Résultat : un quart-temps de douze minutes de jeu effectif
-        occupe beaucoup plus de douze minutes réelles, et un match complet dure généralement deux
-        heures à deux heures et demie.
+        temps mort demandé par une équipe. Résultat : le temps de jeu affiché (quatre quarts-temps
+        de 12 minutes en seniors en France, de 15 minutes en NFL) occupe bien plus de temps réel.
+        Comptez environ deux heures à deux heures et demie pour un match amateur en France, et
+        environ trois heures pour un match de NFL. Le détail niveau par niveau est dans{' '}
+        <Link href="/blog/combien-de-temps-dure-un-match-de-football-americain/">combien de temps dure un match de football américain</Link>.
       </p>
       <p>
         C’est le point qui déroute le plus les nouveaux spectateurs, alors autant l’assumer : le
-        football américain est un sport <strong>haché</strong>. Chaque action dure entre quatre et
-        huit secondes, puis tout s’arrête, les équipes se regroupent, le schéma suivant est décidé,
+        football américain est un sport <strong>haché</strong>. Chaque action ne dure que quelques
+        secondes, puis tout s’arrête, les équipes se regroupent, le schéma suivant est décidé,
         et ça repart. Ce n’est pas un défaut de rythme, c’est le cœur du jeu : ces intervalles sont
         exactement ce qui permet la dimension stratégique, les ajustements et les substitutions
         massives entre les escouades.
@@ -367,6 +369,14 @@ export default function ArticleRegles() {
         Si tu regardes ton premier match ce week-end, applique cette méthode. Elle fonctionne, et
         elle t’évitera la sensation de décrochage des vingt premières minutes.
       </p>
+      <p>
+        Pour savoir où et quand regarder les matchs, on a fait le point sur les chaînes et les
+        offres pour{' '}
+        <Link href="/blog/comment-regarder-la-nfl-en-france/">regarder la NFL en France</Link>, et
+        sur{' '}
+        <Link href="/blog/combien-de-joueurs-football-americain/">le nombre de joueurs dans une
+        équipe</Link>.
+      </p>
       <ul>
         <li>
           <strong>Regarde d’abord le bandeau d’affichage, pas le ballon.</strong> Il te donne la
@@ -434,17 +444,17 @@ export default function ArticleRegles() {
         titre="Questions fréquentes sur les règles du football américain"
         items={[
           {
-            q: 'Combien de temps dure un match de football américain ?',
+            q: 'Combien de temps dure un match, en pratique ?',
             r: (
               <p>
                 Un match se joue en quatre quarts-temps, mais le temps affiché n’est pas le temps
                 réel : comme le chronomètre s’arrête très fréquemment, à chaque passe non attrapée,
                 à chaque sortie de terrain, à chaque faute et à chaque temps mort, la durée totale
                 d’une rencontre est nettement supérieure à la somme des quarts-temps. En pratique,
-                il faut prévoir de l’ordre de deux heures à deux heures et demie du coup d’envoi au
-                coup de sifflet final, mi-temps comprise. C’est donc un format d’après-midi ou de
-                soirée, et c’est une information utile quand on prévoit d’aller voir un match en
-                famille pour la première fois.
+                il faut prévoir de l’ordre de deux heures à deux heures et demie pour un match
+                amateur en France, mi-temps comprise, et environ trois heures pour un match de NFL.
+                Les chiffres officiels de chaque niveau sont dans{' '}
+                <Link href="/blog/combien-de-temps-dure-un-match-de-football-americain/">la durée d’un match de football américain</Link>.
               </p>
             ),
           },

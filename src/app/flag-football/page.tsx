@@ -26,7 +26,7 @@ const FAQ = [
   },
   {
     q: 'Le flag est-il vraiment mixte ?',
-    r: 'Oui. Femmes et hommes jouent dans la même équipe, sur le même terrain, au même moment : il n’y a pas une équipe masculine d’un côté et une équipe féminine de l’autre. Les rôles se répartissent selon les qualités de chacun, vitesse, lecture du jeu ou précision de passe, pas selon les gabarits.',
+    r: 'Oui. Dans l’équipe mixte, femmes et hommes jouent ensemble, sur le même terrain, au même moment. Le club a aussi une équipe de flag féminine, qui s’entraîne sur les mêmes créneaux. Les rôles se répartissent selon les qualités de chacun, vitesse, lecture du jeu ou précision de passe, pas selon les gabarits.',
   },
   {
     q: 'Combien coûte la saison ?',
@@ -84,7 +84,7 @@ export default function Page() {
         <ReponseDirecte
           bouton="Venir essayer"
           reperes={[
-            <><strong>Flag mixte seniors</strong> : lundi et jeudi de 20h15 à 22h45</>,
+            <><strong>Flag mixte et flag féminin seniors</strong> : lundi et jeudi de 20h15 à 22h45</>,
             <><strong>Flag mixte juniors</strong> : jeudi de 19h00 à 20h30</>,
             <><strong>{STADE.nom}</strong>, {STADE.rue}, {STADE.codePostal} {STADE.ville}</>,
             <><strong>5 contre 5</strong>, mixte, sans contact, sans protection</>,
@@ -95,8 +95,8 @@ export default function Page() {
               Le flag football est la version sans contact du football américain : on arrache un
               ruban porté à la ceinture au lieu de plaquer, et l’on joue à 5 contre 5. Aux Pionniers
               de Touraine, il se pratique au {STADE.nom}, {STADE.rue}, {STADE.codePostal}{' '}
-              {STADE.ville}. L’équipe flag mixte seniors, où femmes et hommes jouent ensemble,
-              s’entraîne le lundi et le jeudi de 20h15 à 22h45 ; les juniors ont leur créneau flag le
+              {STADE.ville}. L’équipe flag mixte seniors, où femmes et hommes jouent ensemble, et
+              l’équipe féminine s’entraînent le lundi et le jeudi de 20h15 à 22h45 ; les juniors ont leur créneau flag le
               jeudi de 19h00 à 20h30, et les plus jeunes le samedi de 10h00 à 12h00. Aucun
               équipement de protection n’est nécessaire : une tenue de sport et des baskets
               suffisent. La semaine découverte est offerte et cette séance d’essai gratuite n’engage
@@ -123,8 +123,8 @@ export default function Page() {
                 </p>
                 <p className="sc-legal-text">
                   Aux Pionniers de Touraine, le flag se pratique au {STADE.nom}, sur trois
-                  collectifs : une équipe mixte seniors, un créneau juniors et l’école de flag pour
-                  les plus jeunes. Pour découvrir le flag football à Tours, aucun équipement de
+                  collectifs : les seniors (une équipe mixte et une équipe féminine), un créneau juniors
+                  et l’école de flag pour les plus jeunes. Pour découvrir le flag football à Tours, aucun équipement de
                   protection n’est nécessaire : une tenue de sport, des baskets, et c’est parti.
                 </p>
                 <p className="sc-legal-text">
@@ -133,12 +133,14 @@ export default function Page() {
                   courtes, le rythme est élevé. C’est un sport de stratégie autant qu’un sport de
                   course : chaque action se prépare, s’annonce et s’exécute ensemble.
                 </p>
-                <h3 className="sc-h3">Le flag football mixte à Tours : vraiment mixte</h3>
+                <h3 className="sc-h3">Le flag football mixte et féminin à Tours</h3>
                 <p className="sc-legal-text">
-                  Femmes et hommes jouent dans la même équipe, sur le même terrain, au même moment.
-                  Il n’y a donc pas ici une équipe masculine d’un côté et une équipe de flag
-                  football féminin de l’autre : il y a une équipe, et elle est mixte. C’est rare
-                  dans un sport collectif, et c’est l’ADN de notre section flag. Personne n’est là
+                  Dans l’équipe mixte, femmes et hommes jouent ensemble, sur le même terrain, au même
+                  moment. C’est rare dans un sport collectif, et c’est l’ADN de notre section flag.
+                  Le club a aussi une équipe féminine, sur les mêmes créneaux, emmenée par sa
+                  quarterback Lucie Houret, quarterback de l’équipe de France féminine de flag. Tout
+                  est expliqué dans notre article sur{' '}
+                  <Link href="/blog/flag-football-feminin/">le flag football féminin</Link>. Personne n’est là
                   pour faire de la figuration : les rôles se répartissent selon les qualités de
                   chacun, pas selon les gabarits.
                 </p>
@@ -203,8 +205,8 @@ export default function Page() {
               <p className="sc-legal-text">
                 Aux Pionniers de Touraine, le flag n’est pas une nouveauté de circonstance. Le club
                 existe depuis 1987, il fête bientôt ses 40 ans, et il fait vivre trois pratiques de
-                flag : une équipe mixte seniors, une pratique juniors partagée avec le football
-                américain et une école de flag pour les plus jeunes.
+                flag : des équipes seniors mixte et féminine, une pratique juniors partagée avec le
+                football américain et une école de flag pour les plus jeunes.
               </p>
             </div>
           </div>

@@ -173,6 +173,11 @@ export default function ArticleFlagJO2028() {
         L’entrée aux Jeux ne se traduit pas par une révolution abstraite. Elle se traduit par des
         effets très concrets, dont plusieurs sont déjà visibles dans les clubs.
       </p>
+      <p>
+        Aux JO, le tournoi féminin compte autant que le masculin, et l’équipe de France féminine y
+        vise une place : on raconte le parcours de notre quarterback internationale dans{' '}
+        <Link href="/blog/flag-football-feminin/">le flag football féminin</Link>.
+      </p>
       <ul>
         <li>
           <strong>Une visibilité inédite.</strong> Un sport olympique devient un sport qu’on peut

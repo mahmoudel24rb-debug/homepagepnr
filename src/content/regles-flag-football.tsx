@@ -533,6 +533,10 @@ export default function ArticleReglesFlag() {
         aux Jeux Olympiques, les tournois sont séparés entre femmes et hommes.
       </p>
       <p>
+        Le club a aussi une équipe féminine, sur les mêmes créneaux : tout est expliqué dans{' '}
+        <Link href="/blog/flag-football-feminin/">le flag football féminin à Tours</Link>.
+      </p>
+      <p>
         Le format mixte impose ses propres règles de composition d’équipe sur le terrain, et ces
         modalités relèvent du règlement de la compétition concernée. Là encore, le format évolue
         d’une saison à l’autre : le site de la FFFA est la référence.

@@ -4,8 +4,8 @@ import Faq from '@/components/blog/Faq';
 
 /**
  * Article. Mots-clés : « vocabulaire football américain », « quarterback »,
- * « running back », « linebacker », « wide receiver », « touchdown »,
- * « combien de joueurs football américain », « durée match football américain ».
+ * « running back », « linebacker », « wide receiver », « touchdown ».
+ * « Combien de joueurs » et « durée d’un match » ont leurs propres articles (renvoi en #chiffres).
  * 60 entrées, une ancre par terme (h3 id) pour capter les requêtes longue traîne.
  * Aucune durée chiffrée de quart-temps : elle dépend du règlement de la compétition.
  */
@@ -48,7 +48,7 @@ export default function ArticleLexique() {
           <li><a href="#scoring">Les actions et le scoring</a></li>
           <li><a href="#fautes">Les fautes</a></li>
           <li><a href="#flag">Le vocabulaire du flag football</a></li>
-          <li><a href="#chiffres">Combien de joueurs, combien de temps</a></li>
+          <li><a href="#chiffres">Les chiffres du jeu, en bref</a></li>
           <li><a href="#faq">Questions fréquentes</a></li>
         </ol>
       </div>
@@ -666,45 +666,21 @@ export default function ArticleLexique() {
         Tout est expliqué sur la page de <Link href="/flag-football/">notre section flag</Link>.
       </p>
 
-      <h2 id="chiffres">Combien de joueurs, combien de temps : les réponses directes</h2>
-
-      <h3 id="combien-de-joueurs">Combien de joueurs sur un terrain de football américain ?</h3>
+      <h2 id="chiffres">Les chiffres du jeu, en bref</h2>
       <p>
-        <strong>Onze contre onze</strong>, soit vingt-deux joueurs sur le terrain à chaque action.
-        Mais un effectif complet est bien plus large que onze, pour une raison simple : une équipe
-        de football américain est composée de trois escouades distinctes. L’escouade offensive entre
-        quand l’équipe a le ballon, l’escouade défensive la remplace en entier quand elle le perd,
-        et les équipes spéciales interviennent sur les phases de coup de pied. Les changements sont
-        libres et illimités entre deux actions, ce qui explique le ballet permanent sur la ligne de
-        touche.
+        Onze joueurs par équipe sur le terrain, mais des effectifs bien plus larges, parce que
+        l’attaque, la défense et les équipes spéciales sont trois escouades distinctes ; cinq contre
+        cinq au flag football. Le détail, de la NFL aux clubs français, est dans 
+        <Link href="/blog/combien-de-joueurs-football-americain/">combien de joueurs dans une équipe de football américain</Link>.
       </p>
-
-      <h3 id="combien-de-joueurs-flag">Combien de joueurs au flag football ?</h3>
       <p>
-        <strong>Cinq contre cinq</strong>. Le terrain est plus petit, il n’y a ni plaquage ni ligne
-        de cinq bloqueurs, et chaque joueur touche donc beaucoup plus le ballon qu’au football
-        américain. C’est l’une des raisons pour lesquelles le flag est aussi efficace comme porte
-        d’entrée : on y comprend la logique du jeu très vite, parce qu’on y participe en permanence.
-      </p>
-
-      <h3 id="duree-match">Combien de temps dure un match de football américain ?</h3>
-      <p>
-        Un match se joue en <strong>quatre quarts-temps</strong>, séparés par une mi-temps, avec une
-        courte pause entre le premier et le deuxième quart puis entre le troisième et le quatrième.
-        La donnée qui surprend tout le monde, c’est l’écart entre le temps de jeu affiché et la
-        durée réelle : le chronomètre s’arrête très souvent, à chaque passe incomplète, à chaque
-        sortie du terrain, à chaque changement de possession et à chaque temps mort. En pratique,
-        prévois une soirée ou un après-midi, pas une heure.
-      </p>
-
-      <h3 id="duree-jeunes">Et pour les jeunes ?</h3>
-      <p>
-        Les formats des catégories de jeunes sont plus courts que ceux des seniors, et le flag est
-        lui aussi joué sur des durées réduites. La durée exacte d’un quart-temps dépend du règlement
-        de la compétition concernée, donc le mieux est de vérifier pour la rencontre que tu comptes
-        voir. Notre article sur{' '}
+        Côté chronomètre, le temps de jeu affiché n’a pas grand-chose à voir avec la durée réelle,
+        parce que l’horloge s’arrête très souvent. Les formats changent selon le niveau, la
+        compétition et la catégorie d’âge : tout est expliqué, chiffres officiels à l’appui, dans 
+        <Link href="/blog/combien-de-temps-dure-un-match-de-football-americain/">combien de temps dure un match de football américain</Link>. Pour les
+        catégories de jeunes, notre article sur 
         <Link href="/blog/football-americain-jeunes-u13-u16-u18/">le football américain chez les
-        jeunes</Link> détaille comment les catégories sont organisées.
+        jeunes</Link> détaille leur organisation.
       </p>
 
       <CtaTunnel

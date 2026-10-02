@@ -336,6 +336,11 @@ export default function ArticleCollegeFootballFrance() {
         maison.
       </p>
       <p>
+        Et pour la NFL, les droits sont totalement différents : chaînes, abonnements et horaires
+        sont détaillés dans notre guide pour{' '}
+        <Link href="/blog/comment-regarder-la-nfl-en-france/">regarder la NFL en France</Link>.
+      </p>
+      <p>
         <strong>Fighting Irish TV</strong> est un service proposé par le site officiel de
         l’université, accessible <strong>gratuitement aux spectateurs situés hors des
         États-Unis</strong>, sur simple création d’un compte. C’est probablement l’offre la plus

@@ -27,6 +27,10 @@ import ArticleCommentRegarderLeCollegeFootballEnFrance from '@/content/comment-r
 import ArticleQuelSportQuandOnEstGros from '@/content/quel-sport-quand-on-est-gros';
 import ArticleQuelSportQuandOnEstGrand from '@/content/quel-sport-quand-on-est-grand';
 import ArticleQuelSportQuandOnEstPetit from '@/content/quel-sport-quand-on-est-petit';
+import ArticleCommentRegarderLaNflEnFrance from '@/content/comment-regarder-la-nfl-en-france';
+import ArticleCombienDeTempsDureUnMatchDeFootballAmericain from '@/content/combien-de-temps-dure-un-match-de-football-americain';
+import ArticleCombienDeJoueursFootballAmericain from '@/content/combien-de-joueurs-football-americain';
+import ArticleFlagFootballFeminin from '@/content/flag-football-feminin';
 /**
  * Registre des articles du blog (FR uniquement : le SEO vise des requêtes
  * françaises). L'ordre du tableau = ordre d'affichage sur /blog/.
@@ -431,6 +435,62 @@ export const ARTICLES: ArticleMeta[] = [
     minutesLecture: 18,
     motCle: 'quel sport quand on est petit',
     content: ArticleQuelSportQuandOnEstPetit,
+  },
+  {
+    slug: 'comment-regarder-la-nfl-en-france',
+    titre: 'Comment regarder la NFL en France en 2026-2027 : chaînes, streaming et horaires',
+    titreCourt: 'Regarder la NFL en France',
+    titleSeo: 'Regarder la NFL en France : le guide 2026-2027',
+    description:
+      'L’Équipe gratuit le dimanche, beIN Sports, NFL Game Pass en français, Netflix : où regarder la NFL en France en 2026-2027, à quel prix et à quelle heure.',
+    emoji: 'foot-us',
+    datePublication: '2026-10-02',
+    dateModif: '2026-10-02',
+    minutesLecture: 17,
+    motCle: 'regarder la nfl en france',
+    content: ArticleCommentRegarderLaNflEnFrance,
+  },
+  {
+    slug: 'combien-de-temps-dure-un-match-de-football-americain',
+    titre: 'Combien de temps dure un match de football américain ? NFL, universitaire, France et flag',
+    titreCourt: 'Durée d’un match de football américain',
+    titleSeo: 'Durée d’un match de football américain',
+    description:
+      'Combien de temps dure un match de football américain ? 60 minutes de jeu, un peu plus de 3 h en réalité en NFL : universitaire, France et flag détaillés.',
+    emoji: 'temps',
+    datePublication: '2026-10-02',
+    dateModif: '2026-10-02',
+    minutesLecture: 10,
+    motCle: 'combien de temps dure un match de football américain',
+    content: ArticleCombienDeTempsDureUnMatchDeFootballAmericain,
+  },
+  {
+    slug: 'combien-de-joueurs-football-americain',
+    titre: 'Combien de joueurs dans une équipe de football américain ? Terrain, effectif, NFL et flag',
+    titreCourt: 'Combien de joueurs au football américain ?',
+    titleSeo: 'Combien de joueurs au football américain ?',
+    description:
+      'Combien de joueurs dans une équipe de football américain ? 11 sur le terrain, 53 en NFL, la feuille de match en France et le flag à 5 : tous les chiffres.',
+    emoji: 'jouer',
+    datePublication: '2026-10-02',
+    dateModif: '2026-10-02',
+    minutesLecture: 10,
+    motCle: 'combien de joueurs dans une équipe de football américain',
+    content: ArticleCombienDeJoueursFootballAmericain,
+  },
+  {
+    slug: 'flag-football-feminin',
+    titre: 'Flag football féminin : le sport collectif où les femmes jouent au plus haut niveau, à Tours aussi',
+    titreCourt: 'Flag football féminin',
+    titleSeo: 'Flag football féminin : jouer à Tours',
+    description:
+      'Le flag football féminin, sans contact et olympique en 2028 : joue aux Pionniers avec la quarterback de l’équipe de France. Premier essai gratuit à Tours.',
+    emoji: 'rejoindre-flag',
+    datePublication: '2026-10-02',
+    dateModif: '2026-10-02',
+    minutesLecture: 15,
+    motCle: 'flag football féminin',
+    content: ArticleFlagFootballFeminin,
   },
 ];
 

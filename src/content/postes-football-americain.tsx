@@ -793,16 +793,17 @@ export default function ArticlePostes() {
             ),
           },
           {
-            q: 'Combien de joueurs dans une équipe de football américain ?',
+            q: 'Combien de joueurs sur le terrain, et dans l’équipe ?',
             r: (
               <p>
                 Onze joueurs par équipe sur le terrain, soit vingt-deux en tout à chaque action.
                 Mais ce ne sont pas les mêmes onze pendant toute la rencontre : l’attaque et la
                 défense sont deux escouades distinctes qui se relaient à chaque changement de
                 possession, et une troisième unité, les équipes spéciales, entre sur les phases de
-                coup de pied. L’effectif complet d’un club est donc bien plus large que onze joueurs,
-                et il varie selon le niveau et le championnat. En flag football, on joue à cinq
-                contre cinq.
+                coup de pied. L’effectif complet d’un club est donc bien plus large que onze joueurs ;
+                les chiffres de la NFL, des universités et des clubs français sont dans{' '}
+                <Link href="/blog/combien-de-joueurs-football-americain/">combien de joueurs dans une équipe de football
+                américain</Link>. En flag football, on joue à cinq contre cinq.
               </p>
             ),
           },
